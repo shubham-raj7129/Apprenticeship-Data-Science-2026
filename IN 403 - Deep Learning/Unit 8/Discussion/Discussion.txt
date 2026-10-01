@@ -1,0 +1,20 @@
+Defending an Enterprise AI System
+
+A hospital network is preparing to launch a new enterprise AI system that combines multiple components: predictive models, a policy assistant powered by an LLM with retrieval, monitoring for drift, and a formal governance process. Before launch, leadership has asked for a final review to determine whether the system is ready for deployment and how it should be defended if questions arise from clinicians, compliance officers, or regulators.
+
+Your role is to evaluate the system from an enterprise perspective and recommend whether it should move forward, under what conditions, and how it should be defended as a responsible AI deployment.
+
+Initial Post:-
+
+Describe an enterprise AI system similar to those studied in this course (for example: a hospital policy assistant, clinical risk prediction system, or operational monitoring tool). Then address the following:
+1. System overview: Briefly describe the system’s purpose, users, and key components (models, data sources, monitoring, governance).
+2. Deployment readiness: Explain whether you believe the system is ready for deployment today. Identify one strength that supports deployment and one risk that still needs to be managed.
+3. Risk and safeguards: Describe two safeguards you would rely on to defend the system (for example: grounding with retrieval, human review, drift monitoring, access controls, or governance approvals).
+4. Defense scenario: Explain how you would defend this system if challenged by a stakeholder who is concerned about safety, bias, privacy, or reliability.
+End your post with a clear recommendation: deploy, deploy with conditions, or delay deployment.
+
+Peer Responses:
+Reply to two classmates. For each reply:
+1. Identify one assumption or risk that could weaken their defense of the system.
+2. Suggest one additional safeguard or governance improvement.
+3. Ask one question that would significantly change their deployment recommendation if answered differently

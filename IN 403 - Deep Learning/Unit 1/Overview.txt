@@ -1,0 +1,11 @@
+In this unit, you will focus on applied AI decision-making through a hands-on Google Colab lab using PyTorch. You will build and evaluate two predictive approaches for a hospital no-show scenario: a simple baseline model (logistic regression) and a small neural network. After comparing their performance and practical tradeoffs, you will recommend which model is the best fit for hospital operations and explain your reasoning for a non-technical audience. The goal is to practice making clear, evidence-based model choices that balance performance, interpretability, and operational needs.
+
+After completing this unit, you should be able to:
+Explain core deep learning algorithms, including their purposes, key components, and typical use cases.
+Describe the structure and function of neural networks, including layers, activation functions, and how training occurs.
+
+Course Outcomes practiced in this unit:
+IN403-1: Create deep neural networks for application to the field of information technology;
+
+GEL-1.02: Demonstrate college-level communication through composition of original materials in Standard English
+

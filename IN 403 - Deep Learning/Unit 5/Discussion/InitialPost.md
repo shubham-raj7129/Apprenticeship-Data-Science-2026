@@ -1,0 +1,41 @@
+# Should This Hospital Trust an LLM? — Initial Post
+
+## Recommendation: Option B (LLM + RAG)
+
+I recommend Option B — a retrieval-augmented generation (RAG) system — as the hospital's first deployment for three reasons:
+
+1. **Grounded answers reduce hallucination risk.** A RAG system retrieves actual hospital policy text before generating an answer, meaning responses are anchored to verified institutional documents rather than whatever the model "remembers" from training data. Lewis et al. (2020) demonstrated that RAG architectures produce more factually accurate and specific outputs compared to parametric-only models, which is critical when staff need precise procedural guidance.
+
+2. **Traceability enables accountability.** Every RAG answer can cite its source document and passage, creating an audit trail that hospital compliance teams can verify. In regulated healthcare environments, being able to trace a recommendation back to an approved policy document is not optional — it is a legal and accreditation requirement (Topol, 2019).
+
+3. **Scope is naturally bounded.** A RAG system can only answer from what is in its document corpus. If a topic is not covered by ingested policies, retrieval scores will be low, and the system can be configured to refuse rather than guess. This creates a predictable boundary around what the assistant can and cannot do.
+
+## Safety Risk
+
+Consider a staff member asking: *"What PPE is required for aerosol-generating procedures?"* A plain LLM might generate an answer based on generic training data — perhaps citing CDC guidelines from 2020 that have since been updated, or referencing equipment our hospital does not stock. If a nurse follows this incorrect guidance during an intubation and uses a surgical mask instead of the N95 respirator our policy requires, the result could be a preventable respiratory infection for the healthcare worker.
+
+A RAG system reduces this risk by retrieving our hospital's actual PPE policy (which specifies "N95/respirator: required for aerosol-generating procedures") and generating its answer from that text. Even if the generation model paraphrases imperfectly, the cited source document is displayed, enabling the staff member to verify the answer against the original policy.
+
+## Keeping Policies Current
+
+I would implement a **designated Document Owner workflow**. Each policy category (infection control, privacy, emergency codes, etc.) would have an assigned owner — typically the department head or compliance officer — responsible for reviewing and re-uploading documents on a quarterly schedule. When a document is updated, the owner marks the previous version as superseded, uploads the new version, and triggers an automated re-indexing of the vector database. This ensures the RAG system always retrieves from current, approved policy text. A simple version log (document name, effective date, owner, last indexed) would be maintained and reviewed at quarterly compliance meetings.
+
+## Three Required Guardrails
+
+1. **Technical guardrail — Confidence threshold with refusal.** If the retrieval similarity score falls below a defined threshold (e.g., 0.25), the system must refuse to answer and instead display: "I cannot find a relevant policy for this question. Please contact [department]." This prevents the model from generating speculative answers when no relevant policy exists in the corpus.
+
+2. **Policy/process guardrail — Defined usage scope with human escalation.** The assistant would be scoped to administrative and general operational questions only (not clinical treatment decisions). Any question flagged as clinical (medication dosing, diagnosis, triage) would trigger an automatic escalation message: "This question requires clinical judgment — please consult your supervisor or the on-call provider." Staff would receive onboarding training explaining what the tool can and cannot do.
+
+3. **Monitoring guardrail — Monthly error review with "can't answer" tracking.** All queries, retrieved sources, and generated answers would be logged. A monthly review by a policy SME would audit a random 10% sample for accuracy. Additionally, "can't answer" cases would be tracked — a spike in refusals for a particular topic signals a missing or outdated document that needs to be added to the corpus.
+
+## Why Option A Is Weaker
+
+A plain LLM chatbot with no access to hospital documents cannot guarantee that its answers reflect *this* hospital's specific policies, making it fundamentally unsuitable for a regulated healthcare environment where institutional specificity, traceability, and compliance with local procedures are non-negotiable requirements.
+
+---
+
+**References**
+
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, *33*, 9459–9474.
+
+Topol, E. J. (2019). High-performance medicine: The convergence of human and artificial intelligence. *Nature Medicine*, *25*(1), 44–56. https://doi.org/10.1038/s41591-018-0300-7

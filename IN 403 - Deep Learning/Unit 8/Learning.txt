@@ -1,0 +1,5 @@
+Enterprise AI System Design, Deployment, and Defense
+
+Practice What You Have Learned: It is strongly recommended that you complete this learning activity to prepare for your unit assignment.
+
+Unit 8 - Natural Language Processing Activity(https://kapextmediassl-a.akamaihd.net/IST/media/IN403/IN403_2008D/NLP/story.html)

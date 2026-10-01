@@ -1,0 +1,91 @@
+LLM Security, Guardrails, and Adversarial Testing
+
+Course Outcome practiced in this unit:
+IN403-6: Examine risks and controls in deployed AI systems.
+
+In this assignment, you will take on the role of an AI security and governance analyst for a hospital. You will evaluate how an LLM-based policy assistant behaves under adversarial and unsafe prompts, design guardrails to reduce risk, and decide whether the system is safe to deploy. Unlike earlier assignments that focused on model performance or governance scoring, this assignment focuses on LLM security and misuse by focusing on understanding how systems fail under attack and how organizations defend them.
+
+The goal is to move from theoretical risks (prompt injection, PHI leakage, unsafe advice) to practical controls, escalation rules, and deployment decisions.
+
+Software Requirements (Google Colab Only)
+1. You do not need to install Python locally for this assignment.
+2. Use Google Colab (free) in your web browser with a Google account.
+
+Getting Started in Colab
+1. Go to Google Colab and choose New Notebook.
+2. Rename your notebook and confirm the runtime is Python 3 (default).
+3. Upload your data files via the folder icon → Upload (or mount Google Drive if preferred).
+
+Files Provided
+1. IN403_Unit9_Security_Lab_Template. (The notebook contains a dataset of adversarial prompts and structured sections for testing, analysis, and written responses.)(https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit9_Security_Lab_Template.ipynb OR IN 403 - Deep Learning/Unit 9/Assignment/IN403_Unit9_Security_Lab_Template.ipynb)
+2. IN403_Unit9_Security_RedTeaming_Dataset.zip(IN 403 - Deep Learning/Unit 9/Assignment/IN403_Unit9_Security_RedTeaming_Dataset)
+
+Step-by-Step Instructions:
+1. Understand the Threat Categories
+In the notebook, review the four attack categories:
+1.1. Prompt injection
+1.2. PHI/data exfiltration
+1.3. Jailbreaks
+1.4. Unsafe medical advice
+Briefly summarize what each category means in a hospital context.
+2. Run Baseline LLM Responses (No Guardrails)
+Using the notebook:
+2.1. Execute the baseline model on the provided adversarial prompt dataset.
+2.2. Record how the model responds to unsafe or malicious prompts.
+2.3. Identify at least three examples where the model produces unsafe, inappropriate, or risky outputs.
+3. Design Guardrails. Design a guardrail framework for the policy assistant. You must define at least three types of guardrails:
+3.1. Technical guardrails. Examples:
+3.1.1. Refusal rules
+3.1.2. PHI detection/redaction
+3.1.3. Policy-only answering
+3.1.4. Confidence thresholds
+3.1.5. Retrieval constraints
+3.2. Monitoring/logging controls. Examples:
+3.2.1. Prompt logging
+3.2.2. Unsafe response alerts
+3.2.3. Weekly security review metrics
+3.2.4. Block-rate monitoring
+3.3. Governance/process controls. Examples:
+3.3.1 Access restrictions
+3.3.2. Staff training
+3.3.3. Incident response workflow
+3.3.4. Approval and escalation policies
+Describe how each guardrail works and what risk it addresses.
+4. Evaluate Safety Performance. Create a simple evaluation table that includes:
+4.1. Number of unsafe prompts
+4.2. Number correctly blocked (REFUSE)
+4.3. Number escalated
+4.4. Number incorrectly allowed (false ALLOW)
+4.5. Number incorrectly blocked (false REFUSE)
+Interpret what these results mean for hospital risk.
+5. Deployment Decision. Make a clear enterprise deployment recommendation:
+5.1. Approve deployment
+5.2. Approve with conditions
+5.3. Pause deployment
+5.4. Justify your decision based on:
+5.4.1. Safety performance
+5.4.2. Residual risks
+5.4.3. Adequacy of guardrails
+5.4.4. Organizational readiness
+6. Security & Governance Memo
+Write a 400–600 word LLM Security Memo in markdown addressing the following:
+6.1. Overview of the policy assistant and its role in the hospital
+6.2. Key security risks observed during testing
+6.3. Guardrails required before deployment (technical, monitoring, governance)
+6.4. Deployment decision and justification
+6.5. Escalation policy (when to refuse vs escalate vs answer)
+6.6. Ongoing monitoring and re-approval triggers
+
+Deliverables
+Submit the completed notebook with all sections clearly labeled and all outputs visible.Your submission must include:
+1. Completed IN403_Unit9_Security_Lab_Template.ipynb
+2. All written responses embedded in markdown
+3. Tables and results generated in the notebook
+
+Assignment Requirements
+Be sure to upload your Jupyter notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit9 notebook file, and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN 403 - Deep Learning/Unit 9/Assignment/Rubrics) before beginning this activity.

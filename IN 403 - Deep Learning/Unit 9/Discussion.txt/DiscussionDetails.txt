@@ -1,0 +1,28 @@
+The Policy Chatbot Is Being Attacked — What Do You Do?
+
+A hospital launches a policy chatbot to help staff find answers quickly. Within the first week, several issues occur:
+1. Users try to trick it into revealing internal documents (prompt injection)
+2. Someone asks for patient details (PHI/data exfiltration)
+3. A few prompts request unsafe medical advice
+4. The chatbot generates an inappropriate response during a stressful shift
+
+Leadership asks for an immediate plan to reduce risk while keeping the chatbot useful.
+
+Initial Post (250–350 words)
+
+Pick one attack category to focus on: prompt injection, PHI/data exfiltration, jailbreaks, or unsafe medical advice. Then address the following:
+1. Attack overview. Briefly describe what the attack looks like in practice and why it is likely to occur in a hospital setting.
+2. Risk level. Explain why this attack is high-risk. Include one potential impact (patient safety, legal/compliance, operational disruption) and one reason it is plausible or likely.
+3. Controls and safeguards.Propose three controls to reduce risk, including:
+3.1. One technical guardrail (for example: policy-only answering, refusal rules, retrieval constraints, PHI detection/redaction)
+3.2. One monitoring or logging control (for example: alerting, audit logs, weekly review of blocked prompts)
+3.3. One governance or process control (for example: access restrictions, staff training, incident response workflow)
+4. Escalation policy. Explain when the assistant should refuse, when it should escalate to a human, and who should be notified.
+5. End your post with a clear recommendation: deploy, deploy with conditions, or pause deployment.
+
+Peer Responses:
+
+Reply to Two Classmates. For each reply:
+1. Identify one gap or weakness in their plan (be specific).
+2. Add one additional control that reduces false ALLOW (unsafe requests slipping through).
+3. Ask one question that would change their recommendation if answered differently (for example: what is the PHI leakage rate during testing, or what percentage of prompts trigger refusals).

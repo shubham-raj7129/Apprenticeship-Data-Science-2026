@@ -1,0 +1,10 @@
+Large Language Models, Embeddings, and Retrieval-Augmented Generation (RAG)
+
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+Watson, M., & Chollet, F. (2024). Deep learning with Python (3rd ed.). Manning Publications.
+Chapter 16: “Text Generation”
+
+Web Reading:
+FAISS Documentation (vector search)- https://faiss.ai/
+OpenAI Retrieval Concept Guide (background)- https://platform.openai.com/docs/guides/retrieval
+RAG Explained- https://www.topquadrant.com/resources/blog-retrieval-augmented-generation-explained/

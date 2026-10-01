@@ -1,0 +1,2 @@
+Machine Learning Use Cases and Data Types
+In this unit, you will learn about various use cases for implementations in scalable learning, support vector machine (SVM), neural networks, and deep learning. You will then explore various data types such as supervised and unsupervised data, quantitative versus qualitative data, and examples of each. Finally, you will test Python NumPy functionality as used in machine learning.

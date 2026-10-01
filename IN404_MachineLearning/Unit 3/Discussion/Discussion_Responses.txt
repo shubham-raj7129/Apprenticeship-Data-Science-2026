@@ -1,0 +1,22 @@
+Response to Mateo Uribe Giraldo
+
+Great post, Mateo. I really liked how you brought in the seminar example about sentiment polarity not always matching a customer review's star rating—that is a perfect illustration of why NLP is so challenging. It made me think about how sarcasm and mixed feelings in a single review can throw off even a well-trained model. Your explanation of count vectorization capturing combinations of two or three words (n-grams) was also a strong point because simple single-word counts can miss important phrases like "not good" versus just "good."
+
+Building on your discussion of feature extraction, I did some additional research and found that one limitation of count vectorization is that it treats all words as equally important based solely on frequency. A technique called TF-IDF (Term Frequency–Inverse Document Frequency) addresses this by weighting words not just by how often they appear in a document but also by how rare they are across the entire corpus. This means common words like "the" or "is" get downweighted, while more distinctive terms receive higher scores, which can improve classification accuracy (Kowsari et al., 2019). Beyond that, newer approaches like word embeddings (Word2Vec and GloVe) go even further by representing words as dense numerical vectors that capture semantic relationships. For example, words with similar meanings end up clustered together in vector space, which allows models to understand context in ways that simple frequency counts cannot (IBM, 2024). Have you looked into whether using TF-IDF or word embeddings in place of basic count vectorization might have improved the accuracy of the models discussed in seminar?
+
+References
+
+IBM. (2024). What are word embeddings? IBM. https://www.ibm.com/think/topics/word-embeddings
+
+Kowsari, K., Jafari Meimandi, K., Heidarysafa, M., Mendu, S., Barnes, L., & Brown, D. (2019). Text classification algorithms: A survey. Information, 10(4), Article 150. https://doi.org/10.3390/info10040150
+
+
+Response to Jacob Lasley
+
+Nice work, Jacob. I appreciated how thorough your post was, especially the way you clarified that CountVectorizer is technically a feature-extraction method rather than the statistical process of selecting the sample itself. That distinction is easy to overlook, and I think it shows a solid understanding of the pipeline. Your point about the quality and amount of training data affecting NLP model performance also stood out to me because I have seen firsthand in our coursework how a small or unbalanced dataset can lead to a model that looks accurate on paper but fails on new data.
+
+I wanted to expand on your mention of bag-of-words and TF-IDF as feature extraction techniques. One thing I found interesting in my research is that both of these methods still treat words as independent features and lose information about word order and context. More recent techniques called word embeddings, such as Word2Vec and GloVe, address this by mapping words into continuous vector spaces where semantically similar words are positioned close together. According to IBM (2024), these embeddings capture relationships between words that traditional frequency-based methods miss entirely—for instance, the model can learn that "king" relates to "queen" in the same way "man" relates to "woman." This kind of semantic understanding can be especially helpful for the social media listening and brand monitoring applications you mentioned, where informal language and slang are common and simple word counts might not capture the true meaning. Do you think using word embeddings instead of count vectorization could help handle some of the spelling and grammar challenges you mentioned in your post?
+
+Reference
+
+IBM. (2024). What are word embeddings? IBM. https://www.ibm.com/think/topics/word-embeddings

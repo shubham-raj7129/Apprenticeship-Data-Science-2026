@@ -1,0 +1,18 @@
+Monitoring Drift in Deployed Hospital AI Systems
+
+A hospital has deployed several AI systems to support operations and clinical decision-making, including a no-show prediction model, a PPE detection system, and a policy assistant for staff questions. All of these systems performed well during testing, but they have now been running in production for several months.
+
+Recently, staff have reported that some predictions feel “off,” and leadership is concerned that changes in patient behavior, workflows, or data collection may be affecting model performance. The hospital must decide how to monitor these systems and what actions to take when performance degrades.
+
+Initial Post
+
+Choose one deployed hospital AI system (for example: no-show prediction, PPE detection, or policy assistant). Then address the following:
+1. Type of drift: Identify one type of drift that could affect this system (data drift, prediction drift, or concept drift) and explain it in plain language.
+2. Risk of not detecting drift: Describe what could go wrong if this drift is not detected. Focus on patient safety, staff operations, or compliance risk.
+3. How to detect drift: Explain one practical method the hospital could use to monitor or detect this drift (for example: feature distribution monitoring, output distribution checks, performance sampling, or periodic human review).
+4. What action to take: Describe one action the hospital should take when drift is detected (for example: retraining, threshold adjustment, rollback, or temporary shutdown)
+
+Reply to two classmates. For each reply:
+1. Identify one assumption or missing risk in their monitoring plan.
+2. Suggest one improvement to their drift detection or response strategy.
+3. Ask one “what if” question that would change their recommendation (for example, what if labels are delayed or unavailable, or what if retraining is costly).

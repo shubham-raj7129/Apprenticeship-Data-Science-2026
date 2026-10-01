@@ -1,0 +1,159 @@
+Number of star ratings(5    138
+4     95
+3     53
+2     44
+1     33
+Name: Star, dtype: int64,)
+
+Top rows of training set()
+
+600                                                                                                                                                                                                                                                                                                                                                                                                                                        I've used this a lot and love it. So quick and easy to send updates to the doc!
+451                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Helps me and my Doctor track what may be wrong
+926                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    It was fun it helped me and my kids
+617    EDIT 10/3/15: Since the last update its reset a lot of stuff & it added categories I'd deleted, but it now says "cannot be altered" & cannot be deleted! -- This is the best mood tracker I have seen, it just needs to be able to let you enter data more than just once per day, and hourly graphs would make it perfect. Also the ability to send results by email for safe keeping. I had questions about the app, but there is only 1 page on a site for it and no one you can contact with questions. That...
+384                                                                                                                                                                                                                                                                                                             This is my favorite mood tracking app, my only problem is that I can't seem to find a way to write down notes, I see that there is a place on the graph to view them but I can't find where to write them.
+Name: Review_Text, dtype: object()
+
+Top rows of testing set()
+
+767                                                                                                                                                                                                                                           Like a few others, I've experienced the app crashes whenever I try to view my graph. I've reported the bug and messaged the developers, and heard nothing. Once that's fixed, this will go back to 5.
+846                                                                                                                                                                                                                                                                                                                                                                                                     Please fix this. It's been over two months.
+316                                                                                                                                                                                                                                                                                          I just downloaded the app to my phone & im learning how it works. I like it so far. Could be easier to use, but as I said, im learning how to work it.
+476                                                                                                                                                                                                                                                                                                                                                                                                                             Doesn't work at all
+576    Problem med att pÇminnelserna slutar fungera med ganska j_mna mellanrum (ca en vecka funkar det sen fÇr man gÇ in och ta bort och g_ra om inst_llningarna). Annars n_jd, anv_nder tre av de kategorier som finns. Hade g_rna sett en f_r fysiskt mÇende dÇ jag lider av halsbr_nna och illamÇende mm som vore sk_nt att se f_r_ndring i _ver tid, men det _r okej. Hoppas de fixar buggen g_llande pÇminnelserna snart!
+Name: Review_Text, dtype: object()
+
+Print best_worst reviews data set dimensions()
+
+(171, 9)()
+
+Print best_worst reviews data set dimensions()
+
+(171, 10)()
+
+5    138
+1     33
+Name: Star, dtype: int64()
+
+Training set((128, 933),)
+
+Testing set((43, 933),)
+
+Default count vectorizer on reduced data set(0.9302325581395349,)
+
+Training set - line 337((128, 1044),)
+
+Reduced data set no lowercase applied - line 350(0.9069767441860465,)
+
+Reduced data set with 1-3 ngrams - line 357((128, 6260),)
+
+Accuracy for reduced data set and 1-3 ngrams(0.9069767441860465,)
+
+Null model accuracy - line 376(0.8604651162790697,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+Ngram 1-3 model()
+
+Dimensions: (8276,)
+
+Accuracy: (0.8136796536796537,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+Ngram 1-3 & english stop words()
+
+Dimensions: (4587,)
+
+Accuracy: (0.8072727272727273,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+English stop words and features = 250()
+
+Dimensions: (250,)
+
+Accuracy: (0.8422510822510823,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+Ngram 1-3 & features = 250()
+
+Dimensions: (250,)
+
+Accuracy: (0.8311688311688312,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+Ngrams 1-3 & terms appear at least three times()
+
+Dimensions: (447,)
+
+Accuracy: (0.8425974025974027,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+Default TF-IDF()
+
+Dimensions: (1108,)
+
+Accuracy: (0.8072727272727274,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+TF-IDF removing english stop words()
+
+Dimensions: (926,)
+
+Accuracy: (0.8072727272727274,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+TF-IDF 1-3 ngrams()
+
+Dimensions: (8276,)
+
+Accuracy: (0.8072727272727274,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+TF-IDF 1-2 ngrams()
+
+Dimensions: (4420,)
+
+Accuracy: (0.8072727272727274,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+TF-IDF 3 words()
+
+Dimensions: (274,)
+
+Accuracy: (0.8072727272727274,)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++()
+
+(128, 879)()
+
+(43, 879)()
+
+Final reduced data set - line 440(0.8837209302325582,)
+

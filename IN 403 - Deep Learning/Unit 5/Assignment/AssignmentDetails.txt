@@ -1,0 +1,62 @@
+Build a Hospital Policy Assistant with Embeddings, Vector Search, and RAG
+
+Course Outcome practiced in this unit:
+1. IN403-3: Use a deep learning model to develop solutions to real life problems
+
+In this assignment, you will build a hospital policy assistant that answers staff questions using trusted documents instead of guessing. You will create document embeddings, store them in a vector index, retrieve the most relevant policy passages for a question, and generate a grounded answer with citations (RAG). You will also compare a plain LLM-style answer (no retrieval) against a RAG answer to see how retrieval reduces hallucinations and improves reliability in high-risk settings like healthcare.
+
+Files Provided
+
+IN403_Unit5_Hospital_Policy_Dataset.zip (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit5_Hospital_Policy_Dataset.zip or IN 403 - Deep Learning/Unit 5/Assignment/IN403_Unit5_Hospital_Policy_Dataset)
+IN403_Unit5_RAG_Lab_Template.ipynb (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit5_RAG_Lab_Template.ipynb or IN 403 - Deep Learning/Unit 5/Assignment/IN403_Unit5_RAG_Lab_Template.ipynb)
+
+Step-by-Step Instructions
+1. Open the notebook template in Google Colab.
+2. Upload IN403_Unit5_Hospital_Policy_Dataset.zip to the same Colab session.
+3. Run the unzip cell to extract the policy files into the folder used by the notebook.
+4. Load all policy documents and print or display the list of filenames so you can confirm the files were read successfully.
+5. Chunk the documents (about 300 words per chunk with overlap) and create a chunk table that includes:
+5.1. doc_name
+5.2. chunk_id
+5.3. chunk_text
+6. Generate embeddings for each chunk using the SentenceTransformer model provided in the notebook.
+7. Build a FAISS index using the embeddings.
+8. Implement a retrieval function that takes a user question and returns the top-k most similar chunks. Display the results with:
+8.1. doc_name
+8.2. chunk_id
+8.3. similarity score (or distance)
+9. Build a RAG answering function that follows this workflow:
+9.1. retrieve top-k chunks
+9.2. assemble retrieved text as context
+9.3. generate an answer that uses only the retrieved context
+9.4. return citations that reference doc_name and chunk_id
+10. Generate a plain answer for the same question without retrieval (no context), then compare it to the RAG answer. Identify any claims in the plain answer that are not supported by documents.
+11. Run the mini evaluation set (5 questions) provided in the notebook and record:
+11.1. the top sources retrieved
+11.2. whether the answer is grounded
+11.3. any failure modes you notice
+12. Answer the reflection questions in markdown and write the deployment memo.
+12.1. Would you deploy the policy assistant? If yes, what scope would you start with (who uses it and what topics are allowed)?
+12.2. What failure modes still exist even with RAG (for example: outdated documents, missing documents, retrieval errors, confusing policies)?
+12.3. What guardrails are required before launch? Include at least: document governance, logging/audit, and an escalation workflow.
+12.4. What should the assistant do when it is uncertain (refuse, ask a clarifying question, or route to a human)? Explain why.
+
+Your notebook must include the following outputs (visible):
+1. At least 2 example questions with retrieved chunks displayed (doc_name, chunk_id, similarity score).
+2. A RAG answer with citations (doc_name, chunk_id).
+3. A plain (non-RAG) answer for the same question.
+4. A mini evaluation table containing 5 questions and the top sources retrieved.
+5. Reflection answers written in markdown.
+
+Deliverables
+1. Completed notebook (.ipynb) with all code cells executed and outputs visible.
+2. All required outputs listed above.
+3. Deployment memo (300–500 words) included at the end of the notebook in markdown (or submitted as a separate document if instructed).
+
+Assignment Requirements
+Be sure to upload your Colab  notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit5 notebook file, and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN 403 - Deep Learning/Unit 5/Assignment/Rubrics) before beginning this activity.

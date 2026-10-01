@@ -1,0 +1,72 @@
+Production Monitoring and Incident Response for Deployed AI Systems
+
+Course Outcome practiced in this unit:
+IN403-6: Examine risks and controls in deployed AI systems.
+
+In this assignment, you will take on the role of an AI operations and reliability analyst for a hospital. You will analyze production monitoring signals, detect potential model failures, and design an incident response plan for a deployed AI system. Unlike earlier assignments that focused on model design, governance, or security, this assignment focuses on operational decision-making focusing on determining when a system is functioning normally versus when it poses risk and requires intervention.
+
+The goal is to move from monitoring signals to structured incident response and evidence-based deployment decisions.
+
+Software Requirements (Google Colab Only)
+1. You do not need to install Python locally for this assignment.
+2. Use Google Colab (free) in your web browser with a Google account.
+
+Getting Started in Colab
+1. Go to Google Colab and choose New Notebook.
+2. Rename your notebook and confirm the runtime is Python 3 (default).
+3. Upload your data files via the folder icon → Upload (or mount Google Drive if preferred).
+
+Files Provided
+1. IN403_Unit10_Production_Lab_Template.ipynb(https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit10_Production_Lab_Template.ipynb OR IN 403 - Deep Learning/Unit 10/Assignment/IN403_Unit10_Production_Lab_Template.ipynb) (The notebook contains simulated production metrics, monitoring data, and structured sections for analysis and written responses.)
+2. IN403_Unit10_Production_Monitoring_Dataset.zip(https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit10_Production_Monitoring_Dataset.zip OR IN 403 - Deep Learning/Unit 10/Assignment/IN403_Unit10_Production_Monitoring_Dataset)
+
+Step-by-Step Instructions:-
+1. Review the Production Scenario
+1.1. In the notebook, review the deployed hospital AI system scenario and the provided monitoring signals.
+1.2. Identify the system being monitored (e.g., prediction model, vision system, or LLM assistant) and its operational role in the hospital.
+2. Analyze Monitoring Signals. Using the provided data in the notebook, analyze at least three types of monitoring signals. Examples may include:
+2.1. Model performance metrics (accuracy, error rate, precision/recall)
+2.2. Data or prediction drift indicators
+2.3. Usage patterns or anomaly rates
+2.4. User feedback or incident reports
+    Describe what each signal suggests about system health.
+3. Identify Potential Incidents. Determine whether the monitoring signals indicate:
+3.1. Normal variation
+3.2. Degradation in performance
+3.3. Elevated operational risk
+3.4. A potential production incident
+    Explain your reasoning using evidence from the metrics and trends.
+4. Incident Severity Assessment. Classify the situation using an incident severity level (for example: low, medium, high, or critical). For your chosen severity level, explain:
+4.1. Potential impact on patient safety or operations
+4.2. Likelihood of harm if no action is taken
+4.3. Urgency of response
+5. Design an Incident Response Plan. Create a structured response plan that includes:
+5.1. Immediate actions (e.g., restrict system use, adjust thresholds, notify teams)
+5.2. Technical remediation steps (e.g., retraining, rollback, configuration changes)
+5.3. Escalation workflow (who is notified and when)
+5.4. Verification steps to confirm the system is safe to resume normal operation
+6. Operational Decision. Make a clear operational recommendation:
+6.1. Continue deployment
+6.2. Restrict deployment
+6.3. Roll back or pause the system
+    Justify your decision based on monitoring evidence and risk assessment.
+7. Production Operations Memo. Write a 350–500 word Production Operations Memo in markdown addressing the following:
+7.1. System overview and operational context
+7.2. Key monitoring signals and what they indicate
+7.3. Incident severity and risk rationale
+7.4. Response actions and escalation plan
+7.5. Operational decision (continue, restrict, or roll back)
+7.6. Ongoing monitoring and alert thresholds
+
+Deliverables
+Submit the completed notebook with all sections clearly labeled and all outputs visible. Your submission must include:
+1. Completed IN403_Unit10_Production_Lab_Template.ipynb
+2. All written responses embedded in markdown
+3. Tables, charts, and interpretations generated in the notebook
+
+Assignment Requirements
+Be sure to upload your Jupyter notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit10 notebook file, and submit it to the Dropbox by the deadline.
+Review the rubric(IN 403 - Deep Learning/Unit 10/Assignment/Rubrics) before beginning this activity.

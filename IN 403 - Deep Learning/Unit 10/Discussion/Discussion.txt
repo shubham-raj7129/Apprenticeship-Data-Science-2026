@@ -1,0 +1,22 @@
+Your Model Just Triggered Alerts — Do You Pause Deployment?
+
+Scenario:
+Your hospital deployed a no-show model and a policy RAG assistant. During the last two weeks, monitoring shows:
+1. Increased drift and a drop in performance for the no-show model
+2. Decreased retrieval hit rate and increased hallucinations for the RAG assistant.
+3. User complaints increased during peak clinical hours
+
+Leadership asks: "Should we continue, continue with conditions, or pause/rollback?"
+
+Initial Post Instructions (required):
+1. Pick ONE system (No-show OR RAG) and describe what metrics you would watch daily.
+2. Define the 3 alert thresholds that matter most and explain why.
+3. Recommend a response: continue / continue with conditions / pause / rollback.
+4. Describe a containment action (safe-mode or human-in-the-loop) you would use immediately.
+5. List who must be notified (roles) and what the escalation path is.
+
+Peer Responses:
+Reply to 2 of your peers. For each reply:
+1. Challenge their thresholds with a stronger safety argument.
+2. Suggest one additional diagnostic check (data quality, labeling delay, segment drift).
+3. Add one prevention step (tests, monitoring automation, change management).

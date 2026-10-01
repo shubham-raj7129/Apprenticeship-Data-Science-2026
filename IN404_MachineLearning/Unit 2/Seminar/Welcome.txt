@@ -1,0 +1,46 @@
+Welcome to Unit 2!
+-Sonali Sen Baidya posted on Sep 1, 2026 12:30 AM
+
+Hello everyone,
+
+Welcome to Unit 2! This week, we move from the foundations of machine learning into how we choose and apply models to real-world problems.
+
+The key idea for this unit is simple: The right model starts with understanding the data.
+
+What You'll Learn
+
+This week, you will explore:
+1. Different types of data and when to use supervised vs. unsupervised learning
+2. Linear regression for predicting continuous values
+3. Logistic regression for classification problems
+4. Feature management and challenges with incomplete or streaming data
+5. Scalability in machine learning
+6. Using NumPy for scientific computing in Python
+7. The relationship between AI, Machine Learning, and Deep Learning
+
+Helpful Resources
+1. Linear Regression:
+Linear Regression – Concept & Python Example(https://www.youtube.com/watch?v=O2Cw82YR5Bo)
+
+2. Logistic Regression:
+Logistic Regression – Concept & Intuition(https://www.youtube.com/watch?v=yIYKR4sgzI8)
+
+These videos are optional but recommended if you want additional explanation and examples.
+
+Your Assignment
+Your Unit 2 assignment combines concepts + real-world analysis + Python. You will work with AI/ML/DL concepts, explore the Python scientific stack, and complete a NumPy coding activity with output.
+
+Tip: Don't wait until the last day. Work through the coding portion as you go so you have time to troubleshoot.
+
+ Keep This Question in Mind
+As you work through the unit, keep asking:
+
+“What type of problem am I trying to solve, what data do I have, and which approach makes the most sense?”
+
+That mindset is much more valuable than simply memorizing algorithms.
+
+If you have questions, please reach out through the discussion board or course messaging system.
+
+Have a great Unit 2!
+
+Dr. Sonali Sen Baidya

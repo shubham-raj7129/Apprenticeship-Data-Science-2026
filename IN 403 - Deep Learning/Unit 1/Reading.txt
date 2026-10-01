@@ -1,0 +1,9 @@
+Introduction to Deep Learning and Neural Networks
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Watson, M., & Chollet, F. (2024). Deep learning with Python (3rd ed.). Manning Publications.
+Chapter 1: “What is Deep Learning?”
+Chapter 2: “The Mathematical Building Blocks of Neural Networks”
+
+Web Reading
+PyTorch Basics Tutorial- https://pytorch.org/tutorials/beginner/basics/intro.html

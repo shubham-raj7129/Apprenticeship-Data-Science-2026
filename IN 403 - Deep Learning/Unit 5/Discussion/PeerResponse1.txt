@@ -1,0 +1,11 @@
+Great post, Victoria — I appreciate how clearly you connected RAG to staff trust, especially your point that employees need to know responses come from approved policies rather than the AI's best guess. That framing makes the value proposition immediately understandable for hospital leadership.
+
+One hidden assumption I noticed in your proposal is that the hospital's policy documents will always be complete and internally consistent. In practice, policies can overlap or even contradict each other — for example, an older infection control document might reference one notification chain while a newer privacy policy specifies a different one. If the RAG system retrieves chunks from both during a suspected privacy incident (your example scenario), it could merge conflicting guidance into a single answer without flagging the contradiction. The staff member might follow a blended procedure that matches neither official policy, which creates the same compliance risk you identified — just through a different mechanism.
+
+One improvement I would suggest is adding a document metadata check at retrieval time. If the top retrieved chunks come from documents with different "Last Updated" dates or different owning departments, the system could flag this and respond with something like: "Multiple policies may apply to this question. Please verify with your compliance team." This adds minimal friction but prevents the dangerous scenario of silently merging outdated and current guidance into one answer.
+
+Here is my "what if" question for you: What if a critical policy has not been written yet — say, the hospital just adopted a new active shooter protocol, but the document has not been uploaded to the system? A staff member asking "What should I do during an active threat?" would still receive a retrieval result (whatever is closest in the corpus), but it would be the wrong policy entirely. How would your system distinguish between "I found a relevant policy" and "I found the least irrelevant policy because the right one does not exist"?
+
+References
+
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. Advances in Neural Information Processing Systems, 33, 9459–9474.

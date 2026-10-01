@@ -1,0 +1,17 @@
+Hello class,
+
+Attached is the reference code and also the txt file output that I promised for Unit 4 alongwith the other files that you would need for the assignment. Please attempt to write the code yourself first and then if you get stuck feel free to use this as a way to troubleshoot.
+
+Just a note:  Your accuracy scores may differ slightly from the example results because different versions of Python, scikit-learn, NumPy, and related packages may use updated default settings or calculations. This does not automatically mean your code is incorrect. Report the scores produced by your own completed program and interpret those results.
+
+Please email me if you have any questions. 
+
+Thanks,
+
+Dr. Sen Baidya
+
+Attachment(s): 
+IN404_Reviews.csv (113.55 KB)			
+IN404_Unit4_Solution.py (10.23 KB)			
+IN404_Unit4.py (9.39 KB)			
+IN404_Unit4.txt (7.88 KB)

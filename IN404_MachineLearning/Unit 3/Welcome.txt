@@ -1,0 +1,83 @@
+
+Welcome to Unit 3!
+Sonali Sen Baidya posted on Sep 8, 2026 8:00 PM
+Welcome to Unit 3! This week, we move from working with numerical data to working with text data.
+
+You will learn how machine learning can analyze written reviews, determine sentiment, and use that information to make predictions. This is an important application of ML used in areas such as customer reviews, social media, chatbots, recommendation systems, and customer feedback analysis.
+
+What You’ll Learn:-
+By the end of this unit, you should be able to:
+1. Understand basic Natural Language Processing (NLP)
+2. Understand sampling and hypothesis testing
+3. Use sentiment analysis to analyze text
+4. Understand Count Vectorization and how text is converted into numerical data
+5. Apply Logistic Regression to classify text
+6. Evaluate and compare machine learning models
+
+The Big Picture:-
+Think of the process this way:
+Text → Clean/Analyze → Convert to Numbers → Build Model → Predict Sentiment → Evaluate Results
+
+What to Read:-
+Please review the following:
+1. Mastering Pandas — Chapter 3
+2. Principles of Data Science — Chapters 7 & 8
+3. Machine Learning: The New AI — Chapter 3
+4. Python: Real World Machine Learning — Analyzing Text Data
+
+You do not need to memorize everything. Focus on understanding the main concepts and how they are used in the assignment.
+
+Recommended Videos
+These videos can help you understand the concepts before starting the assignment:
+
+1. NLP & Sentiment Analysis
+    Natural Language Processing with Python – Sentiment Analysis(https://www.youtube.com/watch?v=6d9cG8R9D1k)
+2. Count Vectorization
+    Count Vectorizer and Bag of Words Model(https://www.youtube.com/watch?v=OGK9SHt8SWg&pp=ygUnQ291bnQgVmVjdG9yaXplciBhbmQgQmFnIG9mIFdvcmRzIE1vZGVs)
+3. Logistic Regression for Text Classification
+    Text Classification using Logistic Regression(https://www.youtube.com/watch?v=Q81RR3yKn30)
+4. End-to-End NLP Example
+    Sentiment Analysis Project with Python(https://www.youtube.com/watch?v=ujId4ipkBio)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Unit 3 Assignment: Natural Language Processing
+This assignment is hands-on. You will work with review data and use Python to perform sentiment analysis and machine learning.
+
+Before You Start
+Make sure you have:
+1.Python installed
+2.PyCharm installed (VSCode is fine)
+3.The provided .py file
+4.The required Python libraries
+
+Your Process
+1.Open the provided .py file.
+2.Read the comments/instructions in the file.
+3.Add your code where indicated.
+4.Run the program.
+5.Check your output and make sure there are no errors.
+6.Capture the required screenshots/output.
+7.Answer the written questions.
+8.Submit the completed assignment.
+
+What You Need to Complete:-
+1. Analyze the Data
+    You will generate and interpret:
+        Boxplot of sentiment by star rating
+        Histogram showing sentiment distribution
+2. Build & Compare Models
+    You will:
+        Use Count Vectorization
+        Build three different models
+        Calculate model accuracy
+        Compare the models with the null model
+3. Explain the Concepts
+    Make sure your written responses explain:
+        What is Count Vectorization?
+        How does Count Vectorization convert text into numerical features?
+        What is the difference between the three models?
+        What is a train/test split and why is it important?
+        What is sentiment polarity?
+        How does TextBlob help determine sentiment?
+

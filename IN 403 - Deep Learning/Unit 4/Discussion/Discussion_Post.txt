@@ -1,0 +1,79 @@
+IN403 Unit 4 Discussion – Deploying Computer Vision in Clinical Spaces
+
+---
+
+Initial Post
+
+My recommendation: PPE Detection
+
+---
+
+1. Recommendation and Rationale
+
+I'd recommend PPE detection as the first system to deploy. It has a clearly scoped, low-stakes task — detecting whether a mask is present in a specific zone — which makes it far easier to validate, explain to staff, and govern responsibly than the other two options. In the Unit 4 lab assignment, I trained a ResNet-18 transfer learning classifier on a PPE mask dataset and achieved 100% test accuracy with 0 false positives and 0 false negatives on the held-out test set (200 images). That kind of performance is achievable on a well-curated dataset because the visual signal is simple and consistent. Transfer learning on ResNet-18 is well-supported for this type of binary classification task (He et al., 2016). The system also operates without needing to know who anyone is, which significantly reduces privacy exposure.
+
+2. Type of Model Needed
+
+PPE detection requires a two-stage pipeline: first a detector to locate faces in the camera frame (bounding boxes), then a classifier to label each crop as mask_on or mask_off. These are distinct tasks — classification answers "what is this?" given a cropped input, while detection answers "where are the objects?" in a full scene (Szeliski, 2022). In the lab I used OpenCV's Haar cascade for the detection step and ResNet-18 for classification. For this use case I don't need facial recognition at all, which matters because it means I never process biometric identity data.
+
+3. Patient Safety and Error Risk
+
+- False positive (mask_off classified as mask_on — missed unmasked person): an unmasked staff member passes the camera check and enters a sterile zone or ICU undetected. This is the more dangerous error — it could expose immunocompromised patients to respiratory pathogens with no alert generated.
+- False negative (mask_on classified as mask_off — unnecessary alert): a masked staff member is incorrectly flagged. On its own this is disruptive but not harmful. The real risk is that if false alarms are frequent, staff begin ignoring alerts — alert fatigue — which undermines the whole system.
+
+4. Privacy and Consent
+
+Cameras would be placed at entry points to designated mask-required zones (e.g., ICU corridors, surgical prep areas), not in patient rooms or bathrooms. Both patients and staff pass through these areas, so both groups are recorded. I'd require visible signage at each camera location explaining that AI-assisted PPE monitoring is in operation. No consent is required for PPE compliance monitoring in a workplace context under most jurisdictions, but staff should be informed through HR policy, and patients through admission documentation. Critically, no facial identity data is extracted or stored — only the presence or absence of a mask is assessed.
+
+5. Bias and Validation Plan
+
+One clear bias risk is that the model may perform worse for certain mask types — respirators, religious face coverings, or non-standard PPE — if those weren't well represented in training data. It could also perform unevenly under different lighting conditions (dim corridors vs bright wards). This is a known challenge in medical AI deployment, where training data rarely reflects the full diversity of real-world clinical environments (Obermeyer et al., 2019). Before deployment I'd stratify the test set by mask type and lighting condition and check precision/recall separately for each subgroup. If any subgroup shows meaningfully lower recall, I'd collect more examples from that group and retrain before going live.
+
+6. Three Guardrails
+
+- Technical: I'd set a confidence threshold — any prediction below 0.85 confidence is treated as uncertain and routed to human review rather than acted on automatically. This prevents low-confidence errors from triggering alerts or being silently cleared.
+- Policy/Process: A documented escalation workflow ensures that every alert goes to a charge nurse or security station for human confirmation before any action is taken. No automated locks, barriers, or disciplinary flags — a human stays in the loop at every decision point.
+- Monitoring/Audit: I'd log every prediction with timestamp, camera zone, and confidence score, and run a weekly audit comparing flagged events against manual spot-checks. If real-world recall for mask_off drops below 90%, the model is flagged for retraining before the next review cycle.
+
+---
+
+Why the other two options are higher risk as a first deployment
+
+Fall detection is a harder computer vision problem — distinguishing a fall from someone crouching, sitting on the floor, or moving quickly requires temporal context (video sequences), not just single-frame classification. A false negative (missed fall) could mean a patient lies on the floor unattended, and a false positive could flood nursing stations with phantom alerts. The model complexity and validation burden are both significantly higher.
+
+Identity recognition is the highest-risk option of the three. It processes biometric identity data on patients who may not have meaningfully consented, in a setting where they're already vulnerable. HIPAA, state biometric privacy laws, and general public trust concerns make this extremely difficult to deploy responsibly. A false positive — checking in the wrong patient — could result in medication being administered to the wrong person, which is a serious clinical safety event. I'd only consider this after the hospital has significant operational experience with simpler vision systems.
+
+---
+
+Reply to Brittany (Identity Recognition)
+
+Hi Brittany, I agree with your conclusion — identity recognition is the wrong choice for a first deployment, and your point about biometric data misuse is exactly the right concern to lead with. The privacy risk alone makes it difficult to justify when simpler, lower-stakes options are available.
+
+One hidden assumption I'd flag: your proposal mentions that the system "could make mistakes for certain age groups and anyone that has similar facial features." This understates the bias risk a bit — facial recognition systems have documented higher error rates for women and darker-skinned individuals specifically, not just people who look similar (Buolamwini & Gebru, 2018). That's a structured disparity, not a random one, and it matters for a hospital environment where those same populations may already face disparities in care.
+
+For an improvement, I'd suggest strengthening the consent guardrail beyond just having consent on file. A patient who consented to general hospital data policies may not have understood they were consenting to facial recognition specifically. A clearer safeguard would be a separate, explicit opt-in for biometric processing — distinct from the general admission paperwork — so consent is genuinely informed.
+
+What if a significant portion of patients refuse to consent to facial recognition? At that point the hospital still needs a check-in process for those patients, which means running two parallel systems. How would your proposal ensure the non-biometric fallback doesn't become so cumbersome that it pressures patients to consent just to avoid the inconvenience?
+
+
+Reply to Jessica (Fall Detection)
+
+Hi Jessica, strong post — I like that you addressed the alarm fatigue risk directly, since that's often overlooked when people focus only on false negatives. Your technical guardrail of processing video at the edge and converting bodies to stick figures is a genuinely smart privacy-by-design approach.
+
+One hidden assumption worth examining: your post references ncoa.org to support fall detection's clinical value, but that source covers consumer medical alert products, not hospital-deployed computer vision systems. The performance characteristics are quite different — a wearable device that detects sudden motion is a simpler problem than a camera system that must distinguish a fall from bending, crouching, or sitting on the floor across a busy hallway (Szeliski, 2022). The clinical evidence base for camera-based fall detection in hospitals is still limited, which is a real deployment risk.
+
+One improvement I'd suggest: your 3-second human confirmation window is a good idea, but I'd recommend specifying what happens if the reviewer doesn't respond within that window. Does the alert auto-escalate, auto-dismiss, or stay open? Leaving that undefined creates a gap where an alert could silently expire during a busy shift.
+
+What if the hospital's hallway lighting is inconsistent — bright near nursing stations but dim near patient rooms — and the model performs significantly worse in low-light zones? Would you validate performance separately by zone before rollout, and how would you handle a zone where the model doesn't meet your accuracy threshold?
+
+---
+
+References
+
+Buolamwini, J., & Gebru, T. (2018). Gender shades: Intersectional accuracy disparities in commercial gender classification. Proceedings of Machine Learning Research, 81, 1–15. https://proceedings.mlr.press/v81/buolamwini18a.html
+
+He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 770–778. https://doi.org/10.1109/CVPR.2016.90
+
+Obermeyer, Z., Powers, B., Vogeli, C., & Mullainathan, S. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447–453. https://doi.org/10.1126/science.aax2342
+
+Szeliski, R. (2022). Computer vision: Algorithms and applications (2nd ed.). Springer. https://doi.org/10.1007/978-3-030-34372-9

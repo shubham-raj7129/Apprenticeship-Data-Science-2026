@@ -1,0 +1,29 @@
+incident_id,system_id,incident_type,severity,summary,days_since_deploy
+INC-0001,SYS-008,Data pipeline break,Medium,User reported incorrect recommendation; escalated to supervisor.,239
+INC-0002,SYS-002,Privacy incident,High,Complaint received regarding different outcomes across patient groups.,188
+INC-0003,SYS-004,Bias complaint,Low,Device lost with cached logs; privacy team notified.,230
+INC-0004,SYS-002,Bias complaint,Low,Complaint received regarding different outcomes across patient groups.,52
+INC-0005,SYS-008,False positive alert,High,Feature distribution shifted after workflow change; performance dropped.,135
+INC-0006,SYS-007,False negative miss,Medium,Complaint received regarding different outcomes across patient groups.,205
+INC-0007,SYS-006,False negative miss,High,Model flagged compliant case; manual review overturned decision.,202
+INC-0008,SYS-006,Bias complaint,Low,Device lost with cached logs; privacy team notified.,158
+INC-0009,SYS-003,False positive alert,Low,System failed to retrieve updated policy version; answered from outdated text.,232
+INC-0010,SYS-005,False negative miss,Low,Device lost with cached logs; privacy team notified.,188
+INC-0011,SYS-003,False positive alert,Medium,Complaint received regarding different outcomes across patient groups.,112
+INC-0012,SYS-001,False negative miss,Low,Model flagged compliant case; manual review overturned decision.,90
+INC-0013,SYS-006,False positive alert,Low,System failed to retrieve updated policy version; answered from outdated text.,84
+INC-0014,SYS-007,Hallucinated policy,High,System failed to retrieve updated policy version; answered from outdated text.,133
+INC-0015,SYS-007,Data pipeline break,Low,Complaint received regarding different outcomes across patient groups.,47
+INC-0016,SYS-007,Hallucinated policy,Medium,Device lost with cached logs; privacy team notified.,41
+INC-0017,SYS-006,False positive alert,Low,User reported incorrect recommendation; escalated to supervisor.,33
+INC-0018,SYS-002,Data pipeline break,Medium,System failed to retrieve updated policy version; answered from outdated text.,190
+INC-0019,SYS-002,Hallucinated policy,High,Device lost with cached logs; privacy team notified.,12
+INC-0020,SYS-004,False negative miss,Low,Device lost with cached logs; privacy team notified.,190
+INC-0021,SYS-006,Privacy incident,Low,User reported incorrect recommendation; escalated to supervisor.,185
+INC-0022,SYS-007,Data pipeline break,Medium,User reported incorrect recommendation; escalated to supervisor.,167
+INC-0023,SYS-003,Hallucinated policy,Medium,User reported incorrect recommendation; escalated to supervisor.,19
+INC-0024,SYS-008,False positive alert,High,System failed to retrieve updated policy version; answered from outdated text.,206
+INC-0025,SYS-006,Hallucinated policy,High,Complaint received regarding different outcomes across patient groups.,122
+INC-0026,SYS-008,Bias complaint,High,System failed to retrieve updated policy version; answered from outdated text.,151
+INC-0027,SYS-003,False negative miss,Medium,Feature distribution shifted after workflow change; performance dropped.,201
+INC-0028,SYS-002,Privacy incident,Low,Device lost with cached logs; privacy team notified.,205

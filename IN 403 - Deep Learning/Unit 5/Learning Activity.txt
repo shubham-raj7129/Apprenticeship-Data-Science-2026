@@ -1,0 +1,4 @@
+Large Language Models, Embeddings, and Retrieval-Augmented Generation (RAG)
+Practice What You Have Learned: It is strongly recommended that you complete this learning activity to prepare for your unit assignment.
+
+Unit 5 - Deep Learning Activity- https://kapextmediassl-a.akamaihd.net/IST/media/IN403/IN403_2008D/Deep_Learning/story.html

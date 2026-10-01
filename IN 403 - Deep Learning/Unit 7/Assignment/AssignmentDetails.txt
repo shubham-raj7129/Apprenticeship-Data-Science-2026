@@ -1,0 +1,53 @@
+
+AI Risk Register Scoring and Model Approval Memo
+
+Course Outcome practiced in this unit:
+1. IN403-5: Develop a deep learning project
+
+In this assignment, you will take on the role of an AI governance reviewer for a hospital. Using a risk register, incident history, and a controls library, you will score AI systems based on their risk, identify the highest-risk system, and decide whether it should be approved for continued use. The focus is on governance and accountability—moving from technical results to formal approval decisions that include controls, monitoring, and escalation plans.
+
+Files Provided
+IN403_Unit7_Governance_Dataset.zip (includes risk register, incident history, and controls library) (IN 403 - Deep Learning/Unit 7/Assignment/IN403_Unit7_Governance_Dataset)
+IN403_Unit7_Governance_Lab_Template.ipynb (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit7_Governance_Lab.ipynb or IN 403 - Deep Learning/Unit 7/Assignment/IN403_Unit7_Governance_Lab.ipynb)
+
+Step-by-Step Instructions:
+1. Open the provided notebook template in Google Colab.
+2. Upload IN403_Unit7_Governance_Dataset.zip to your Colab session and unzip the files.
+3. Load the risk register and incident history tables.
+    Compute an incident-weighted risk score for each system, weighting incidents by severity.
+4. Define and implement a total risk score that combines:
+4.1. inherent risk class
+4.2. level of automation
+4.3. data sensitivity
+4.4. drift risk
+4.5. fairness or bias risk
+4.6. incident history
+5. Rank all systems from highest to lowest total risk and create one visualization (bar chart) showing the results.
+6. Select the highest-risk system and propose at least eight controls from the controls library. For each control, map:
+6.1. Risk addressed
+6.2. Control description
+6.3. Monitoring metric
+6.4. Control owner
+7. Write a one-page Model Approval Memo in markdown that recommends whether the system should be approved, approved with conditions, or not approved and address the following:
+7.1. System description and intended use
+7.2. Risk score rationale (what factors drove the risk level)
+7.3. Decision today: Approve, Approve with conditions, or Do not approve
+7.4. Required controls prior to approval (include control owners)
+7.5. Monitoring plan and re-approval triggers
+7.6. What the system should do when uncertain (refuse, escalate, or route to human review)
+8. Submit the completed notebook with all outputs visible.
+
+Deliverables:
+1. A risk scoring table with your formula clearly shown.
+2. A ranked list of systems with total risk scores.
+3. One visualization (bar chart) of system risk scores.
+4. A control mapping table with at least eight controls.
+5. A Model Approval Memo written in markdown.
+
+Assignment Requirements
+Be sure to upload your Colab notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit7 notebook file, and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN 403 - Deep Learning/Unit 7/Assignment/Rubrics) before beginning this activity.

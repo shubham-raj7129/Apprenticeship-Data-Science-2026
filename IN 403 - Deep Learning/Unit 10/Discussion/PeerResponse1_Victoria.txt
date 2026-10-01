@@ -1,0 +1,21 @@
+Response to Victoria Lacour-grant
+
+Victoria, your post does a strong job of connecting the monitoring metrics to real clinical consequences, and I agree that the combination of declining retrieval, rising hallucinations, and growing complaints is a serious signal that warrants immediate action.
+
+Challenge on Thresholds
+
+However, I would push back on the retrieval hit rate threshold of 70% — in a healthcare environment, allowing the system to miss relevant policy documents 30% of the time is quite permissive. If a nurse queries the PPE policy for the ICU and the system fails to retrieve it nearly one-third of the time, she may receive a fabricated or partial answer without realizing it. Evidently AI (n.d.) emphasizes that the severity of drift thresholds should be calibrated to the domain's risk tolerance — and healthcare is among the lowest-tolerance domains. I would argue for a tighter threshold around 85–90%, especially for policy domains that directly affect patient safety. In healthcare, the cost of a miss is asymmetric — a wrong policy answer can cause real harm, so the threshold should reflect that severity rather than a general-purpose benchmark.
+
+Additional Diagnostic Check
+
+One additional diagnostic I would suggest is a document-level retrieval audit: compare which specific policy documents are being retrieved now versus the baseline period. It is possible that the drop in retrieval performance is not uniform — perhaps a recent policy update changed the document formatting or metadata, causing the vector embeddings to no longer match the query patterns. This is a form of data quality issue rather than organic drift — Evidently AI (n.d.) draws a clear distinction between data drift (valid data with shifted distributions) and data quality problems (corrupted or structurally changed data), and the intervention for each is different. Identifying whether the degradation is concentrated in specific policy categories (e.g., infection control vs. HR policies) would help narrow the root cause much faster than looking at aggregate hit rate alone.
+
+Prevention Step
+
+As a prevention step, I would recommend implementing automated regression tests on the retrieval index after every policy document update. Google Cloud's MLOps framework (n.d.) emphasizes that Level 2 maturity extends CI/CD practices beyond code to include data validation and model validation — the same principle applies to a RAG system's document index. Before any new or revised policy document is published into the RAG system, a test suite of known queries should be run against the updated index to verify that retrieval quality has not degraded. This change-management gate would catch many of these issues before they reach production and trigger alerts.
+
+References
+
+Evidently AI. (n.d.). Data drift in machine learning. https://www.evidentlyai.com/ml-in-production/data-drift
+
+Google Cloud. (n.d.). MLOps: Continuous delivery and automation pipelines in machine learning. https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

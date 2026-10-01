@@ -1,0 +1,23 @@
+Response to Jack Boaz
+
+Jack, your selection of groundedness as a daily metric is excellent — it adds a dimension beyond hallucination rate alone by measuring whether the answer is actually anchored in retrieved sources. I also appreciate the reference to Basu et al. (2026) on healthcare-specific hallucination risks, which reinforces why this domain demands tighter controls than most.
+
+Challenge on Thresholds
+
+That said, I would challenge your retrieval hit rate threshold of 90%. While this is tighter than many thresholds I have seen, the more critical question is what counts as a "hit." If the system retrieves any document but it is the wrong policy — for example, returning the visitor policy when the user asked about PPE requirements — a 90% hit rate gives a false sense of security. Evidently AI (n.d.) distinguishes between monitoring raw metric thresholds and understanding what those metrics actually capture about system behavior. I would recommend pairing the hit rate threshold with a retrieval precision metric — measuring not just whether a document was found, but whether it was the correct document. A system that retrieves something irrelevant 15% of the time is arguably more dangerous than one that returns nothing, because a "miss" is obvious while a wrong retrieval looks authoritative and may not be questioned by a busy clinician.
+
+Additional Diagnostic Check
+
+For an additional diagnostic, I would recommend a query-cluster drift analysis: group recent user queries by topic and compare against the historical distribution. This applies the concept of data drift — which Evidently AI (n.d.) defines as a change in the statistical properties of input data — to the RAG system's query stream. If a spike in queries about a specific policy area (say, new infection control protocols) coincides with the performance drop, it could indicate that the knowledge base is stale or missing recently updated documents. This would explain both the retrieval degradation and the hallucination increase — the model is being asked questions the knowledge base cannot answer, so it fabricates. The NIST AI RMF emphasizes that organizations must continuously monitor not just model outputs but also changes in the operational environment that may affect system behavior (NIST, 2023).
+
+Prevention Step
+
+As a prevention step, I would add automated staleness detection to the document pipeline. Each policy document in the RAG index should carry a last-reviewed timestamp, and the system should flag any document older than its review cycle (e.g., 90 days for clinical policies). When a flagged document is retrieved, the response should include a disclaimer that the source may be outdated. Google Cloud's MLOps framework (n.d.) recommends data validation as a core pipeline component — verifying that input data meets expected schemas and freshness constraints before it reaches the model. Applying this same principle to the RAG document corpus would prevent the system from confidently serving stale policies as current truth, which is one of the most dangerous failure modes in a healthcare RAG system.
+
+References
+
+Evidently AI. (n.d.). Data drift in machine learning. https://www.evidentlyai.com/ml-in-production/data-drift
+
+Google Cloud. (n.d.). MLOps: Continuous delivery and automation pipelines in machine learning. https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
+National Institute of Standards and Technology. (2023). AI risk management framework (AI RMF 1.0). U.S. Department of Commerce. https://www.nist.gov/itl/ai-risk-management-framework

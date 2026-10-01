@@ -1,0 +1,11 @@
+Topic: Botnets
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with botnets and automated bots. Based on the resources, respond to the following for your initial post:
+
+In paragraph form, summarize what botnets are. Include a discussion of botnet architectures and how they work. Include the core components covering control protocols and zombie computers. Also, discuss command and control protocols and how they work. Include two tools used for automated bots and/or botnets. Conclude your discussion with common features most botnets have.
+
+For the initial post:
+1. Cite your source properly using APA in-text citation.
+2. Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about botnets and automated bots or do some light research "beyond" the other student's initial post (citing your sources, of course).

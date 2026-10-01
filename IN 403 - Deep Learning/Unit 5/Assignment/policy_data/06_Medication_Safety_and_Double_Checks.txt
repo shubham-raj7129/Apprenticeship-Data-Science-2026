@@ -1,0 +1,16 @@
+Title: Medication Safety & Double Checks (Synthetic Policy)
+Last Updated: 2025-08-12
+
+High-Alert Medications
+- Require an independent double check for dosing and patient identity.
+- Examples: insulin infusions, anticoagulants, chemo agents.
+
+Five Rights (Minimum Standard)
+- Right patient, right medication, right dose, right route, right time.
+
+Look-Alike / Sound-Alike
+- Use barcode scanning whenever available.
+- If barcode scanning fails, follow downtime procedure and document exception.
+
+Reporting
+- Near misses must be reported; focus is learning, not blame.

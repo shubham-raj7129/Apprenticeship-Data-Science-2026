@@ -1,0 +1,47 @@
+Monitoring Drift in Deployed Hospital AI Systems — Initial Post
+
+System Chosen: No-Show Prediction Model
+
+1. Type of Drift
+
+The drift most likely to affect a no-show prediction model is concept drift — the situation where the relationship between input features and the outcome (no-show vs. show) changes over time, even if the feature distributions themselves appear stable.
+
+In plain language: imagine the model learned that "patients who book 14+ days in advance are more likely to no-show." That was true when the model was trained, because long lead times gave patients more opportunity to forget or develop scheduling conflicts. But then the hospital introduced automated text reminders three days before every appointment. Now, patients who book far in advance still show up because the reminder re-engages them. The model's original rule — longer lead time means higher no-show risk — is no longer accurate, but the model does not know this because it was never updated. The inputs look the same, the predictions still come out, but the underlying truth has shifted.
+
+This is different from data drift (where the inputs themselves change distribution) or prediction drift (where outputs shift). Concept drift is more insidious because standard feature monitoring may not detect it — the features look normal, but the model is quietly wrong (Gama et al., 2014).
+
+2. Risk of Not Detecting Drift
+
+If concept drift goes undetected in the no-show prediction model, several concrete harms could result:
+
+- Overbooking miscalculation: If the model still predicts high no-show probability for patients who now actually show up (due to reminders), the hospital's overbooking algorithm will schedule too many patients into each slot. The result is overcrowded waiting rooms, extended wait times, provider burnout, and rushed appointments — all of which directly impact patient safety and care quality.
+
+- Wasted outreach resources: The hospital may continue sending extra reminders, phone calls, or transportation offers to patients the model flags as "likely no-shows" — even though those patients were already going to attend. This misallocates limited staff time that could be directed toward patients who genuinely need support.
+
+- Equity concerns: If the model's stale predictions disproportionately flag certain demographics (e.g., younger patients, patients with prior no-shows), it could create disparate treatment in reminder intensity or appointment access, raising compliance and fairness issues.
+
+3. How to Detect Drift
+
+I would recommend performance sampling with delayed label comparison. Here is how it works:
+
+Every week, the hospital takes a random sample of 50–100 patients for whom the model made predictions. After those appointments pass, the actual outcome (showed up or not) is compared against the model's predicted probability. If the model predicted 60% no-show probability for a cohort but only 20% actually no-showed, the calibration has degraded — this is a direct signal of concept drift.
+
+This method is practical because it requires no new infrastructure — just a scheduled query comparing predictions to outcomes in the EHR. It detects concept drift that feature monitoring would miss, because it checks whether the model's predictions still match reality rather than whether the inputs look familiar.
+
+The hospital should set a threshold: if calibration error exceeds 10 percentage points for two consecutive weeks, an alert is triggered.
+
+4. What Action to Take
+
+When drift is detected, I would recommend a staged response rather than immediately retraining:
+
+First, lower the model's decision authority. Rather than letting the model automatically drive overbooking, switch it to "advisory mode" where its predictions are shown to scheduling staff but not used for automated decisions. This is safer than a full shutdown because staff still get a signal (even an imperfect one), but a human makes the final call.
+
+Second, investigate why the drift occurred. If the cause is identifiable (e.g., the new reminder system changed patient behavior), the team can retrain the model with post-intervention data that reflects the current reality. If the cause is unclear, additional monitoring should continue before committing engineering resources to retraining.
+
+This approach balances patient safety (don't trust a degraded model for automated decisions) with operational continuity (don't remove a useful tool entirely while investigating).
+
+References
+
+Gama, J., Žliobaitė, I., Bifet, A., Pechenizkiy, M., & Bouchachia, A. (2014). A survey on concept drift adaptation. ACM Computing Surveys, 46(4), 1–37. https://doi.org/10.1145/2523813
+
+Lu, J., Liu, A., Dong, F., Gu, F., Gama, J., & Zhang, G. (2019). Learning under concept drift: A review. IEEE Transactions on Knowledge and Data Engineering, 31(12), 2346–2363. https://doi.org/10.1109/TKDE.2018.2876857

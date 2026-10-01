@@ -1,0 +1,438 @@
+Sonali Baidya
+Sonali Baidya
+Hey, good evening, everybody.
+Let's give a couple, a few more…
+Minutes, and then we'll go ahead and start, okay?
+Okay, it's been past 1 minute. I'll go ahead and start this week's seminar.
+First of all, good evening, everybody, and thanks for joining.
+How is everyone doing today?
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:06:55
+It's still hot.
+Sonali Baidya
+Sonali Baidya
+00:07:01
+Good. Okay.
+Okay, yeah. So, let's go ahead and start this week's.
+I'll go ahead and share my screen. Okay, yeah, me too, I'm still waiting. I'm in Texas, so you can imagine.
+How badly I'm waiting for that cool weather.
+So… Yeah. Okay, let's go ahead and start. Let me share my screen first.
+Are you guys able to see my screen?
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:07:39
+Yes.
+Sonali Baidya
+Sonali Baidya
+00:07:40
+Okay, great.
+Okay, so, like, every week, I've already posted an announcement for this week as well, what it is going to be, and how it looks like. So again, as every week, Unit 4,
+If you go and go to the overview, it's about reshaping the data. So we're just going to work on the same data set that we used last week and see how we can improve, or use the data in a better way, okay, to
+and manipulate it for a better accuracy model. So that's what we're going to do this week, okay? The other thing is, like, as every week there is a discussion.
+post, so please go ahead and do that based accordingly, like, 3 dates, 3 different days it needs to be, and you know the drill by now, so please go ahead and do that if you have not already started.
+For seminar, again, like, since you guys are already attending, you should be good. But for those who are not attending, please go through this recording and submit the alternative seminar.
+assignment. Now, let's go to the…
+assignment for this week. So, if you see, there are two paths, Assignment 1 and Assignment 2. So, you need to submit two separate stuff, so you have to name it accordingly for Assignment 1.
+and also assignment 2, so that I know
+Which file is it? I did not check if the Dropbox is the same, but if the Dropbox is the same, so make sure you're submitting the file names with the appropriate… as assignment 1 and an Assignment 2. If the Dropbox is different, then you should be good, but still make sure the file names are, like, distinguishable, right, for Assignment 1 and Assignment 2.
+The assignment one consists of the code part. Assignment 2 is more like
+Understanding, and then, writing a draft on it, like a report on it. So, let's go ahead and start with the first one.
+Okay, so you have separate Dropbox. Then you should be good, but still, please make sure the file name is, named as Assignment 1 and Assignment 2, so that I can understand, okay, these are two separate files, because when I'll be creating it, I'll be downloading both.
+And then I'll be going ahead with the grades. Okay.
+Now, again, for Assignment 1, if you see over here, these are the outcomes that we are going to cover. This time, we are going to, go through some specific methods, and
+terms like frequency, inverse, document frequency. We are also going to see some approaches, like we are using five-fold approach.
+We are going to also do reshaping of the data set, so these are the things that we are going to go through in this particular assignment.
+Okay?
+Again, make sure you have the…
+PyCharm installed, and Python installed. You are going to use the code from the resources, and we are going to use the same data set that we used last week, but only thing that is changing is we are going to use the Python file.
+So, in this week, for item 1, you have to provide a screenshot of the execution.
+Be sure to post the Python file as well.
+When you are submitting your files, and and then…
+what you have to do is, as in the last unit that you did, wherever you see in that particular file, your code here, you need to write your part over there, okay?
+Once that is done, the second is list the accuracy score for all that you have received in item 1. There should be 15 total accuracy score that you will be getting, and describe which accuracy scores, if any, beat the null model.
+which was the best model? Which two tied as the second best model? What do these results tell you? Okay, so you need to understand all the different methods, find out which one is the best
+Model, which one is the second best, and then you have to understand and tell, like.
+what you understand the accuracy from the accuracy score that you're getting out of these two, okay?
+You have to compare two tokenization methods using count vectorizer. This time, it's engram range 1 to 3 and engram range 1 to 2, and we are going to discuss
+In a bit about what these two means. And then, once you compare these two tokenization models, you have to again describe which model had the better accuracy score, why do you think they scored differently.
+The fifth is compare and contrast the trend-test split and five-fold cross-validation process used in the test vector function from the code in item 1.
+Show how each was done in the code, and which you would expect better results from.
+Now, what is this five-fold cross-validation? I will also explain that, so that will help you to understand, like, what you are doing in your code.
+Then research the count vectorization… vectorizer function used. What do the flags of engram range, stop words, max DF, mean DF, and max features do? And also, I'll go through it as well.
+Compare and contrast count vectorization and term frequency. We call it, in short form, TFIDF, okay? So, term frequency inverse Document Frequency.
+Be sure to include when would you use each.
+which gave the better accuracy results, and why. So these are the things, that's for the first assignment, okay? The second assignment is mostly about, like.
+You have to do some research.
+Based on all these graphs, okay? So what you need to do is, based on research and the knowledge you have achieved thus far in this class, compose an informative report covering communicating data using visualizations, okay? This
+Report that you will be generating should follow APA guidelines and be at least 3 pages in length, not including the required title and reference pages.
+Research and provide details covering 5 reasons to implement data visualizations. Also cover effective and ineffective visualizations. Use examples to make your points. Be sure to describe the visualizations methods listed below, cover when they should be used, and for what type of data. So, the intent over here is you have to find
+Find out, like, you have to describe
+Out of these, you must have at least 3 references, okay? So make sure you are…
+Using 3 references, and you have to select 3 visualizations and summarize 2 use cases each in place today, okay?
+why… what is the intent is just to understand, like, once you have that data, you… you use the models, you get the accuracy and all those stuff. If you want to plot it.
+which would be the best option to plot for which type of use cases or scenarios, and where you would like to implement all these visualizations, okay? So that's what…
+has been asked in this second one. So, second one is mostly about researching, finding out, and writing it up. The first one is more like writing it up, but along with that, you have to write your code, understand why
+Or which is the best model, which is giving a better accuracy score, and then
+Write a two-liner or three-liner explaining it.
+Okay, any questions on the assignment part?
+Any ideas, any confusions? What needs to be done for this assignment?
+Okay? If I don't see any questions in chat, that means nobody has any questions. So, I'll go ahead and start.
+to give you an idea about all these terms that have… they have mentioned over here, right? To understand what it is, so that that gives you a better way to, like, understand and implement your code.
+Okay. So, just to start with, so your current assignment, assignment 1, has 3 jobs, okay? First, you have to reshape the data, so… so why are we reshaping the data? So, it answers a clearer question.
+Right? And what was the intent of our data set? To look at the reviews, and then find out which star it is. Right? So that's… we are going to take that. We are going to understand the reviews and find out their sentiments.
+Whether it's positive or negative.
+Next, we are going to compare different ways
+to turn words into numbers, because, you know, we discussed this in the last unit, You don't,
+like, your computer doesn't understand all those English language, right? So it needs to be transformed into numbers.
+And third, you have to communicate the results so another person can make a decision.
+So the most important improvement in this unit, okay, it's not just… it's not like we have to implement a complicated algorithm, but we have to understand, like.
+What is the focused question we need to ask the model, so that the model gives a better,
+Output.
+Okay? So that's what this unit is about.
+the… So, in order to do that, okay, so every supervised machine learning project, it follows us
+chain of decisions. First is, it defines the prediction question, okay?
+what should be predicted? That's the first question you have to ask. The second, it needs to decide which rows belong
+Third, it represents the inputs as numbers.
+And we know why. Fourth, you have to fit a learning algorithm.
+Right? Over here, we use logistic regression.
+Fifth?
+Evaluate it on unseen data. That's why we do that split of training and testing.
+And, last but not least, we explain whether it added value or not.
+So…
+In this unit as well, we are going to use the same learning algorithm, which is the logistic regression.
+The main changes are… We are going to work on the rows that we are going to keep.
+And we are also going to work on the numerical representation of the words, and how we estimate the accuracy.
+Okay? So that's what this unit is focused on.
+So… Then the original data, if you remember, contained, like, 5
+labels, right? 1 star, 2 star, 3 star, 4-star, and 5-star.
+So, it was, like, a 5-class… Classification problem.
+So, it is difficult because when the neighboring classes sound similar, like, for example, if you… there is a review.
+Which, it's a 3-star review. It becomes very difficult. Like, say, for example, it is useful.
+One of the reviews is, like, it is useful, but the reminders do not work, right?
+Now, when you hear this one, it can… and they… sometimes the reviewer can make it as a 3-star, sometimes can reviewer can make it as a 4-star.
+Okay?
+But it's the same review.
+So… It's sub… problem to identify which star it can go for, either 3 or 4.
+So, another problem if you see, and if the number of reviews that we have based on that.
+Just to understand it visually, okay?
+If you see all these bars.
+They're obviously not the same height.
+And of all these 5, you'll see the 5-star reviews are much more common than the 1-star review.
+Okay? So this is called a class imbalance.
+Okay? So…
+Now, the question is, which is harder to separate a text from? Is it from a 1-star review from a 5-star review, or 3-star review from a 4-star review?
+Of course, a 3-star versus a 4, because the language over here might overlap, right?
+So, there are two separate difficulties over here we saw. One, Is the overlapping classes?
+And second, if you see, these are the uneven class sizes.
+Okay?
+So for that, What we do is… So, after…
+We keep only the extreme reviews.
+So that means we are going to keep only the 1 star and the 5-star.
+So if we do that, definitely the number of reviews will come down.
+And if I imagine it into, like, a 20 square, right, then we will see that 16 are green and 4 are red.
+But if I refuse to read the reviews.
+And if I look at this 20 square, and call for every square, obviously, you'll see that most of the green is… number of green is higher.
+Okay?
+So this is why…
+A high accuracy number by itself is not a proof that the model learned everything or anything useful, okay? So that means because the model will be… tend towards more, or towards the 5 stars, rather than
+The one star one.
+Does it make sense so far?
+Okay? This is because of the class imbalance that we are seeing over here.
+Any questions so far, or is it, like, making sense?
+And this is what exactly you're going to do step-by-step in your code as well.
+So the next one is, we talked about in brief about the null model, like, you guys have also implemented and run the code.
+So, the concept of null model is the lazy comparison model. So, it ignores every review and always predicts the majority class, right? That's what the null model is. So, if you have, say.
+120… 120, or 130, or whatever row of extreme review set.
+Always predicting 5 stars is correct will be much more higher, right?
+But on the particular test split.
+the majority is even larger. So now, if I go to the code that they have over here, and let me see that area…
+Oh, where is that? Okay. So, we've seen the last one, we used random state as 1.
+Right? When we were splitting the data.
+There is…
+Okay.
+So now, if I look at it, this one over here, later, if you see.
+The random state is equal to 2 in this particular test strain, train and test split.
+Okay?
+Now, what does this random state is doing? Any idea?
+since you ran the code in the last unit, you use the random state is equal to 1. So what does this random state imply?
+Anybody has any idea about this?
+Why are we using this random state over here in the train-test split?
+Anyone can do a guess as well?
+What does that mean? Can you elaborate?
+Okay, just to be, so, just to clarify, random state is like a… Shuffling setting.
+So the same number…
+gives the same train test groups, but a different number gives a different arrangement, right? So the number does not affect the amount of data selected.
+Okay, and definitely 2 is not… does not mean that 2 is better than 1. It only chooses a different, repeatable shuffle.
+So that's what it is doing over here in the random state.
+Okay? I hope it makes sense now.
+So…
+So therefore, the fair question is, suppose if I run this random state equal to 2, and the majority is even larger.
+So maybe we, when you run it, you'll see that the null model is giving about 86%.
+So, the fair question over here will be…
+Did the learning from the words beat that 86% on the test set or not? Okay? It should not be, is 86% high? That's not the right question to ask when you are using the shuffling.
+The right question, or the fair question, I can say, is… we should be asking over here, when we are doing that machine learning, is did learning from the words beat that 86% on that test set or not?
+Okay?
+But does that, or does the null model use count vectorizer?
+No, right? Because It reads no words.
+Okay? That's why the null model is…
+null model. It's making the guesswork over here.
+Okay? So that's what…
+the null model is. So that's what you're going to see in the code as well. That's what you have to understand and see what the accuracy model over there, how much it's scoring, and all those steps.
+The next comes is, once we run that, is the reshaping part. So, reshaping means you're selecting or reorganizing the data so it matches the question we want to answer.
+So, here we keep rows where we are… its star is either 1 or 5, and we removed, say, 2, 3, and 4 star, because they were overlapping.
+So the model is no longer solving a 5-class problem now. It's like a binary classification now. Extreme negative, or extreme positive, okay?
+So that means there are two possible classes right now, which we are doing through reshaping.
+Okay? So, makes sense?
+So now, next is, the new problem has a clear language boundary now. We know that, okay, it's the extreme cases we are handling, either extreme negative or extreme positive, and based on that, we are going to focus on the reviews.
+No.
+This time, now we have a clear language boundary. It either says words like… very much clear, like, yeah, I like it, or love it, or perfect, or great, or either it will say hate, it doesn't work, or something like that.
+Right? So this can produce a much higher accuracy.
+Okay? However, we have to, or we must, describe the result honestly, because we may say the model distinguishes 1 star from a 5 star, but we may not say that the model predicts every star rating with, say, very high accuracy.
+So does that mean we improved the model when we just made it into a binary classification, or did we make the assignment easier over here? Anyone?
+Did we improve the model, or did we make the assignment easier?
+When we are doing binary classification.
+Or we are in reshaping it.
+Any idea?
+Okay, no? So, in this case, he has both.
+the data definition and the feature choices will affect the result, okay? Because we are doing the reshaping, which is the largest change we are making to the data.
+Okay, any questions?
+Okay.
+So, the next one is…
+Once we do the reshaping, then we are going to start implementing the learning algorithm. That's the logistic regression. So…
+Logistic regression, again, we know it cannot directly mix the sentence, like, reminders do not work, if there is something like that, okay? What it does, it needs the numerical columns. So, that's where we use the
+count vectorizer. So vectorizer is like a bridge which takes those,
+vocabulary, and then converts each review into rows of values. For example, over here, we have reminders do not work, and accordingly, we are going to make how many columns we have to see, and then based on that, whichever columns has the words in it, we are going to map it as 0 and 1, and according
+Okay?
+So that's where vectorizer are used.
+So the… obviously, the next one, after doing the… using the logistic vector regression, where we are using the count vectorizer, we're converting it, and we talked about this, about building a document term matrix. So, that means a document is, like, one review.
+So, documents can… are made up of rows, as like this.
+And a term is, like, a word or phrase.
+And there can be multiple columns based on the number of terms.
+And each cell records how many times a term appears in the review.
+Okay?
+So, if I say reminders don't not work, so that means not work reminders, these are all used once, so it will be 1, great is not there over here, so we'll term it as 0.
+Okay?
+So that's how the document term matrix has been created.
+So, the… so then, just to think about, so after vectorization, does logistic regression still receive the original sentence, or not?
+Yes or no?
+Go on.
+So we did a vectorization. So now, will the logistic recreation receive the original sentence?
+Yes, no, it will not, because we are… it's going to now receive… what? It was going to receive the numeric rows.
+those numbers.
+Right? So again, like.
+say, I have a great, great app. Instead of great app, I have great, great app. So what should be the numeric number that the logistic regression received? It will receive?
+2… And if there was an app word over here, then 2 and 1.
+Something like that. So that's how it will be receiving those, numbers.
+Okay, so once that is done, then we will go with the default count model. So the default count vectorizer applies three important choices in this code.
+First, it will convert the words to lowercase, okay? So if there is a word called love.
+So it will convert, or it will be all caps, or just the first one is caps, so it will convert this entire thing in lowercase, okay? And it will have all these things as one column.
+Second.
+it will also do is it will create… using… it will use unigraps, okay? So that means one word at a time. So if you have a word like not good as a phrase, it will just take not, and then good, and then make it as 1-1H. That's unigra.
+So, the third it will do is, it will…
+count. It will take that raw counts, okay? This simplest representation is a
+Strong baseline of any default count model.
+Okay? But there are more complicated representations, so… That is used
+to improve the performance on maybe the unseen reviews that we are going to do when we are going to do the testing part with the test set. So that's what the next one is. So sometimes you will also see that
+It's not only going for one.
+that is Unicram, it's going for, say, 2 words, or 3 words, or something like that, based on the… to improve the accuracy and find out how it's grown.
+So, the next one in your code, you'll see that there is a lowercase false, and I can show it over here.
+Yeah, over here, if you see, the count vectorization is using lowercases equal to false. So.
+So, with the default setting, if there are 3 capitalization versions of, say, the word love.
+for example, it will contribute to one column, because with the lowercase equal to false, false, they become three separate columns, so that's why keeping it false. Otherwise, everything will be merged into
+one column, okay? So, now, capitalization can carry a useful signal. So, if we have, say.
+Somebody has written a review with everything in caps.
+It may express intensity, but separating the forms also spreads the evidence across rarer features, okay? So that's why we need to make sure we are tackling all those things properly when we are making our
+algorithm learn.
+Okay, so next is…
+as we were talking about, engrams, so that means it not needs to be only unigram. That means it contains one word. It can contain a bigram, that's two words, or a trigram, which is, like, three words in it.
+Like, for example, word as… phrase as not good. It is a useful bigram, because if you split it, not is a separate word, good is a separate word, so it becomes difficult for the
+algorithm to understand, the machine to understand, okay, is it a…
+positive or a negative one. So if I just put not and good as separate, it becomes… the accuracy score becomes less. In… in place, if we do not good as a
+2 gram, and send it as a 2 gram, then definitely it will understand, okay, not good, so that means it's negative, so it will understand, okay, and the accuracy model will increase, okay? So, that's why we have to think about all these
+Different types of ways how we can increase the accuracy of the model.
+And that's why in your code also, you will find out
+So, if you see over here, it's use Ngram range, 1, 2, 3, which means…
+It can keep unigrams, it can keep… it's a range, so remember, it can keep unigram, bigram, and frigram. So it just… just does not mean that it will only keep 3-word phrases, it will keep anything between 1 gram to 3 grams.
+Okay?
+So that's about that in the code. After that is done, so after that, after we have found out, figured out how many grams and grams we are going to use.
+Next, we have to think about the default training matrix.
+Okay, so how many columns it is having.
+Adding 1 gram, 2 gram, or 3 word n-grams increases… will increase the columns or not? If so, then we have to think about how we can split that for training and testing purposes, okay?
+So… Now, then, when we have many phrases, Okay? Which appears only once.
+The model can memorize these rare phases instead of learning the patterns that repeat in new reviews, right? And we discussed about this in the last unit. That is the overfeeding. Now.
+So…
+what does… so there are two terms. One is overfeeding, and the other one is underfeeding. So anybody can tell me the difference between the overfeeding and underfeeding?
+Anyone just in very… Simple language.
+What does overfeeding mean?
+Or… and what does underfeiting mean?
+Anybody?
+Okay, so the overfitting means, like, the model memorizes the training examples instead of learning a general pattern. So, for example, like, say a student is memorizing the answers from one practice test, and they get 100% on that test.
+But if I give a different set of tests, that student will perform poorly in it, okay? So that means, in machine learning, there will be a training accuracy, and there will be a testing accuracy.
+So, the training accuracy in this case will be very high, whereas the testing accuracy will be low, okay? The opposite is the underfitting. So, the underfitting means the model is too simple to
+to learn the important patterns. Like, it's the same as a student studies, only one rule for an exam, say, covering 10 topics, and they perform very poorly on both
+The practice as well as the test.
+So that means, in both cases, the training accuracy and the testing accuracy is low. So in those cases, we say that it's underfitting.
+Okay? Make sense?
+Now, there's also definitely a good fit, which means…
+both the training and the testing both are high, then when both are coming high, that means it's a good fit. So then we will know that we are
+Algorithm is working fine, okay?
+So, the other thing that they mentioned about is to un… to discuss about those five controls, about the reshaping, remember? So, like, engram range.
+So, and we talked about this. Engram range is, like, the length of the word chucks. It's going to be 1, or 2, or 3, what is the length phrase? Now, there's a concept called stop words as well. So, if you've seen your code.
+They have used stop words. Anybody has any idea about what stop words mean?
+Who has already worked with machine learning already, maybe?
+And it says that stop words in English.
+is equal to English, right? So what does stop words mean? Anybody?
+Okay.
+So, stop words means, like.
+It's the general… so in an English language, the common words that we use in a sentence, like the, or and, is, and, of, to, so these are all the stop words. So when we are considering the reviews, what they're doing is, they're just
+Removing all these top words.
+Okay? So if there is a survey review called, the app is very easy to use. So, we'll just remove this top words, and we'll say, okay, app.
+Easy and use.
+So that's what stop word is.
+Okay? So this… what happens is, if we are removing the stop words, it's creating fewer word columns, okay? And that is helping the model focus on the important words, and it's eliminating the rest.
+Okay? So that's why in the count vectorization, we are using stop words over there in your code.
+Okay? Anybody has any questions on that?
+Okay, the next one is MINDEF, DF. So what is this?
+This is, like, it's like a term that…
+you can say it removes the terms that appear in too few, like, in the document. So if, say, if I say with min underscore DF is equal to 3,
+That means a term must appear in at least 3 reviews.
+Okay? Otherwise, We'll remove it.
+Max DF is just the opposite, it removes the terms that appear in too many documents, okay? So that's what max underscore DF is.
+Max underscore features is, like, it places a hard limit on the number of columns, okay? So that's why these… they have asked you to understand all these terminologies and then explain it.
+Okay, the next thing is understanding what TFIDF is.
+So, TFIDF is the… the full form is called Term Frequency Inverse Document Frequency.
+So, term frequency is, like, it asks, like, how much does this term appear in this review, okay? So that's what term frequency is.
+I'm going to go ahead…
+Okay, I'll go show you, when we are talking about the code, I'll tell you what all these means, okay? Let me finish this first.
+So TF, as I said, it means the term frequency. It asks, how much does this term appear in the review?
+And inverse document frequency asks, like, say, how common is this term across all the reviews?
+Okay? For example, the term, like, the, it may appear several times in one review.
+But it also appears nearly everywhere, so that's why it receives a lower weightage.
+Okay? But say a term like crash, or it… the app crashes, so crashes may appear only once in this review, but in relatively
+It will also appear in less… in fewer reviews overall.
+Okay? So that's why it will have… it will receive a higher weight.
+But that means, does RTF, IDEF remove all the common words? No.
+It usually gives them a smaller weight, but what does the common words remove? We already saw it's a stop word. So, stop word removal is the one which removes the common words.
+Okay? So that's what TFIDF means. Now…
+In your… throughout your code, in the later part, you will see that they have used TFIDF.
+Okay?
+Now… When do we use TFIDF, and when do we use count vectorize?
+So we have to understand that first. So, count vectorizer stores the raw counts. It is often effective for short reviews, and when repetition is meaningful. Whereas.
+TFIDF stores the weighted values, so it is often useful for longer documents. If it has a document searching you're doing, or situations where you have, common terms, okay? So in those cases, we use TFIDF.
+But…
+There is a hard and fast rule that, okay, yes, I should be using convectorizer versus I should be using TF-IDF? No.
+Okay? Neither of these representations for 100% can win every problem. So it depends upon what the scenario is, what the situation is. Based on that, you have to use this
+Techniques to find out which one performs better versus the other, based on which scenario or situation.
+Okay?
+So, that's what count vectorizer versus TFIGF means.
+Once that is done, then of course, in your code, you will see there is a trend test thing, and you know what trend test means, it's going to split it.
+But, in your code, there is one thing that they have now, which was not there earlier, and let me see…
+Yes. So over here, if you see.
+there is something called CV is equal to 5 and cross-val score, right?
+Now, what is this?
+Okay? And, that's what I mentioned earlier, is the five-fold cross-validation.
+So, train test is fine, it's… you have just splitted your data set, you train on the data, 80% of your data set, and you test on the 20% of your data set and find out the accuracy. But there's a technique that you can improve that by using called five-fold cross-validation.
+So what does this five-fold cross-validation mean?
+So it's here… It divides the data into 5 parts. So, for example, if you have the training data.
+your training data can be divided into 5 parts, okay? So that means on Fold 1, Part 1 is the test set.
+And the other 4 are the training set.
+On Fold 2, maybe part 2 is the test.
+And the other four are the training.
+Why are we doing that, okay? This process will repeat until we… every part has served as the test set once.
+Now… Once we do that, that 5 accuracy values we get, we do an average.
+And we then…
+Use that average, or the mean, to understand the… what is the accuracy score of my model.
+Previously, I was just using the entire test set to find out the accuracy score, or we were just doing a training, and we were finding the accuracy score over there. What we are doing now is we are doing it in five folds.
+So, does that mean is every row used for testing? Yes, exactly. Once… exactly once across the five folds.
+And then, does that mean, is every row also used for training?
+Yes. The other four folds are used for training. So, that's what five-fold cross-validation means, okay? And that's what… that's why they have refined it over here, that the cross-val score, where
+CV is equal to 5, so we're determining the five-fold cross-validation, okay?
+That's pretty much the 5. What else are we missing? Yeah, so when you run, you'll see the accuracy score. I don't want to go there. I will run the code, and you can see the outputs.
+Anna, of course, at the end,
+Yeah, I think that's all it is about.
+the code, pretty much. I don't want to… the first assignment, basically.
+Okay, so… maybe I'll… what I'll do now is I'll go through the code in very… because we have 15 more minutes.
+And I will show you… tremendous.
+So maybe what… You will be downloading is this one, and when you download that particular
+Python file, wherever you will see this
+Has write your code, you have to…
+Put, write the code that you need to for that particular, step, okay? No.
+I'll just… I have gone through the entire process while I was explaining, but
+I will go through the solution, maybe, and as I do every week after the seminar, I will also have the solution in place in this announcement. You can use it as a reference.
+To find out, like, okay.
+what it means and how it's been used, but I will definitely recommend you to go through it, understand it, and write your own code to find out how to write it. That will also help you understand, like, okay, yes, I understood it clearly, maybe I can let me see how I can implement it.
+Okay?
+Okay, these parts I'm not going to go through because it's the same as the last one we used. You just need to, like I said, you have to use the same data set. We are using the DTEX sentiment as the last one to check the polarity, so these are all the same, okay?
+Then the null model part, this… I have gone through what this concept means, and why we are using a random status equal to 2 over here, so this is pretty much fine.
+Let me… One thing, let me see…
+Yeah, just… just to let you guys know, this one over here, so if you see that, there's a pipe we are using, this means this or this, okay? So, we will keep the row if the star is 5 or 1.
+And we will drop if it is 2, 3, or…
+4. Okay, that's why we are using this over here, and this is how we are doing the reshaping.
+Okay? Once that is done, this is pretty much… we are printing the shape.
+The rest is pretty simple, so you should be understanding what needs to be done over here. I don't think we are… you need to do anything, you just need to split it, the F… everything else is done by the code.
+Okay.
+I think this…
+Yeah, this is where, after this, you have to write your own codes. This part does not… Lowercase, okay.
+So, let me focus on those areas.
+So, let me see… well, let me start from here, then.
+So, over here, if you see,
+This one, right? Okay.
+So, I talked briefly about what lowercase is equal to false means, I think, when I was explaining. Do you guys
+remember about this. Anybody has any questions on that?
+Anybody?
+if… Okay.
+Okay, so once that is… okay, let me,
+So, I think I… there was a question, like, what does DTM mean? So, DTM is, again, I talked about it earlier, Documental Matrix, right? So, that's what it is. Over here, we are using DTM.
+So, rows are reviews, and the columns are words, remember, and cells we were counting.
+So that's what DTM is about. So we are using the document term matrix over here. Once that is done, we are going to print the matrix, that's what it's been done in the write function.
+So, once that is done, then I think… Mmm…
+Yeah, so let's go over here.
+So, it's the same classifier we are using over here in the last one we used in the last unit as well. So, we are now on the word counts, and the classes will be class 1.
+1 and 5, remember? Because we are using only the extreme ones, and based on that, we are going to find out the fraction of the test reviews. Like, who guessed the star matches, and which one, what is the accuracy of this model.
+Now, once that is done, the next part over here is, like, if you see these, and we talked about this, this X train and all those stuff, this is a part, like.
+Where you have to keep
+the… all the lowercase values as two columns, and where you're going to, have more features, which not… needs more signal, okay? And once you run it… let me run it…
+If you see, it's going to show you the accuracy of the train and the test for each and every case. So, let me go up…
+this is what the training and the testing set will look like, okay? So it will show you, so at the very beginning, it's 93% of the accuracy, okay? But eventually, when we did the reshaping and everything, and this, the null value was 87%,
+We did the NGRAMP 1 to 3 model.
+We removed the stop words, and each case, you see the accuracy model came down to 81.
+Next, it came to 80 percentage.
+And pretty much, it's 82.4 percentage.
+And so on and so forth. So if… and then when we use TFIDF,
+It was sticking around to 80.7.
+So, the question is, like, you now need to determine, once you understand what TFIGF is.
+what stop words we used, what happened over there. You have to identify why the accuracy score differed from 93% to 80%.
+And if this is… This is good enough, or your model is…
+Currently good enough, to… since it's dropped down to 80%, 80.47%, or 86%, still, whether it's good enough or not, it shows… the accuracy score is better than 93% that it was showing at the beginning.
+Okay? So those are the things that you need to understand and analyze, and then,
+Write it in your report.
+So that, like, just to make sense, like, why the accuracy… first of all, why the accuracy score dropped?
+And then eventually, what happened? Like, why is it sticking? It's still good enough or not? So those are the things you need to analyze and write in your report.
+Okay, so that's what it is, and I think explained most of it as I was going through the process. You just need to go through the code. You'll see, like, over here in every case, this is where the stop word's been applied.
+And then when you're using the engram range, we are using min difference, and I talked about this max features is equal to 250 we are considering. These are all things I have explained, so just to make sure…
+Try to understand what I talked about.
+And how this affected the score, model, and why.
+Okay? Anybody has any questions?
+About the second part, make sure you understand, I'll just show a quickly, just a demo what this is from the visualization angle. So if I… if you see, I have used the bar chart in both the cases.
+But in the first case, if you see.
+It's not showing or reflecting correctly the data versus the second one.
+And that's because, over here, the data that I'm plotting over here.
+If you see the range over here versus a range over here.
+It's based on the null model, okay?
+So now we have to understand that
+Visualization, in both cases, we are using bar chart, but which is more effective?
+Because the same data, if you plot in, like, in both the cases, it's the same data.
+But the way you're interpreting the data in your charts can be misleading, or it can give you a lot of information.
+So, when you're writing that report, please keep in mind, like.
+What visualization is effective in what scenario, and how?
+Okay? Think about in taking this use case as well, and then see how you can,
+Use those visualizations to show the data.
+I think I've talked enough, I know it's a lot of information. This is recorded, so you can go back and review it, and again, I'll post the solution as well, go through the code. If you have any questions, feel free to drop an email, I can explain it.
+If not, then if you guys don't have any further questions, just go ahead and make sure you finish the assignment and submit it.
+But again, like, we still have 2 more minutes. You guys have any other questions?
+On the assignment, or anything that was not clear.
+Okay. No, thank you very much, good night, and see you all next week.
+Lucas Lucena
+Lucas Lucena
+Thank you, have a good night.

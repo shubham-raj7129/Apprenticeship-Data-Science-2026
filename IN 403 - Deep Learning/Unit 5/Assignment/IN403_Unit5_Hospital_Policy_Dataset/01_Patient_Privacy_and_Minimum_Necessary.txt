@@ -1,0 +1,21 @@
+Title: Patient Privacy & Minimum Necessary (Synthetic Policy)
+Last Updated: 2025-06-15
+
+Purpose
+- Protect patient privacy and ensure staff access only what is needed to do their job.
+
+Key Rules (Minimum Necessary)
+1) Access patient information only for treatment, payment, or operations (TPO) and only the minimum needed.
+2) Do not discuss patient information in public areas (hallways, elevators, cafeteria).
+3) Screens must be locked when unattended (auto-lock within 5 minutes).
+4) Printed materials containing patient identifiers must be shredded in approved bins.
+
+Disclosures
+- Verify identity before sharing information with family members. If uncertain, escalate to Charge Nurse.
+- For media requests, route to Public Affairs. Do not provide statements.
+
+Incidents
+- If you suspect a privacy incident (lost device, wrong recipient, unauthorized access):
+  a) Notify supervisor immediately
+  b) Submit an incident report within 2 hours
+  c) Contact Information Security if a device is involved

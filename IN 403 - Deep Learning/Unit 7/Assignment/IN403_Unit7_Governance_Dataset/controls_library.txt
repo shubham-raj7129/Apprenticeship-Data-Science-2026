@@ -1,0 +1,27 @@
+IN403 Unit 7 – Controls Library (Synthetic)
+------------------------------------------
+Use these controls to propose mitigations. You may add your own.
+
+Governance & Process Controls
+- Model owner identified (RACI) + escalation path
+- Change management for data + model updates
+- Documentation: model card + data sheet + intended use
+- Compliance/clinical review prior to launch (for high-risk use cases)
+- Periodic review (quarterly) + re-approval triggers
+- Incident management + root cause analysis
+
+Technical Controls
+- Monitoring: performance (AUC/accuracy), drift (PSI), data quality checks
+- Fairness evaluation by subgroup; define acceptable thresholds
+- Human-in-the-loop gating for high impact decisions
+- Confidence thresholding + refusal for RAG/LLM when context insufficient
+- Audit logging: prompts, retrieved chunks, outputs, user feedback
+- Privacy: de-identification, access controls, retention limits, encryption
+- Red teaming / adversarial testing for LLM assistants
+- Rollback plan and safe-mode operation
+
+User Experience & Safety Controls
+- Clear UI disclaimers and “not medical advice” where applicable
+- Provide sources/citations and last-updated timestamps (for policies)
+- Encourage escalation to human for uncertain/high-risk cases
+- Training + user onboarding and acceptable use policy

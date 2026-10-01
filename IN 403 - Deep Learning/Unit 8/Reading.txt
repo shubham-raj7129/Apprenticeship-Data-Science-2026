@@ -1,0 +1,11 @@
+Enterprise AI System Design, Deployment, and Defense
+
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Web Readings:
+The Ultimate AI Governance Guide(https://syncari.com/blog/the-ultimate-ai-governance-guide-best-practices-for-enterprise-success):
+    Best Practices for Enterprise Success
+Model Governance(https://witness.ai/blog/model-governance):
+    Managing Risk, Compliance & AI Performance
+What is AI Governance?(https://www.obsidiansecurity.com/blog/what-is-ai-governance?) 
+    Definitions, Frameworks, and Tools for 2025

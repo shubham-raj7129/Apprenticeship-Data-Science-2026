@@ -1,0 +1,2 @@
+Cyber Warfare
+In this unit, you will learn about cyber warfare, as well as logical and physical weapons used. Some of the tools explored cover reconnaissance, scanning, access, exfiltration, sustainment, assault, and obfuscation. Concerns looked at cover infrastructure and supply chains. Finally, you will program Python to explore network packets for malicious intent and discover how automated BOTs can be deployed and used.

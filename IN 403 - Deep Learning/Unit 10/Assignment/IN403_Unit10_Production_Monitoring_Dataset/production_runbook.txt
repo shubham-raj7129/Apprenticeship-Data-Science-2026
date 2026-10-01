@@ -1,0 +1,33 @@
+IN403 Unit 10 – Production Runbook (Template)
+--------------------------------------------
+Use this template to respond to alerts.
+
+1) Detect & Triage
+- What alert fired? (metric + threshold + timestamp)
+- Is it safety-critical? (PHI leak, clinical harm, severe bias)
+- Who is on-call? Who must be notified?
+
+2) Contain
+- Turn on safe-mode (increase refusal / human review) if needed
+- Roll back to previous model version if available
+- Disable automation, keep advisory mode, or rate-limit
+
+3) Diagnose
+- Check data quality (missingness, schema drift, outliers)
+- Check drift (PSI), performance (AUC/accuracy), fairness gap
+- For RAG: retrieval hit rate, doc freshness, citation coverage
+
+4) Remediate
+- Data fix? Feature update? Re-train? Re-index docs?
+- Add/adjust guardrails or thresholds
+- Update documentation/model card + approval note
+
+5) Verify & Monitor
+- Run offline evaluation
+- Canary deploy / shadow mode
+- Monitor metrics for 48 hours
+
+6) Post-Incident Review
+- Root cause analysis (RCA)
+- Prevent recurrence (tests/monitoring)
+- Update runbook and training

@@ -1,0 +1,11 @@
+Computer Vision Systems (Detection, Classification, and Deployment Risk)
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Watson, M., & Chollet, F. (2024). Deep learning with Python (3rd ed.). Manning Publications.
+Chapter 8: “Image Classification”
+
+Web Reading:-
+PyTorch Transfer Learning Tutorial- https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+TorchVision Models & Weights- https://pytorch.org/vision/stable/models.html
+OpenCV Haar Cascade Face Detection- https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html
+NIST Face Recognition Vendor Test (FRVT) overview- https://www.nist.gov/programs-projects/face-recognition-vendor-test-frvt

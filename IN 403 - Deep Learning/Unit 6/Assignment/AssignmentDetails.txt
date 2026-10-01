@@ -1,0 +1,55 @@
+Detecting Data and Prediction Drift in Deployed AI Systems
+
+Course Outcome practiced in this unit:
+1. IN403-4: Analyze multiple case studies involving deep learning;
+2. GEL-4.03: Understand patterns of human behavior based upon real world observation
+
+In this assignment, you will analyze how deployed AI models degrade over time due to changes in data and behavior. Using a baseline dataset and a future dataset, you will detect data drift and prediction drift, interpret what the changes mean, and recommend actions a hospital should take when drift is identified. The focus is not on improving the model, but on monitoring, diagnosis, and responsible decision-making after deployment.
+
+Files Provided
+1. Baseline dataset (historical data), baseline_no_show.csv (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/hospital_no_show_synthetic.csv or IN 403 - Deep Learning/Unit 6/Assignment/hospital_no_show_synthetic.csv)
+2. Future dataset (new data collected after deployment), future_no_show.csv (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/future_no_show.csv or IN 403 - Deep Learning/Unit 6/Assignment/future_no_show.csv)
+3. IN403_Unit6_Drift_Detection_Lab_Template.ipynb (https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit6_Drift_Lab.ipynb or IN 403 - Deep Learning/Unit 6/Assignment/IN403_Unit6_Drift_Lab.ipynb)
+
+Step-by-Step Instructions
+1. Open the provided notebook template in Google Colab.
+2. Load the baseline dataset and the future dataset provided in the notebook.
+3. Review the features used by the deployed model and confirm which variables are inputs and which represent predictions.
+4. Data Drift Detection:
+4.1. Compare feature distributions between the baseline and future datasets.
+4.2. Use visualizations (such as histograms or density plots) and summary statistics to identify changes.
+4.3. Identify at least one feature showing meaningful drift.
+5. Prediction Drift Detection:
+5.1. Compare model prediction distributions between the baseline and future datasets.
+5.2. Visualize changes in prediction probabilities or class outputs.
+5.3. Describe how the model’s behavior has shifted over time.
+6. Drift Interpretation:
+6.1. Explain what the observed drift suggests about changes in patient behavior, workflows, or data collection.
+6.2. Discuss whether the drift represents a minor shift or a serious risk.
+7. Response Recommendation:
+7.1. Recommend one or more actions the hospital should take (for example: retraining, threshold adjustment, increased monitoring, or rollback).
+7.2. Justify your recommendation based on patient safety and operational impact.
+8. Answer the reflection questions in markdown at the end of the notebook.
+8.1. Which features showed the most evidence of data drift, and why might those changes have occurred?
+8.2. Did prediction drift occur even if some feature distributions appeared stable? Explain why this can happen.
+8.3. What risks could arise if this drift went undetected in a hospital setting?
+8.4. What action would you recommend first, and why?
+
+Your notebook must include:
+1. At least one visualization comparing baseline vs future feature distributions.
+2. At least one visualization comparing baseline vs future prediction distributions.
+3. A brief written interpretation of detected drift.
+4. Reflection answers written in markdown.
+
+Deliverables
+1. Completed notebook (.ipynb) with all code cells executed and outputs visible.
+2. All required plots and written interpretations included.
+3. Reflection section completed at the end of the notebook.
+
+Assignment Requirements
+Be sure to upload your Jupyter notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit6 notebook file, and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN 403 - Deep Learning/Unit 6/Assignment/Rubrics) before beginning this activity.

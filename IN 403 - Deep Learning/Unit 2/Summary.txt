@@ -1,0 +1,5 @@
+Convolutional Neural Networks and Recurrent Neural Networks
+Unit 2 focused on selecting the right neural network architecture for the right type of data. You compared convolutional neural networks (CNNs) for image classification and recurrent models (RNN/LSTM) for text sentiment analysis, then evaluated performance, training behavior, and practical tradeoffs. Through the lab, you built both models, reviewed sample predictions, and explained why architecture choice matters for real-world healthcare applications.
+
+Looking Ahead
+Unit 3 builds on that foundation by introducing explainable, probability-based AI for medical diagnosis. You will compare a Bayesian model (Naive Bayes) to a neural network for cancer screening, with an emphasis on explainability, patient safety, and risk. In the lab, you will train both models using the provided dataset, compare accuracy and ROC-AUC, and write a one-page recommendation memo for hospital use.

@@ -1,0 +1,16 @@
+Response 1 — To Shashank Mishra
+
+Great post, Shashank! I really liked how you explained Domain Generation Algorithms (DGAs) in your discussion. That was something I did not cover in my own post, and I found it fascinating how attackers can generate hundreds of random domain names daily so that even if defenders block one, the next one takes over automatically. It made me realize how adaptive these botnets truly are. After reading your post, I did some additional research and came across a report from Akamai (2022) that discusses how modern botnets are increasingly targeting edge devices like home routers and smart TVs because these devices often lack proper security updates and monitoring compared to traditional computers. I think this ties directly into what you mentioned about Mirai scanning for IoT devices with default passwords. It seems like the IoT explosion has given botmasters a much larger attack surface to exploit. One thing I am curious about after reading your post is this: since DGAs can generate so many domains, do you think DNS-level filtering or machine learning-based detection could be a practical defense against that technique, or would attackers just find another way around it? I would love to hear your thoughts.
+
+Reference
+
+Akamai Technologies. (2022). Akamai's state of the internet report: Attack superhighway. Akamai. https://www.akamai.com/resources/state-of-the-internet
+
+
+Response 2 — To Mateo Uribe Giraldo
+
+Excellent post, Mateo! I appreciated how you went beyond just listing botnet tools and instead discussed analysis tools like Scapy and WEKA. In my initial post, I focused on Mirai and Zeus as botnet tools themselves, so your perspective on the detection and analysis side was a really valuable addition for me. The idea that Scapy can capture and filter network packets to identify potential C2 traffic is something I had not considered, and I think it highlights an important point: understanding botnets is not just about knowing how they attack but also about knowing how we can detect and respond to them. I did some light research after reading your post and found that Vormayr et al. (2017) conducted a comprehensive survey on botnet communication patterns and noted that machine learning-based approaches, similar to what you described with WEKA, are becoming one of the most promising methods for detecting botnets because they can identify unusual traffic patterns even when attackers change their protocols. My question for you is: between Scapy's packet-level inspection and WEKA's machine learning classification, which approach do you think would be more effective in a real-world enterprise environment where the volume of network traffic is extremely high? I imagine there would be trade-offs in terms of speed and accuracy.
+
+Reference
+
+Vormayr, G., Zseby, T., & Fabini, J. (2017). Botnet communication patterns. IEEE Communications Surveys & Tutorials, 19(4), 2768–2796. https://doi.org/10.1109/COMST.2017.2749442

@@ -1,0 +1,57 @@
+CNN vs RNN in Practice
+
+Course Outcome practiced in this unit:
+
+IN403-2: Explore Bayesian machine learning
+
+In this assignment, you will compare a probability-based Bayesian model with a neural network for an early cancer screening scenario. Using a guided notebook, you will train and evaluate both approaches, examine their performance, and consider how model explainability and patient safety influence deployment decisions in healthcare. Rather than focusing on advanced theory, this assignment emphasizes applied decision-making: understanding what each model provides, where risks arise, and how to justify a responsible model choice in a clinical context.
+
+Files Provided
+IN403_Unit3_Bayesian_vs_NN_Detailed.ipynb- https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit3_Bayesian_vs_NN_Detailed.ipynb (IN 403 - Deep Learning/Unit 3/IN403_Unit3_Bayesian_vs_NN_Detailed.ipynb)
+skin_cancer_bayes.csv- https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/skin_cancer_bayes.csv (IN 403 - Deep Learning/Unit 3/skin_cancer_bayes.csv)
+
+Student Instructions
+
+1. Open the provided notebook template in Google Colab.
+2. Run the setup cells to import required libraries and load the dataset.
+3. Data Understanding and Preparation:
+    3.1. Review the dataset and identify the target variable for cancer screening.
+    3.2. Confirm how features relate to patient risk indicators.
+4. Bayesian Model Task:
+    4.1. Train a Bayesian model using the provided features. Use Gaussian Naive Bayes (GaussianNB) from scikit-learn.
+    4.2. Why: It’s the simplest “Bayesian-style” classifier for tabular numeric features, trains instantly, and produces class probabilities (predict_proba) that are easy to interpret and discuss. Library: naive_bayes.GaussianNB
+    4.3. Evaluate the model using appropriate classification metrics. Metrics to use include precision, recall, FI-score, and accuracy
+    4.4. Examine probability outputs and consider how they could be interpreted by clinicians.
+5. Neural Network Task:
+    5.1. Train a neural network using the same dataset. Use a small feedforward neural network (MLP) for tabular data in PyTorch.Recommended architecture (keep it small):
+        5.1.1. Input layer = number of features
+        5.1.2. Hidden layer 1: 32 units + ReLU
+        5.1.3. Dropout: 0.2
+        5.1.4. Hidden layer 2: 16 units + ReLU
+        5.1.5. Output: 1 unit + Sigmoid (binary classification)
+        5.1.6. Training setup:
+            5.1.6.1. Loss: BCELoss (or BCEWithLogitsLoss if you skip Sigmoid in the model)
+            5.1.6.2. Optimizer: Adam (learning rate ~0.001)
+            5.1.6.3. Epochs: 15–25 (enough to learn, not too long)
+                5.1.6.3.1. Evaluate the neural network using the same metrics as the Bayesian model.
+                5.1.6.3.2. Compare performance results across models.
+6. Model Comparison:
+    6.1. Compare accuracy, ROC-AUC (if applicable), and error types.
+    6.2. Consider how each model supports explainability, trust, and patient safety.
+7. Reflection and Decision:
+    7.1. Answer the reflection questions included in the notebook.
+    7.2. Make a recommendation for initial deployment based on clinical use, not just accuracy.
+
+Deliverables:
+1. A completed Google Colab notebook with all code cells executed and outputs visible.
+2. Performance metrics for both the Bayesian model and the neural network.
+3. A written comparison explaining the strengths and limitations of each approach.
+4. A short recommendation explaining which model should be deployed first for cancer screening and why.
+
+Assignment Requirements
+Be sure to upload your Colab notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit3 notebook file, and submit it to the Dropbox by the deadline.
+
+Review the rubric(https://purdueglobal.brightspace.com/d2l/lp/rubrics/preview.d2l?ou=387941&rubricId=1588277&originTool=quicklinks OR IN 403 - Deep Learning/Unit 3/Criterions) before beginning this activity.

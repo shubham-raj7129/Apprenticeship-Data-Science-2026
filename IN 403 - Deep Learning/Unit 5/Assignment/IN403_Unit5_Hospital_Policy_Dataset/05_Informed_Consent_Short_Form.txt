@@ -1,0 +1,17 @@
+Title: Informed Consent – Short Form Guidance (Synthetic)
+Last Updated: 2024-12-05
+
+When Consent Is Required
+- Consent is required before invasive procedures and for release of information beyond routine operations.
+
+Consent Process (Short Form)
+1) Explain procedure, benefits, risks, and alternatives in plain language.
+2) Confirm patient understanding; allow questions.
+3) Verify identity; ensure correct patient, procedure, and site.
+4) Document consent in the EHR and obtain signature as required.
+
+If Patient Lacks Capacity
+- Follow surrogate decision-maker protocol and document rationale.
+
+Note
+- If there is a conflict between this short form and a unit-specific consent policy, escalate to the attending provider and Compliance.

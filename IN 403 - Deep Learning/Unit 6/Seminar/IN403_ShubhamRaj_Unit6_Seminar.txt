@@ -1,0 +1,82 @@
+IN403 Unit 6 Seminar — Alternative Assignment Summary
+Student: Shubham Raj
+Date: July 2026
+
+============================================================
+MAIN POINTS DISCUSSED IN THE SEMINAR
+============================================================
+
+This week's seminar focused on AI Governance, Risk, and Compliance — a shift from algorithm development to the operational and organizational responsibilities that come after deploying AI models. I noted three major topics covered: Model Cards, Data Drift detection, and the NIST AI Risk Management Framework (RMF).
+
+1. Model Cards
+   - I learned that a model card is essentially an "instruction manual" for an AI model — it documents what the model does, how it was trained, what data was used, its limitations, and licensing information.
+   - I noted that model cards have two components:
+     • Metadata (YAML format): Machine-readable information that helps platforms like Hugging Face organize, categorize, and make models discoverable. It includes fields like language supported, license type, tags (e.g., BERT, sentiment analysis), library name (Transformers, Diffusers), and dataset references.
+     • Markdown description: Human-readable documentation similar to a README file — it covers model description, intended use, training data, evaluation metrics, known biases, and limitations.
+   - I took note of the best practices the instructor shared: a good model card should answer questions like — What does this model do? Who should use it? Who should NOT use it? What data was it trained on? What are its known weaknesses? What license applies?
+   - I also noted common mistakes to avoid: missing license information (which creates legal risk for users), no dataset references, no evaluation metrics, and no discussion of limitations.
+   - I appreciated the instructor's comparison of model documentation to code reuse — transparency builds trust, reputation, and enables transfer learning where others can build on your work.
+
+2. Data Drift Detection
+   - I saw that this section revisited and expanded on last week's discussion of data drift — the situation where production data distributions differ from training data distributions.
+   - I understood why this matters: models assume future data resembles training data. When input distributions shift (due to changing customer behavior, marketing campaigns, economic conditions, etc.), predictions become less accurate even though the model itself hasn't changed.
+   - I took note of two detection methods discussed:
+     • Simple summary statistics: I can compare mean, median, standard deviation, min, max, percentiles, and missing value rates between reference (training) data and current production data. Large differences indicate drift.
+     • Specialized libraries: The instructor mentioned a Python library that can automatically compare two datasets, detect distribution changes using appropriate statistical tests for each feature, and generate an HTML drift report in the browser.
+   - I noted that a typical drift report includes: whether dataset drift is present, which columns have drift, visual comparison of feature distributions, and statistical significance of detected changes.
+   - An example scenario discussed was a hospital readmission prediction model where age and blood pressure distributions shifted over 6 months — even though the model worked well initially, the drift suggested further investigation was needed.
+   - I recorded the recommended steps when drift is detected: (1) verify the data pipeline is functioning correctly, (2) investigate which features changed, (3) check model performance if labeled data is available, (4) retrain if drift is substantial and performance has decreased.
+
+3. NIST AI Risk Management Framework (AI RMF)
+   - I learned that this is a voluntary framework developed by the U.S. National Institute of Standards and Technology to help organizations identify, assess, manage, and reduce AI-related risk throughout the AI lifecycle.
+   - It is intended for organizations of any size across different industries.
+   - An important distinction I noted: the framework does NOT tell you what to do or how to build AI — it provides a structured way to think about AI risk so organizations can make informed decisions.
+   - I noted the characteristics of Trustworthy AI (according to NIST):
+     • Valid and reliable — produces consistent, accurate, reproducible results
+     • Safe — avoids causing harm to individuals or groups
+     • Secure and resilient — resists attacks and recovers from failures
+     • Accountable and transparent — not a "black box"
+     • Explainable and interpretable — outputs are understandable
+     • Privacy-enhancing — protects personal and sensitive information (PII, PHI)
+     • Fair — with harmful bias managed
+   - I found the four core functions of the framework particularly important (they form an ongoing cycle, not a one-time checklist):
+     • GOVERN — Establishing the organizational foundation for responsible AI (who owns AI decisions, what policies exist, who approves deployment, how risks are reported, are employees trained)
+     • MAP — Understanding the AI system's purpose, users, environment, and possible impact (what problem does it solve, who will use it, who may be harmed, what assumptions are made)
+     • MEASURE — Evaluating AI performance and identifying potential risks (accuracy, fairness, robustness, security, privacy, reliability metrics)
+     • MANAGE — Taking action (fixing problems, updating models, monitoring performance, adding human review, limiting system use, or retiring unsafe models)
+   - A key takeaway for me: risk management is continuous — it does not stop after deployment. It follows the AI lifecycle: plan, design, build, test, deploy, monitor, improve.
+   - I also noted what the framework does NOT do: certify AI systems, guarantee safety, replace laws/regulations, eliminate risk, or mandate specific technologies.
+
+============================================================
+SUB-TOPICS AND CLASSROOM DISCUSSION
+============================================================
+
+- Assignment Walkthrough (Unit 6):
+  The instructor spent significant time walking through this week's assignment, and I found this very helpful for understanding the expectations. Here is what I gathered:
+  • I will work with three files: AI Incidents file, AI Risk Register, and a Controls Library.
+  • My task is to assign numerical weights to categorical variables (severity, data sensitivity, automation level) to calculate a total risk score for each system.
+  • I noted that higher severity incidents receive higher weights; data sensitivity (PII/PHI) increases risk scores; and automation level affects risk (fully automated = higher operational risk due to less human oversight).
+  • I need to identify the system with the highest total risk score, then select 8 controls from the controls library that address that system's specific incidents.
+  • I noted the risk score ranges: 0-30 = low, 31-60 = high, above 60 = critical.
+  • The example discussed was System 2 (PPE Mask Classifier), which had two incidents (privacy incident and bias complaint) plus PHI data sensitivity, making it high-risk — requiring governance, technical, and operational controls.
+  • I understand that my memo should explain why each selected control is appropriate given the specific incidents I identify.
+
+- I noted that the instructor emphasized AI risk is different from traditional software risk because of issues like bias, privacy violations, lack of transparency, and security vulnerabilities specific to AI systems.
+
+- I found the brief discussion of attacks on AI systems interesting — people may use bad data (data poisoning) to make AI systems untrustworthy, which connects to the security and resilience characteristics of trustworthy AI.
+
+- I appreciated how the instructor tied this week's governance content back to the AI lifecycle discussed in earlier units, data drift from Unit 5/6, and the deployment monitoring concepts from our assignments.
+
+============================================================
+POINTS OF INTEREST AND PERSONAL REFLECTIONS
+============================================================
+
+- I found the distinction between the NIST framework and prescriptive regulations particularly interesting. Unlike compliance standards that tell you exactly what to do (like HIPAA's specific requirements), the AI RMF is a thinking framework — it asks the right questions rather than prescribing answers. This makes it flexible across industries but also means organizations must do the hard work of determining what "acceptable risk" means in their specific context.
+
+- The model card concept resonates with my experience in the Unit 5 RAG assignment. When I used the sentence-transformers/all-MiniLM-L6-v2 model, I relied on its documentation to understand its capabilities and limitations. Without that model card information, I would not have known it produces 384-dimensional embeddings optimized for semantic similarity — information critical to choosing it for my use case.
+
+- The connection between data drift detection and the Unit 6 assignment was very clear to me. In my drift analysis notebook, I observed exactly the kind of scenario the instructor described — feature distributions shifted dramatically (lead_days went from a mean of 14.5 to 44.5), making the model's predictions unreliable. Seeing the same concept explained from both a technical (statistical detection) and governance (what organizational actions to take) perspective reinforced my understanding that drift detection is not just a data science task — it's an operational responsibility.
+
+- The idea that "nobody is responsible" when AI goes wrong is a governance failure I had not considered deeply before. The instructor's point about finger-pointing ("it's not my problem, it's an AI problem") highlights why the GOVERN function must explicitly assign accountability before deployment, not after a failure occurs.
+
+- I would have liked to hear more discussion about how organizations balance the cost of continuous monitoring against the risk of undetected drift — particularly in resource-constrained settings like smaller hospitals where dedicated AI governance committees may not be feasible.

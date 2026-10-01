@@ -1,0 +1,15 @@
+Your Hospital AI Is Failing—Who Owns the Risk?
+
+A hospital has multiple AI systems in use (no-show prediction, PPE detection, skin cancer triage support, and a policy chatbot). Six months after deployment, staff report false alarms, missed cases, and inconsistent answers. Compliance is concerned about privacy and bias. Leadership asks you to explain what is happening, how to monitor it, and what governance actions are required.
+
+Initial Post Instructions
+1. Choose ONE system (No-show, PPE vision, Skin cancer triage, or Policy RAG) as your focus.
+2. Explain what failure modes are most likely for that system (drift, fairness, privacy, hallucination, etc.).
+3. Propose a monitoring plan: 3 metrics (at least one drift metric and one outcome metric).
+4. Define a governance action: Continue / Continue with conditions / Pause automation / Retire.
+5. Identify who is accountable (roles), who must be notified, and what the escalation path is.
+
+Reply requirements:
+1. Identify a risk they missed (be specific).
+2. Suggest one additional control (policy or technical).
+3. Ask one question that would change the decision (e.g., what’s the error rate in a high-risk subgroup?).

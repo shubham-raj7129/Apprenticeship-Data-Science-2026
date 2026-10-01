@@ -1,0 +1,35 @@
+Should This Hospital Trust an LLM?
+
+A hospital is considering deploying an AI assistant to help staff quickly answer common operational and policy questions, such as:
+1. What is the hospital policy for suspected privacy incidents?
+2. What PPE is required for aerosol-generating procedures?
+3. What steps should staff take after a patient fall?
+
+Hospital leadership must decide how this assistant should be designed. Two options are being considered:
+1. A plain large language model (LLM) chatbot with no access to internal hospital documents
+2. A retrieval-augmented generation (RAG) system that retrieves relevant hospital policy text and uses it as context when generating answers
+
+Several constraints shape this decision. Hospital policies change over time, some documents may be outdated or incomplete, and incorrect answers could create safety, compliance, or legal risk. At the same time, staff need concise, usable answers rather than long or technical citations.
+
+Initial Post
+
+Choose one approach for the hospital’s first deployment:
+1. Option A: Plain LLM chatbot (no access to hospital documents)
+2. Option B: LLM + RAG (retrieves hospital policy text and uses it to answer)
+
+Write your post as a short recommendation to hospital leadership. Address the four items below:
+1. Recommendation: State which option you chose (A or B) and give 2–3 reasons why it is the better first choice for a hospital.
+2. Safety risk: Describe one way the assistant could cause harm if it gives a wrong answer (examples: privacy incident steps, PPE guidance, patient fall response). Explain how your chosen option reduces that risk.
+3. Keep policies current: Explain one simple process for keeping answers aligned with current policies (examples: document owner, version control, regular updates, approval workflow).
+4. List three guardrails you would require before launch:
+4.1. One technical guardrail (example: refuse when unsure, only answer from retrieved text, show sources)
+4.2. One policy/process guardrail (example: usage scope, escalation to humans, training for staff)
+4.3. One monitoring guardrail (example: logging, monthly review of errors, tracking “can’t answer” cases)
+Also include one sentence explaining why the other option is weaker for a hospital setting.
+
+Peer Responses
+
+Reply to two classmates. For each reply:
+1. Identify one hidden assumption, risk, or failure mode in their proposal.
+2. Suggest one improvement, either technical or governance-related.
+3. Ask one “what if” question that could change their recommendation if answered differently (for example, what if a policy is missing or outdated, or what if staff rely on the assistant without verification).

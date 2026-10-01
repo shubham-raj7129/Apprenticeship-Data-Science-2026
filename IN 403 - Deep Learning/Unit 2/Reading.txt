@@ -1,0 +1,10 @@
+Convolutional Neural Networks and Recurrent Neural Networks
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Watson, M., & Chollet, F. (2024). Deep learning with Python (3rd ed.). Manning Publications.
+Chapter 3: “Introduction to TensorFlow, Pytorch, JAX, and Keras”
+
+Web Readings:
+CNNs for Vision (PyTorch)- https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html
+RNNs Explained- https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html
+CS231n CNN Overview (Stanford)- https://cs231n.github.io/convolutional-networks/

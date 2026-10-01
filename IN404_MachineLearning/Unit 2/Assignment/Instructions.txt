@@ -1,0 +1,49 @@
+Unit 2 Assignment: Machine Learning Use Cases and Data Types
+
+Outcomes addressed in this activity:
+
+1. Unit Outcomes:
+Examine data types used in machine learning.
+Analyze use cases in machine learning.
+Test NumPy functionality using Python.
+2. Course Outcome:
+IN404-2: Analyze multiple case studies of practical use of machine learning.
+
+Purpose
+In this assignment, you will learn about case studies where machine learning algorithms are used. Also, you will learn about logistic regression, feature management, and scalability. Finally, you will learn about the Numpy library concepts using Python.
+
+Assignment Instructions
+You must have Python and PyCharm(or VSCode) installed to perform this assignment. You should use the free editions for each.
+
+Complete the following:
+Please number the assignment items in your Microsoft® Word® document.
+Please post your code for Python to cover item 8 below.
+For item 8 below, provide a screenshot of the execution. Be sure to submit the actual .py file for Python. Make sure to also respond to items 1–7. Another possibility might be to copy-and-paste your code and results in the assignment document.
+
+Start the next action on a new page.
+
+1. Knowing which machine learning algorithms to apply to data sets is import for achieving usable results. Research and describe linear regression. Describe how the algorithms work. Also, select two real-world use cases below involving linear regression. Summarize the studies and results.
+1.1. A novel fuzzy time series forecasting model based on multiple linear regression and time series clustering(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/A%20Novel%20Fuzzy%20Time%20Series%20Forecasting%20Model%20Based%20on%20Multiple.pdf)
+1.2.Short period prediction based on multivariant linear regression model(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/Short%20period%20PM2.5%20prediction%20based%20on%20multivariate%20linear%20regression%20model.pdf)
+1.3. A comparative study of fuzzy linear regression and multiple linear regression in agricultural studies(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/A%20comparative%20study%20of%20fuzzy%20linear%20regression%20and%20multiple%20linear%20regression%20in%20agricultural%20studies%20(3).pdf)
+1.4. Temperature-induced displacement of supertall structures.
+2. Research and describe logistic regression. Describe how the algorithm work. Also, select two real-world use cases below involving logistic regression. Summarize the studies and results.
+2.1. Application of data mining techniques and logistic regression to model drug use transition to injection(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/Application%20of%20data%20mining%20techniques%20and%20logistic%20regression%20to%20model%20drug%20use%20transition%20to%20injection.pdf)
+2.2. Analysis of haematological parameters as predictors of malaria infection using logistic regression model(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/Analysis%20of%20Haematological%20Parameters%20as%20Predictors%20of%20Malaria%20Infection%20Using%20a%20Logistic%20Regression%20Model.pdf)
+2.3. Associated factors of anemia in pregnancy using logistic regression(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/Associated%20Factors%20of%20Anaemia%20in%20Pregnancy%20Using%20Logistic%20Regression.pdf)
+2.4. Investigation of injury severity in urban expressway crashes(https://kapextmediassl-a.akamaihd.net/IST/IN404/IN404_2104B/Investigation%20of%20injury%20severity%20in%20urban%20expressway%20crashes.pdf)
+3. At times, you will not always get complete data sets for machine learning analysis. You may have to deal with streaming data as it comes into your environment. Research and discuss feature management techniques with data streams. Be sure to summarize the need to understand the target variable before analyzing data. Include techniques you might use for the different data types.
+4. Research and describe scalability as applied to machine learning. Include any bottlenecks or problems that could be encountered when dealing with data. Conclude with two examples of using Python to scale effectively for data analysis.
+5. Compare, and contrast, artificial intelligence, machine learning, and deep learning. Be sure to summarize each first and conclude with a comparison. Finally, include two case studies each, where each would be best used.
+6. Research and summarize the tools of the Python scientific stack. Tools would include NumPy, SciPy, Matplotlib, Pandas, and Scikit-learn. Be sure to provide two examples of each to cover how, what, and why they are used for any given data set.
+7. Summarize the differences between a Python list and a NumPy array. Include examples to show the differences. Conclude with advantages the NumPy array offers for machine learning.
+8. Type in the below Python code(IN404_MachineLearning/Unit 2/Seminar/IN404_Unit2.py). It covers using the NumPy Python library and some of its features use on NumPy arrays:
+
+Assignment Requirements
+Be sure to use appropriate APA format and cite your textbook or other sources that you used in the assignment. For more information on APA style formatting, go to Academic Writer under the Academic Tools area of this course.
+Also review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit2 and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN404_MachineLearning/Rubrics/AssignmentRubric.docx) before beginning this activity.

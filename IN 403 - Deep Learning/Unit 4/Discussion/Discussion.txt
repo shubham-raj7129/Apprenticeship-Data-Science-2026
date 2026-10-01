@@ -1,0 +1,27 @@
+Deploying Computer Vision in Clinical Spaces
+A hospital network wants to add computer vision cameras in hallways and waiting rooms to improve safety and operations. The goal is to support staff with timely alerts and better visibility into daily workflows. However, the compliance team is concerned about privacy, bias, and the risk of false alarms.
+
+The hospital is considering three options for an initial rollout:
+1. PPE detection (detect whether masks are worn in required zones)
+2. Patient fall detection (detect potential falls and alert staff)
+3. Identity recognition (recognize patients and auto-check them in)
+
+Initial Post
+Pick one option as the first system the hospital should deploy (PPE detection, fall detection, or identity recognition). Then address all items below:
+
+1. Recommendation and rationale: State your choice and explain why it is the best first deployment based on risk and benefit.
+2. Type of model needed: Explain whether your option requires classification, detection, or recognition, and why that matters for the task.
+3. Patient safety and error risk: Explain one example of harm from a false positive and one example of harm from a false negative for your chosen option.
+4. Privacy and consent: Describe who is being recorded, where the cameras would operate, and what consent or notice should be required.
+5. Bias and validation plan: Identify one way the system could perform unevenly across groups or environments and describe how you would check for that risk before deployment.
+6. Recommend three guardrails:
+6.1. One technical guardrail (example: confidence thresholds, human-in-the-loop review, restricted zones, data minimization)
+6.2. One policy or process guardrail (example: signage and consent process, access controls, documented escalation workflow)
+6.3. One monitoring or audit guardrail (example: false-alarm tracking, monthly performance review, periodic bias audits)
+Also explain briefly why the other two options are higher risk or less feasible as a first deployment.
+
+Peer Responses
+Reply to two classmates. For each reply;
+1. Identify one hidden assumption, blind spot, or risk in their proposal.
+2. Suggest one improvement (technical or governance).
+3. Ask one “what if” question that could change their recommendation if the answer were different (for example, what if staffing is limited for human review, or what if patients opt out of being recorded).

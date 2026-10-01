@@ -1,0 +1,67 @@
+Assignment Details
+
+Unit 1 Assignment: Cyber Warfare
+
+Outcomes addressed in this activity:
+1. Unit Outcomes:
+1.1. Investigate command and control for automated BOTs.
+1.2. Examine cyber warfare tools using in cyber warfare.
+1.3. Analyze network traffic, using Python, to detect malicious packets.
+2. Course Outcome:
+2.1 IN404-1: Examine the use of automated bots in cyberwarfare. 
+
+Purpose
+This assignment examines Python code that shows how simply it is to gather information about websites and cookies. Other code shows how to get the hardware media access control (MAC) address based in an internet protocol (IP) address. The results can be used for malicious activity by bots. The assignment then looks into the python scapy module used both offensively and defensively to protect networks. Finally, you will research logical weapons of cyber warfare and tools applied.
+
+Assignment Instructions
+You must have Python and PyCharm installed to perform this assessment. You should use the free editions for each.
+
+If you do not have the above software installed, please perform the required installations. The following documents will assist you with installation of the software:
+Python
+PyCharm
+
+Note: We can use VSCode if not PyCharm
+
+Complete the following:
+Please number the assessment items in your Microsoft® Word® document.
+For items 3 and 6 below, provide a screenshot of the execution, in Python, showing the code and the result set. Be sure to submit the actual .py files. Make sure to also respond to items 4–5 and 7–10. Another possibility might be to copy and paste your code and results into the document you submit.
+
+Start the next action on a new page.
+1. Download the files used in the assessment from the Course Resources. You will need to unzip the .zip file. If the csv file opens in the browser, don't copy the content, and paste it in an empty file opened using a text editor on the local computer as this can distort the structure of the file and cause the code to err. Right click on the opened file and click on Save As and save it as is.
+2. Type in the code below to mechanize websites and gather MAC addresses given an IP address. When importing a library, if it does not appear In the auto complete list, it means the library is not Installed and you need to install it. There are two ways to Install a library:
+2.1. First method
+2.1.(1) On the PyChram IDE, click Terminal on the bottom
+2.1.(2) Type pip Install myLibrary
+2.1.(3) This should Install the required library.
+2.1.(4) Repeat for all missing libraries.
+2.2. Second method
+2.2.(1) Click on File then Setting.
+2.2.(2) A new window will open. Click on your project then Python Interpreter, then the + sign to add the library
+2.2.(3) A new window will open. Type the library name in the search box and after finding it, click Install Package
+2.2.(4) Repeat for all missing libraries.
+3. Resume typing the code below:
+IN404_MachineLearning/Unit1/Assignment/Step 3.png OR IN404_MachineLearning/Unit1/Assignment/Code/step3_mechanize_mac.py
+4. Research and summarize the purpose of the Python mechanize module. Include what its purpose is and how it can read, or create, cookies. Conclude with why that can be important for automated bots.
+5. Research and summarize what a MAC address is and why one might want to spoof MAC addresses.
+6. Type in, and execute, the following Python code. NOTE: You will need the IN404.pcpang and IN404.csv datasets. Recommend you put these in the same directory as the Python file you create.
+IN404_MachineLearning/Unit1/Assignment/Step 6(a).png, IN404_MachineLearning/Unit1/Assignment/Step 6(b).png OR IN404_MachineLearning/Unit1/Assignment/Code/step6_scapy_analysis.py
+7. Research and explain what the code is doing. Be sure to cover each choice (1–7), and what each is doing in the summary.
+8. Research and summarize how scapy can be used both offensively and defensively. Include three examples of how it can be used for each to support your findings.
+9. Select two of the below and discuss three tools used for each as logical weapons used in cyber warfare. Be sure to cover what the tool is and how it is used.
+9.1. Reconnaissance
+9.2. Scanning
+9.3. Access and Escalation
+9.4. Exfiltration
+9.5. Sustainment
+9.6. Assault
+9.7. Obfuscation
+10. Research and summarize how automated bots can be effective tools used in cyber warfare. Include, how they can be used and where they can be most effective. Provide two use cases where automated bots were successfully used in cyber warfare. Be sure to fully summarize and support your conclusions.
+
+Assignment Requirements
+Be sure to use appropriate APA format and cite your textbook or other sources that you used in the assignment. For more information on APA style formatting, go to Academic Writer under the Academic Tools area of this course.
+Also review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit1 and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN404_MachineLearning/Rubrics/AssignmentRubric.docx) before beginning this activity.

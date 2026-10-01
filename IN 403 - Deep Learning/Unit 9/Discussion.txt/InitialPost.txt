@@ -1,0 +1,33 @@
+The Policy Chatbot Is Being Attacked — What Do You Do?
+
+Initial Post — PHI/Data Exfiltration
+
+1. Attack Overview
+
+PHI/data exfiltration occurs when a user crafts prompts designed to coax the chatbot into revealing protected health information—patient names, diagnoses, medication lists, or internal records embedded in its retrieval corpus. In a hospital setting this attack is especially likely because clinical staff routinely phrase questions that blend policy queries with patient-specific context (e.g., "What is our isolation protocol for the COVID patient in room 412?"). If the chatbot's retrieval-augmented generation (RAG) pipeline indexes documents containing PHI, even well-intentioned queries can surface sensitive data (Yao et al., 2024).
+
+2. Risk Level
+
+This attack is high-risk for two reasons. First, a single PHI disclosure can trigger a HIPAA breach notification, exposing the hospital to fines up to $1.5 million per violation category and significant reputational harm (U.S. Department of Health & Human Services [HHS], 2024). Second, the attack is plausible because hospital knowledge bases frequently co-mingle de-identified policy documents with identified patient data in shared drives, making accidental indexing a near-certainty without rigorous data pipelines.
+
+3. Controls and Safeguards
+
+- Technical guardrail: Implement a Named Entity Recognition (NER) filter on both the retrieval and generation stages that detects and redacts PHI patterns—names, MRNs, dates of birth—before any text reaches the user. Pair this with a strict allowlist so the chatbot can only retrieve from a curated, PHI-free policy corpus (Shao et al., 2024).
+- Monitoring control: Log every query-response pair with a sensitivity score. Configure real-time alerts when the NER filter flags a potential PHI match, and conduct weekly audits of flagged interactions to identify new leakage vectors.
+- Governance control: Require mandatory staff training on acceptable chatbot use, establish a data steward role responsible for vetting every document before it enters the retrieval index, and define a written incident-response workflow for PHI exposures.
+
+4. Escalation Policy
+
+The chatbot should immediately refuse any query that the NER filter scores above the PHI-risk threshold and return a standard message: "I can only answer general policy questions. For patient-specific information, please consult the EHR." If a user repeatedly triggers refusals within a session, the system should lock the session and escalate to the IT Security and Privacy Officer for review. Critical incidents—confirmed PHI in a response—must be reported to the HIPAA Compliance team within one hour per the hospital's breach notification protocol.
+
+5. Recommendation
+
+I recommend deploy with conditions. The chatbot provides genuine operational value by reducing policy lookup time, but deployment must be contingent on: (a) a verified PHI-free retrieval corpus, (b) active NER redaction on all outputs, and (c) a 30-day monitored pilot restricted to non-clinical administrative staff before broader rollout.
+
+References
+
+Shao, Z., Wang, Y., Chen, J., & Zhang, L. (2024). Safeguarding large language models in healthcare: A framework for PHI detection and redaction. Journal of Biomedical Informatics, 150, 104612. https://doi.org/10.1016/j.jbi.2024.104612
+
+U.S. Department of Health & Human Services. (2024). HIPAA enforcement highlights. https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/index.html
+
+Yao, Y., Duan, J., Xu, K., Cai, Y., Sun, Z., & Zhang, Y. (2024). A survey on large language model (LLM) security and privacy: The good, the bad, and the ugly. High-Confidence Computing, 4(2), 100211. https://doi.org/10.1016/j.hcc.2024.100211

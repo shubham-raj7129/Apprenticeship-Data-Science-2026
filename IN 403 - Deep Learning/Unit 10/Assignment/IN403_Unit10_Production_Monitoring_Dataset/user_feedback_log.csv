@@ -1,0 +1,261 @@
+feedback_id,date,system_name,user_role,rating_1to5,reported_issue,triage_action,free_text
+FB-00001,2025-11-03,No-Show Predictor,nurse,5,none,log_only,System was slow during shift change.
+FB-00002,2025-11-26,Policy RAG Assistant,admin,3,slow_response,log_only,Great—saved time.
+FB-00003,2025-10-16,No-Show Predictor,admin,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00004,2025-10-28,No-Show Predictor,nurse,5,wrong_prediction,log_only,Great—saved time.
+FB-00005,2025-10-25,Policy RAG Assistant,nurse,5,slow_response,triage_queue,System was slow during shift change.
+FB-00006,2025-11-15,No-Show Predictor,nurse,5,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00007,2025-10-14,No-Show Predictor,scheduler,5,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00008,2025-10-24,No-Show Predictor,it,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00009,2025-10-02,Policy RAG Assistant,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00010,2025-11-13,Policy RAG Assistant,scheduler,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00011,2025-10-19,No-Show Predictor,admin,4,none,log_only,Great—saved time.
+FB-00012,2025-11-18,No-Show Predictor,nurse,3,bias_concern,urgent_escalation,Great—saved time.
+FB-00013,2025-10-16,No-Show Predictor,nurse,4,slow_response,log_only,I wasn't sure what to do next after the response.
+FB-00014,2025-10-06,No-Show Predictor,scheduler,5,none,log_only,System was slow during shift change.
+FB-00015,2025-11-24,Policy RAG Assistant,scheduler,3,none,triage_queue,I wasn't sure what to do next after the response.
+FB-00016,2025-10-23,Policy RAG Assistant,nurse,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00017,2025-11-13,Policy RAG Assistant,scheduler,5,none,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00018,2025-11-11,Policy RAG Assistant,scheduler,4,privacy_concern,log_only,Output seemed off; I double-checked manually.
+FB-00019,2025-11-19,Policy RAG Assistant,scheduler,4,slow_response,log_only,Answer didn't cite the policy and felt made up.
+FB-00020,2025-11-20,No-Show Predictor,physician,3,none,log_only,System was slow during shift change.
+FB-00021,2025-11-16,Policy RAG Assistant,admin,5,hallucination,log_only,I wasn't sure what to do next after the response.
+FB-00022,2025-11-09,Policy RAG Assistant,physician,5,privacy_concern,urgent_escalation,Output seemed off; I double-checked manually.
+FB-00023,2025-11-03,No-Show Predictor,scheduler,5,none,log_only,Concern about different outcomes for certain groups.
+FB-00024,2025-11-08,No-Show Predictor,nurse,2,none,log_only,System was slow during shift change.
+FB-00025,2025-10-28,No-Show Predictor,scheduler,4,none,triage_queue,Output seemed off; I double-checked manually.
+FB-00026,2025-11-27,No-Show Predictor,nurse,4,none,log_only,System was slow during shift change.
+FB-00027,2025-10-24,Policy RAG Assistant,nurse,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00028,2025-10-20,Policy RAG Assistant,nurse,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00029,2025-10-05,Policy RAG Assistant,scheduler,3,bias_concern,urgent_escalation,I wasn't sure what to do next after the response.
+FB-00030,2025-10-28,No-Show Predictor,nurse,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00031,2025-11-12,Policy RAG Assistant,nurse,3,hallucination,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00032,2025-11-10,Policy RAG Assistant,physician,4,none,log_only,Great—saved time.
+FB-00033,2025-11-16,Policy RAG Assistant,nurse,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00034,2025-11-06,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00035,2025-11-01,Policy RAG Assistant,admin,5,none,log_only,I wasn't sure what to do next after the response.
+FB-00036,2025-10-08,No-Show Predictor,scheduler,4,wrong_prediction,log_only,System was slow during shift change.
+FB-00037,2025-11-26,Policy RAG Assistant,nurse,4,none,log_only,Great—saved time.
+FB-00038,2025-10-07,No-Show Predictor,it,5,wrong_prediction,triage_queue,Great—saved time.
+FB-00039,2025-10-25,No-Show Predictor,scheduler,5,wrong_prediction,triage_queue,Great—saved time.
+FB-00040,2025-10-20,No-Show Predictor,it,3,wrong_prediction,urgent_escalation,System was slow during shift change.
+FB-00041,2025-11-27,No-Show Predictor,nurse,2,none,log_only,Concern about different outcomes for certain groups.
+FB-00042,2025-11-27,No-Show Predictor,scheduler,5,wrong_prediction,log_only,System was slow during shift change.
+FB-00043,2025-11-14,Policy RAG Assistant,scheduler,3,privacy_concern,triage_queue,I wasn't sure what to do next after the response.
+FB-00044,2025-10-11,No-Show Predictor,it,3,wrong_prediction,log_only,Great—saved time.
+FB-00045,2025-10-02,No-Show Predictor,physician,4,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00046,2025-10-20,No-Show Predictor,scheduler,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00047,2025-10-29,Policy RAG Assistant,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00048,2025-10-11,No-Show Predictor,nurse,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00049,2025-10-04,No-Show Predictor,admin,2,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00050,2025-11-29,Policy RAG Assistant,it,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00051,2025-11-18,Policy RAG Assistant,scheduler,3,none,log_only,Great—saved time.
+FB-00052,2025-10-08,Policy RAG Assistant,physician,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00053,2025-11-01,Policy RAG Assistant,it,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00054,2025-10-23,No-Show Predictor,admin,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00055,2025-11-07,No-Show Predictor,scheduler,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00056,2025-11-04,Policy RAG Assistant,it,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00057,2025-10-18,No-Show Predictor,nurse,5,privacy_concern,log_only,I wasn't sure what to do next after the response.
+FB-00058,2025-10-16,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00059,2025-11-07,Policy RAG Assistant,scheduler,5,wrong_prediction,log_only,Concern about different outcomes for certain groups.
+FB-00060,2025-11-13,No-Show Predictor,admin,3,slow_response,log_only,Answer didn't cite the policy and felt made up.
+FB-00061,2025-11-13,Policy RAG Assistant,it,4,hallucination,triage_queue,I wasn't sure what to do next after the response.
+FB-00062,2025-11-14,No-Show Predictor,physician,4,privacy_concern,log_only,I wasn't sure what to do next after the response.
+FB-00063,2025-11-22,Policy RAG Assistant,scheduler,4,bias_concern,log_only,Concern about different outcomes for certain groups.
+FB-00064,2025-10-28,Policy RAG Assistant,nurse,5,none,log_only,I wasn't sure what to do next after the response.
+FB-00065,2025-11-20,No-Show Predictor,admin,4,privacy_concern,log_only,Output seemed off; I double-checked manually.
+FB-00066,2025-10-01,No-Show Predictor,scheduler,5,slow_response,log_only,I wasn't sure what to do next after the response.
+FB-00067,2025-11-29,Policy RAG Assistant,admin,4,privacy_concern,urgent_escalation,Output seemed off; I double-checked manually.
+FB-00068,2025-10-28,No-Show Predictor,scheduler,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00069,2025-10-23,No-Show Predictor,nurse,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00070,2025-10-07,No-Show Predictor,scheduler,4,wrong_prediction,log_only,Great—saved time.
+FB-00071,2025-10-05,No-Show Predictor,physician,5,none,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00072,2025-10-13,No-Show Predictor,it,4,none,log_only,System was slow during shift change.
+FB-00073,2025-10-15,No-Show Predictor,physician,4,none,triage_queue,Great—saved time.
+FB-00074,2025-11-06,No-Show Predictor,scheduler,5,wrong_prediction,log_only,Great—saved time.
+FB-00075,2025-11-28,Policy RAG Assistant,nurse,4,bias_concern,triage_queue,System was slow during shift change.
+FB-00076,2025-11-25,No-Show Predictor,admin,5,wrong_prediction,log_only,Concern about different outcomes for certain groups.
+FB-00077,2025-11-03,No-Show Predictor,it,5,bias_concern,urgent_escalation,Answer didn't cite the policy and felt made up.
+FB-00078,2025-11-15,No-Show Predictor,admin,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00079,2025-10-14,Policy RAG Assistant,nurse,4,wrong_prediction,triage_queue,Concern about different outcomes for certain groups.
+FB-00080,2025-10-25,No-Show Predictor,scheduler,5,bias_concern,log_only,System was slow during shift change.
+FB-00081,2025-11-27,No-Show Predictor,scheduler,4,none,triage_queue,I wasn't sure what to do next after the response.
+FB-00082,2025-10-26,Policy RAG Assistant,scheduler,2,none,log_only,I wasn't sure what to do next after the response.
+FB-00083,2025-11-07,No-Show Predictor,scheduler,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00084,2025-10-23,No-Show Predictor,nurse,4,none,log_only,System was slow during shift change.
+FB-00085,2025-10-15,Policy RAG Assistant,scheduler,5,slow_response,triage_queue,System was slow during shift change.
+FB-00086,2025-10-19,No-Show Predictor,scheduler,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00087,2025-11-24,No-Show Predictor,it,3,wrong_prediction,log_only,I wasn't sure what to do next after the response.
+FB-00088,2025-11-07,Policy RAG Assistant,physician,4,none,log_only,Great—saved time.
+FB-00089,2025-11-24,Policy RAG Assistant,scheduler,2,wrong_prediction,log_only,I wasn't sure what to do next after the response.
+FB-00090,2025-10-10,No-Show Predictor,nurse,5,wrong_prediction,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00091,2025-10-15,No-Show Predictor,admin,4,none,triage_queue,Great—saved time.
+FB-00092,2025-11-29,Policy RAG Assistant,physician,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00093,2025-11-06,No-Show Predictor,nurse,5,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00094,2025-11-22,No-Show Predictor,nurse,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00095,2025-11-19,Policy RAG Assistant,nurse,5,hallucination,triage_queue,I wasn't sure what to do next after the response.
+FB-00096,2025-10-13,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00097,2025-10-19,Policy RAG Assistant,scheduler,5,slow_response,log_only,Great—saved time.
+FB-00098,2025-10-27,Policy RAG Assistant,nurse,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00099,2025-11-24,Policy RAG Assistant,scheduler,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00100,2025-11-23,Policy RAG Assistant,physician,4,hallucination,log_only,Answer didn't cite the policy and felt made up.
+FB-00101,2025-10-08,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00102,2025-10-02,Policy RAG Assistant,scheduler,4,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00103,2025-10-29,No-Show Predictor,nurse,3,wrong_prediction,log_only,I wasn't sure what to do next after the response.
+FB-00104,2025-11-02,No-Show Predictor,physician,4,bias_concern,log_only,Great—saved time.
+FB-00105,2025-11-13,No-Show Predictor,it,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00106,2025-10-21,No-Show Predictor,physician,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00107,2025-11-15,No-Show Predictor,nurse,4,wrong_prediction,triage_queue,Great—saved time.
+FB-00108,2025-10-07,No-Show Predictor,admin,4,none,log_only,System was slow during shift change.
+FB-00109,2025-10-15,Policy RAG Assistant,it,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00110,2025-10-21,Policy RAG Assistant,nurse,3,none,log_only,System was slow during shift change.
+FB-00111,2025-11-15,No-Show Predictor,scheduler,5,wrong_prediction,urgent_escalation,Great—saved time.
+FB-00112,2025-10-28,Policy RAG Assistant,scheduler,4,hallucination,log_only,Output seemed off; I double-checked manually.
+FB-00113,2025-10-06,No-Show Predictor,admin,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00114,2025-10-13,No-Show Predictor,scheduler,4,wrong_prediction,log_only,System was slow during shift change.
+FB-00115,2025-11-15,Policy RAG Assistant,nurse,4,hallucination,urgent_escalation,Answer didn't cite the policy and felt made up.
+FB-00116,2025-10-03,Policy RAG Assistant,scheduler,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00117,2025-10-07,No-Show Predictor,nurse,5,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00118,2025-11-05,No-Show Predictor,it,5,none,log_only,Concern about different outcomes for certain groups.
+FB-00119,2025-10-12,No-Show Predictor,scheduler,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00120,2025-11-10,Policy RAG Assistant,scheduler,4,none,log_only,Great—saved time.
+FB-00121,2025-10-21,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00122,2025-11-10,Policy RAG Assistant,nurse,4,none,log_only,Great—saved time.
+FB-00123,2025-10-27,No-Show Predictor,admin,5,wrong_prediction,log_only,Answer didn't cite the policy and felt made up.
+FB-00124,2025-11-13,No-Show Predictor,nurse,4,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00125,2025-10-25,No-Show Predictor,nurse,3,wrong_prediction,log_only,Great—saved time.
+FB-00126,2025-10-31,No-Show Predictor,scheduler,3,none,log_only,Great—saved time.
+FB-00127,2025-11-21,No-Show Predictor,nurse,3,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00128,2025-10-19,No-Show Predictor,it,4,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00129,2025-10-28,No-Show Predictor,admin,4,wrong_prediction,log_only,I wasn't sure what to do next after the response.
+FB-00130,2025-10-20,No-Show Predictor,scheduler,4,slow_response,log_only,System was slow during shift change.
+FB-00131,2025-10-01,No-Show Predictor,physician,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00132,2025-11-10,No-Show Predictor,admin,5,slow_response,log_only,System was slow during shift change.
+FB-00133,2025-11-09,Policy RAG Assistant,it,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00134,2025-10-16,No-Show Predictor,admin,5,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00135,2025-10-26,Policy RAG Assistant,nurse,5,none,log_only,Great—saved time.
+FB-00136,2025-10-27,Policy RAG Assistant,nurse,5,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00137,2025-11-08,Policy RAG Assistant,it,3,bias_concern,log_only,Great—saved time.
+FB-00138,2025-10-01,No-Show Predictor,nurse,2,wrong_prediction,log_only,Concern about different outcomes for certain groups.
+FB-00139,2025-10-14,No-Show Predictor,scheduler,4,none,triage_queue,Concern about different outcomes for certain groups.
+FB-00140,2025-10-05,No-Show Predictor,admin,4,none,log_only,Great—saved time.
+FB-00141,2025-10-10,No-Show Predictor,nurse,5,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00142,2025-11-29,Policy RAG Assistant,nurse,2,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00143,2025-10-31,No-Show Predictor,nurse,5,privacy_concern,log_only,System was slow during shift change.
+FB-00144,2025-10-03,No-Show Predictor,scheduler,3,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00145,2025-10-01,No-Show Predictor,it,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00146,2025-11-15,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00147,2025-11-26,Policy RAG Assistant,physician,5,none,log_only,Concern about different outcomes for certain groups.
+FB-00148,2025-11-08,No-Show Predictor,scheduler,5,privacy_concern,log_only,System was slow during shift change.
+FB-00149,2025-10-28,No-Show Predictor,nurse,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00150,2025-11-21,No-Show Predictor,scheduler,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00151,2025-10-23,Policy RAG Assistant,scheduler,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00152,2025-10-11,Policy RAG Assistant,nurse,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00153,2025-11-10,Policy RAG Assistant,scheduler,5,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00154,2025-11-06,No-Show Predictor,physician,5,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00155,2025-10-04,No-Show Predictor,nurse,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00156,2025-11-07,Policy RAG Assistant,nurse,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00157,2025-10-24,Policy RAG Assistant,nurse,4,wrong_prediction,log_only,System was slow during shift change.
+FB-00158,2025-10-02,Policy RAG Assistant,physician,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00159,2025-10-16,Policy RAG Assistant,admin,4,wrong_prediction,log_only,Answer didn't cite the policy and felt made up.
+FB-00160,2025-10-21,Policy RAG Assistant,scheduler,5,privacy_concern,urgent_escalation,I wasn't sure what to do next after the response.
+FB-00161,2025-11-10,No-Show Predictor,nurse,5,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00162,2025-10-10,Policy RAG Assistant,it,5,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00163,2025-11-14,No-Show Predictor,scheduler,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00164,2025-11-07,No-Show Predictor,admin,4,none,log_only,Great—saved time.
+FB-00165,2025-11-10,No-Show Predictor,it,4,none,log_only,System was slow during shift change.
+FB-00166,2025-11-07,Policy RAG Assistant,it,5,none,log_only,System was slow during shift change.
+FB-00167,2025-10-09,No-Show Predictor,physician,5,bias_concern,log_only,Concern about different outcomes for certain groups.
+FB-00168,2025-10-17,Policy RAG Assistant,nurse,2,slow_response,triage_queue,System was slow during shift change.
+FB-00169,2025-11-04,No-Show Predictor,it,5,none,log_only,I wasn't sure what to do next after the response.
+FB-00170,2025-11-22,Policy RAG Assistant,scheduler,4,wrong_prediction,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00171,2025-10-01,No-Show Predictor,it,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00172,2025-10-31,Policy RAG Assistant,scheduler,4,none,log_only,System was slow during shift change.
+FB-00173,2025-10-12,No-Show Predictor,scheduler,5,none,log_only,System was slow during shift change.
+FB-00174,2025-10-19,No-Show Predictor,nurse,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00175,2025-10-21,Policy RAG Assistant,it,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00176,2025-10-11,No-Show Predictor,nurse,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00177,2025-10-21,No-Show Predictor,nurse,4,none,log_only,Great—saved time.
+FB-00178,2025-11-17,No-Show Predictor,scheduler,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00179,2025-10-16,Policy RAG Assistant,nurse,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00180,2025-10-24,No-Show Predictor,scheduler,3,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00181,2025-10-09,Policy RAG Assistant,it,3,wrong_prediction,urgent_escalation,Great—saved time.
+FB-00182,2025-11-01,No-Show Predictor,scheduler,5,wrong_prediction,log_only,Great—saved time.
+FB-00183,2025-11-08,No-Show Predictor,nurse,5,none,log_only,I wasn't sure what to do next after the response.
+FB-00184,2025-11-17,Policy RAG Assistant,scheduler,3,none,log_only,System was slow during shift change.
+FB-00185,2025-10-21,No-Show Predictor,it,5,none,triage_queue,I wasn't sure what to do next after the response.
+FB-00186,2025-10-19,No-Show Predictor,scheduler,5,none,log_only,System was slow during shift change.
+FB-00187,2025-11-01,Policy RAG Assistant,nurse,4,hallucination,triage_queue,System was slow during shift change.
+FB-00188,2025-11-27,No-Show Predictor,it,3,slow_response,log_only,Answer didn't cite the policy and felt made up.
+FB-00189,2025-10-07,Policy RAG Assistant,nurse,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00190,2025-10-22,No-Show Predictor,nurse,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00191,2025-11-07,Policy RAG Assistant,nurse,3,wrong_prediction,log_only,System was slow during shift change.
+FB-00192,2025-10-17,No-Show Predictor,it,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00193,2025-10-12,No-Show Predictor,nurse,3,none,log_only,Concern about different outcomes for certain groups.
+FB-00194,2025-10-21,No-Show Predictor,it,3,bias_concern,log_only,System was slow during shift change.
+FB-00195,2025-11-16,Policy RAG Assistant,scheduler,3,wrong_prediction,log_only,System was slow during shift change.
+FB-00196,2025-10-27,Policy RAG Assistant,admin,4,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00197,2025-11-21,No-Show Predictor,physician,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00198,2025-10-11,Policy RAG Assistant,physician,2,hallucination,log_only,Output seemed off; I double-checked manually.
+FB-00199,2025-11-02,No-Show Predictor,scheduler,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00200,2025-11-25,Policy RAG Assistant,it,3,none,log_only,System was slow during shift change.
+FB-00201,2025-11-02,Policy RAG Assistant,nurse,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00202,2025-10-14,No-Show Predictor,scheduler,4,privacy_concern,log_only,Answer didn't cite the policy and felt made up.
+FB-00203,2025-10-31,No-Show Predictor,scheduler,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00204,2025-10-11,No-Show Predictor,scheduler,4,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00205,2025-10-18,Policy RAG Assistant,scheduler,4,none,log_only,System was slow during shift change.
+FB-00206,2025-10-09,Policy RAG Assistant,nurse,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00207,2025-11-11,No-Show Predictor,nurse,2,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00208,2025-10-28,Policy RAG Assistant,nurse,4,bias_concern,log_only,Great—saved time.
+FB-00209,2025-11-10,No-Show Predictor,admin,4,slow_response,log_only,Output seemed off; I double-checked manually.
+FB-00210,2025-11-03,No-Show Predictor,nurse,3,bias_concern,triage_queue,Great—saved time.
+FB-00211,2025-10-10,No-Show Predictor,physician,2,bias_concern,triage_queue,Output seemed off; I double-checked manually.
+FB-00212,2025-10-21,Policy RAG Assistant,scheduler,4,none,log_only,I wasn't sure what to do next after the response.
+FB-00213,2025-11-11,No-Show Predictor,nurse,2,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00214,2025-11-25,No-Show Predictor,physician,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00215,2025-11-27,Policy RAG Assistant,scheduler,4,slow_response,log_only,Concern about different outcomes for certain groups.
+FB-00216,2025-11-05,No-Show Predictor,admin,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00217,2025-10-19,No-Show Predictor,nurse,4,none,log_only,Great—saved time.
+FB-00218,2025-11-23,Policy RAG Assistant,admin,3,hallucination,urgent_escalation,Great—saved time.
+FB-00219,2025-11-12,No-Show Predictor,it,5,privacy_concern,log_only,I wasn't sure what to do next after the response.
+FB-00220,2025-10-01,No-Show Predictor,nurse,3,none,log_only,Output seemed off; I double-checked manually.
+FB-00221,2025-10-13,Policy RAG Assistant,it,4,hallucination,triage_queue,System was slow during shift change.
+FB-00222,2025-11-23,Policy RAG Assistant,scheduler,3,none,log_only,Great—saved time.
+FB-00223,2025-10-01,Policy RAG Assistant,admin,5,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00224,2025-11-03,No-Show Predictor,nurse,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00225,2025-10-14,Policy RAG Assistant,it,5,none,log_only,Output seemed off; I double-checked manually.
+FB-00226,2025-11-18,No-Show Predictor,scheduler,2,wrong_prediction,triage_queue,Answer didn't cite the policy and felt made up.
+FB-00227,2025-10-18,Policy RAG Assistant,scheduler,5,hallucination,triage_queue,System was slow during shift change.
+FB-00228,2025-11-05,No-Show Predictor,it,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00229,2025-11-29,No-Show Predictor,scheduler,3,privacy_concern,triage_queue,Output seemed off; I double-checked manually.
+FB-00230,2025-11-14,Policy RAG Assistant,admin,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00231,2025-11-08,No-Show Predictor,admin,4,bias_concern,log_only,Answer didn't cite the policy and felt made up.
+FB-00232,2025-11-18,Policy RAG Assistant,it,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00233,2025-10-31,No-Show Predictor,scheduler,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00234,2025-11-26,No-Show Predictor,physician,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00235,2025-11-13,Policy RAG Assistant,scheduler,4,wrong_prediction,log_only,Concern about different outcomes for certain groups.
+FB-00236,2025-10-30,No-Show Predictor,admin,3,none,log_only,System was slow during shift change.
+FB-00237,2025-11-24,Policy RAG Assistant,nurse,4,slow_response,log_only,I wasn't sure what to do next after the response.
+FB-00238,2025-10-03,Policy RAG Assistant,physician,4,none,log_only,System was slow during shift change.
+FB-00239,2025-11-17,No-Show Predictor,nurse,3,wrong_prediction,log_only,Answer didn't cite the policy and felt made up.
+FB-00240,2025-10-01,No-Show Predictor,scheduler,5,none,log_only,System was slow during shift change.
+FB-00241,2025-11-19,No-Show Predictor,physician,3,none,log_only,Great—saved time.
+FB-00242,2025-11-27,No-Show Predictor,nurse,5,wrong_prediction,log_only,Great—saved time.
+FB-00243,2025-11-03,Policy RAG Assistant,admin,4,none,log_only,System was slow during shift change.
+FB-00244,2025-11-24,Policy RAG Assistant,it,4,none,log_only,Concern about different outcomes for certain groups.
+FB-00245,2025-11-21,No-Show Predictor,scheduler,4,wrong_prediction,triage_queue,Output seemed off; I double-checked manually.
+FB-00246,2025-10-14,No-Show Predictor,nurse,3,bias_concern,log_only,I wasn't sure what to do next after the response.
+FB-00247,2025-10-05,No-Show Predictor,scheduler,4,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00248,2025-11-19,No-Show Predictor,scheduler,3,bias_concern,log_only,Great—saved time.
+FB-00249,2025-10-25,Policy RAG Assistant,physician,4,none,log_only,System was slow during shift change.
+FB-00250,2025-10-04,No-Show Predictor,physician,4,wrong_prediction,triage_queue,Concern about different outcomes for certain groups.
+FB-00251,2025-10-02,No-Show Predictor,admin,5,wrong_prediction,log_only,Answer didn't cite the policy and felt made up.
+FB-00252,2025-11-14,Policy RAG Assistant,scheduler,3,none,log_only,I wasn't sure what to do next after the response.
+FB-00253,2025-11-20,No-Show Predictor,nurse,3,bias_concern,log_only,I wasn't sure what to do next after the response.
+FB-00254,2025-10-25,No-Show Predictor,it,4,wrong_prediction,log_only,Output seemed off; I double-checked manually.
+FB-00255,2025-10-30,No-Show Predictor,admin,4,slow_response,log_only,Great—saved time.
+FB-00256,2025-10-25,No-Show Predictor,physician,2,wrong_prediction,triage_queue,I wasn't sure what to do next after the response.
+FB-00257,2025-10-23,Policy RAG Assistant,scheduler,5,none,log_only,Great—saved time.
+FB-00258,2025-11-15,No-Show Predictor,nurse,3,none,log_only,Answer didn't cite the policy and felt made up.
+FB-00259,2025-10-17,No-Show Predictor,it,4,none,log_only,Output seemed off; I double-checked manually.
+FB-00260,2025-10-22,No-Show Predictor,admin,5,none,log_only,System was slow during shift change.

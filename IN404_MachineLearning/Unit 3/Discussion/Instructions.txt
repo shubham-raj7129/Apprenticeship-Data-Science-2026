@@ -1,0 +1,11 @@
+Topic: Text Analysis
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with text analysis. Based on the resource, respond to the following:
+
+In paragraph form, summarize text analysis. Be sure to discuss natural language processing problem areas or difficulties. Include why sampling data methods and hypothesis testing can be important. Also, describe stemming and lemmatization, tokenization, and feature extraction descriptions. Describe count vectorization as a method of sampling data and how logistic regression can be used to determine the model accuracy. Conclude, with three areas where text analysis can be applied.
+
+For the initial post:
+Cite your source properly using APA in-text citation.
+Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about text analysis, or do some light research "beyond" the other student's initial post (citing your sources, of course).

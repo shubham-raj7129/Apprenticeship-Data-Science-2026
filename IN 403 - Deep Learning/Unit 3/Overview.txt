@@ -1,0 +1,4 @@
+In this unit, you will explore why different neural network architectures are designed for different types of data. Building on the decision-making skills developed in Unit 1, you will apply convolutional neural networks (CNNs) to image data and recurrent neural networks (RNNs) to text data. Through hands-on experiments and guided analysis, you will compare how these models learn, how they perform, and what tradeoffs they introduce. The emphasis is not on mastering complex theory, but on understanding which architecture is appropriate for a given problem and how to justify that choice in real-world applications.
+
+Course Outcome practiced in this unit:
+IN403-2: Explore Bayesian machine learning

@@ -1,0 +1,57 @@
+Peer Responses — Unit 7 Discussion
+(Templates to adapt once classmate posts are available)
+
+---
+
+RESPONSE 1 TEMPLATE
+
+[Opening compliment on their specific point]
+
+One risk I believe they missed: [adapt based on their chosen system]
+
+- If they chose No-Show Prediction: They likely missed the feedback loop risk. If the model predicts a patient will no-show and the hospital responds by sending extra reminders or overbooking that slot, the intervention itself changes the outcome. The model then never observes what would have happened without the intervention — so it cannot learn whether its original prediction was correct. Over time, the model gets "credit" for preventing no-shows it caused the hospital to prevent, inflating its apparent accuracy while its actual predictive ability may be degrading.
+
+- If they chose PPE Detection: They likely missed the adversarial adaptation risk. Staff who know they are being monitored by cameras may comply in visible areas but remove PPE in unmonitored zones (break rooms, supply closets). The model reports high compliance, leadership believes the system is working, but actual PPE adherence in unmeasured locations could be declining — creating a false sense of safety.
+
+- If they chose Policy RAG: They likely missed the silent failure mode. Unlike a model that produces a clearly wrong number, a RAG system can produce a fluent, confident, and completely outdated answer. There is no "error signal" unless a human happens to notice the policy has changed. The system could serve stale guidance for weeks before anyone detects it, unlike prediction models where ground truth labels eventually arrive.
+
+One additional control I would suggest: [adapt]
+
+- For No-Show: Implement a causal inference check — periodically withhold the intervention (reminders) for a random 5% sample and compare actual no-show rates to model predictions on that untreated group. This gives unbiased ground truth.
+
+- For PPE: Add randomized spot audits in unmonitored areas, explicitly compared against the AI's reported compliance rate for monitored areas. If there is a large gap, the AI is measuring compliance theater rather than actual behavior.
+
+- For Policy RAG: Implement automated document freshness monitoring — flag any answer that cites a document older than 90 days with a warning: "This policy was last updated on [date]. Please verify with your department."
+
+- For Skin Cancer Triage: Require mandatory disaggregated performance reporting — the model's sensitivity must be reported separately for each Fitzpatrick skin type every quarter, not just as an aggregate number that can hide disparities.
+
+Question that would change the decision: [adapt]
+
+- What if the false negative rate for a specific demographic subgroup is 3x higher than the overall rate? Would you still recommend "continue with conditions," or does that disparity warrant an immediate pause for that subgroup?
+- What if the hospital cannot afford to retrain the model for 6+ months due to budget constraints? Does your governance action change if the recommended technical fix is not feasible in the near term?
+- What if clinicians have already stopped trusting the system and are overriding it 40% of the time? At what override rate does the system become a net negative (adding workflow friction without adding clinical value)?
+
+---
+
+RESPONSE 2 TEMPLATE
+
+[Opening compliment on their specific point]
+
+One risk I believe they missed: [adapt based on their chosen system]
+
+- If they focused on technical metrics only: They missed the organizational single-point-of-failure risk. They identified who monitors the model, but what happens if that person leaves the organization? If the ML engineer who understands the monitoring pipeline takes a new job, and no one else knows how to interpret the drift alerts, the system effectively becomes unmonitored — even though the dashboard still exists.
+
+- If they proposed retraining as the primary action: They missed the retraining-on-biased-data risk. If the model's recent predictions influenced clinical decisions (e.g., lower-priority patients waited longer and some had worse outcomes), then the outcome labels in recent data are contaminated by the model's own errors. Retraining on this data could institutionalize the bias rather than correcting it.
+
+- If they proposed pausing the system: They missed the counterfactual harm of removal. If the system, even degraded, catches 70% of urgent cases faster than the manual process, pausing it means those 70% now wait longer. The governance decision must weigh the known harm of the model's errors against the estimated harm of removing the model entirely.
+
+One additional control I would suggest: [adapt]
+
+- Add a "model confidence dashboard" visible to end users. Rather than showing binary recommendations (high priority / low priority), display the model's confidence level so clinicians can calibrate their own trust appropriately. A "92% confidence: high priority" is used differently than a "54% confidence: high priority."
+
+- Implement a formal knowledge transfer requirement — at least two people must understand each monitoring pipeline, documented in a runbook, tested quarterly via tabletop exercise.
+
+Question that would change the decision: [adapt]
+
+- What if a patient dies because the model classified their lesion as low-priority and specialist review was delayed by two weeks? Does your governance framework have a predefined trigger for this scenario, or would leadership have to improvise a response?
+- What if the model performs well overall (95% sensitivity) but only 78% sensitivity for patients over age 75 — a group where skin cancer is most common and most deadly? Is aggregate performance an acceptable metric when the highest-risk subgroup is underserved?

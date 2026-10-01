@@ -1,0 +1,41 @@
+PPE Mask Classification with Transfer Learning + Detection Demo
+Course Outcome practiced in this unit:
+IN403-3: Use a deep learning model to develop solutions to real life problems
+
+In this assignment, you will build a practical computer vision system using transfer learning in PyTorch. You will train an image classification model to detect whether PPE masks are worn in hospital settings and evaluate its performance using standard metrics. You will also explore the difference between image classification and detection through a short OpenCV demo. The focus of this assignment is not only model performance, but responsible deployment—understanding how errors, privacy, and operational constraints affect real-world use in clinical environments.
+
+Files Provided
+IN403_Unit4_PPE_Image_Dataset.zip- https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit4_PPE_Image_Dataset.zip (IN 403 - Deep Learning/Unit 4/Assignment/IN403_Unit4_PPE_Image_Dataset)
+IN403_Unit4_Computer_Vision_Lab_Template.ipynb- https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit4_Computer_Vision_Lab_Template.ipynb (IN 403 - Deep Learning/Unit 4/Assignment/IN403_Unit4_Computer_Vision_Lab_Template.ipynb)
+
+Step-by-Step Instructions
+1. Open the provided notebook template in Google Colab.
+2. Upload IN403_Unit4_PPE_Image_Dataset.zip to the same Colab session.
+3. Run the unzip cell to extract the dataset into the ppe_data/ directory.
+4. Load the image dataset using ImageFolder and apply the required transforms, including data augmentation and ImageNet normalization.
+5. Preview several images and confirm the two class labels: mask_off and mask_on.
+6. Load a pretrained ResNet-18 model, freeze the backbone layers, and replace the final classification layer to support two classes.
+7. Train the model for five epochs and generate a training loss plot.
+    Evaluate the trained model on the test set, report test accuracy, and generate a confusion matrix.
+8. Run the OpenCV face detection demo and observe how detection identifies regions in an image rather than recognizing identities.
+9. Answer the reflection questions in markdown at the end of the notebook.
+
+Deliverables
+1. A completed Google Colab notebook with all code cells executed and outputs visible.
+2. Training loss plot.
+3. Printed test accuracy.
+4. Confusion matrix figure.
+5. A short deployment note (approximately 200–300 words) recommending guardrails for PPE detection in a hospital setting.Write a short note (200–300 words) answering the following:
+5.1. If the model incorrectly flags someone as mask_off, what could happen? Describe the potential harm from a false positive.
+5.2. If the model fails to detect someone who is mask_off, what could happen? Describe the potential harm from a false negative.
+5.3. What guardrails would you add before deployment? Include at least:
+5.3.1. one human review or escalation workflow
+5.3.2. one monitoring or performance tracking approach
+5.3.3. one privacy or data governance policy
+5.4. What additional data would you collect after deployment to safely improve the model over time?
+
+Assignment Requirements
+Be sure to upload your Colab notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit4 notebook file, and submit it to the Dropbox by the deadline.

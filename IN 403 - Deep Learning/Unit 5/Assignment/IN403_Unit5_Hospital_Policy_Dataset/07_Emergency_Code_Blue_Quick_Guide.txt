@@ -1,0 +1,16 @@
+Title: Emergency – Code Blue Quick Guide (Synthetic)
+Last Updated: 2025-05-01
+
+Definition
+- Code Blue indicates a patient requires immediate resuscitation response.
+
+First Actions
+1) Call Code Blue (per unit procedure) and activate emergency response.
+2) Start CPR if indicated; follow ACLS guidance and your training scope.
+3) Assign roles if team present (compressions, airway, meds, recorder).
+
+Documentation
+- Document event timeline and actions in the EHR as soon as feasible after stabilization.
+
+Safety
+- Ensure area is clear; manage bystanders.

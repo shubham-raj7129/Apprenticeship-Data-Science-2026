@@ -1,0 +1,57 @@
+Your Hospital AI Is Failing—Who Owns the Risk? — Initial Post
+
+System Chosen: Skin Cancer Triage Support
+
+1. Failure Modes
+
+I chose the skin cancer triage support system because it operates at the intersection of clinical decision-making and patient safety — where failures have the most direct human impact. After six months in production, I believe the most likely failure modes for this system are:
+
+Concept drift and fairness degradation. The model was trained on a specific distribution of dermatological images, but the patient population presenting for triage may shift over time — new demographics, seasonal skin conditions, or referral pattern changes. More critically, skin cancer detection models are well-documented to perform worse on darker skin tones due to training data imbalances (Daneshjou et al., 2022). If the hospital serves a diverse population but the model was trained predominantly on lighter-skinned patients, its miss rate (false negatives) for melanoma in darker-skinned patients could be significantly higher — a fairness failure with life-threatening consequences.
+
+False negatives (missed cases). For a triage system, a false negative means a potentially cancerous lesion is classified as low-priority and the patient waits longer for specialist review — or worse, is reassured and sent home. Staff reports of "missed cases" suggest this is already happening.
+
+Calibration drift. Even if the model's ranking ability (AUC) remains stable, its confidence scores may have drifted out of calibration. A system that says "30% chance of malignancy" when the true rate for that cohort is 60% will cause clinicians to under-prioritize genuinely urgent cases.
+
+2. Monitoring Plan: 3 Metrics
+
+I propose the following three metrics for ongoing monitoring:
+
+Metric 1 (Drift): Population Stability Index (PSI) on input features — measured weekly. I would track PSI on the distribution of image characteristics (lesion size, color variance, patient age, body location) between the training reference set and the current month's inputs. A PSI > 0.2 on any feature triggers an investigation. This catches data drift before it impacts predictions.
+
+Metric 2 (Outcome): False negative rate (sensitivity) stratified by skin tone — measured monthly. I would track the percentage of biopsy-confirmed malignancies that the model initially classified as low-priority. Critically, this metric must be stratified by Fitzpatrick skin type to detect fairness degradation. An overall sensitivity below 90% or a subgroup gap exceeding 10 percentage points triggers escalation.
+
+Metric 3 (Operational): Clinician override rate — measured weekly. I would track how often clinicians override the model's triage recommendation (either upgrading a low-priority case or downgrading a high-priority one). A rising override rate signals that clinicians are losing trust in the system because its recommendations no longer match their clinical judgment — an early behavioral indicator of model degradation that often precedes formal performance metrics.
+
+3. Governance Action: Continue with Conditions
+
+I recommend continuing the system with conditions rather than pausing or retiring it. My reasoning:
+
+- The system provides genuine clinical value — faster triage means earlier specialist review for high-risk lesions, which directly improves melanoma survival rates.
+- However, the reported "missed cases" indicate the system cannot operate in its current state without additional safeguards.
+- Conditions: (1) All model "low-priority" classifications for patients with Fitzpatrick skin types IV–VI must receive mandatory secondary review within 48 hours until the fairness gap is confirmed below 10%. (2) The model must be retrained on a more representative dataset within 90 days. (3) Weekly PSI monitoring must be operational within 30 days.
+
+4. Accountability and Escalation
+
+Accountable roles:
+- Model Owner: Chief of Dermatology — accountable for clinical accuracy and appropriate use
+- Technical Owner: ML Engineering Lead — accountable for model performance, drift monitoring, and retraining
+- Governance Authority: AI Governance Committee — accountable for approve/pause/retire decisions
+- Data Owner: Health Informatics Director — accountable for training data quality and representativeness
+
+Notification requirements:
+- Any false negative confirmed by biopsy → notify Model Owner (Dermatology Chief) within 24 hours
+- PSI threshold exceeded → notify Technical Owner (ML Engineering) immediately
+- Fairness gap exceeds 10% in any subgroup → notify AI Governance Committee within 48 hours
+- Any patient harm attributed to model recommendation → notify CMO, Risk Management, and Legal within 4 hours
+
+Escalation path:
+1. Technical Owner detects issue → investigates within 48 hours
+2. If issue confirmed → notifies Model Owner + AI Governance Committee
+3. Governance Committee convenes within 5 business days → decides: continue monitoring, impose new conditions, or pause
+4. If patient harm occurs → immediate pause, CMO notification, incident report filed, root cause analysis within 10 days
+
+References
+
+Daneshjou, R., Vodrahalli, K., Novoa, R. A., Jenkins, M., Liang, W., Rotemberg, V., Ko, J., Swetter, S. M., Bailey, E. E., Gevaert, O., Mukherjee, P., Phung, M., Yekrang, K., Fong, B., Sahasrabudhe, R., Zou, J., & Kiani, A. (2022). Disparities in dermatology AI performance on a diverse, curated clinical image set. Science Advances, 8(32), eabq6147. https://doi.org/10.1126/sciadv.abq6147
+
+NIST. (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.AI.100-1

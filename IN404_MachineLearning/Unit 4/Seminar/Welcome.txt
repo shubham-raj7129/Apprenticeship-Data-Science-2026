@@ -1,0 +1,32 @@
+This week, I want you to focus on one important idea: How does a machine learning model understand text?
+
+When we read a review, message, or comment, we understand the words and their meaning. A computer, however, needs text to be converted into numbers before a machine learning model can work with it.
+
+One common method is called Count Vectorization (Bag of Words).
+
+For example:
+
+Sentence 1: I love this product
+
+Sentence 2: I hate this product
+
+Count Vectorization identifies the words and counts how often they appear. This turns the sentences into numbers that a machine learning model can use.
+
+Why is this important?
+Once text is converted into numbers, a model such as logistic regression can use those numbers to identify patterns and make predictions, such as:
+
+Positive vs. negative reviews
+
+Spam vs. non-spam messages
+
+Sentiment in social media posts
+
+As you work on this week's assignment, don't focus only on getting the code to run. Think about what the numbers and features actually represent.
+
+A good question to ask yourself is:
+
+What is the model learning from the text?
+
+🎥 Optional Video: Count Vectorizer Explained – Bag of Words Model(https://www.youtube.com/watch?v=pF9wCgUbRtc)
+
+Keep practicing, and don't hesitate to reach out if you have questions. You’ve got this!

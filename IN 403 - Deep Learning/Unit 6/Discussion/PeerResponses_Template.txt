@@ -1,0 +1,44 @@
+Peer Responses — Unit 6 Discussion
+
+---
+
+RESPONSE 1 TEMPLATE
+(Adapt to the actual classmate's post once available)
+
+[Opening compliment referencing their specific point]
+
+One assumption I noticed in your monitoring plan is [identify based on their post — examples below]:
+- If they chose PPE detection: You assume the camera angles and lighting conditions remain consistent. In practice, hospital renovations, seasonal lighting changes, or equipment repositioning could cause data drift in the image inputs without any change in staff PPE behavior — the model starts failing not because people stopped wearing masks, but because the pixels look different.
+- If they chose no-show prediction with data drift: You assume that monitoring feature distributions will catch all problems. But concept drift can occur while features remain stable — the same inputs start mapping to different outcomes because an external factor (like a new reminder system) changed the relationship.
+- If they chose policy assistant: You assume the quality of the retrieved documents guarantees answer quality. But if the retrieval model itself drifts (e.g., new terminology in queries that the embedding model does not handle well), the system could retrieve wrong passages while appearing confident.
+
+One improvement I would suggest: [adapt based on their monitoring method — examples]:
+- If they proposed manual review: Add a structured scoring rubric for reviewers so that "drift detection" is consistent across different staff members rather than subjective. Without a rubric, one reviewer might flag a minor issue while another ignores a major one.
+- If they proposed statistical monitoring: Supplement it with a small human-in-the-loop audit — perhaps 20 cases per week reviewed by a clinician — because statistical tests can miss semantically meaningful errors that numbers alone cannot capture.
+- If they proposed retraining as the action: Add a validation gate — retrain on new data, but do not deploy until the retrained model passes a held-out test set AND a clinician review of edge cases.
+
+"What if" question: [adapt based on their system — examples]:
+- What if ground truth labels are delayed by weeks (e.g., no-show labels are available next day, but adverse outcome labels take months)? How would your monitoring plan work if you cannot compare predictions to reality in real time?
+- What if retraining costs $50,000 and takes three weeks — would you still recommend it as the first response, or would threshold adjustment buy enough time?
+- What if the drift is intentional (e.g., the hospital deliberately changed its patient population by opening a new clinic)? Should the model still be rolled back, or should it be adapted to the new reality?
+
+---
+
+RESPONSE 2 TEMPLATE
+(Adapt to the actual classmate's post once available)
+
+[Opening compliment referencing their specific point]
+
+One missing risk I identified: [adapt based on their post — examples]:
+- If they focused on technical monitoring only: They did not address the organizational response gap — who receives the alert when drift is detected? If the alert goes to an IT team that does not understand the clinical implications, it could sit unaddressed for weeks. Monitoring without a clear escalation pathway is just observation, not protection.
+- If they proposed frequent retraining: The risk of training on corrupted or biased data. If drift was caused by a data collection error (e.g., a system bug marking patients as no-shows when the appointment was actually rescheduled), retraining would permanently encode that error into the model.
+- If they discussed PPE detection: The risk of adversarial adaptation — if staff learn where cameras are positioned, they might comply in monitored areas but not in unmonitored ones, giving the model artificially good performance scores that mask real non-compliance.
+
+One improvement I would suggest: [adapt]:
+- Add a "drift budget" concept — define in advance how much drift the hospital is willing to tolerate before action is required. This prevents two failure modes: over-reacting to normal variation (wasting resources) and under-reacting to serious drift (accepting degraded performance).
+- Implement A/B comparison when retraining: run the old and new model side-by-side on the same patients for one week, compare predictions, and only switch to the new model if it demonstrably outperforms on recent outcomes.
+
+"What if" question: [adapt]:
+- What if two types of drift occur simultaneously (e.g., both the input data AND the underlying patient behavior change at the same time)? Your detection method catches one — would it catch the other?
+- What if the hospital cannot afford to take the model offline because scheduling depends on it entirely? Is there a graceful degradation strategy that maintains some value while reducing risk?
+- What if staff stop trusting the model after one publicized failure — how would you rebuild confidence even after fixing the technical issue?

@@ -1,0 +1,11 @@
+Topic: Handling Missing Data
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with how to handle missing data in machine learning. Based on the resource, respond to the following:
+
+In paragraph form, summarize what handling missing data covers. select three visualizations and summarize two use cases, each, in place today where visualizations are used to effectively communicate results of machine learning Cover the advantages of handling missing data and disadvantages if not handled. Be sure to discuss how you might handle NaN or NULL values in a data set. Also, explore formatting of certain data and adding columns based on data set contents. Include summarizations of techniques you might use to handle missing data. Conclude with two examples of handling missing data effectively.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about handling missing data, or do some light research "beyond" the other student’s initial post (citing your sources, of course).

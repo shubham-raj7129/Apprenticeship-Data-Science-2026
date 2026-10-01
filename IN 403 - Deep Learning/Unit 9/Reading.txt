@@ -1,0 +1,6 @@
+LLM Security, Red Teaming, and Guardrails
+
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+Web Readings:
+    NIST AI Risk Management Framework (overview)(https://www.nist.gov/itl/ai-risk-management-framework):
+        A structured framework for identifying, assessing, and managing AI risks across the system lifecycle.

@@ -1,0 +1,91 @@
+Enterprise AI System Design, Deployment, and Defense
+
+Course Outcome practiced in this unit:
+1. IN403-5: Develop a deep learning project
+
+In this assignment, you will take on the role of an enterprise AI architect and governance reviewer for a hospital. You will design an end-to-end AI system, evaluate its risks, propose safeguards, and defend your deployment decision to hospital leadership. Unlike earlier assignments that focused on individual models or components, this capstone requires you to integrate technical design, risk analysis, monitoring, and governance into a single coherent system proposal.
+
+The focus is on enterprise decision-making—moving from isolated technical models to a deployable AI system that is safe, explainable, monitored, and governed.
+
+Software Requirements (Google Colab Only)
+1. You do not need to install Python locally for this assignment.
+2. Use Google Colab (free) in your web browser with a Google account.
+
+Getting Started in Colab
+1. Go to Google Colab and choose New Notebook.
+2. Rename your notebook and confirm the runtime is Python 3 (default).
+3. Upload your data files via the folder icon → Upload (or mount Google Drive if preferred).
+
+Files Provided
+1. IN403_Unit8_Capstone_Lab_Template.ipynb(https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit8_Capstone_Lab_Template.ipynb OR IN 403 - Deep Learning/Unit 8/Assignment/IN403_Unit8_Capstone_Lab_Template.ipynb)
+(This notebook contains structured sections for your system design, risk analysis, and written responses.)
+2. IN403_Unit8_Capstone_Dataset(https://kapextmediassl-a.akamaihd.net/IST/IN403/2602B/IN403_Unit8_Capstone_Dataset.zip OR IN 403 - Deep Learning/Unit 8/Assignment/capstone.csv)
+
+Step-by-Step Instructions:
+1. Define the Enterprise AI System
+In the notebook, define the AI system you are proposing for a hospital. Describe:
+1.1. System purpose (what problem it solves)
+1.2. Primary users (clinicians, staff, administrators, patients, etc.)
+1.3. Key AI components (predictive model, computer vision, LLM + RAG, monitoring, governance)
+1.4. High-level workflow (data, model, decision, human oversight)
+2. Technical and System Design
+Explain how your system works at a technical and operational level. Include:
+2.1. Types of models or AI components used (e.g., logistic regression, neural network, CNN, RAG, drift monitoring)
+2.2. Data sources (clinical data, images, policy documents, operational data)
+2.3. How outputs are generated and used in decisions
+2.4. Where human review or intervention occurs
+3. Risk Analysis. Identify at least three major risks affecting your system. You must include risks from different categories:
+3.1. Technical risk (e.g., drift, hallucinations, model errors)
+3.2. Operational risk (e.g., automation bias, workflow disruption, scalability)
+3.3. Ethical or legal risk (e.g., bias, privacy, compliance)
+3.4. For each risk, explain:
+3.4.1. Why the risk exists
+3.4.2. Why it matters in a hospital setting
+3.4.3. Potential consequences if the risk is not addressed
+4. Safeguards and Controls. Propose at least six safeguards to manage the risks you identified. You must include:
+4.1. At least two technical controls
+(e.g., thresholds, grounding, human-in-the-loop, drift monitoring)
+4.2. At least two governance or policy controls
+(e.g., approval workflows, access restrictions, documentation, audit requirements)
+4.3. At least two monitoring or audit controls
+(e.g., incident logging, performance dashboards, periodic reviews)
+4.4. For each control, map:
+4.4.1. Risk addressed
+4.4.2. Control description
+4.4.3. Monitoring metric
+4.4.4. Responsible owner (e.g., IT, compliance, clinical leadership)
+5. Deployment Decision. Make a clear enterprise deployment recommendation:
+5.1. Approve for deployment
+5.2. Approve with conditions
+5.3. Do not approve
+5.4. Explain your decision based on:
+5.4.1. System benefits
+5.4.2. Risk level
+5.4.3. Adequacy of safeguards
+5.4.4. Organizational readiness
+6. Defense Scenario. Respond to a stakeholder challenge in the notebook. Example prompt: “A compliance officer is concerned that this AI system could produce biased or incorrect recommendations that affect patient safety. Why should the hospital trust this system?” Explain:
+6.1. How your design reduces risk
+6.2. How safeguards and monitoring address concerns
+6.3. What happens when the system is uncertain or wrong
+7. Capstone Defense Memo. Write a 400–600 word Enterprise AI Defense Memo in markdown addressing the following:
+7.1. System overview and intended use
+7.2. Key risks and what drives system risk
+7.3. Safeguards and governance controls required before deployment
+7.4. Deployment decision (approve, approve with conditions, or do not approve)
+7.5. Monitoring plan and re-approval triggers
+7.6. How the system should behave when uncertain (refuse, escalate, or route to humans)
+
+Deliverables:
+1. A risk scoring table with your formula clearly shown.
+2. A ranked list of systems with total risk scores.
+3. One visualization (bar chart) of system risk scores.
+4. A control mapping table with at least eight controls.
+5. A Model Approval Memo written in markdown.
+
+Assignment Requirements
+Be sure to upload your Colab notebook (.ipynb) file with each cell annotated. Also, all written portions of the assignment should be in a markup cell.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Colab, save it as IN403_YourName_Unit8 notebook file, and submit it to the Dropbox by the deadline.
+Review the rubric(IN 403 - Deep Learning/Unit 8/Assignment/Rubric) before beginning this activity.
+

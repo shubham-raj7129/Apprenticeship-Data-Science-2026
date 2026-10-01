@@ -1,0 +1,717 @@
+Hi, everyone.
+Hope everybody has a great week so far.
+And… it is… Past 7 o'clock, and then we're going to start.
+So anytime… I think I have some internet connection.
+Issue sometime this week.
+So if I… you didn't hear me, just let me know sometime, just…
+I'm breaking up because my internet connection, maybe I have to turn off.
+My video sometime.
+Turn on my camera.
+There's some issues.
+So far, I think it's okay, just let me know.
+Okay, that's great, you can hear me, okay.
+So this week… We're going to go over AI governance, Risk.
+And compliance, instead of talking about the algorithm or different models, so it's slightly different.
+The gut rail.
+And the risk, I think we have covered some of them already in, in other… in previous weeks, but…
+this week, today, we're going to focus more on this.
+So, for… For this week, we're gonna, learn about,
+Model selection, how to evaluate the model, deployment.
+guardrails, grounding, and monitoring. So we have talked about those monitoring, and also,
+A model selection and evaluation before.
+And also wondering if the data drift
+And the concept drifts of the model, and need to be, maybe retrained, or you need to…
+Just updated data, depending on what kind of derivative it is.
+So you're going to get experience about AI governance by, evaluating the drift, bias, and risk.
+And also make some decisions whether the system should be running, or… Paused or retired.
+So this week, you're going to use a risk register.
+Incident history and controls library and control, to calculate
+The risk scores for this assign… for this week's assignment.
+And propose, mitigations, With owners and the metric.
+And I'm going to write a model approval memo.
+That reflects how the organization is going to manage
+accountability and also compliance with the AI when it's in production.
+So also it, it, depending on the industry, there are some regulations, and the AI has to comply into certain policy and AI,
+the reclivation that… Need to continue to monitor.
+report.
+And this reading, there's, like, 3, readings for this week.
+So we're going to cover…
+a model card. I may probably switch gears around 7.30 to
+cover most, go for assignments.
+And then I'll come back.
+To this slide deck.
+I just want to make sure that I don't run out of time.
+And some of you have to drop off at 8… pray at 8 o'clock.
+So I cover… let me switch around 7.30.
+So, a model called,
+We're going to discuss what a model card is, And,
+And why every AI model should have one.
+And how they mock… how to, structure…
+And to raise your own, motor card.
+And how the metadata helps people to discover your model.
+For example, if you go to…
+CAICO or KD, Nugget, there are a lot of data, similar to datasets.
+in… If it is, the dataset have a title and metadata, Describe.
+The dataset, so it helps other people to discover the data set and to use it.
+And the same thing with model, so the metadata is published.
+Your model to some repository.
+model repository. It's any metadata is going to help, the people to.
+of Discover Your Model, we're going to talk about the metadata that
+The… about the model should have.
+In order for people to find your model.
+So without, documentation, other people won't know what the, what your model does.
+And also, how it was trained.
+What data sets, were used?
+Those are important questions. A lot of times, people will say, what data… are the data sets trustworthy? Is it,
+Valid, it is a trustworthy data source.
+What language does it support? And also, whether it is safe to use.
+So AutoCA is the instruction manual for… basically, it's a instruction manual for your AI model. So, a couple, few weeks ago, something called transfer learning, so you can use, some of the AI model is being trained on something.
+to build on top of it. So, if your AI model may be not exactly what other people are looking for, but they can transfer the knowledge from your… the AI model that you
+You're trained into something they can build upon.
+So it's similar to code reuse, something that you…
+You build, maybe within your enterprise, or even though, if it is public, repo.
+Other people can reuse what you have been used. But a lot of times, people will say, is it…
+Is it safe to use it? Is it trustworthy?
+So a model card helps the user answer questions like, what problem does this, Mother Soft.
+The domain of problem space these models of.
+Who created it? What is… what are the limitations?
+Can I use it commercially? Are there any licensing issues?
+So, this is an important question that… A motorcut helped the…
+Answer some of the questions that a user
+So the model card has two parts.
+And, the metadata is information about The computer usage also helped.
+there's a website called Hugging Face to organize and search models. Sometimes when people publish their model there.
+There's a lot of information, in hugging phase.
+And… So it helped them to organize those information, the models.
+categorize them.
+And also has a markdown description as well.
+So, for example, like, this is the metadata, for the model car, and so you imagine, let's say, a language that you use.
+It's important, like, English.
+Or… or French, or other languages, or Spanish, another thing. What advises?
+So, for the MIT or other… License that… and support.
+And also about… Tags about… something about this,
+model is, like, for example, this is, say, use BERT and use, for sentiment analysis.
+And also the data sets.
+Which data set's been used?
+Sort of like in here.
+The library name, possible values could be, Transformer… Diffusers are off there.
+So the library name specify which machine learning model the model used.
+So the more information, you provide to the user, the…
+In addition to easy to find, find out what it is, and it's more likely to…
+The more they understand it, the more likely they would, use it.
+So tags are more, like, for people to discover it.
+So, user can find your model by filtering the tag.
+So in the, in the markdown, in the model card, it's more, like, human-readable.
+Explanation is similar to the README file.
+So in the markdown, you can put anything you want. The model description, intended use, Oh, so…
+KFC.
+Why not speak trained?
+etc.
+So in here, in addition to the…
+Our metadata, you talk about it in the markdown.
+The training data, and also the evaluation, the accuracy when it was trained.
+And just a little bit more description.
+So the best practice is to answer those questions,
+Similar to what I covered earlier.
+What does this model do?
+Who should've used it?
+Who should not use it?
+For example, if somebody… you want to use it for some other usage, let's just say.
+Probably start putting this usage.
+Which data is being used on, how is it evaluated, or any metric.
+Help the user.
+or even your data set, you can point the user to the dataset you, for example, if it is in…
+Not in the library, data set, in the library, but, for example, in… Kekko.
+Which data set it is, maybe provide a link.
+To the dataset so that the user can…
+Take a look at it to see if it is, the data set is diverse.
+Or there's limitation in data sets.
+And what are the witnesses for some of the known witnesses that you know of?
+So you can put it there. What license?
+applies.
+The more transparent about your documentation, and the easier for the other people to understand and reuse your work.
+So a lot of people publish, let's say, software, or data sets.
+Or models, to the… some public repro.
+Sort of, like, help them to establish their… The name, their reputation… There it is.
+expertise.
+As a subject matter expert.
+So a lot of people use those to establish.
+Their reputation, To be known.
+So come and begin the mistake, you didn't put any license information.
+It'd be a big problem if people used it without…
+know that what license is being used, or it's not supposed to be for commercial use, because of the licensing issue, they could be
+So I'm missing data set information, no explanation what the model does.
+No evaluation matric.
+And no discussion of the limitation.
+So even a short note about no witness can help your documentation more useful.
+So the Hugging Face, Model Card,
+goes with your AI model.
+It consists of the… metadata.
+In the YAML file format.
+So you… the data in the YAML format.
+It's more like a machine… Readable information, so that somebody maybe can parse it.
+Using programmatically.
+And Markdown is mostly for human… To read this.
+a, A well-written model, a car improves.
+discoverability, transparency, And also reproduce, make it easier for people to understand and use the model.
+So to… Today we can go a little bit more about
+Data Drift, we talked about last week.
+It's a bit… Go a little bit.
+I'll take the drugs again.
+So understand why data drift matters.
+Compare your reference data with the current data.
+And detect, data drills using simple statistical summary, like talked last week.
+And then there's another library, it's called… This library to generate I did a drift report.
+So there's a library, probably at the other library as well, because it's a… no problem.
+a lot of people want to… need to know about what are the data groups, so some other people has already developed a library. So, if you're interested in,
+Contribute to, like.
+in the open source software or the AI development, you can, if you find that there's a missing library that… or software to… for a… even a, for example, this one is the AI drip model report.
+And then if you find a way, it's better to do it, or some other thing that is not…
+Currently, it's not covered. You can write a library and then publish.
+And so the other people could use it as well.
+So for example, at one point, the age of your data is around this range.
+And the income is this, The purchase is.
+Totally just see.
+the outcome.
+And several months later, the customer behavior changes because of new marketing campaigns, economic conditions, or some other external
+changes. So you can see the age group, Change?
+Balsama cover… after, A little bit older.
+And then the income, because it's the income, Oh, what?
+Aren't they 50 years old.
+The income is a bit higher.
+So, the input data no longer has the same distribution.
+As they would… when you train the model.
+So… This is the data drift, so you need to… When you understand the external factors.
+Understand there could be a data drift.
+So why data truth matters,
+Because it assumes the future data was similar to your training data.
+So it's heavily data dependent?
+So when the data changes significantly, the prediction becomes less accurate, because they've never seen those data before, and maybe it would do some guessing.
+I saw some prediction, but it may not be accurate, because it's a lot of times,
+It just all depends on the human behavior. It's just hard for the machine learning.
+To predict based on the current data.
+So where computation become unreliable?
+And, or the fraud detection may become…
+I may miss some of the fraud.
+fraudulent transactions.
+Our medical analysis model can perform worse.
+So even though the model doesn't change, changing the input data could reduce your model effectiveness.
+So DataTrip is detected by comparing the two data sets.
+For example, the data used during training could be…
+January 2025 sales data, the new production data, I could be in June.
+So… We're going to determine whether the current data still resembles…
+The reference data, which is here.
+January, if it is, if it is, resemble those.
+It doesn't… no, probably no action need to be… perform.
+You know, otherwise, It can be, some… Or training, or some other…
+They need to be… action needs to be performed.
+So, I mentioned last week during the assignment, talking about statistical summary statistic, souls.
+At the beginning, before you use a specialized tool, you can just compare, so using simple, simple statistic.
+at the meme.
+the median… And the standard deviation to see if there's a data drift.
+And they are a specialized tool, or library, or algorithm to determine
+Oh, there's the data groups, but for the… at the beginning, at least you can also use some…
+Summary statistic.
+To see if they are data drifts.
+Or sometimes it just means a man.
+Could also help you to determine as well.
+For example, let's say, later the production data has this, The tick summary?
+So you can compare the two.
+So, you can see… The meand is different.
+Understand the duration.
+It's quite different from deep.
+before.
+So you can see the average age by comparing the
+The statistic summary between the two data sets.
+The average age has increased, significant, noticeably.
+So that the age distribution has shifted.
+You can also compare the minimum value, maximum value, percentile.
+And also missing value percentage as well.
+So a large difference could indicate a data drift.
+So we can use data drift.
+detecting data through Python, for example, you can use Describe.
+To look at, the summary.
+So look for large difference.
+In the… in the… in the… Describe result.
+Also, you can use this,
+This library to automatically compare two datasets.
+And detect the distribution changes using
+Altysical tests appropriate for each of the features.
+So, you just have to install this library.
+And to create a data drift report.
+This is the, some of the sample code…
+And then it will generate HTML file in your browser.
+So you can bring up on your browser to look at the… The result.
+So for this week, Assignment?
+You can use this,
+Statistical summary to do to see if then the data drift
+Or you can use, this library as well.
+Whatever is appropriate for you to do your analysis.
+So the report summarized whether the drip was detected, and highlights the affected features, so if you think that you don't have to
+look at.
+individual features.
+So, it typically… the report typically includes the data drift, whether the data set drift is present.
+Which columns have drift?
+The visual comparison, which, for the feature distribution.
+And the statistical significance for the detection.
+Change.
+So, this is an editor… I don't have the… Report here to show.
+But, when you have a dataset, you can use, Include the library.
+So example scenario, suppose that you have a hospital readmission protection model, or somebody's the age.
+And this is a… Pressure, and there's the training data.
+And 6 months later, you can see… The age… Increase…
+And both the age and the blood pressure distribution have shifted.
+And even though they work How the model work.
+Well…
+Initially, the troops suggested you have to
+I'll further investigate whether the model still performs.
+Quickly.
+What should you do when the drift is detected? Verify the data pipeline is functioning correctly?
+And investigate which features change.
+Then check model performance, if the label data is available, and also retrain the data if the drift is substantial.
+And the performance has decreed.
+So data drift occurs when you're
+Usually we have the commander com… Compared to data sets.
+Right, so you say… reduction.
+Versus your… Your reference data, I mean, you want this…
+Let's say, last quarter to this quarter.
+And then you can do that.
+So that you have an idea whether you need to…
+Drift can also reduce, prediction quality.
+Just a simple way to detect these summary statistics.
+Our missing values. I'm missing value rates.
+And then… About this tool, it can automate drip.
+And comparing the reference and the current data sets, so it is very,
+You don't have to do… you don't have to write your… Python code to do
+For each of the features.
+So we're gonna toggle through the, needs…
+artificial intelligence risk management framework. This framework is,
+Very popular in a lot of… company, or use this… Framework.
+as well.
+So there are… resources are… They have propagation.
+So it is a great… in addition to this publication, they are… they have a lot of information.
+as well.
+If you're interested in this AI,
+Risk management area in the future.
+Just go to NIST, and they have a lot of information.
+So nest… also known as RMF.
+It's a voluntary framework developed by U.S. National Institute of Standards and Technology. It's a standard, organization.
+And its purpose is to help organizations
+how to identify, assess, manage, and reduce risk. In addition to AI, it also has a lot of information about the cybersecurity risk management framework, which a lot of companies
+Or government agencies use it as well.
+So if for this AI risk.
+a management framework. It's associated with artificial intelligence throughout the AI lifecycle.
+Intended for organizations of any size and different industry.
+So, unlike many technical standards, it does not tell you what to do.
+or how to build the AI. It provides you, just, it provides just a structural way, a framework.
+think about AI risk.
+And just so that you can make…
+Enterprise can make informed, informed decisions.
+So don't expect… Like, a process or a step-by-step on what you need to do.
+So, In… in the reading, we talk… we're going to…
+talk about the characteristics of trustworthy AI, so because you say.
+A lot of times we talk about whether this AI model can be trusted.
+So what did it mean?
+So that needs… AI risk.
+Management framework, talk about that.
+And talk about the four core functions of the framework.
+And apply the framework to you.
+a simple AI project.
+So why do we need the… especially AI model have been used in many industries, almost all the industries?
+So that's why it is… This is a structured approach to to identify risk
+So that it can make this,
+The stakeholders or decision makers can make decisions.
+So artificial intelligence have been used in many areas, such as healthcare, banking, Hiring, transportation, education.
+And also in cyber security.
+So although AI can improve efficiency and decision-making, also it can reduce risk.
+The risks such as incorrect predictions.
+Some bias or discrimination, which is…
+common when the AI model first came out.
+So, for example, let's say certain gender or age has been biased in the… because it was not covered in the data set.
+Privacy violation.
+And also security, vulnerability.
+And also lack of transparency.
+As you notice, probably noticed now, the AI, when they make… Decisions, or…
+Display some output.
+You will.
+Display, a thinking process.
+Or… What is this doing?
+And then finally, we give you…
+Sort of similar to when you ask a person.
+about something, they say, They will give you the…
+The step is to… how they come up with the decision.
+So you can… You understand?
+To determine if it's trustworthy.
+Or trust the decision-making.
+So who should use it? The business leaders, software developer, data scientists?
+Risk managers, Our compliance team, government agencies, Our researchers, product managers.
+So you can never use the right code, understand the AI's risk, especially the business owners, business leaders, so help them to make
+Decisions, whether it is a goal or no goal for that.
+AI model, or… What are the risk, or to… Where did it deployed?
+For example, if you're… imagine your company built AI systems that reviewed job applications.
+Without risk management, the system could reject some qualified candidates.
+And favor one demographic over another.
+And also, leaked personal information, which is… No problem.
+And also, making decisions nobody understands.
+So the AI Risk Management Framework encourages you to ask questions such as before deploying. So,
+Such as, is the training data representative?
+Are the… are the data diverse?
+Can use their challenge.
+those decisions.
+How accurate is the model? Who is responsible if something goes wrong? Because a lot of times, it's just…
+If there's no… So, if this AI model, if nobody is responsible.
+Then a lot of people just…
+pointing fingers. You say, oh, it's not my problem, it's an AI problem. So you need to have someone who is responsible if something go wrong.
+Let me see… so am I wrong.
+So I've got a sip on it Totally.
+So I'll go back, come back to… Here…
+So for this… I'll go to talk about the assignment.
+There are a couple files, or I would just, screenshot some of those.
+the first few rows. So there's, couple of files, there's AI, there's one AI incident, so you can see the internet ID, the system ID,
+The incident type, the severity… The summary…
+I don't… I think I have to…
+So you can, you can look at the data. I'll set days since deployed.
+So this is an example of what in-depth file.
+And then there's another file called AI Risk Register.
+So talk about system ID. In here, talk about the incident for each of the systems.
+Was it the incident?
+and the incident type. And this file talks about AI risk register, talk about the system name, the model type.
+In here.
+The domain, whether it is, scheduling.
+Or it is related to operations or clinical.
+The primary use… The risk classification?
+In here.
+So it's important that, Identify some of the columns that you may be
+Need to use for your analysis?
+And data sensitivity, and whether it is automated or human in the loop.
+And intended use. And then there's some… Information about…
+The baseline accuracy and all those information.
+And also including… include a control library is… you're going to use this library.
+This file.
+Because they are… those are the, controls.
+You can see there are… A number of control.
+In this assignment, you will…
+After you identify the highest, the risk score for the system, the highest risk.
+And then you're going to… Depending on what is being identified as the incident.
+Which control in which of the category?
+in the library.
+So that's 8 of them.
+That is appropriate for the system.
+And that's incident.
+So if, for example, if the issue is about failure, Fallest evaluation.
+About failures in your incidents, then you may want to have some technical control about this one.
+fallacy evaluation.
+or,
+Or lead to a documentation, make sure that Talk about… About your dataset.
+He's a typo.
+So you select 8 of those in your, controls.
+In your memo, they discuss why you, Selector's control.
+So to calculate risk score, a common approach is to assign a numerical weight to each of those incidents' severity, because as you see in here…
+Those are string?
+So you want to assign severity to have a numerical value.
+And also… Here, you want to have
+Some numerical value, or data sensitivity, you want to
+And also, order automation, those categories.
+2… Catacological data, or numeral data.
+So that you can calculate the risk score.
+So optionally, you can normalize the score to 0 to 100.
+But it's optional.
+For some of severity risk.
+In your code, you're going to…
+have a… A score for the, for the severity after it's… it is a… Numerical value.
+And so you can also aggregate by the system ID.
+For example, I say system… has… ID2 have how many… low severity.
+How many medium? How many high?
+So you can… Look at your score to be 6, because probably higher score has higher weight, even though
+There's only two, so it doesn't…
+So, it doesn't add up to just 6. It's only 2, but…
+The higher sorority have higher weight.
+for this one, so you could, have a weight for each of those severity.
+So for this system, We can identify this system as the… At the highest,
+Sorority have a higher score in here.
+And then you can combine it with the AI risk register.
+So those are the… this one is from the, incident?
+And then you can combine it with the AI.
+Register by joining.
+or through the system ID.
+Sort of, like, so this is your, actually, you can call it incident score, so it's more… descriptive?
+So, after you combine it with your risk register in your code, and then you can say, for this system.
+the model type is this, my risk classification is high. You may want to also,
+Assign the market value to this?
+And those are… this information is from the, risk register.
+And then my incidence score is this.
+So you have all the data.
+A1 police?
+And then so you can calculate your overall, risk score.
+Because in the assignment, it will ask you to define and implement a total risk score, combining all those.
+This area, this, area.
+So…
+So make sure that you have The total risk score comes for autos.
+Level automation, for example, one of the columns here.
+is the automation.
+This is referencing this…
+level of automation. If the… if it is manual, that means you have a higher risk.
+Data sensitivity, if it is that data sensitivity, is high, and you have an incident.
+that means your risk score is going to be high. So it's depending a lot of the incident.
+And also, whether there's a data pipeline problem, And also,
+Your data sensitivity, and also this.
+Increase your… the system overall risk score.
+So, for example, there's a column called Inherent, Risk, so you can… Assigned a… of value to…
+To each of those, Classification, because it's numeric.
+So, for System 2, persist…
+The high severity, that means it has a 5.
+So the automation level, there's 3 values.
+Category, so you can assign For this, assigned score for each of those categories.
+So in here, actually, for the automation.
+In this example, the higher automation generally increasing operational risk, And human… less human oversight.
+So that you… if you mention that this is higher risk, this is your… the score that you assign.
+for automation is high. Or you can say human in the loop is,
+Higher risk, because it could be human error.
+So you provide your rationale.
+So data sensitivity, if it's PII information and notes, means text, it could be, all images.
+It could be a higher… Score, because higher risk.
+The PII will be still high, but your images and nooks will be higher.
+If it's public, it'll be one, since it's already public, already scrubbed, or… Can be properly released.
+For some of the similar data groups, we assign
+A score to each of those, numeric value to EW.
+the category?
+So, same thing with other… Area, which is… that you need to cover.
+in your… In your assignment.
+I think they are…
+So, after you get overall risk, Our total risk score.
+If it is, let's say, if it is between 0 to 30, it is… overall risk is low.
+If it is, let's say, 31 to 60, it's high, this value is going to be are critical.
+So, if you want to identify a system, Which is the higher… higher risk.
+So for this example, if you, identify System C, system 2, PPE mark classifier…
+At a higher overalls, Risk based on a total score.
+Also, this is a duplicate.
+So, for example, this is from the AI Risk Register.
+If you identify this as the highest, because this one… System 2?
+It has two incidents, privacy incident, and also bias.
+complaint.
+So combining them… It could be because it has a privacy incident.
+So, it could be… As a result, it is, the highest.
+So this is, this is just a system name.
+But this system… PPE mask classifier, the system name, the system.
+Has two incidents.
+with the… and also PII information.
+Data sensitivities.
+is, and so this will be…
+of high score. But you have used the Python code to calculate all those… your highest score?
+This is just a extracts from the…
+the AI… Risk register.
+Because it's a high-risk automated system, Handling PHI.
+So it requires a strong governance, technical, and operation control. So if you identify something like Like this one?
+For example, this one is System 2, so that means you have… Select.
+cover control, because it will cover all these three categories of control. Select which control in each of the categories.
+apply.
+So, for example, you don't have to put in a table format, But,
+It is just optional, or you can just put it… Just organize the information.
+So they're easy to read.
+For example, this is, this is, like, my control.
+The control library.
+Because they are…
+I don't remember how, but it's 15. And then you need to select 8 of those. So even if it's one of the control.
+Like this one?
+And then the risk is addressed here, the control description, the monopolymetric, the control…
+You don't need to put in the control on the date.
+Identify what… why you think this control For this system?
+Due to the incident, Indeed, stronger governance.
+Technical control. It needs to be implemented.
+And then you're going to describe why this control appropriate.
+For the aid control appropriate, because, for example, let's say a high severity privacy incident.
+Making privacy control, audit logging, and incident management compliance.
+Reviews are more important.
+Because of the bias complaint?
+Making feathers, testing, and periodic monitoring.
+Important.
+So let's go back?
+D.C.
+Cool.
+Somewhere.
+Yeah, so for example, let's say…
+I give a buyer, so that's why, that's why you…
+It makes sense to select the control because of the biased incident.
+So this is just the… I just opened it up.
+the AI incidents.f file… And also…
+the AI risk register, so these are included in your… Data set… And… The code this week…
+Oh, the template of this one doesn't have code in it?
+So you… basically, a lot of, for this week, mostly the Python code.
+That you will do… Calculating the risk score?
+But this is Francoenaute.
+that I have.
+So, for example, like, there are a couple of questions and a couple of steps you need in the assignment.
+You just, put it… a header.
+And then you load the data.
+And you're going to…
+Oh, this is the risk… This is the control library.
+So, what is your… How do you calculate your risk score?
+And then the incident weighs, because higher sorority, for example, P… PHI, if it is,
+The weight is… severity is higher, that means you give it a little bit more weight.
+discussed earlier.
+So it's mostly Python code.
+And then, one of the, one of the steps is to rank the risk, and the risk visualization is just…
+Just visualized all those systems after the total score.
+There's the other system… And then your total risk score. This is just an example.
+Of the risk score, you calculate your, your, you range the…
+Could be a bit different. The score you assign for each of those categories could be different.
+So it's just an example.
+So, for each of those systems.
+This is the name… the name of the system, and then total risk… Osso…
+So this, your identified system had the highest total of… For some risk.
+And now you come to here, to… this is the explanation.
+So for each of those, risks.
+Which control, it has. For example, you have to have 8 of those,
+you need to select A of the control. So you say, which, provider veteran now.
+It is important.
+So this is the this week's assignment, and… mostly just, display… charts.
+And also calculate… the score.
+And also apply the weight.
+If it is, so that the higher severity higher.
+High awake.
+This is it.
+So, I covered the assignment.
+Are there any questions about the assignment before I go back to the slide?
+Getting a lot of, places have storms and rain.
+Hopefully.
+I told it.
+Nobody… By the bad weather.
+Okay, no questions, okay.
+Yeah, so if you have any questions, as usual, just send me an email.
+I check my email up pretty often.
+So, I think I'm gonna own 36.
+Circle back to the slide after we talk about the assignment.
+So according to NIST, a trustworthy AI system.
+should be valid and reliable. So, yeah, they come up with a lot of,
+There was information by a lot of the subject matter experts.
+And then they continue to revise it.
+As the environment change.
+So they come up with something that if a system is trustworthy, AI system is trustworthy, it has to be valid and reliable.
+There has been consistent and accurate results. If you cannot reproduce or… Is that accurate?
+And it's not trustworthy.
+And it's also safe.
+I mean, safety means, not like a physical safety, it's just…
+It does that. It avoids harming to anybody.
+reputation… Or… Or harming a group of people.
+So this trustworthy AI.
+It could be… it could be if it's considered if it's a… AI system Used in a physical system.
+It could be your physical safety, because it's going to drive some of the Our physical system.
+Issue, also because it's also secure and also resilient, to be resist attacked.
+and recover from failure. So, it's something related to… Cybersecurity, And also, there are…
+on the AI system. Some people may use bad data to add…
+Just to make the AI system.
+what, not trustworthy.
+So there are lots of attacks on the AI system. So make sure the AI system is secure and resilient.
+And accountable and transparent.
+So you don't want to trust… you probably won't trust a system
+If it is, like, a black box.
+You just say, input it, and just output something.
+How do I know that it's trustworthy?
+What kind of dis… How did they come up with the step? They come up with the…
+With the results.
+So, especially, it's a very complex AI system.
+Explainable, Explain it.
+And also interpret the results. Make the output understandable.
+If the output is very, complex.
+you require subject matter expert, or require somebody with mathematical background, PhD.
+So not too many people can understand it.
+So try to make it more understandable in… It's… can be interpreted.
+And also privacy. Protect personal and sensitive information.
+PII, PHI information could be.
+Protected?
+And also… to be fair.
+And also, with harmful bias being managed.
+So the four core functions in this framework It is governed.
+measure.
+So it is an ongoing cycle rather than it's a one-time checklist, so you go back to govern map…
+measure.
+So Gavin means,
+It's about creating the organization foundation for responsible AI, so probably you heard about trustworthy AI, responsible AI.
+So this governance to… give a foundation for responsible AI.
+who own the AI decisions.
+Our policy exists?
+Who approved the system? When it's deployed, who approves it?
+What's it for some, or how… What?
+Strategy, or, or, or policy.
+Duh.
+deploy the system.
+Dot, dot.
+the checklist.
+the AI system can be deployed.
+How are the risks of being reported?
+Are the employees trained?
+So this is one of those questions included in this,
+So, for example, a hospital career AI governance committee reviewed AI, every new AI application before.
+Patient… pay… Patients can be affected.
+So, could AI start with governance. So, in certain domain.
+Usually there is a governance committee before
+the AI application can be used.
+This is one of the examples.
+So the second one is MAP.
+Mapping means, to understand it.
+Understand the AI system?
+A purpose?
+The user… It's environment and possible impact.
+The questions in this category, this area, will be.
+What problem does this AI problem solve?
+Who will use it?
+Who may be harmed?
+What assumptions?
+are being made. And some of the questions in this mapping can be, used in the
+We talk about metadata card.
+So those can be included.
+In the metadata card, and also in the… In the descriptions.
+In the Markdown area.
+So, for example, a bank developed a AI loan approval system, The mapping identified of the customers.
+Employee, regulators, the data source, Potential, discrimination risk.
+So we don't want to have a discrimination against a certain group of, category of people, for the loan approval.
+So before, solving a problem, understand the complete picture first.
+So measure. Measurement means evaluate how an AI system performs, and identify the potential risk.
+For central measurements, you'll be… We talk about some of the metric accuracy, fairness, robustness, security, privacy.
+and also reliability. You have to measure how it's being measured, and how is it being, reported.
+For example, the AI medical model could say, the overall accuracy overall is this.
+But only about 72% accuracy for one patient group.
+So it gives you… Give people some idea.
+So measurement can help to.
+Review some important, families issue.
+Without measurement organization, assume everything go well.
+So, everybody is going well for everybody. So, with all the information, In other people who… It's not…
+involved in the development of the AI model.
+They can… Identify potential issues.
+So manage means, take actions.
+Such as, fixing the problem.
+Updating the model, monitoring performance, Agent Human…
+I have someone to review it, and also limited system use, mentioned about the limitation of this system, and when not to use it.
+So, if it is unsafe, just retire the model.
+For example, a chatbot, begins producing inaccurate legal advice.
+Oh.
+So the organization may restrict legal responses.
+Improvement monitoring, or retrain the model, or have someone, review, human review it.
+So risk RAM management is continuous, it's not just one-time thing.
+And, so, it's… You just go… it's a loop.
+So it's like, AIP lifecycle we talked about last week.
+It's a plan, design, build, test, deploy, monitor, improve.
+The AIM lifecycle actually discovered a few weeks ago.
+So risk management doesn't stop after it's being deployed.
+So, the AI risk is different from traditional software risk.
+That we've discussed before.
+So I want to see anything…
+I want to cover up, because I was a total… It's April 1… Important.
+I'll just cover a couple of things. So, organization, some kind of risk is bias risk.
+Privacy, as you see in the
+The dataset that we have for this assignment.
+Our security, reliability, safety, transparency, and agon…
+accountability. So understand those risks help you to…
+Develop when you develop the AI model.
+So this, framework doesn't certify any AI system?
+Or guarantee safety, of replacing law or regulation, or eliminating risk.
+Or mandate specific technologies just help the organization, make better and informed, risk management, decisions.
+So just to understand what risk this framework does not do.
+So there are lots of information, the playbook, Our frequently asked questions.
+So I have a quiz, before, I don't have time, but… quiz.
+I pulled this aside… I'll put a slide in the… In the discussion thread.
+So, are there any questions before… Are we end?
+No questions?
+As I mentioned before, don't have any questions, just… Feel free to email me.
+And everybody have a great night.
+And I see you next week.

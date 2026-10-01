@@ -1,0 +1,7 @@
+AI Governance, Risk, and Compliance
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Web Readings
+Hugging Face – Model Cards- https://huggingface.co/docs/hub/model-cards
+NIST AI Risk Management Framework (overview)- https://www.nist.gov/itl/ai-risk-management-framework
+Evidently AI – Data Drift concepts- https://www.evidentlyai.com/ml-in-production/data-drift

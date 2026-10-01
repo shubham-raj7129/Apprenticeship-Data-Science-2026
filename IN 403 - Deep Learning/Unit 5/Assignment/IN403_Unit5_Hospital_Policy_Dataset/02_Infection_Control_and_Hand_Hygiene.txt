@@ -1,0 +1,17 @@
+Title: Infection Control & Hand Hygiene (Synthetic Policy)
+Last Updated: 2025-09-01
+
+Core Principle
+- Perform hand hygiene BEFORE and AFTER patient contact and after removing gloves.
+
+Hand Hygiene Requirements
+1) Use alcohol-based hand rub for routine decontamination unless hands are visibly soiled.
+2) Wash with soap and water for at least 20 seconds when hands are visibly soiled or after contact with spore-forming organisms.
+3) Gloves do not replace hand hygiene.
+
+Isolation Signage
+- Follow posted isolation signage at the patient room door.
+- If signage is missing or unclear, ask Charge Nurse before entering.
+
+Escalation
+- If a supply station is empty (hand rub, soap, towels), notify Environmental Services immediately.

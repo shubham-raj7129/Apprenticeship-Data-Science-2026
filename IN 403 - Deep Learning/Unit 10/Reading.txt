@@ -1,0 +1,11 @@
+Production Monitoring and Incident Response
+
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Web Readings
+1. Google – MLOps: Continuous delivery and automation pipelines(https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning)
+    Overview of how organizations design MLOps pipelines to automate model training, testing, deployment, and monitoring in production environments.
+2. Evidently AI – Data drift concepts(https://www.evidentlyai.com/ml-in-production/data-drift)
+    Explanation of what data drift is, why it occurs in deployed models, and how it can be detected and monitored in real-world systems.
+3. NIST AI RMF – Manage & Govern functions(https://www.nist.gov/itl/ai-risk-management-framework)
+    Overview of how the NIST AI Risk Management Framework defines governance and management processes for controlling AI risks across the system lifecycle.

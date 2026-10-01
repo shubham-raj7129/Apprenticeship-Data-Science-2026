@@ -1,0 +1,9 @@
+system_id,system_name,model_type,domain,primary_use_case,risk_classification,data_sensitivity,automation_level,intended_users,baseline_accuracy,baseline_roc_auc,fairness_gap_tpr,max_feature_psi,explainability_score,origin_unit
+SYS-001,No-Show Predictor,tabular,scheduling,predict_no_show,Medium,PHI,Automated,Frontline Staff,0.901,0.954,0.037,0.15,0.643,Unit1
+SYS-002,PPE Mask Classifier,vision,safety,detect_ppe_compliance,High,PHI,Automated,Patients,0.806,0.873,0.141,0.231,0.265,Unit4
+SYS-003,Skin Cancer Triage,tabular,clinical,triage_support,High,PHI,Human-in-the-loop,Frontline Staff,0.883,0.912,0.161,0.099,0.653,Unit3
+SYS-004,Policy RAG Assistant,llm_rag,operations,answer_policy_questions,Medium,PHI+Images,Advisory,Frontline Staff,0.763,0.828,0.018,0.168,0.201,Unit5
+SYS-005,Medication Safety Checker,rules+ml,clinical,dose_check_support,High,PHI,Human-in-the-loop,Patients,0.907,0.939,0.15,0.131,0.86,New
+SYS-006,ED Wait Time Forecaster,tabular,operations,forecast_wait_time,Medium,PHI+Notes,Advisory,Clinicians,0.768,0.826,0.019,0.19,0.573,New
+SYS-007,Readmission Risk Model,tabular,clinical,predict_readmission,High,No PHI,Human-in-the-loop,Frontline Staff,0.736,0.785,0.162,0.281,0.713,New
+SYS-008,Call Center Routing Bot,nlp,operations,route_requests,Low,PHI,Human-in-the-loop,Frontline Staff,0.774,0.843,0.027,0.124,0.631,New

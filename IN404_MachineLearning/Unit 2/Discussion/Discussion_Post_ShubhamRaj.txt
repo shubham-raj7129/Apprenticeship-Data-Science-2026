@@ -1,0 +1,77 @@
+============================================================
+INITIAL POST — Data Types in Machine Learning
+============================================================
+
+As I worked through this unit's readings, one thing that really stood out to me is how much the success of a machine learning project depends on understanding the data before ever choosing an algorithm. I did some research beyond the course text and found two resources that helped me connect the dots: an IBM article by Jonker and Gomstyn that breaks down structured versus unstructured data, and a Built In article by Donges (2025) that clearly explains the statistical levels of measurement. Between those and our course readings, I feel like I have a much stronger grasp of how data types shape the entire ML workflow.
+
+**Structured and Unstructured Data**
+
+From what I have learned, structured data is data that is organized in a predefined format—it fits neatly into rows and columns with a fixed schema (Jonker & Gomstyn, n.d.). The first use case I think of is a hospital's electronic health records database, where each row represents a patient and columns hold attributes like age, blood pressure, and diagnosis code. Another example I find useful is financial transaction logs, where every purchase is recorded with a timestamp, amount, merchant, and account number. I noticed that because structured data is already tabular, I can feed it into machine learning models with relatively little preprocessing, which makes it much more straightforward to work with.
+
+Unstructured data, on the other hand, does not follow a predefined structure, and I was surprised to read that it accounts for roughly 90% of all enterprise-generated data (Jonker & Gomstyn, n.d.). One use case that I find fascinating is sentiment analysis of customer reviews—raw text has to be converted into numerical representations before a model can classify reviews as positive or negative. Another powerful use case is medical image analysis, where convolutional neural networks are trained on X-rays or MRI scans to detect tumors. What stands out to me is that extracting insights from unstructured data typically requires more advanced techniques like NLP or deep learning, which makes it significantly harder to handle than structured data.
+
+**Qualitative and Quantitative Data**
+
+Qualitative data, also called categorical data, describes categories or characteristics rather than measurable quantities. For example, in a customer churn prediction model, I would treat the subscription plan type (basic, standard, or premium) as qualitative data to help identify behavioral patterns across groups. Another use case I have seen is spam email detection, where the presence or absence of certain keywords serves as categorical features for classification. What I found important is that qualitative data needs to be encoded—using techniques like one-hot encoding or label encoding—so that ML algorithms can work with it numerically (Donges, 2025).
+
+Quantitative data represents measurable numerical values, and I find it generally more intuitive to work with. In a real estate price prediction model, for instance, I would use features like square footage, number of bedrooms, and lot size—all quantitative—and feed them directly into a regression algorithm. Another example that interests me is predictive maintenance in manufacturing, where sensor readings like temperature, vibration frequency, and pressure are continuous quantitative measurements used to predict equipment failure. I have noticed that even though quantitative data is easier for models to handle directly, it still benefits from normalization or standardization to ensure balanced feature contributions.
+
+**Levels of Measurement and Appropriate ML Methods**
+
+The four levels of measurement—nominal, ordinal, interval, and ratio—further refine how I think about handling data in machine learning.
+
+Nominal data consists of categories with no inherent order, like eye color, country of origin, or product category. Since there is no ranking relationship, I would use classification algorithms like decision trees, random forests, or naive Bayes, which can split data based on category membership without assuming any ordinal relationship. I learned that one-hot encoding is the standard preprocessing step here to avoid implying a false ordering (Donges, 2025).
+
+Ordinal data has a meaningful order, but the intervals between categories are not necessarily equal. Education level (high school, bachelor's, master's, doctoral) and customer satisfaction ratings (poor, fair, good, excellent) are examples I find helpful. For ordinal data, I would lean toward tree-based methods like gradient boosting and random forests, which respect the order without requiring equal spacing. Logistic regression with label encoding can also work well here since the encoded integers preserve the rank order.
+
+Interval data has equal intervals between values but lacks a true zero point. Temperature in Celsius is the classic example I keep coming back to—the difference between 20°C and 30°C is the same as between 30°C and 40°C, but 0°C does not mean "no temperature." SAT and IQ scores also fall into this category. I think interval data is well-suited for linear regression, support vector machines, and k-nearest neighbors, since all of these rely on meaningful distance calculations between data points. I would typically apply standardization here to make sure features on different scales contribute equally.
+
+Ratio data has both equal intervals and a true zero point, which means ratios between values are actually meaningful. Examples I find easy to remember include income, weight, age, and distance traveled. What I appreciate about ratio data is that it supports the full range of mathematical operations, so it is compatible with virtually all ML methods—linear and logistic regression, neural networks, clustering algorithms like k-means, and dimensionality reduction techniques like PCA. The true zero lets a model interpret proportional relationships (for example, earning twice as much or traveling half as far), which I think is particularly valuable in regression and forecasting tasks.
+
+**Real-World Application: Healthcare Fraud Detection**
+
+To tie all of these concepts together, I thought about a machine learning system designed to detect fraudulent healthcare insurance claims—this application touches nearly every data type I discussed above. The structured data includes the claims database itself, with fields like patient ID, procedure codes, billed amount, and provider number. The unstructured data comes in the form of physician notes, scanned documents, and call center transcripts that may reveal suspicious patterns. I would identify qualitative features like the type of procedure (nominal) and the urgency classification of a visit (ordinal), alongside quantitative features like the dollar amount billed (ratio) and the number of procedures per visit (ratio).
+
+If I incorrectly treated ordinal urgency levels as nominal, I would lose valuable information about the severity ranking and might miss patterns where fraudsters consistently classify visits at a higher urgency to inflate reimbursements. Conversely, if I treated nominal procedure codes as ordinal by label-encoding them, I would introduce a false ordering that misleads the model into thinking procedure code 500 is somehow "greater" than code 100—which makes no sense.
+
+One transformation challenge that I find really interesting involves the unstructured physician notes. Using NLP techniques like TF-IDF or word embeddings, I could convert those notes into structured numerical features—essentially turning unstructured qualitative data into structured quantitative data that a supervised learning classifier can use alongside the tabular claims data. I think this is a great example of how understanding data types is not just theoretical; it directly shapes the decisions I would make in a real ML pipeline.
+
+**References**
+
+Donges, N. (2025, August 28). Types of data in statistics: A guide. Built In. https://builtin.com/data-science/data-types-statistics
+
+Jonker, A., & Gomstyn, A. (n.d.). Structured vs. unstructured data: What's the difference? IBM. https://www.ibm.com/think/topics/structured-vs-unstructured-data
+
+
+============================================================
+PEER RESPONSE 1 — Reply to Dhaneshwar Patil
+============================================================
+
+Hi Dhaneshwar,
+
+Great post! I really liked how you grounded every example in manufacturing—it made the data type distinctions feel very concrete and practical. Your point about treating machine identification numbers as quantities was one of my favorite parts because it is such a realistic mistake. A model that assumes machine 200 has twice the value of machine 100 would learn completely meaningless relationships, and I think that kind of error is easy to make when columns look numerical on the surface.
+
+Your discussion about using computer vision to examine product images for defects got me thinking about the challenge of combining structured and unstructured data in a single pipeline. I did a little extra research and found that, according to Jonker and Gomstyn (n.d.), unstructured data now makes up approximately 90% of enterprise-generated data, yet most traditional ML algorithms are designed to work with structured, tabular inputs. That tells me that in a manufacturing setting like the ones you described, a huge portion of the effort would go into feature engineering—converting those raw product images or written maintenance reports into structured columns a model can actually use.
+
+For example, building on your defect detection use case, I could imagine a pipeline where a convolutional neural network first scans product images and outputs structured features like defect type (nominal), defect size in millimeters (ratio), and defect location on the part (nominal). Those features could then be merged with the structured sensor data you mentioned—temperature, vibration, and cycle time—into a single dataset for a classification or regression model. If I failed to encode defect type with one-hot encoding and instead label-encoded it, the model might assume that a "crack" is somehow ranked higher or lower than a "missing part," which would introduce a false ordering. I think this is where your point about careful data identification becomes especially important. Have you thought about what preprocessing steps would be needed to merge the structured sensor data with the features extracted from those product images in a real manufacturing pipeline?
+
+**Reference**
+
+Jonker, A., & Gomstyn, A. (n.d.). Structured vs. unstructured data: What's the difference? IBM. https://www.ibm.com/think/topics/structured-vs-unstructured-data
+
+
+============================================================
+PEER RESPONSE 2 — Reply to Shashank Mishra
+============================================================
+
+Hi Shashank,
+
+Thanks for sharing your insights on the four levels of measurement. I thought your point about z-score scaling for interval data was really well made—it is something I had not thought about as carefully until I read your post. The idea that an arbitrary zero point in interval data could distort geometric metrics makes a lot of sense to me, and it connected nicely with what we covered in the seminar this week.
+
+Reading your post, I started thinking more about how the level of measurement affects not just which algorithm I choose but also which preprocessing technique I apply. Donges (2025) points out that practitioners commonly use one-hot encoding for nominal features and label encoding for ordinal features, and I realized that getting this wrong can seriously harm model performance. For instance, in your credit card fraud detection example, if I label-encoded the merchant category (groceries = 1, travel = 2, entertainment = 3), the model might interpret entertainment as being "greater" than groceries, which is meaningless. On the other hand, for your survey ratings example (dissatisfied to satisfied), label encoding actually preserves the useful rank information—so it makes sense there.
+
+I also found it interesting how you distinguished between interval and ratio data in terms of the preprocessing they support. You mentioned that ratio data supports log transformations and min-max scaling because all arithmetic operations and geometric ratios remain valid. That made me think about your real estate example—square footage is ratio data, so I can meaningfully say one house is twice the size of another, and a log transformation could help normalize a skewed distribution of home sizes. But if I applied the same log transformation to interval data like a credit score, the result would be harder to interpret because the zero point is arbitrary. Do you think that distinction means z-score standardization is generally safer for interval features, while min-max scaling or log transforms might be better reserved for ratio features where proportional relationships are meaningful?
+
+**Reference**
+
+Donges, N. (2025, August 28). Types of data in statistics: A guide. Built In. https://builtin.com/data-science/data-types-statistics

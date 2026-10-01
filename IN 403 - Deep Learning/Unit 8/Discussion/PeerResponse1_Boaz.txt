@@ -1,0 +1,13 @@
+Response to Jack Boaz
+
+Jack, your clinical risk prediction system is a strong choice for this discussion, and I appreciate that you emphasized the importance of continuous monitoring and recalibration after deployment. That aligns well with the drift detection concepts from Unit 6 — models that perform well at launch can degrade silently as patient populations and clinical workflows change over time.
+
+One assumption that I think could weaken your defense is the claim that AI's ability to analyze both structured and unstructured clinical data makes it "superior to most traditional clinical risk calculation systems." While this is true in terms of the range of inputs the model can process, it also introduces a risk you did not address directly: bias embedded in the historical data itself. If the electronic health records used to train the model reflect existing healthcare disparities — for example, if certain demographic groups are underrepresented in the training data, or if documentation practices vary by provider or facility — the model could systematically underperform for those populations. A stakeholder asking about fairness could point out that continuous monitoring and governance, as you described them, would not catch this issue unless the monitoring specifically stratifies performance metrics by patient demographics.
+
+As an additional safeguard, I would suggest implementing a fairness auditing process that evaluates model performance across demographic subgroups — stratified by age, race, gender, and socioeconomic indicators — both before deployment and on an ongoing basis. This would complement your existing governance and monitoring safeguards by ensuring that the model does not produce disparate outcomes for vulnerable populations, which is a core concern in the NIST AI Risk Management Framework's emphasis on equity and bias mitigation (NIST, 2023).
+
+One question I would raise: if the clinical risk prediction model was found to have significantly lower sensitivity for a specific demographic group — for example, detecting cardiac risk in women at half the rate compared to men — would that change your recommendation from "deploy with conditions" to "delay deployment" until the disparity is resolved? I think the answer to that question has major implications for how we define "ready" in a clinical setting where prediction errors directly affect patient outcomes.
+
+Reference
+
+National Institute of Standards and Technology. (2023). AI risk management framework (AI RMF 1.0). U.S. Department of Commerce. https://www.nist.gov/itl/ai-risk-management-framework

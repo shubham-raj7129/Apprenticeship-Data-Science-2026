@@ -1,0 +1,128 @@
+First 5 rows of the reviews from the data set()
+
+  Package_Name  ...                                                                                                                                                                                                                                                                       Review_Text
+0  com.foo.bar  ...                                                                                                                                                                              Needs amending Needs times of day even if a m, p.m etc.....also scale if numbers 1-10; disappointing
+1  com.foo.bar  ...                                                                                                                                                                                                  Great program! Helped me identify 2 day lag between activities and pain! Thanks!
+2  com.foo.bar  ...                                                                                                                                                                                                                                                                               NaN
+3  com.foo.bar  ...                                                                                                                                                                                                                                                                               NaN
+4  com.foo.bar  ...  Not up to par This is a great start, but it need a way to sign in, maybe with Facebook or Google accounts, so it can be synced across devices. It would also be great if you could select which date you're recording for so users can backfill to keep their records congruent.
+
+[5 rows x 8 columns]()
+
+The dimensions of the data set('(958, 8)',)
+
+First 5 rows after NaN replaced with none(  Package_Name  ...                                                                                                                                                                                                                                                                       Review_Text
+0  com.foo.bar  ...                                                                                                                                                                              Needs amending Needs times of day even if a m, p.m etc.....also scale if numbers 1-10; disappointing
+1  com.foo.bar  ...                                                                                                                                                                                                  Great program! Helped me identify 2 day lag between activities and pain! Thanks!
+2  com.foo.bar  ...                                                                                                                                                                                                                                                                              none
+3  com.foo.bar  ...                                                                                                                                                                                                                                                                              none
+4  com.foo.bar  ...  Not up to par This is a great start, but it need a way to sign in, maybe with Facebook or Google accounts, so it can be synced across devices. It would also be great if you could select which date you're recording for so users can backfill to keep their records congruent.
+
+[5 rows x 8 columns],)
+
+Sentiment column added(  Package_Name  ... sentiment
+0  com.foo.bar  ...    -0.600
+1  com.foo.bar  ...     0.625
+2  com.foo.bar  ...     0.000
+3  com.foo.bar  ...     0.000
+4  com.foo.bar  ...     0.800
+
+[5 rows x 9 columns],)
+
+Dimensions with new sentiment column((958, 9),)
+
+The new reviews data set dimensions((363, 9),)
+
+New reviews data set(  Package_Name  ... sentiment
+0  com.foo.bar  ...    -0.600
+1  com.foo.bar  ...     0.625
+4  com.foo.bar  ...     0.800
+5  com.foo.bar  ...     0.000
+6  com.foo.bar  ...     0.000
+
+[5 rows x 9 columns],)
+
+Most positive reviews by sentiment analysis()
+
+76                           An Excellent way to keep up with what to relay to my psychiatrist or PCP. Thank-You!
+443    There the button to view notes but non to write any. Can anyone tell me how this works? Else, a great app!
+598                            excellent tool for anxiety and well being, notes section does not seem to function
+916                           Reporting function stopped working. Otherwise it's an awesome app.PLEASE FIX GRAPH.
+Name: Review_Text, dtype: str()
+
+Most negative reviews by sentiment analysis()
+
+722    I use this to track my anger issues. When your notificarions don't work, it makes me angry. FIX THEM!
+Name: Review_Text, dtype: str()
+
+Negative sentiment with 5 star rating()
+
+    Package_Name  ... sentiment
+451  com.foo.bar  ... -0.500000
+862  com.foo.bar  ... -0.330556
+
+[2 rows x 9 columns]()
+
+Positive sentiment with 1 star rating()
+
+    Package_Name  ... sentiment
+556  com.foo.bar  ...      0.65
+
+[1 rows x 9 columns]()
+
+Number of star ratings(Star
+5    138
+4     95
+3     53
+2     44
+1     33
+Name: count, dtype: int64,)
+
+Top rows of training set()
+
+600                                                                                                                                                                                                                                                                                                                                                                                                                                        I've used this a lot and love it. So quick and easy to send updates to the doc!
+451                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Helps me and my Doctor track what may be wrong
+926                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    It was fun it helped me and my kids
+617    EDIT 10/3/15: Since the last update its reset a lot of stuff & it added categories I'd deleted, but it now says "cannot be altered" & cannot be deleted! -- This is the best mood tracker I have seen, it just needs to be able to let you enter data more than just once per day, and hourly graphs would make it perfect. Also the ability to send results by email for safe keeping. I had questions about the app, but there is only 1 page on a site for it and no one you can contact with questions. That...
+384                                                                                                                                                                                                                                                                                                             This is my favorite mood tracking app, my only problem is that I can't seem to find a way to write down notes, I see that there is a place on the graph to view them but I can't find where to write them.
+Name: Review_Text, dtype: str()
+
+Top rows of testing set()
+
+767                                                                                                                                                                                                                                           Like a few others, I've experienced the app crashes whenever I try to view my graph. I've reported the bug and messaged the developers, and heard nothing. Once that's fixed, this will go back to 5.
+846                                                                                                                                                                                                                                                                                                                                                                                                     Please fix this. It's been over two months.
+316                                                                                                                                                                                                                                                                                          I just downloaded the app to my phone & im learning how it works. I like it so far. Could be easier to use, but as I said, im learning how to work it.
+476                                                                                                                                                                                                                                                                                                                                                                                                                             Doesn't work at all
+576    Problem med att pÇminnelserna slutar fungera med ganska j_mna mellanrum (ca en vecka funkar det sen fÇr man gÇ in och ta bort och g_ra om inst_llningarna). Annars n_jd, anv_nder tre av de kategorier som finns. Hade g_rna sett en f_r fysiskt mÇende dÇ jag lider av halsbr_nna och illamÇende mm som vore sk_nt att se f_r_ndring i _ver tid, men det _r okej. Hoppas de fixar buggen g_llande pÇminnelserna snart!
+Name: Review_Text, dtype: str()
+
+Dimensions of the training set on line 172((272, 1534),)
+
+Dimensions of the testing set on line 173((91, 1534),)
+
+First fifty features in the count vectorizer(['10', '100', '12', '15', '180', '1980s', '1st', '20', '24', '30', '3x', '5_', '60', '865', '8mos', '98', '_ao', '_ltima', '_vel', '_wietlajóä', 'abandoned', 'abilities', 'ability', 'able', 'about', 'absolutely', 'access', 'accidental', 'accounts', 'accurate', 'accurately', 'acknowledging', 'across', 'action', 'activities', 'actual', 'actually', 'acute', 'ad', 'add', 'added', 'adding', 'additional', 'address', 'adhd', 'adjust', 'adjusted', 'ads', 'advise', 'aesthetically'],)
+
+Last fifty features in the count vectorizer(['whenever', 'where', 'wherever', 'which', 'while', 'who', 'whole', 'why', 'wi', 'will', 'windows', 'wish', 'with', 'within', 'without', 'won', 'wonder', 'wonderful', 'wonderfully', 'work', 'workaround', 'worked', 'working', 'works', 'world', 'worry', 'worse', 'worst', 'worth', 'worthless', 'would', 'woulda', 'wright', 'write', 'writing', 'written', 'wrong', 'wszystko', 'wtf', 'wy', 'year', 'years', 'yellow', 'yes', 'yet', 'you', 'your', 'yourself', 'årement', 'öfrom'],)
+
+Current count vectorizer options(CountVectorizer(),)
+
+Print the default count vectorizer accuracy metric - line 193(0.3956043956043956,)
+
+The new CV training set on line 219((272, 1751),)
+
+First fifty features no-lowercase CV(['10', '100', '12', '15', '180', '1980s', '1st', '20', '24', '30', '3x', '5_', '60', '865', '8MOS', '98', 'ADHD', 'AGO', 'ALL', 'APP', 'AVERAGE', 'Add', 'Added', 'Adding', 'After', 'Again', 'All', 'Allies', 'Also', 'Although', 'Amazing', 'An', 'And', 'Android', 'Anyone', 'App', 'April', 'As', 'Astro', 'At', 'Awesome', 'Awesomeness', 'Awful', 'BAM', 'BEST', 'BPD', 'Back', 'Backup', 'Be', 'Before'],)
+
+Last fifty features no-lowercase CV(['weird', 'well', 'were', 'weren', 'what', 'when', 'whenever', 'where', 'wherever', 'which', 'while', 'who', 'whole', 'why', 'will', 'wish', 'with', 'within', 'without', 'won', 'wonder', 'wonderful', 'wonderfully', 'work', 'workaround', 'worked', 'working', 'works', 'world', 'worry', 'worse', 'worst', 'worth', 'worthless', 'would', 'wright', 'write', 'writing', 'written', 'wrong', 'wy', 'year', 'years', 'yellow', 'yet', 'you', 'your', 'yourself', 'årement', 'öfrom'],)
+
+Print the no-lowercase count vectorizer accuracy metric - line 236(0.4175824175824176,)
+
+Dimensions of the ngram data set on line 252((272, 13863),)
+
+First fifty features ngram CV(['10', '10 15', '10 15 since', '10 also', '10 also have', '10 create', '10 create records', '10 disappointing', '10 green', '10 green being', '10 mins', '10 mins per', '10 months', '10 months of', '10 of', '10 of the', '100', '100 percent', '100 percent its', '12', '12 hours', '12 hours then', '15', '15 since', '15 since the', '180', '180 days', '180 days and', '1980s', '1980s corporate', '1980s corporate training', '1st', '1st but', '1st but im', '20', '20 seconds', '20 seconds and', '24', '24 hours', '24 hours after', '30', '30 60', '30 60 180', '30 days', '30 days being', '30 days graph', '3x', '3x day', '3x day but', '5_'],)
+
+Last fifty features ngram CV(['your doctors', 'your entry', 'your entry is', 'your entry ve', 'your feedback', 'your feedback wonder', 'your feeling', 'your feeling at', 'your graphed', 'your graphed results', 'your health', 'your health thanks', 'your issues', 'your issues in', 'your mood', 'your mood amazing', 'your mood over', 'your mood was', 'your needs', 'your needs and', 'your notificarions', 'your notificarions don', 'your notifications', 'your notifications don', 'your old', 'your old device', 'your own', 'your own but', 'your own categories', 'your particular', 'your particular needs', 'your personal', 'your personal preferences', 'your preferences', 'your preferences every', 'your results', 'your results in', 'your results it', 'your stars', 'your stars back', 'your stats', 'your stats added', 'yourself', 'yourself not', 'yourself not fan', 'årement', 'årement personnalisable', 'öfrom', 'öfrom the', 'öfrom the sd'],)
+
+Print the ngram count vectorizer accuracy metric - line 270(0.42857142857142855,)
+
+Null model accuracy - line 255(np.float64(0.6043956043956045),)
+

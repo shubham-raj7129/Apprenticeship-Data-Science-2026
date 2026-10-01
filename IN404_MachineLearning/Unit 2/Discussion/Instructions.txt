@@ -1,0 +1,26 @@
+Topic: Data Types
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with data types used in machine learning. Based on the resource, respond to the following:
+
+In paragraph form, summarize data types used in machine learning. Be sure to state what structured, unstructured, qualitative, and quantitative data are. Use at least two use cases, per data type, to help make your points in the summary. Conclude with a summary of nominal, ordinal, interval, and ratio levels of data and what machine learning methods you would use for each and why.
+
+For the initial post:
+1. Cite your source properly using APA in-text citation.
+2. Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences data types used in machine learning, or do some light research "beyond" the other student’s initial post (citing your sources, of course).
+
+Professor Instructions:
+Before selecting a machine learning algorithm, it is important to understand the data being used. Structured data is organized in a defined format, such as customer records, sales transactions, or patient databases. Unstructured data does not follow a predefined structure and includes text, images, audio, and video. For example, machine learning can analyze customer reviews for sentiment or medical images for disease detection.
+
+Data can also be qualitative or quantitative. Qualitative data describes categories or characteristics, such as customer satisfaction levels or product types. Quantitative data represents measurable values, such as income, temperature, age, or number of purchases. Understanding these differences helps determine how data should be prepared and which machine learning techniques may be appropriate.
+
+The level of measurement is also important. Nominal data represents categories without an order, while ordinal data has an order but unequal differences between categories. Interval data has equal intervals but no true zero, while ratio data has equal intervals and a meaningful zero. These distinctions can influence how features are encoded and whether classification, regression, clustering, or other machine learning methods are appropriate.
+
+Think about a real-world machine learning application such as fraud detection, healthcare, recommendation systems, or social media analysis.
+1. What types of structured, unstructured, qualitative, and quantitative data would be involved?
+2. What levels of measurement might appear in the data?
+3. What could happen if the data type or measurement level were incorrectly identified before training the model?
+4. Can you think of an example where unstructured data could be transformed into structured data for machine learning?
+
+Use your research to support your response and be sure to include APA in-text citations and a full reference.

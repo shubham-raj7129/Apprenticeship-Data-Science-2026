@@ -1,0 +1,57 @@
+# Defending an Enterprise AI System — Initial Post
+
+## 1. System Overview
+
+The system I am describing is a hospital policy assistant — an enterprise AI platform that helps clinical and administrative staff quickly find accurate answers to institutional policy questions. This builds directly on the RAG-based policy assistant explored in Unit 5, but scaled to a full enterprise deployment with predictive monitoring, drift detection, and formal governance.
+
+**Purpose:** Staff across a hospital network — nurses, residents, compliance officers, administrative personnel — frequently need to reference institutional policies during their workflows: infection control procedures, PPE requirements for specific scenarios, patient privacy protocols, medication safety checklists. Currently, this information lives in scattered PDF repositories and intranet pages that are difficult to search under time pressure. The policy assistant provides a single conversational interface where staff can ask natural-language questions and receive answers grounded in the hospital's own approved documents.
+
+**Key components:**
+
+- **LLM with retrieval-augmented generation (RAG):** The core of the system. When a user submits a query, the system first encodes the question into an embedding vector and performs a similarity search against a FAISS-indexed corpus of hospital policy documents (Lewis et al., 2020). The top-matching passages are retrieved and passed to the LLM as context, which generates an answer anchored to those specific sources — the same architecture we built and tested in the Unit 5 lab. Each response cites the source document by name and effective date.
+
+- **Predictive usage model:** A lightweight neural network (similar to the baseline models from Unit 1) trained on query logs to predict which policy categories will see high query volume in a given week — for example, infection control queries spike during flu season, and PPE questions increase when new equipment is introduced. This model helps the governance team prioritize which documents to audit and update first.
+
+- **Drift monitoring dashboard:** Drawing from the MLOps concepts in Unit 6, the system tracks two types of drift. *Data drift* monitors whether the distribution of incoming queries is shifting — for instance, a sudden surge in questions about a topic the corpus does not cover well. *Performance drift* monitors retrieval quality scores and user feedback ratings over time. If retrieval similarity scores trend downward or "not helpful" ratings spike for a category, the dashboard flags the issue automatically (iMerit, n.d.).
+
+- **Governance process:** Following the Unit 7 framework, the system operates under a cross-functional AI oversight committee that includes clinical informaticists, a compliance officer, nursing leadership, and a legal representative. The committee maintains a risk register, reviews model performance quarterly, and must approve all changes to the document corpus, retrieval thresholds, or LLM configuration before they go live. Every system interaction is logged for audit, consistent with the model card documentation standards recommended by Hugging Face (n.d.).
+
+## 2. Deployment Readiness
+
+I believe this system is ready for deployment with conditions — not as an unrestricted, network-wide launch.
+
+**Strength supporting deployment:** The RAG architecture directly addresses the most critical risk of deploying an LLM in healthcare — hallucination. As demonstrated in Unit 5, a plain LLM can generate answers that sound authoritative but are fabricated or based on outdated training data. By grounding every response in retrieved hospital policy text and displaying the source citation, the system gives staff a verifiable basis for each answer. This is not a theoretical benefit — in the Unit 5 lab, we saw that RAG-grounded responses produced accurate, source-cited answers for policy questions where an ungrounded LLM would have generated plausible but unverifiable responses. Lewis et al. (2020) confirmed that RAG architectures produce more factually accurate outputs than parametric-only models for knowledge-intensive tasks.
+
+**Risk that still needs to be managed:** The system currently has no mechanism to detect when a policy document in the corpus has become outdated but has not yet been replaced. If the hospital updates its infection control protocol but the new version is not re-indexed into the vector database, the system will continue retrieving and citing the old policy with full confidence. In a healthcare environment, acting on a superseded protocol — for example, following discontinued isolation procedures — could directly compromise patient or staff safety. This is a form of data drift specific to document-grounded systems that the Unit 6 drift monitoring framework does not automatically catch, because retrieval scores remain high even when the content itself is stale.
+
+## 3. Risk and Safeguards
+
+**Safeguard 1 — Retrieval confidence threshold with refusal.** The system enforces a minimum cosine similarity score on retrieved documents. If no document in the corpus meets the threshold (e.g., 0.25), the system refuses to generate an answer and instead displays: *"I cannot find a relevant policy for this question. Please contact [department/phone number]."* This prevents the LLM from speculating when it lacks grounding material. In Unit 5, we discussed how ungrounded LLM responses are the highest-risk failure mode in a healthcare setting — this safeguard directly eliminates that scenario by ensuring the model either answers from evidence or does not answer at all.
+
+**Safeguard 2 — Continuous drift monitoring with automated escalation.** The drift monitoring dashboard (Unit 6) tracks rolling weekly averages for retrieval similarity scores, query volume by category, and user satisfaction ratings. When any metric crosses a predefined threshold — for example, average retrieval score for "medication safety" queries drops below 0.30 for two consecutive weeks — the system automatically generates an incident report and routes it to the governance committee. This prevents the most dangerous post-deployment failure mode: silent degradation, where the system slowly becomes less accurate without anyone noticing until a clinician acts on a bad answer. As covered in Unit 7, this kind of proactive monitoring is a core control in any AI risk register (NIST, 2023).
+
+## 4. Defense Scenario
+
+Suppose a hospital compliance officer challenges the system: *"How do we know this tool won't give staff incorrect policy information that leads to a compliance violation or patient safety incident?"*
+
+I would defend the system on three levels:
+
+**Grounding and traceability.** Every answer the system generates is accompanied by the specific source document, passage, and the document's effective date. If a staff member receives guidance on hand hygiene procedures, the response explicitly cites, for example, "Infection Control and Hand Hygiene Policy, effective March 2026, Section 3.2." The compliance officer can verify that citation against the approved policy in seconds. This is fundamentally different from a general-purpose chatbot — the system cannot invent policy that does not exist in the corpus.
+
+**Bounded scope with refusal.** The system is scoped to administrative and operational policy questions only. It does not answer clinical treatment questions — any query identified as clinical (medication dosing, diagnosis, triage decisions) triggers an automatic escalation message directing staff to consult their supervisor or on-call provider. Furthermore, when the system lacks sufficient grounding material, it refuses to answer rather than generating a speculative response. These boundaries are transparent, documented, and configurable by the governance committee.
+
+**Auditability and governance.** Every query, retrieved passage, generated answer, and user feedback rating is logged with a timestamp and user role. The AI oversight committee reviews a random 10% sample monthly for accuracy, following the governance and accountability framework from Unit 7. If a problematic answer is identified, the committee can trace the full chain — what was asked, what was retrieved, what was generated — and determine whether the issue was a retrieval failure, a stale document, or a generation error. This audit trail is the organizational evidence that the system is managed responsibly, and it aligns with the NIST AI Risk Management Framework's emphasis on documentation, accountability, and continuous monitoring (NIST, 2023).
+
+## Recommendation
+
+My recommendation is to **deploy with conditions**. The system should launch in a phased rollout, beginning with a single department (e.g., nursing administration) where query patterns are well understood and the policy corpus has been fully validated. Expansion to additional departments should be contingent on three conditions: (1) retrieval accuracy remains above the governance committee's defined threshold during the pilot period, (2) a document currency workflow is implemented so that updated policies are re-indexed within 48 hours of approval, and (3) a mandatory 90-day post-deployment review is completed before the system is offered network-wide. This approach balances the clear operational value of the system against the real risks of deploying AI in a regulated healthcare environment — and it provides the evidence base that leadership, clinicians, and regulators will need to trust it.
+
+## References
+
+Hugging Face. (n.d.). *Model cards*. <https://huggingface.co/docs/hub/model-cards>
+
+iMerit. (n.d.). *Staying ahead of drift in machine learning systems*. <https://imerit.net/resources/blog/staying-ahead-of-drift-in-machine-learning-systems-all-una/>
+
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, *33*, 9459–9474.
+
+National Institute of Standards and Technology. (2023). *AI risk management framework (AI RMF 1.0)*. U.S. Department of Commerce. <https://www.nist.gov/itl/ai-risk-management-framework>

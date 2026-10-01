@@ -1,0 +1,3 @@
+Enterprise AI System Design, Deployment, and Defense
+
+In this unit, you will synthesize everything learned throughout the course to design, deploy, and defend an enterprise AI system. You will integrate model selection, evaluation, grounding, monitoring, and governance into a single, cohesive solution suitable for real-world organizational use. The emphasis is on applied judgment and accountability—clearly explaining design choices, identifying risks and safeguards, and defending your system to both technical and non-technical stakeholders. By the end of the unit, you will demonstrate the ability to propose an AI system that is not only effective, but also responsible, auditable, and ready for deployment.

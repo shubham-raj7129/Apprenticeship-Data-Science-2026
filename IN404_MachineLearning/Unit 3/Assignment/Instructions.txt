@@ -1,0 +1,50 @@
+Unit 3 Assignment: Natural Language Processing
+
+Outcomes addressed in this activity:
+1. Unit Outcomes:
+Examine sampling and hypothesis testing methods.
+Investigate natural language processing as applied to text.
+Analyze count vectorization and logistic regression on review text.
+2.Course Outcome:
+IN404-3: Analyze different machine learning algorithms for a specified problem.
+
+Purpose
+In this assignment, you will be provided with a Python file and data set. The program parses a data set and slices it down to necessary features. You will be performing sentiment analysis and count vectorization on text reviews. You will also apply logistic regression to determine model accuracy. Finally, you will get the null model accuracy. You will use the results to provide answers to the remaining items.
+
+Assignment Instructions:-
+
+Complete the following:
+Please number the assignment items in your Microsoft® Word® document.
+For item 1, provide a screenshot of the execution. Be sure to submit the actual .py file for Python. Finally, include the text file of the results of running the code. To capture the results in a file, simply change this code: PRINT = False on line 24, or so, of the provided code. Another possibility might be to copy-and-paste your code and results in the assignment document. Provide your results and input for the remaining items as requested below.
+
+Start the next action on a new page.
+1. Using the provided IN404_Reviews.csv and IN404_Unit3.py files, complete the programming where you see ################# YOUR CODE HERE ########################.
+2. Include a screenshot of the boxplot visualization of sentiment grouped by star ratings.
+    Describe the results and what the visualization is telling you.
+3. Include a screenshot of the histogram visualization of sentiment.
+    Describe the results and what the visualization is telling you.
+4. List the accuracy model results you got for the three count vectorization models and the null model. Four total and the first one looks like: Print the default count vectorizer accuracy metric - line 202 (0.37362637362637363,)
+4.1. Describe count vectorization and how it is used.
+4.2. Describe what the three count vectorization models did.
+4.3. Which had the highest percentage of accuracy?
+4.4. Which had the lowest percentage of accuracy?
+4.5. Describe what a null model is and how it is used for model accuracy.
+5. Given the code below that was used in the Python program, explain what the train/test split is and what is returned by the function train_test_split:
+#Define X and y
+X = new_reviews.Review_Text
+y = new_reviews.Star
+writeFunction("Number of star ratings", y.value_counts())
+#Split the new DataFrame into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+6. Describe what sentiment polarity and analysis are. You performed that with the below code:
+TextBlob(review).sentiment.polarity
+
+Directions for Submitting Your Assignment:-
+Assignment Requirements:
+For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit3 and submit it to the Dropbox by the deadline.
+
+Review the rubric(IN404_MachineLearning/Rubrics/AssignmentRubric.docx) before beginning this activity.

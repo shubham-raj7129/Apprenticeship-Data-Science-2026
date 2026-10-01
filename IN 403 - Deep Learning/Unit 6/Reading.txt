@@ -1,0 +1,8 @@
+MLOps & Drift Monitoring
+
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Web Readings:
+Data Drift and Model Monitoring Explained- https://imerit.net/resources/blog/staying-ahead-of-drift-in-machine-learning-systems-all-una/
+MLOps Model Management with Azure Machine Learning- https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2
+MLOps: Continuous Delivery and Automation Pipelines in Machine Learning- https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

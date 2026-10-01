@@ -1,0 +1,8 @@
+Bayesian Machine Learning
+Read and review the following learning materials by selecting the link(s) below or navigating to “More Tools”, then “Library”, then “Required Readings”:
+
+Web Readings-
+
+Naive Bayes- https://scikit-learn.org/stable/modules/naive_bayes.html
+Bayesian Thinking- https://statswithr.github.io/book/the-basics-of-bayesian-statistics.html
+PyTorch NN- https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html

@@ -1,0 +1,465 @@
+Sonali Baidya
+Good evening, everybody.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:50
+Hey, good evening, Samuel.
+Sonali Baidya
+Sonali Baidya
+00:55
+How's everyone doing?
+How's… how's the day? Good so far?
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+01:05
+It's really funny day, it's too hot.
+Sonali Baidya
+Sonali Baidya
+01:08
+Okay.
+Okay, yeah, we all are.
+James, so… we're handing so many stuff, so we are tired.
+Yeah, I know, Erica. Everybody's recovering, me too, I'm recovering from a cold. I don't know, it's viral or something, it's everywhere, I think.
+Anyways, it's already time, so I'll go ahead and start this week's seminar.
+And I'll go ahead and share my screen. Okay.
+Let me share my screen, and you guys can let me know that if you're able to see it or not.
+Hmm…
+Are you guys able to see my screen now?
+Okay, okay, good. So, I've already posted this week's what we are covering in the announcements section. I'm not sure if how many of you got a chance to look at it, but that's fine, so we are going to go through it again.
+So this week, we are actually going to implement some of the
+techniques of machine learning. So, we are going to apply, some of the models, like count vectorization models.
+Then logistic regression, and so on and so forth, and we are going to use it
+through a data… data set that we are going to use it, okay? Over here. And it's… it's based on some sentiment analysis that we are going to use.
+That's the data set. Now, you should be able to download that from the course resources, and right after the seminar, I'll also attach it in the announcements section, because sometimes once you download from there, it can be messier, so you might need to
+fix it. It's going to be a CSV file.
+That's fine. I'm just starting, that… what we are going to cover this week. So…
+As every week, there will be a reading portion, and it's good to have, like, read these chapters that will give you a good understanding about
+The data structures that we are going to use in our code,
+And the algorithms that we're going to use in our code as well. So, as I said, we are going to use some of the machine learning algorithms. This week, we are going to go through the count vectorization model, and we are going to use also logistic regression, okay?
+Discussion, again, you know the drill, so go ahead and start, and I know some of you have already started, which is good. For those who have not started, go ahead and start,
+With your discussion posts, And, please make sure you have at least
+Two more, along with your initial post, to… as a response to your peers.
+And that needs to be in 3 different days. So, make sure you're following that, so that in order to avoid any
+point deductions and stuff like that, so… Seminar, for those who are already attending today, you're good. For those who are not attending, this is getting recorded, so please review the seminar video and submit the alternatives assignment.
+In order to get your, treats.
+Now, coming to the assignment part.
+Okay, so this is… this is the part that,
+We need to go through, like, and again, we are going to write…
+a Python code, so for this one, you will be…
+needing two files. One, a CSV file, which is a data set, okay? So it will have a bunch of reviews of
+About a product, and…
+it will have… also, you have to download the Python file. So some of these places in this Python file, you'll see that you need to insert your line of code. Okay, so it seems going to be something like this.
+So when you download it, Some of the sections will be there.
+These are the sections that won't be there, which… this is where you need to work and write your code.
+mostly, mainly… it's generally a one-liner, most of it. You don't have to write a bunch of things. As long as you understand, it should be pretty simple. And again, as every week, I will be providing a solution as well.
+But do not just copy and paste it from there blindly, it's just a recommendation. Try to understand what is there in the solution, and then try to write on your own so that you understand what this code is about and how it's working on the dataset, okay?
+Okay, so… oh, sorry, I did not switch the screen, right? So I just got to know that. Okay, let me switch my screen.
+Are you guys able to see my PyCharm now?
+Dhaneshwar Patil
+Dhaneshwar Patil
+06:49
+Yes.
+Sonali Baidya
+Sonali Baidya
+06:50
+Okay, so this is what I was talking about. So this code, that byte file that you will be downloading, it will have some of the sections already written, and there are some of some of these parts where you need to write your code, okay? It's going to be mostly one-liner.
+So you have to fill those parts. Wherever it's written, please place your code here. So that's the part that you have to write your code, okay? When you download, most of these packages
+it's right over there already. What you need to do is, you need to install those packages when you are running the code, because at the beginning, you might not have those packages already installed in your machine, unless you're already working with these packages.
+in your machine, okay? So that's, another thing. I'll go over the code, I'll go over what it is about, but before that, I just want to make sure that you guys know what you need to download, what you need to have. So these are the two files that you will be finding in the course resources section.
+And again, as I said, I will be also putting them in the announcement section right after the seminar today, so you should be able to download from there, because sometimes when you download the CSV file from the course resources, it can get… kind of get messier.
+So instead, you can download the file as it is. I'm going to put it in the announcement, okay? So let me show you how the dataset looks. So when you download the CSV file, it's kind of like this. So if you see, there are dates.
+Don't… we are not going to deal with mostly these three… four columns, mostly.
+Or 5 columns. What we are going to deal with is only these two columns to be. What the text is, what is the review.
+And what is the star rating, okay? So, these are the two sections, or two columns we are going to deal with mostly, okay? Now…
+This is how the CSV file is going to look when you're going to download it. And you're going to need it, so, in your code, so make sure, as you did in the earlier one.
+create a project folder in the PyCharm, and then place all the files inside it, so that it can… the code can access it from there. If you are placing the CSV file somewhere else, please make sure you are putting the right path over here.
+Otherwise, it won't be able to locate and throw an error, okay?
+Okay, having said that, these are the things that you need to do for this assignment.
+I'll just go with what you need to do first, and then I'll go ahead and, as I do it in every seminar, I'll explain through what you need to do, and… which will help you to go ahead with the assignment to do by yourself, okay?
+So, first of all, please number the assignment items in your document file.
+For item 1, provide a screenshot of the execution. Be sure to submit the actual PI file. Please, guys, please, to whoever is submitting the assignment, along with your doc file, please make sure you're also submitting the .py file, because I would need that to execute and see what it is there, and sometimes there may be errors, and for which the results might be different, so I can help you or guide
+you with the feedbacks.
+Finally, include the text file of the results of the running code, so…
+instead of showing it in your terminal, you need to put it in a text file, like, over here. So this is a blank file, so there's a way in your code that you can write everything in your
+Text file instead of printing it in your terminal.
+Okay? So, that's what is needed.
+Finally, include the text file, sorry, sorry. To capture the results in a file, simply change this code where there's a line. Print is equal to false on line 24, you need to make change that, and you'll see that all the results are getting printed in the text file, okay?
+No.
+The first item is just get that score and the CSV file. The second point is include a screenshot of the box plot visualization of sentiment grouped by
+star rating. So, what I mean to say is, when you run your code with all everything in place, I'll just show you by running this, so you'll get an idea.
+So this is what it's going to generate, a box plot like this, okay? So this is what the screenshot they are talking about, okay?
+Other than that, they're going to be a histogram as well, so that's also going to get generated from your code, so that's also another screenshot they will be… they're talking about, okay?
+So let me go ahead and quit it for now.
+So…
+Screenshot of the box plot visualization of sentiment grouped by star ratings. Describe the results and what the visualization is telling you. Second and third, you have to include a screenshot of the histogram again, and you have to describe the results and the visualization, what it is telling you.
+list the accuracy model results you got for the three-count vectorization models and the null models. So, I'm going to go through what are these.
+In a bit, but just to let you know, this will be the next thing.
+4 total, and the first one looks like this. So, when you… I will run my code as well, and you will be able to see.
+And once you get those,
+the outputs, you have to describe
+What it is and how it is used, describe what the three-count pictorization model did, which had the highest percentage of accuracy and the lowest, and describe what a null model is and how it is used in further model accuracy.
+So, once that is… and the fifth one says, given the code below that was used in the Python program, explain what the train-test split is, and what it is required… returned by the function, okay?
+So this is the part that will be in your code.
+Where will be… there will be a training and a testing split of the data sets, and why we do it. For those who already work on machine learning or know, have an idea, you should be knowing it. For those who don't, I'll just go through it in a bit.
+Okay, and the last one is describe what sentiment polarity and analysis are.
+And then you perform that with the below code, so you have to explain, once you run this particular function, what happens.
+Okay?
+Any questions so far about the assignment, what needs to be done?
+Anybody has any questions?
+Okay.
+Okay, so Erica, you already downloaded it, and you have already done it. You're saying that? And it's fine?
+Okay, I can… Let's see what it is related. Is this about the CSV file you mentioned, Erica?
+Okay.
+Okay, that's good then. For the rest, whoever has not done it, that's… you can do it the same way as Erica has done, or I'm going to post it in the announcement section as well, so you can grab it from there, okay?
+Okay, so if there are no further questions, I'll go ahead and start in a bit, like, explaining what each of these things are.
+And then, so that you get an idea about what these are, and then, accordingly, it will be easier for you to implement, and then
+Write out the assignment document, okay?
+Okay.
+So, I have taken one of the reviews from here, say, like, say this one. Great program.
+Helped me identify 2-day lag between activities and pain.
+Okay Thanks. So, I've checked in this one. Now, My question is… Think about,
+when I hear this question, or when I read this one, right?
+And they have also, I think, in this one, they have clicked a 5-star.
+Okay? Five star, they have given.
+So when I, as a human being, is going through that particular sentence, okay.
+I understand from the tone, I understand from the… Words, that's here, that's great.
+And then tanks, That, okay, what the person is happy, it's positive, and all those steps.
+But when it comes to… from the computer aspect, the computer doesn't understand, okay, great means, that means
+the person is very happy, the tone is very happy, right? Okay?
+So… For computer, it's all about… Mix of numbers.
+So that's what we are going to analyze and see how we can
+Feed this information to the computer.
+And then it analyzes and tells us, okay, yes, when a person is writing this particular review, it means it's a 5-star review, okay? Or it's a 2-star review, or a 3-star review.
+Okay? So… That's what we are going to do in this particular unit.
+Now, how do we do that?
+There's the concept of
+supervised learning and machine learning is there. There are two types of learning we generally categorize into. One is supervised, the other one is unsupervised. So, supervised means, like.
+We already have the answers, We do not ask the computer to invent the stars over here.
+So, think about this particular tip. We have the reviews, we have the inputs.
+We already have the answers, okay? Because we have shown… we have seen in the dataset.
+Okay?
+So, what we are going to do is, we are going to feed in these to the computer, saying, hey, this is the review, these are the stars.
+Okay? And then, do this… go through all these different types of reviews 100 times, or 1,000 times, or 10,000 times, depending on the size of your data set.
+And then I'll give it a new review.
+To guess, like, okay, Now tell me…
+After looking at this review, what the star would be.
+So that is where what is called the supervised learning.
+So, I am giving every information to the computer, The inputs, the outputs.
+And the computer is learning a lesson. Okay, happy words goes with 5 stars.
+bad words, or doesn't work, all these words goes with two stars, or even needs amending or disappointing, these words goes with two stars as well. So that's how it's learning.
+Okay?
+The other type, as I mentioned, it's unsupervised. We are not doing that in this particular unit. So, unsupervised means
+I will tell the computer, hey, these are the reviews. I'm not going to give you the stars. You group the similar ones.
+Okay? And then you will tell me.
+That what would be the star for all these reviews, or… We… you will label it.
+Okay?
+So let's not talk about unsupervised now. We'll talk about supervised.
+So, we are giving all these…
+to the computer, the computer is going to go through all these data sets, the entire dataset.
+And then it's going to guess, with a new review that you're going to give it to the computer, it's going to look at that sentence, and then say, hey, okay, this is 5-star, or 4-star, or 3-star, whatever it is. Okay? Now, in order to do that.
+There are two piles.
+And you have to understand, when you are having a data… when you have a dataset, And you're using…
+Machine learning.
+You need to understand that you need to have two things very, well-defined.
+One, what are the features?
+And second, what is the target?
+So features, in terms of features, we write in our code as X, and what we are trying to find out, or get the machine guess, or learn, or, like, output, give us the output, that's the Y.
+Okay?
+So, in this case, We will start with the review text.
+And later, we'll see that in… later in the code, we are going to use, like, counts of the words.
+Okay?
+And what would be the target? The target will be, okay, it's going to guess which star. Is it 1, or 2, or 3, or 4, or whatever it is. Okay?
+So that's the second step that you… next step you need to do. The first… very… after understanding, okay, which particular learning you want to do, supervised learning in this case, now then next is what are the features, what are the targets, that's what we have to just…
+Find out and… We have to define.
+Next comes is what is called the classification.
+Now, which means, like, I have to pick a bucket, right? So, when you're running these algorithms.
+it picks a bucket. For example, like, in case of our mailboxes, where the mail comes in.
+At the very beginning, suppose the mail comes from a new address, or the mailbox… the product that's working behind the mailbox. That's no clue, okay?
+At the very beginning, you might say, okay, this is a spam, or put it in a delete folder, or whatever it is. So that's how the mail… the algorithm over there learns, okay, this is a spam or not.
+Right? Similarly, over here, it's going to understand from those pairs which buckets it falls into. Is it a 1 star, or a 2-star, or a 3-star, so on and so forth.
+Okay?
+And then, we are going to use the regression. Regression is a little different over here.
+We know regression guesses a number on a line, right? A price or a height.
+That we have seen in the last unit. Over here.
+It's a kind of little different. It's a star that looks like a number, but it's not like we are going to say, okay, there's a star of 3.7, or a 4.2. It's very strictly, we have defined, okay, there is either going to be 1, 2, 3, 4, or 5.
+Right? So the tool over here to use for buckets is the logistic regression.
+Okay? So that's what the next thing that we have to do in the… when we are going through this machine learning process.
+Now, when we are going over the entire dataset, you will see it's around 958 rows, I think.
+So that many data you have. So if you just go down… Scroll all the way down…
+You'll see around, I don't know.
+Yeah, so it's 9.59, so 9.58.
+Okay? But, if you see.
+Most of these doesn't have any reviews over here, so these are blanks, so these are of no use to me.
+So the next thing that you should be doing in your dataset is, obviously, we have to stream it down to the ones which are most useful.
+the ones that has reviews in it, okay? So we are going to just omit all the reviews from this entire data set, which doesn't have any text over here.
+We are just going to consider those which have reviews in it. So that's the next step that you need to do, and that's what is exactly in your code as well.
+So, once that is done.
+then you will be able to see it has come down to something around 363 reviews. And out of that, then you can find out, okay, which buckets each of these reviews falls into. You can see that there will be 33 ones. There may be 138, there are 5s, okay?
+So… Obviously, these two matters the most, because…
+First, when we are running the model, the model will see, okay.
+5 is most popular, it's more often there, it's there. So it will lean towards saying 5.
+Okay? Second, a lazy person can already look very smart. So if you always shout 5,
+You are right on a lot of these reviews without reading a word, right? So, if 90% of the reviews were 5-star, would then mean… that means that 90% accurate… it's 90% accurate, your model is?
+No, right? Because not always all the reviews, the people who are, say, submitting those reviews, might click on 5-star, but may have a bad review over there, with some negative words in it.
+So those are the things that we need to understand when we are running a machine learning model to find out how accurate it is, how smart the model is.
+Okay?
+Okay, so once that is done, then obviously the next
+thing you need to do in your code is.
+There will be two works, there are two jobs in your code.
+First is, you have to understand how the score is filling. That means that's called polarity. And they asked you, like, what is polarity, and how it's been useful. So, in very simple word.
+Polarity means, like, how positive or negative
+does that particular text sound, okay? And it can range from minus 1, or negative 1, 2 positive 1.
+Okay?
+And for this one, we use a ready-made tool, which is called Text Blob. So, if you go to the code.
+We are using text blob over here, okay? So, what this text blob does is…
+It's not teaching this text block. Text block is just a package or function we are using over here.
+So…
+We plot it, we describe the pictures, we do not train it, okay? Nobody is teaching text block, anything in this.
+See, it already knows what it needs to do.
+So it's just going to say… look at it, and say, okay, yes, it sounds…
+Negative, so it will be towards
+below zero, which is… and between minus 1 and 0. And it sounds positive, very positive. It will be between 0 and positive 1, okay? So that's how the text blob works.
+The other part where you have to do some fine-tuning is… is the supervised learning. This is part… the part that you need to, give in the words, and then make it guess.
+So it will train, it will learn, and then it will tell, okay, yes, this is 4-star or 5-star.
+And that is a part where we are going to use the count vectorizer and also logistic regression.
+Okay?
+So now, coming back to polarity. Now, As I said.
+Polarity is not a star. It is a feeling number. So, negative is… means it's sour, so it's… and zero is calm, or mixed, and positive one is happy, okay? So, it can… when I'm saying great program and thanks.
+So, it will sit around 0 to positive 1, okay? So maybe I'll just say, okay, it's .63, or something like that.
+But, if it is, say, reminders do not work, bad design, so it means it is a negative feedback, so it will be sitting something between 0 and negative 1. So that's… that's how it works in polarity.
+So, can a 5-star review have negative polarity?
+What do you think?
+Yes? No?
+So if I have a 5-star review, but can it have a negative polarity?
+Anyone?
+Dhaneshwar Patil
+Dhaneshwar Patil
+28:55
+Based on the feedback, the text written.
+Sonali Baidya
+Sonali Baidya
+29:00
+Yes, good. So, yes, we can have…
+negative polarity. Why? Because of the words, the wrong texts that can be put over there, right? From the reviews. So this is not a bug in the data, it's like people reviews, we use it, it's…
+This is how where we are… polarity cannot help. That's where the machine learning comes into the picture. So, the box plot that they have asked you to plot and,
+Then, show generate, okay?
+So, this is what we are going to check from here.
+So… So, when we are doing this box plot, if you see
+the median's over here. It's 0.00, right? Over here, this is also 0.00. So for all the stars.
+If you see, and these are the polarity, okay?
+So, for star 2, this is also 0.00 for star 3, it's point…
+Maybe 1, 5, because it's between 0.00 and 25.
+This is a little more closer to 25, so maybe 0.23.
+And this one is above 2-5, so which is 3-0.
+So, if you see from here, typical 1-star and 2-star reviews, sits near calm.
+Right?
+Which is 0.
+And 5-star reviews.
+sits higher.
+Okay? But if you see, you can see some overlaps as well.
+A 5-star box still reaches down.
+Right? Towards the median, like 0.00.
+And a one-star box still reaches up. It's towards .25.
+Okay? So if you use polarity over here.
+The tone is a clue, but it is not a copy of the star.
+So, if they were the same thing, we would not need machine learning, right? So, this is exactly why they're asking, what is polarity doing here, how we can understand it from a box plot, and where polarity cannot help us.
+Okay?
+So, this is just a regular or informal hypothesis we are checking using the box plot, okay? High stars means higher…
+A typical polarity, okay?
+But, again, we are doing an informal hypothesis here, as I said. It just means, like, you're doing a guess.
+with a picture, but not with actual statistical tests, okay? Now, in order to achieve a more accurate result, in order to understand, that's where we are going to work on using some algorithms, which is,
+We're going to sit in a bit, which is called counter-vectorization.
+So, we'll go back again to that same problem.
+Right?
+So, people might have…
+5-star review, like, click on the 5-star, but might have a bad review as well over there.
+So it's not the issue with… Or there is a… Bug in your…
+app, it's that, that the review that your sentiment analysis that you're doing with the algorithm that you are running, or the machine learning that you're doing, the model is not that accurate enough.
+Okay? So for that, the easier way to do is use logistic regression. It can only mix numbers, so there has to be a middle step, or
+a model that has nothing to eat. So maybe, let's say, turn the sentence
+into a row of counts. So, for example, the first review may be a bad design. So now think about, this is…
+the review, right? Now, if I have all these words, so there's a word called bad, design, and the review B has a word called great. Now, let's create columns for each of these words, and what we'll do is.
+We will put 1 in those words which has the… which is in the review. So, in review way, we have bad and design, so we'll put one.
+We don't have grades, we'll put 0. And review B, we have grades, we'll put 1 over there, and the rest is 0.
+Okay?
+What are we… Doing over here?
+We are trying to form a document term matrix. So this is called… this table is called a document term matrix, okay? So what we are…
+Putting the reviews as rows, and the words as columns.
+Okay? So that's what we are doing here, and that's the concept of count vectorization.
+So now let's go back to the, say, maybe a larger dataset that we have, right? So, count vectorization is like a factory that builds that table.
+So, each review becomes a row of numbers. Those numbers are now the features we talked about. Remember the X? So, over here, at the very beginning when we started, X was the reviews.
+Now we are coming to X as the row of counts. We are no longer considering the paragraph, okay? Because we are using count vectorization.
+So… So, if I consider those two 72 reviews.
+and we start looking at each of those words and forming our document term matrix, it's going to be a huge table.
+Right? So that's what we are going to use.
+To, achieve our goal, like, okay, to understand, okay, which are the words that have been used in the
+reviews and
+how we can use that further. So now, we are going to go into a little more detail later, because in your code, we'll start with count vectorization, with simple, like, taking all the reviews and just putting everything in a simple documentary matrix.
+Later, we are going to, again, group them.
+Based on, say, which are the capital letters, which are the phrases, how many are there, and find the count from there, okay? So that's what the next step is. It's a little advanced version of count factorization.
+So, anybody has any question on count vectorization so far?
+If not… I'll go with the next step, okay? So now…
+We have this matrix, we have the data now.
+Now, suppose we train all the 363 reviews that we have, and then we test on the same 363 reviews.
+What happens in that case?
+Anybody?
+We are making the machine train with those 363 reviews, and later we're going to test it, right? To find out, okay, whether it's guessing right or not, maybe with the same 363 reviews. What happens in those… in that case?
+What do you think? What will happen?
+Okay, let me take it, give it in a different example.
+So, I'm teaching you something today. I give all the notes and everything to you.
+And tomorrow I take a test, and then it's… all these things that I'm teaching today in that review is going to come exactly the same way tomorrow.
+How do you think you will be scoring in that case?
+We are not talking about overfeiting, underfitting over here right now. We are just talking about
+In general sense.
+Yeah, so we are going to achieve a very high score, right? Why is that? Because my model has already memorized everything.
+So, the model, when we are feeding in all these 363 reviews, it can remember all these things, right? So it's memorizing. So when we are trying to get
+Or test within our review.
+it's not going to give me an honest version, which is called generalization. So, generalization is a fancy term to very simply say that when we are training with a data set, it's always good to hide some reviews on purpose.
+Okay? So that's why we always should be doing
+some part of the entire data set for training, and we set aside
+A smaller part of the entire dataset for testing.
+Okay?
+So that's what then comes next. So in your code, there will be a line where you have… you'll see that you are splitting your entire dataset.
+into a training dataset and a testing dataset. So, we give about 75% to learn.
+normally a best practice. Sometimes, in some cases, we give 80-20, we split it into 80-20 as well. So, generally, 75 to 80, to learn, and the rest, we keep it for testing.
+Okay?
+So, we lock the random draw.
+Why… in your code… let me show you it in your code again.
+So, if we go down…
+Let me search by this.
+Yeah. So if you see over here, we are training the X, we are testing the X, we're training the Y, we are testing the Y.
+Right?
+So this is where we are splitting the entire dataset into Train and test.
+Okay?
+So now, there is one thing in the code that is saying that random state is equal to 1.
+that is… meaning is, like, we are shuffling the same way every time. So then your 40%, or whatever it is, should be the same as your classmate. So we don't have two different shuffles over here. So that's why, like, we are keeping random status equal to 1.
+But that can be changed as well, based on what type of dataset you're running, what type of scenarios you want to run and test, and find out, okay? So it's just not like we always keep at this one over here. So this is where I just wanted to show you, that's where the split is happening.
+And we are splitting the entire trainings
+the data set into train and test, okay?
+Now, okay, let's go back.
+Okay, so any questions so far? So, are we understanding each steps, how we are going, going to…
+Write our code or understand how the entire model gets
+Step-by-step, we do it in machine learning… when we are applying a machine learning algorithm so far. Anybody has any questions?
+Okay, if not.
+Then, next, we are going to start working on, again, like, we'll go back to count vectorization. So, count vectorization has two moves, okay? And…
+That order definitely matters.
+So, when Erica was mentioning overfitting.
+So when fit… fit means over here is, you look at those, whatever you have split it up into, 75-25. So maybe 75% is around 200, or whatever reviews. So you look at those 200 learning reviews.
+You learn from it, right? And then, write down every word. Now, those words becomes the columns.
+Correct? Now, the rest, whatever is left over, maybe 90 or whatever, Those are the hidden reviews.
+So you do not get to invent new columns. So if there is a new word.
+That appears over there.
+It's… this model can sometimes ignore it, which is fine. That's what we want to see. We want to get its honest feedback, right? We just don't want to memorize it, or what she was saying, fitting it.
+So that it can give me a reply which is not accurate enough.
+Okay?
+And then comes the word terminology we use as transform. So, transform means…
+For each review, we fill the row, and we will find out, okay, how many times does that great word appear? So, how many times that… does that design word appear, or something like that.
+Okay?
+No.
+No, the next question is… Do you… why is fitting…
+On a… maybe a test set is called cheating.
+Can anybody tell me?
+So, obviously, we spoke just now.
+So, when we are seeing it's… We're fitting it.
+What does that mean?
+Anybody?
+I'm not talking about overfitting or underfitting, I'm just talking about the word fitting. What does that mean?
+You can give me an example. I just gave an example.
+We're using the same data, so, like, I gave you a review question today, I said, go ahead and study, and tomorrow I come… you come back, and I give the test, which has everything from that particular review.
+So that's fitting, that means it's cheating, right? So you know everything from there. I'm not using any different types of questions, I'm putting everything from that review.
+Okay?
+So that's fitting. And so, we have to know some of these terminologies. Fitting, then fit, transform, and we also talked about the training test split. We talked about, I think, the regression, counter-vectorization, so these are the things we have already talked about.
+Okay, the next one is, now the computer finally has the numbers. We know, like.
+What are the numbers for each of these?
+Now, we are going to do the…
+First thing is, we're going to mixing it. So, each word gets a pull. Like, if we see a great, then it pulls towards the 5. If we see there is a word like sad or bad, it pulls towards
+What?
+So, we do not hand-pick those pools. The computer finds pools that make…
+Known which are 5-star reviews look likely.
+And the known one-star reviews looks unlikely.
+So that's the first step.
+The next is…
+What are the chances? So, the mix becomes 5 chances. So, 1 per star, right? 1, 2, 3, 4, 5.
+So they add 200%, maybe 8% chance is there for 1%, 12% maybe for 2-star, and so on and so forth.
+Once those chances are determined, the third one is the pick. So you choose the star with the biggest chance, okay? So that is the grace.
+So, over here, we are not going by the reviews again. Remember the text, we are going by the buckets.
+Okay? So that's what the… Logistic regression is doing over here.
+Now, definitely, next comes says, how accurate it is.
+So, accuracy over here means, like.
+how often it guessed the star matches correctly, right? But that is based on those
+Test dataset, not your training dataset, okay?
+And then, say if there is, say, 90%, or, sorry, 90 in your…
+test data set, out of that, say, maybe 36 were accurately determined by the model. Then, based on that, you will find, okay, maybe, yes, 30%, 37%, or 80%, 40% is accurate, okay? But is 40% good?
+I don't know. It's compared with guessing at random.
+at the very beginning, maybe it's good. Maybe it's not, right? So that's where how we can increase the accuracy.
+In order to do that, Then comes is, now we…
+We are going to use the same concept and the same mixture, but we are going to put it into three-word tables.
+So now we are going to find out and make those three tables, and then we are going to determine which one is giving a higher accuracy. So maybe the table 1 will have the default, we'll put all the small letters or lowercase letters over there.
+Okay? We will count one word at a time, okay? And then…
+So, it doesn't matter. Say we have a word called, like, as I said over here, love and love. So, both are same word, but one has a uppercase L, one has a lowercase L.
+Maybe the computer is not able to understand these two, because it's a lowercase and uppercase, okay? So that's one bucket. The second table is, we are going to put, like, only the caps.
+So…
+We are going to see, okay, if we keep a capitals, all the uppercase ones in one column, and the lowercase one in the second column, whether it's able to determine with more higher accuracy or not.
+And the third one, we'll keep maybe phrases, we'll keep, say, two-word or three-word groups, something like that, and we'll see from that. It's going to make a better, guess or not, okay? And then we are going to run it
+And then we are going to see whether it's… how the accuracy result has increased.
+So… It's always, remember, the wider your table will be.
+the guess is… will be more… much more better. Your accuracy level will also increase, okay? So that… that… the… what we said just now about keeping, say, maybe two-word or three-word phrases.
+Those are called n-gram, or 3-count vectorizer models, okay? So that's what they have in the last point, where they are going to, or towards the end of your code, where you are going to implement that and see how it works.
+And the last but not least, they have something called, mentioned as
+null model. So, it's a null model is a fancy way to say
+A word called dummy we use in machine learning, okay?
+So, that means we ignore the review, we do not read the words, we only use how the common, how a
+like, how common the answers are, okay? So, in this…
+assignment, you first run, the stars to two piles, like 5-star and not. So, you will just make it into two piles. So, which are the ones are 5-star versus which are not, okay? Once you do that, break it into two buckets.
+Then, you have to find out, like, a model that cannot beat always case the popular side. So that means 5 is the more popular.
+It's going to guess that, so it's not helping.
+Okay? That is why we bother with a dummy.
+Okay? So, the null model comes into that picture when we… the model is giving more favor to the one which is more popular.
+So now, that's the last part of your code that they have asked you to, when you run the null model, what happens, and why do you use the null model in a particular, machine learning, when you were running a machine learning model?
+Okay? So that's in gist what everything is about. Now, if I go quickly with the code.
+These are all the packages that you're going to use. Make sure if you, when you're running, you have to install the packages if it's not already installed.
+This is just the warning sign, just to ignore the warnings. It hides the yellow warning text, you don't have to bother, it's already there.
+So you… this is, the file… That you're going to use M…
+Over here for the assignment results, so these are all good. And remember to change this in order to print it in your file and not in your console.
+This is a helper function that they have over here to write.
+And since it's already there, you just call this function everywhere where you need to print, so you don't have to worry about this as well.
+This is where it's going to read the CSV file, okay?
+So this is fine. When you run it, it's going to first…
+Show the first 5 rows of the review, that's the head function, that's why it's over here.
+This is where I told you, right, out of all the 958, it's just going to remove whichever doesn't have any review, so that we can just focus on the ones that has reviews and work on it, okay?
+So that… you should… that should be done at the very beginning, whenever you are writing a machine learning… like, you are designing a machine learning model, or running a machine learning model on a data set.
+Okay, this is where we are using the text blob. As I said, there is nothing to teach or learn over here. It's just going to run the function and check the polarity, and once that is done, then you have to then, I showed you, you have to run and generate those
+the box plot and the histogram, and understand what they are showing from the graph, okay?
+Now, and we talked about the sentiment analysis, the polarity, right? Remember, negative 1 to positive 1, and stuff like that. So, over here, if you see…
+Okay, where is that detector?
+So, this is where we are using detect sentiment. That's on every review. It stores each number in a column.
+named Sentiment. And then, after…
+this line, the table is one column wider, so that there will be a ninth column, so that's what they're asking you to print and show. That's what it has been done over here. Now.
+This is the part I think they… Let me see…
+Yes, so this is where you have to write your codes, that's here.
+And then generate the box plot and the histogram.
+So, this solution will be… I will be sharing this file, just try to go through it.
+In order to generate the histogram, you just need to call this function. Similarly for the box plot, okay, and then you have to define what should be in the column and what should be in the roof. So it's X and Y axis that you have to tell, okay, which one is star and which one is sentiment.
+Once that is done, it's showing to print the reviews of all the positive sentiment and the negative sentiment. And if you see, we are just using one, and we are using negative. So.
+minus 0.66 over here, so that's why we are using that. And then over here, we are going to… you need to…
+show all the 5-star, between 5-star and minus .03, so that's why this is the range. And similarly, for 1 star, use 5-star and 0.5 sentiment values, so that's why we are using this, okay?
+It's not that complicated, so if you have understood what I have been telling so far, and if you follow this code, it's pretty… it's not that hard, and I have mostly everywhere commented, so you can read it and understand it. This is when, again, I think we… I just showed you, you have to split your
+A dataset into training and testing.
+And then you have to use the count factorizer function, where you're going to generate that matrix, the document term matrix, and use it to print whatever there are the last 50 features, the first 50 features, and so on and so forth.
+Then we are using the logistic regression again over here, and then this is the part that we were talking about, like, making into different buckets.
+Which is the engrams, includes the 1 to 3 word combination, and then we're going to find out the accuracy.
+At the end, we are going to do a null model.
+We have to run that and find out what it comes, like, what is the output, and based on that, you have to write your document.
+Anybody has any questions?
+Anybody? Any questions on the assignment?
+Okay.
+So if you guys don't have any questions.
+Or if you feel like you have a question later, feel free to drop an email to me.
+Otherwise… Have a great weekend, and see you next week.
+Yes, sure. If you have any further questions, feel free to drop an email to me to understand anything, and I'll reply back to you.
+Okay.
+Dhaneshwar Patil
+Dhaneshwar Patil
+57:43
+Thank you.
+Yeah.

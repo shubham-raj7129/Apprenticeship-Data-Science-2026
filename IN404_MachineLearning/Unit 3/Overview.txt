@@ -1,0 +1,2 @@
+Natural Language Processing
+In this unit, you will be learning about sampling data, hypothesis testing, and natural language processing. You will use Python to explore a data set using count vectorization models to determine logistic regression accuracy for the best model to use. The model will use star ratings and customer reviews, in plain text, and explore the results.

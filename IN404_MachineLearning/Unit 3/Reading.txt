@@ -1,0 +1,13 @@
+Read or review the following chapters in Mastering Pandas, available at the Library in the Academic Tools section of this course.
+Chapter 3: Using NumPy and Data Structures with Pandas
+
+Read or review the following chapters in Principles of Data Science, available at the Library in the Academic Tools section of this course.
+Chapter 7: “Basic Statistics”
+Chapter 8: “Advanced Statistics”
+
+Read or review Chapter 3: “Pattern Recognition,” in Machine Learning: The New AI, available at the Library in the Academic Tools section of this course.
+
+Read or review Module 1, Chapter 6: “Analyzing Text Data,” in Python: Real World Machine Learning, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+In this unit, you will be reading about analyzing text data. Main areas of focus are pre-processing, tokenization, stemming, lemmatization, sentiment, and classification models. Python modules are explored to apply to text analysis using various methods. The area of focus in this unit, for text analysis, is count vectorization. Finally, you will read about sampling and hypothesis testing.

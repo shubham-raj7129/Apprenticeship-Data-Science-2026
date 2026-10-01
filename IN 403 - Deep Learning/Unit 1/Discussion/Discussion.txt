@@ -1,0 +1,39 @@
+Picking a First Model for Hospital No-Show Prediction
+Scenario
+
+You are advising a hospital that wants to reduce patient no-shows. You have five years of appointment data (e.g., age, appointment type, prior no-shows, lead time, location, weather). Leadership wants your recommendation for the first model to deploy.
+
+Initial Post (250–350 words)
+
+Choose one model for the hospital’s first rollout:
+
+Option A: Logistic Regression (baseline, very interpretable)
+Option B: Small Neural Network (more flexible, harder to explain)
+Write your response as a short message to the hospital’s executive team (non-technical). Address all four items below:
+
+Recommendation: State which option you chose (A or B) and give a brief reason.
+Metric choice: Choose precision or recall as the more important metric for this project and explain why in plain language.
+Risk control: Name one action you would take to reduce harm if the model is wrong (examples include setting a decision threshold, adding human review for high-risk flags, or monitoring performance monthly).
+Tradeoff: Identify one drawback of your chosen model (such as lower accuracy or lower explainability) and explain why it is acceptable for a first rollout.
+
+---
+
+My recommendation is Option A — Logistic Regression. A neural network might sound more cutting-edge, but I think it's the wrong first step here.
+
+Recommendation
+The biggest thing working in logistic regression's favor is that you can actually explain what it's doing. When the model flags a patient as likely to miss their appointment, the care team will want to know why — is it because this person has canceled before? Because the appointment is three weeks out? Logistic regression can answer that clearly. A neural network can't, at least not without a lot of extra work. Staff aren't going to act on a score they don't understand, and they shouldn't have to (Steyerberg, 2009).
+
+Metric: Recall
+For the metric, I'd focus on recall over precision. Recall tells us how many actual no-shows we're catching ahead of time. Missing a patient who doesn't show up means a wasted slot — lost revenue and a missed care opportunity. Calling someone who was going to come in anyway is a minor inconvenience by comparison. I'd rather catch too many than miss too many (Kheirkhah et al., 2016).
+
+Risk Control
+Even with a solid model, I wouldn't let it trigger outreach automatically. I'd have a staff member review the high-risk flags before anything goes out. It's a small added step, but it keeps a human accountable and lets us catch errors early while the model is still proving itself.
+
+Tradeoff
+The honest tradeoff is that logistic regression won't catch every pattern in the data — it might miss subtler combinations, like how lead time interacts with appointment type. But for a first rollout, a model the team trusts and understands is more valuable than squeezing out a few extra percentage points with something no one can interpret.
+
+References
+
+Kheirkhah, P., Feng, Q., Travis, L. M., Tavakoli-Tabasi, S., & Sharafkhaneh, A. (2016). Prevalence, predictors and economic consequences of no-shows. BMC Health Services Research, 16(1), 13. https://doi.org/10.1186/s12913-016-1243-4
+
+Steyerberg, E. W. (2009). Clinical prediction models: A practical approach to development, validation, and updating. Springer.

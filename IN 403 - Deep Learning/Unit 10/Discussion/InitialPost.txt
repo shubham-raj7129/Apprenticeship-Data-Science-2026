@@ -1,0 +1,48 @@
+Your Model Just Triggered Alerts — Do You Pause Deployment? — Initial Post
+
+1. System and Daily Metrics
+
+I chose the no-show prediction model. Drift in a predictive system has a direct operational impact — if the model silently degrades, the hospital over- or under-books appointment slots, which wastes clinician time or delays patient care. This is the kind of silent degradation that Google's MLOps framework warns about: without active production monitoring, a model can lose accuracy for weeks before anyone notices (Google Cloud, n.d.).
+
+I would track five metrics each day:
+
+- Prediction accuracy: overall correct predictions divided by total predictions.
+- Feature drift magnitude using Population Stability Index (PSI) across the top input features — appointment lead time, patient age, insurance type. PSI is a standard distance metric for quantifying distributional shift between training and production data (Evidently AI, n.d.).
+- Prediction distribution shift: comparing today's predicted no-show rate against the 30-day rolling baseline.
+- False-negative rate: patients predicted to show who actually no-showed, since these cause empty slots and lost revenue.
+- Calibration error (ECE): checking whether a predicted 30% no-show probability actually corresponds to roughly 30% real no-shows, because miscalibrated confidence scores lead to bad overbooking decisions.
+
+2. Three Critical Alert Thresholds
+
+Threshold 1 — PSI > 0.20 on any top-5 feature. A PSI above 0.20 signals significant distributional shift in the input data. Evidently AI (n.d.) identifies this as the boundary between moderate and major drift, meaning the model's learned relationships may no longer hold. In a hospital, this could mean a change in patient demographics, insurance mix, or scheduling patterns that the model was not trained on. If the inputs have shifted, the outputs cannot be trusted.
+
+Threshold 2 — False-negative rate exceeds 25%. Missing more than one in four actual no-shows means the hospital is failing to overbook appropriately, resulting in wasted clinical capacity. At scale, even a few percentage points of unused slots translates to thousands of dollars in lost revenue and delayed care.
+
+Threshold 3 — Calibration error (ECE) > 0.10. ECE above 0.10 means the model's probability estimates are unreliable. Operations teams use these probabilities to decide how many patients to overbook. If a predicted 20% no-show rate actually corresponds to 40%, the clinic either double-books dangerously or under-books wastefully. This maps directly to the NIST AI RMF's emphasis on measuring and documenting AI system performance continuously after deployment, not just at launch (NIST, 2023).
+
+3. Recommendation: Continue with Conditions
+
+A full pause would immediately disrupt scheduling workflows that staff depend on daily. I recommend continuing under conditional operation: reduce the model's decision authority by switching from fully automated overbooking to a recommendation-only mode where scheduling staff see the model's suggestion but make the final call. Simultaneously, the data science team should investigate the root cause of drift — whether it is seasonal, a data pipeline issue, or a genuine population shift. This aligns with Google Cloud's Level 1 MLOps maturity, where automated retraining can be triggered by performance degradation or data distribution changes rather than waiting for a scheduled cycle (Google Cloud, n.d.).
+
+4. Immediate Containment Action
+
+Move the model into human-in-the-loop safe mode: the system still generates predictions and displays them to schedulers, but automatic overbooking rules are suspended. Every overbooking decision requires a human confirmation. This preserves the model's value as a decision-support tool while eliminating the risk of automated bad decisions during the degraded period. The NIST AI RMF supports this approach — its Govern function emphasizes that organizations should define escalation procedures and fallback mechanisms before deployment so they can be activated immediately when thresholds are breached (NIST, 2023).
+
+5. Notification and Escalation Path
+
+The following roles must be notified immediately:
+
+- Data Science / ML Operations team — to investigate drift, retrain if needed, and validate data pipelines. As Google Cloud (n.d.) outlines, the operations team is responsible for continuous monitoring and triggering the automated retraining pipeline when drift is confirmed.
+- Clinic Operations Manager — to inform scheduling staff of the mode change and adjust manual overbooking guidelines.
+- IT Infrastructure team — to verify that upstream data feeds (EHR, scheduling system) have not changed format or content. Data quality issues — corrupted or incomplete data — can mimic drift symptoms and must be ruled out first (Evidently AI, n.d.).
+- Chief Medical Informatics Officer (CMIO) — as the clinical AI governance lead, they need visibility into any model operating outside normal parameters.
+
+If the investigation reveals the drift is caused by a data pipeline break or labeling delay, the fix is technical and the model can return to full automation after retraining and validation. If drift persists beyond 7 days despite pipeline verification, escalate to the hospital AI Governance Committee with a recommendation to pause and retrain. If patient safety is affected at any point (e.g., dangerous overbooking levels), immediately escalate to the Chief Medical Officer and pause the system entirely.
+
+References
+
+Evidently AI. (n.d.). Data drift in machine learning. https://www.evidentlyai.com/ml-in-production/data-drift
+
+Google Cloud. (n.d.). MLOps: Continuous delivery and automation pipelines in machine learning. https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
+National Institute of Standards and Technology. (2023). AI risk management framework (AI RMF 1.0). U.S. Department of Commerce. https://www.nist.gov/itl/ai-risk-management-framework

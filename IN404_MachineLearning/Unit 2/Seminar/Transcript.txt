@@ -1,0 +1,505 @@
+Sonali Baidya
+Sonali Baidya
+Good evening, everyone.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:12:12
+Hey, good evening, Sonali.
+Sonali Baidya
+Sonali Baidya
+00:12:14
+Okay, let's give a couple, a few more seconds for the rest of the folks to join, and then we'll go ahead and start, okay?
+Okay.
+thing, we're… Over one minute.
+We'll go ahead and start.
+Okay… Okay, let me go ahead and share my screen.
+Are you… let me check… Are you able to see my screen now?
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:14:24
+Yes.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:14:24
+Yes.
+Sonali Baidya
+Sonali Baidya
+00:14:25
+Okay, great.
+Okay, so…
+So this week, we are going to go over Unit 2, and this is mostly regarding some of the
+Algorithms we're going to know about, do some research on them, and also about, there will be a code that you're going to run and see how it works.
+So having said that, like, as every week this week also, there is a discussion post, so if you see over here…
+This is the discussion post that we have, so please go ahead and start working on it. And you know the drill, you need to start initiate the post on one day, and then you have to respond to at least
+Two other peers in…
+three different days. So your initial post will be on one day, and the other two posts, the replies, will be on the other two days.
+Otherwise, like, as per the rubrics, you'll get… some of the points will get off, okay? So, be careful about that, and…
+Apart from that, There are some reading materials.
+You should… can go ahead and read them, because that will help you when you are writing the article or the document for this unit. This unit as well, you have to understand some of the concepts, and write a document on it, and then submit that document.
+So, in order to do that, these things will definitely work, and help you to write those articles, the document, okay?
+Apart from that…
+there is an assignment, and the seminar, for those who are attending this seminar, you're good, you're going to get the attendance from here. For those who are not attending, please review this video recording, and then go back and submit the alternative seminar assignment to get your grades for that.
+Okay, now let's go jump into the assignment that we have for this week. This week, we are going to learn some of the concepts of machine learning, and also we are going to see a code and how the NumPy functionality works in Python.
+Anybody has already used NumPy earlier in any… if they're working in data science area or anything like that?
+Anybody has already worked or used NumPy so far?
+Yeah, I see Jacob… Erica…
+they all have worked in NumPy, so you guys are familiar with it, so you must be knowing how it works, what it is.
+So maybe I can… you can help me today with, the concepts when we are going through them.
+So
+So again, like, this week, we are going to write the… there will be a code that I will be providing. Since you cannot copy and paste from there, I will…
+after the seminar, I'll drop it into the announcement. Go ahead and grab that file from there, run it through, or you can write your own code as well, by looking at it, and just run and see how the NumPy is working for each of those functions, and then, to get the understanding of,
+Why and how we are using it, okay?
+Again, for this one, there will be… there are 8 items that you need to work on, okay? And be sure when you're writing your Python code, or you're just taking the file and running it, to submit that Python file as well, okay? Because sometimes,
+I need to check the outputs, based on your writings, okay?
+So, you provide the screenshot of the execution, you submit the Python file, and make sure also to respond to items 1 to 7.
+Another possibility you might be to copy and paste your code and results in the assignment document, if that is not
+Sometimes it becomes too much work, so just submit the Python file, that should be fine as well.
+Now, your page or your document should start with, like, knowing which machine learning algorithms to apply to datasets is import.
+For achieving usable
+results. You have to research and describe linear regression, describe how the algorithm works, and also select two real-world use cases involving linear regression.
+Okay, some of… they have already given you some examples. You can take any two of them from here.
+read through it, there are some links provided as well, and you can understand how the linear regression is implemented over here in this particular scenario, and write your thoughts over there. If you're using any,
+materials from where you're taking references, make sure you're putting the references at the right, areas of your document, okay?
+Research and describe logistic regression. Now, describe how the algorithm works, also select two real-world use cases below involving logistic regression, and summarize the studies and the results. Okay?
+Now, at times, you will not always get complete data sets from machine learning analysis. You may have to deal with streaming data as it comes into your environment, research and discuss feature
+management techniques with data strips. Be sure to summarize the need to understand the target variable before analyzing data, and also include techniques you might use for different data types.
+Fourth, research and describe scalability as applied to machine learning. Include any bottlenecks or problems that you could have encountered when dealing with data. Conclude with two examples using Python to scale effectively for data analysis.
+Fifth, compare and contrast artificial intelligence, machine learning, deep learning. Be sure to summarize each first and conclude with a comparison. Finally, you can include two,
+Case studies each, where… or, like, examples, maybe to be precise, maybe in brief, where each would be best used, okay?
+research and summarize the tools of the Python scientific stack, like NumPy, SkyPy, Matplotlib, Pandas, and SkyKitLearn.
+If you go to python.org, all these packages are there, you can read through it and summarize and provide the explanations. Be sure to provide two examples of each
+To cover how, what, and why they are used for a given data set.
+Last, summarizing differences between Python List and NumPy Array include examples to show the differences, and conclude the advantages the NumPy Array offers for machine learning.
+The last part is you have to run this code. It covers using the NumPy Python library and some of the functions over there. Try to understand what each of them are doing, okay? And then,
+maybe you can write, show me the output, like, that's what it is needed over here, that what… what the… how did… and what were the outputs of these… each of these functions, were, or if you understood it correctly, like.
+You can write to me in one line, like, this is what it is doing, and that's it. So that is, in brief, what the…
+Assignment is for this week.
+I'll jump into a little bit, I'll touch upon what each of these algorithms they have discussed over there is, to give a concept.
+And then I'll leave it up to you guys to further go ahead and research and study about it.
+And I'll also touch through each of these things a little bit to give you a hint or make you understand, like, how you can write your paper and submit your assignment. Any questions so far on the assignment part?
+If not, then I'll go ahead and start explaining maybe a little bit on these concepts.
+Anybody has any questions?
+Okay, so if there is no… I don't see anything in the chat.
+So I'm guessing Ed Nori has any questions on it.
+So I'll start… At least.
+Let me share my… screen.
+Are you guys now able to see my pie chart?
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:24:19
+I see your Virtual Studio.
+Yeah, he played some hope.
+Sonali Baidya
+Sonali Baidya
+00:24:25
+And also, are you guys able to see my slide?
+Yep. Okay, good.
+So now, the first… I'll come to the code a little bit later. The first thing is they asked about linear regression and then logistic regression. Anybody has any idea about, since some of you have already worked on
+done by… maybe you already have an understanding on some of these algorithms, if you have already worked on. Anybody has any?
+Idea?
+Yeah, so, Jacob?
+You already have worked on, and you know what linear regression… And, logistic regression is.
+Jacob, I… I can't hear you if you're talking on mute.
+Okay.
+Okay, so let me go through in brief. Now.
+when we talk about, like, computers, right? So, when we are asking computers, like, okay.
+We are giving some data, and it's… we are asking it to guess something, right?
+So, two kinds of guesses are there. At one, it guesses a number.
+Like, example, like, if you feed in that, say, the square fits of different houses, and then… and also the…
+Cost of the houses, maybe after looking at the square fit and the house cost and all those stuff, it guesses, okay, if you feed him another… feed it another square feet, it will give you a rough around… rounder about number.
+Right? So that's one type of guessing it does. The other type of guessing it does is either yes or no.
+Like, are you sick? Yes or no?
+Will the stock market crash? Yes or no? Okay? So there are two types of guesses. So the first one that we talked about, where the computer was talking about numbers, okay, and it was guessing the number
+Okay? That's where the algorithm linear regression comes in.
+Okay? So let's say… This is a particular graph.
+Okay? Now, if you see over here at the bottom.
+You see that this is the study hours, and this is where the test scores are, right?
+So that the dots will not sit on a perfect line. It can go here and there, right? So it can be anywhere, the dots. Forget about this particular line right now.
+just… if you just plot it, the dots can be anywhere, right? So the linear regression, what it does is it draws that straight line
+that fits the dots the best. So, most of the dots, it will try to find out a line that fits most of these dots in that particular line.
+Okay? And then you use that line.
+To guess a number you have not seen yet.
+Okay?
+So, that's how linear regression works.
+So, if you have one output input.
+Okay? So, like, here, study hours, and the output is a test score. That's called simple linear regression.
+If you have several inputs.
+like, if you want to give, say, the age, the name, sorry, the zip code, the location, these are all the different types of inputs, and you want one particular output from it. So that is a multiple linear regression.
+Okay? So that's what the linear regression means. So the… So, the…
+Leftover gap, okay, so from each of these dots that you see over here, like this dot, this dot, this dot.
+It's still not aligned with this in this particular line.
+Right? So these are called the residuals in linear regression.
+Okay?
+Now, the computer's job is to make
+those gaps as small as possible. So, the mistakes as small as possible.
+And then may give the best guess, or it can make the best guess out of all those data points.
+Now, linear regression is definitely, as you can understand, it's based on math… statistics, and so it has a formula. The computer feeds in that formula. Based on that formula and the data that you're giving, it's going to give you an output.
+So that's how exactly this works. I don't want to go into details.
+Just to let you know, like, in order to do the guesswork, if you see over here, there is a…
+starting height, there's a slope, and there is an input, okay? So, this is the number we want to guess.
+The inputs can be anything, like, can be, like, for over here, the homeworks, the hours, it can be a square fit of the house. B1 is the slope, like, how much Y moves.
+when X goes up, and B0 is the intersect. So this is a graph concept. It's mathematics, right? So based on this, it's going to provide you the next best
+guess, or number. And if it is, like, multiple, inputs, so it's going to be V1X plus B2X plus B3X, and so on and so forth. So that's how it, works for multiple linear recreation, okay?
+So now, if you see this diagram, like two graphs over here, let me minimize it.
+Now, if you see how it's trying, so this is my preliminary, all the data points are there, okay? So now…
+How does this computer pick that particular line that's on this side?
+Okay? So for every dot, it guesses a number.
+And, as I showed you over here, this formula it uses. It subtracts the real number.
+Then squares the distance, okay?
+right here.
+this formula it's using, okay, to string the leftover mistakes. That's called the least squares that we are doing over here. So, what it does is, for every dot, it guesses a number, it subtracts the real number, and then it squares the difference so negatives do not cancel.
+Okay? Then it adds those square ups. So what it tries to do is, it tries different slopes.
+Until that particular total is as small as it can get. So, that means, over here in this particular left-hand side, if you see, all these dots are there. These dots, they have a lot of gaps from this line.
+So what it tried to do is it minimizes, or takes the least, means the smallest, and squares over here means the square that mistakes it. So it's like square forms, it tries to
+Find out, find the minimum mistakes, and make it smallest, and then try to align that in this particular line. So it tilts it until it finds the best possible way where it can fit all those dots in a particular line, okay?
+So that's how it works. Now, a lot of stuff goes on at the backend, but this is the simplest way I can tell you right now.
+So that's how it starts, okay? And that's how it tries to do the linear regression.
+Now, if…
+In Python, if the table is small, okay, the Python can solve it in one shot. But if it is a huge table, it's a huge data set.
+Okay, what it does, it… it starts walking downhill when it is
+going through each of those data points, okay? A little at a time. This concept of going…
+through the data points a little at a time is called gradient descent in linear regression, okay? So, you do not need the matrix formula over here, you need… the idea is how to shrink the mistakes.
+Okay? So, that's what…
+the concept is of linear recreation. Now, one thing we need to keep in mind in this case is that when a line can fit the numbers, okay, it can still tell
+Maybe a silly story, like, it can do mistakes, because if two inputs are almost the same.
+Okay? Then, computer gets confused about which one matters.
+So, in those cases, we remove the extra column, or we sometimes combine them, or we sometimes use a concept called adding penalty to the model.
+And so that it stays simple. So this penalty, this thing, this… all the steps that we do in order to eliminate the duplicates is called regularization in linear regression, okay? So that's, in brief, what linear regression means. Any questions so far?
+I hope that was simple enough to understand, like, what linear regression means.
+Anybody has any questions?
+Now, you have to do a little more research.
+Use the same concept, and then try to see how those four use cases… out of those four use cases, you can use two, and then, try to…
+think how you can apply linear regression over there. You don't have to do it
+Through code, you just need to think and analyze and write, okay?
+Next is logistic regression. So, as I said at the very beginning, computers has two ways to guess. One is through numbers, it can guess the next number, or it can say yes or no. So, in logistic regression, what happens is it…
+It's… what… how… how can I say? It's still…
+Uses that formula, that number, the straight formula that we have, but then it somehow uses a…
+a formula it uses in this particular case of algorithm, it squishes the result through this particular S-carve. This curve is called sigmoid curve in logistic regression, okay? So what it does is, it has a…
+Line at the middle, which is the 50% curve.
+And if a number is below that curve, it is considering as no. If it is above that curve, then it considers as yes, okay?
+Excuse me.
+So that's what the concept of logistic regression is. So logistic regression means number,
+if a number… once it calculates and it finds that particular number is above that 50% benchmark or cutoff, then it says yes. If it is not, if it is below that, it says no. So, for example, if a student gets, say,
+AT… AT, and it's,
+in his exam, okay? Is it a pass or fail, right? So that means we have to set a threshold, so let's say if we say 60 is the pass marks, okay? In that case, we are going to set 60 as the cutoff. Now, below, above that.
+We are saying if a student gets 61, that's a pass. If it is below 60, that's a fee. So, yes or no.
+Okay? So that's the concept of…
+Logistic regression. Any questions on logistic regression?
+Sorry for that.
+Anybody has any questions?
+Okay.
+If not, Excuse me.
+Okay.
+Now, next, we are going to go through the next thing that they talked about, is
+What happens if,
+the data set is very huge, right? They asked you to write some research on, or some discussions on that, to explain, like, how does Python handle
+Or, these packages handle in those cases, right?
+So when we mean scalability, when they mentioned about scalability, right? So, when we talk about scalability.
+So, if the file grows 100 times.
+Does your method still finish, or does that computer still have enough memory? So that is scalability over here, okay?
+So we have to think that, in terms of memory.
+The first thing is that if we are using Python List, Okay?
+Now, we have to understand where we can apply what.
+Now, we are… if you're using Python List.
+It's like a backpack, okay? With, say, labeled boxes.
+But, instead if we use, say, arrays.
+It's like a packed suitcase of the same item, okay?
+So that means the suitcase holds more, so in cases where we are handling
+things which are of similar types, it is better to use arrays instead of the Python list, right?
+Next is, obviously, we have to consider about scalability when we are talking about scalability, about the speed.
+When we are at the speed, it's processing.
+No.
+a Python, when we are writing, say, for a for loop, that means it is going to be very slow, right? If we want to update something.
+say, I want to increase
+all the numbers in my particular array, or in my list, by one.
+Now, if you are doing loop, it's going to go one after another, one by one at a time, and then every row, and it's going to be slow. Instead.
+And we're going to see in a bit, if we are using NumPy, which is a package in Python, okay, it's a special type of array concept, to add one to the whole column, it can do at once. It's very fast.
+So that's another thing that we have to think about when we are talking about scalability.
+The other is about reading a file, right? So when we are reading a file, say it's a small file, it's fine. If it's a big file.
+It's a huge data set.
+Then, how do we do that? There comes chunking, so we have to
+Break the entire file into small chunks so that it becomes easy for us to read in bits.
+Right?
+The other factor is… The method itself.
+So, what you're using, what type of method you're using, what type of algorithm you're picking up for which specific case in machine learning. So that's another factor that is definitely going to be… is another point that
+effects when we are talking about scalability, okay?
+No.
+When we're talking about handling these data, we have to understand there are two habits in Python. First, we do vectorization.
+Okay? That means…
+we don't walk cell by cell, okay? Like, for example, if we are using NumPy, we add one to the whole grid. It does the loop in…
+at once, okay? You're not going one by one.
+And the second, we have to think about chunks. If you are using, reading, say, 100, thousandth rows, okay? We have to update the model.
+we have to use chunks so that we can read it and throw the chunk away and read the next. Either we have to do that, or we have to use some advanced or other packages that can help us handle
+or read that many number of rows, right? For example, like, SkyKitLearn. There is a package in machine learning we use, right?
+to use all the CPU cores that we can use. We can define over there how many cores of CPU we need, and we can use that.
+But… so that's… that's the thing that you have to understand when we are writing those…
+issues, the… when we are talking about streaming of data, a lot of data is coming in, how you want to handle it, which is a better approach to do. So all those things you have to keep in mind when you are writing those
+Particular tasks in your list.
+The next part they talked about is explain the differences between artificial intelligence and machine learning and deep learning.
+I'm pretty much sure most of you already know, but just to reiterate again.
+Artificial intelligence is like the outer box, okay?
+At any time a machine does something that looks smart, like it follows a rule, or…
+searches a map, or learns from examples, like a CHASE program that we used to have in the earlier days when we used to start
+Starting about artificial intelligence, that was the first example, right?
+That is… that is basically an if-then rule in AI, which is… AI is using. It did not learn anything.
+Okay? Those rules were written by someone.
+And that's how the chess program ran, but that is called
+an artificial intelligence. Why? Because it was smart enough to follow those rules.
+Okay?
+But inside that artificial intelligence box, we have the machine learning.
+So, machine learning comes when machine is learning from examples, right? So, like, the house prices. So it finds that line, and then it predicts and tells or guesses the next best price that you want to understand for a particular square feet of area, right?
+Or maybe particularly far, say, far, you can also show the strengths. So this particular phase, in the first quarter of the year, if you feed in those datas, the house prices are this. The second quarter of the year, the house prices are this, what might be the
+House prices in the third quarter, based on all the different
+Variables or targets that you are feeding into that particular machine.
+Right? So that's where machine learning comes.
+The last one is deep learning. So that is the machine learning with many layers of artificial neurons. So it is…
+It is advanced, like, it can understand, identify, predict, learn from pictures, from speeches, languages. It wants a lot of data.
+And it also needs a lot of computing power, right? For example, like, if I want to look at the chest x-rays of different patients, and then come out
+for a conclusion, like, what it is denoting for a particular disease, maybe. So that needs deep learning, right?
+So that's the basic differences between the three.
+Now…
+You can give a little more examples, you can give some different use cases to show the differences between these three in your document as well.
+Now then, the question next comes to you all. What do you think, what is ChatGPT? Is it AI, is it machine learning, or is it deep learning?
+What do you think? What is ChatGPD?
+Lucas Lucena
+Lucas Lucena
+00:46:00
+Is it artificial intelligence?
+Sonali Baidya
+Sonali Baidya
+00:46:04
+So that you're saying that it is not machine learning, or it is not deep learning?
+Lucas Lucena
+Lucas Lucena
+00:46:12
+I mean, I guess you can put the data, and then you can try to predict, but…
+I don't know.
+Sonali Baidya
+Sonali Baidya
+00:46:20
+It is also generating data. It is also looking at your, any type of data you're feeding in, be it pictures or speech, or language.
+So, it's all three. It's… it's a product which has AI, and it learns from data, so it's… it has machine learning, and it has the engine, where it is also computing, okay?
+So, it's also deep learning, right? So, it's a combination of three.
+You can say. It's all three.
+Okay? So similarly, you have to find out many different, any other examples that you can fit into this bucket separately, or you can combine these three and come up with a good example, saying, okay, this one is a good example of all these three, or this is what is it artificial intelligence is, or machine learning is, or deep learning is.
+Okay? So that's what the… you have to do it in your… Document.
+The next one is, they talked about to go through all the different types of toolbox that Python has for the scientific stack.
+To start with, We are going to do the NumPy today. So, NumPy is, like.
+A grid of numbers, okay? And it has different functions in it, in that, so you can use those different functions to perform different computations in a particular grid of numbers.
+The next one is the SkyPie, which is, like, It's like, more…
+Used in statistics, statistical tests, okay?
+So, like, for example, we want to find the lowest point of, of all the…
+In a range of errors that is happening in our system, okay?
+Okay? So, you need, it's like you need a test or a solver
+To find out why that custom error is happening, or what is the lowest point of that custom error, or what is the highest point of that particular thing.
+So in those cases, we use Skype app, okay?
+MacBotlib, we already used in our previous unit. You saw that it was used to draw the graph, so you can draw a histogram, you can draw the dots, the lines, and all those steps.
+Okay?
+Next is… Pandas, it's like a spreadsheet in Python. You can open a CSV file.
+And then use that package to go through all the entire CSV file, and then compute based on the data that is there in the CSV file.
+SkyKit Learn, it's like a learning library, like how we talked linear regression, right, or logistic regression. When we're applying those things, we need SkyKit Learn in those cases, okay?
+So… That's what, in very brief, all these… Tools are, okay?
+You need to understand what each of these and where it's been implemented.
+And then, do a write-up.
+Okay? The next one, they have, I think, mentioned about how… what is the difference between Python List and…
+The array, so if you look at this diagram.
+On the left-hand side, if you see, it's the list.
+Now, in Python, list is
+like a row of arrows. So, each of these has a pointer-like or arrow-right things. So, each of these arrows points to a separate
+Python object, okay? It can be sitting anywhere in the memory, it doesn't matter, okay? It's… if you have already done C programming at the very early stage earlier.
+There were concepts of pointers over there, okay?
+So it's like that. So when you are having a list, that means in that list, it's a row of pointers that is pointing to different objects that is sitting somewhere in your
+Memory.
+Excuse me. Those objects
+do not have to match, okay? This can be a text in that particular list, there can be an integer, like a number in that particular list, there can be a decimal or float number, like…
+any 3.222, or whatever it is. It doesn't need to be the same type, okay? That is why a list is easy to group. So you just add another arrow over there, a pointer over there, and you can just point to that particular object, wherever you want to place it.
+But when it comes to mathematics.
+Okay? For a list, it's very difficult for us to deal with, because if we want to add One.
+That means to every cell. So, what happens is, suppose it's a list, I'm not sure…
+Okay, let me show you. So, in a list.
+It's something like this, we use a square bracket like this, okay? So if an analyst I have a number, 1 and 2, okay, I want to add 1
+So if I do plus 1, Okay?
+This does not mean one, it will increase 1 over here and one over here.
+Okay, what it does is, It…
+glues two lists together, okay? So it takes another list and glues that together with this list.
+Okay? So that's why, when it comes to dealing with numbers.
+Python list is not a good option. Instead, we go for the NumPy array.
+Okay? So it becomes very easy for us to handle, we can increase the numbers, we can do anything with numbers much more easily in NumPyA.
+Okay? So because, if you see, it's like one block of same kind of stuffs, okay? It's just packed side by side, like any other array in any other programming language. There are no arrow concepts over here.
+Okay? So that's why we use, generally, numpy arrays when we are dealing with numbers in Python.
+Having said that, When we go over this code, you will be seeing that,
+We are using a NumPy package over here, of course, okay?
+And we're going to use this NumPy name as NP.
+And if you go through each of these lines, and if those who have already used NumPy, their family, these are the very basic ones.
+So we are using some… Assigning some random numbers.
+In this matrix of 20 by 20, so 20 crores, 20 columns, Okay?
+And these numbers… Will be anything ranging between 0 and 1.
+And then we are, when we are going to print this.
+It's going to print the dimension of my matrix, that is 20 by 20.
+Okay?
+So that's what this random function is doing.
+Any questions on this one?
+If not, then I'll go ahead and run and show you what I've already done, I think, before.
+Good. We'll give it a try.
+Yeah.
+So…
+If you go to the next one, and so that's… that's the shape that's over here. Now, if I go to the next one.
+which is printing the number exactly that is on the 10th row and 15th column. It is this particular number. It's a random number, and I've used a random function, random function over here, right?
+Now, any questions on why we are doing this random.random?
+I'm guessing everybody knows that if you are already… you have worked in Python. Anybody?
+Anybody has any questions regarding this one?
+Why?
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:55:01
+Sorry, I haven't worked with Python earlier, so if you can explain a little bit.
+Sonali Baidya
+Sonali Baidya
+00:55:05
+Okay, so… this is basically like… so this is my toolbox, you can see, okay? So now NumPy has…
+a tool called Random in it.
+Now, this is a folder-like thing inside the NumPy toolbox package, you can say. NumPy is a toolbox, inside that there is a folder, one of the folder names is random.
+Okay? And inside that random, there is a function called random.
+So that's why you… in order to understand and get this, function work.
+You have to go inside that particular folder, which is inside that NumPy.
+So that's why we are doing np.random.random.
+This random is a function, this is the folder inside NumPy.
+Okay?
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:56:00
+Yep, thanks.
+Sonali Baidya
+Sonali Baidya
+00:56:01
+Okay, so, again, like, this one is just printing. I can see you just saw the random number in that particular location, which is the 10th row and 15th column, which is very pretty much simple. If I want to go and print
+The entire third row So we can just write the row number, and this colon means…
+whatever is there in that particular row. We don't… we are not binding with any particular specific thing over here. We want to print the entire row.
+third row, however, no matter how many columns are there, okay? So if we are going to do that, so that's what it's printing. So if, since my matrix is 20 by 20, it's going to print all the 20 numbers in that particular row. Similarly, for the 12th column.
+We are going to print all the…
+Numbers in that 12th column, so that's what it is doing over here. Okay?
+This is pretty much like reversing a particular,
+Whatever we have in that particular
+array, so we are going to reverse that. That's what the reverse is about.
+So for reversing, we use minus 1.
+What type of data type? Now, let's go… Right here.
+So, since it's a random, if you see that it's in decimal, that's why it's float 64, that's what it's printing over here.
+Okay, now this one is, we are getting…
+The first 5 rows of a particular array, so… That's…
+Over here, we are getting that, we are not printing it.
+What we are doing is, we are using a function called mayshareMemory.
+Okay?
+So, what this function is doing is, it's going to check if this particular It's been shared
+Between the two arrays, okay? What are the two arrays? C and A.
+So we are taking a part of that A array and storing into the C, and we are checking whether A and C are sharing any memory or not. If it is, then it's going to return true.
+If it is not, then it's going to return false.
+Okay? So that's what this particular function is doing.
+Okay, the next one is,
+Yeah, setting the road to… Column 1 to 0.
+That's what it is, how we can assign a particular row and a particular column, so that means a particular number to zero, that's what it is over here.
+And when you print it, it's going to show you right here.
+The next is flatten.
+Anybody has heard about how Flatten works?
+Anybody has used Flatten earlier?
+Yes, no?
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:59:21
+Nope.
+Sonali Baidya
+Sonali Baidya
+00:59:23
+Anybody else who has already worked in NumPy, who people have said that they have worked with this package?
+Okay.
+So, let me… Give you some idea about it, okay?
+So, when we are… Let me see… 12th.
+Yeah.
+Okay, let me take this example, okay.
+So… What is happening over here is… We are taking the first…
+5 row types, like, this is what is happening over here. So, 5…
+It rows, we are taking, and this colon means… that means 20 columns, right?
+So that means there will be 5…
+Times 20 columns, which is 100 numbers.
+Correct?
+So now, if we are doing this flattened function, we are calling this… This makes this…
+Row and 20 columns of 100 numbers makes a line of 100.
+Okay? So that's what this flatten function is doing. It makes a line of 100.
+And later, if you see over here, it's calling this reshape, Okay?
+Then the flatten function makes Avan's,
+makes the lines of 100, this reshape, this over here, it stacks those same 100 numbers.
+Because 5 times 10 times 2 is still 100.
+So, if the grid had 10 columns.
+That means… and 5 rows, then it would… haven't got… made the reshape over here, because it would have given errors. So, suppose I would run this one, say, instead of 5, if I make 20, 10, 10, 2, and if I run it, you see that it's saying
+Cannot reshape arrow because of the size 100 into this shape.
+Because it's becoming 200 now.
+Since we are already flattening it to 100 at the beginning.
+And now, if we are increasing that reshape function, it's going to throw an error.
+Okay, so if we are doing reshape, it needs to be within that 100, whatever we are assigning over here, using the flatten function.
+Okay? So that's what flatten and reshape means.
+Next is… Like, filling the entire…
+Array with zeros, that's what zeros function is for.
+And again, it's going to check whether this particular B and the earlier A array, they're sharing the memory or not. They're not, that's why it's showing false.
+Okay? This one is, like.
+range and arrange, okay? So there are two functions over here, so we have to be careful. So this is how we are using the range and arrange function over here. Basically, they are doing… they're both the same. If you see the outputs.
+Both are printing.
+0 to 7, 0 to 7.
+But does anybody know what's the difference between the range and the orange function?
+Anybody has any idea what is the difference? Where, both the outputs are same, but how are we using it?
+What is happening in range function, and what is happening in arrange function?
+Anybody?
+Any idea? Like, or a guess, maybe?
+Come on. It's, it's… there's no right or wrong over here.
+If anybody can guess what's happening in range, And what's happening in orange?
+Really? No one?
+Okay. So when we are saying range of 8,
+So that means the Python, the array, we are setting a range. It will start from 0, and it will be filling up till 8th. So that's why it starts from here.
+It will sync that the range is 0 to 7, and that's how we go about, okay?
+So that's why we are using a range… range over here. So we are giving a range of numbers, so there will be 8 numbers in my array, and it's going to fill those based on that number of ranges it's going… I'm going to provide, okay?
+But in case of… orange… What it does it, It… Fills the blocks.
+Okay? 0 through 7.
+Both are… the purpose is the same. Both are doing the same out… giving the same output.
+But the way it works is a little different.
+So this one, we are providing, say, my range will be 8,
+Right? That means my number of…
+Numbers range will be 8, and accordingly, it adjusts and populates. It starts from 0 and goes till 7.
+Now, over here, I'm saying just arrange 8 numbers.
+Okay? So, what it is doing, it's, again, it starts from 0 and 7, since I'm not telling it what should be my starting number and what should be my ending number, over here. So, it's again going to start from 0 and end in 7.
+So that's the only difference between range and arrange. From the output perspective, it's going to be the same.
+Okay?
+Over here, print E plus 1, and as I said at the very beginning, when we are doing this to a list, it won't work, because it is joining the two lists.
+But when we are doing that in a NumPy array, it's simply going to add 1 to each of these numbers, and that's why you're getting plus 1 incremented for each of those numbers.
+Okay? Similarly, we are doing a squaring of each element, so that's what it is showing over here.
+Here, we are doubling each element, that's what we are… that is showing over here.
+And mean, max, and sum, so I think it's…
+We know what those functions are for.
+Okay? So that's what you have to do. You have to pretty much understand these functions, why they are used, where they are used, how they are used, and run this code, and show the output.
+Along with the rest of the things that you need to document for this particular assignment. Let me go over here. So, anybody has any questions on the assignment, and please make sure you are
+Submitting your assignment while writing all those things in a document?
+Providing the formatting that is required for it, and if you're using references from any,
+Where, please make sure you're, adding those references properly in the correct format, okay?
+Any questions, any more… any… anywhere… anybody has any other questions regarding anything in this particular assignment that you need to work on, or if you're not clear?
+Dhaneshwar Patil
+Dhaneshwar Patil
+01:07:42
+No question at the moment.
+Sonali Baidya
+Sonali Baidya
+01:07:44
+Okay.
+Okay, so if you guys don't have any questions, feel free to drop off, and if you have any questions, you can stay back, and we'll meet again next week, okay?
+Dhaneshwar Patil
+Dhaneshwar Patil
+01:07:59
+Thank you.
+Sonali Baidya
+Sonali Baidya
+01:08:01
+Thank you.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+01:08:02
+Goodbye.
+Lucas Lucena
+Lucas Lucena
+01:08:04
+Thank you, have a good night.

@@ -1,0 +1,28 @@
+Response to Brittany Webb
+
+Hi Brittany,
+
+Great choice focusing on PHI/data exfiltration — your point about disguised requests mimicking legitimate sources is an important real-world concern. One gap I noticed in your plan is that while you mention PHI detection and redaction as a technical guardrail, you do not address the retrieval layer itself. If the chatbot's underlying knowledge base already contains PHI-laden documents, detection at the output stage becomes the last line of defense rather than one layer among several. A pre-indexing data curation step — where every document is screened and sanitized before it enters the retrieval corpus — would prevent PHI from ever reaching the generation pipeline in the first place, significantly reducing the surface area for leakage (Yao et al., 2024).
+
+One additional control that could reduce false ALLOWs is implementing a secondary classifier that reviews the chatbot's drafted response before it is displayed to the user. This two-stage check — first at retrieval, then at generation — catches cases where the NER filter misses PHI that is embedded in abbreviations, misspellings, or coded language that staff may use informally (e.g., referring to a patient by room number or initials).
+
+Here is a question that might shift your recommendation: If internal testing revealed that the PHI detection system had a false-negative rate above 5% — meaning one in twenty PHI-containing responses slipped through undetected — would you still recommend deploying with conditions, or would you pause deployment until that rate dropped below an acceptable threshold?
+
+References
+
+Yao, Y., Duan, J., Xu, K., Cai, Y., Sun, Z., & Zhang, Y. (2024). A survey on large language model (LLM) security and privacy: The good, the bad, and the ugly. High-Confidence Computing, 4(2), 100211. https://doi.org/10.1016/j.hcc.2024.100211
+
+
+Response to Jack Boaz
+
+Hi Jack,
+
+Your post does an excellent job of grounding the risk in real statistics — the 77% and 76% figures from the SAS report make the threat feel immediate and credible. One weakness I see in your plan is the escalation path for ambiguous requests. You mention that anything containing PHI should be "passed on to the staff authorized to deal with it," but you do not specify who that staff member is, what the response time expectation should be, or what happens to the user's session while the escalation is pending. Without a defined SLA and a named role (for example, a Privacy Officer on call), escalations risk sitting in a queue while the user either retries or finds a workaround, potentially creating additional exposure.
+
+An additional control to reduce false ALLOWs would be implementing semantic similarity scoring on outbound responses. Even when a query does not explicitly ask for PHI, the chatbot's response might inadvertently contain patient-identifiable details if the retrieval documents are not properly segmented. A cosine-similarity check between the response and a known PHI pattern database would flag outputs that are semantically close to sensitive content, catching cases that keyword-based filters miss (Prosper Team, 2026).
+
+Here is a question for you: If the chatbot's audit logs showed that 30% of all prompts were being refused or flagged during the pilot period — meaning staff found the tool unreliable for routine policy lookups — would you still recommend proceeding with broader deployment, or would you redesign the filtering thresholds first to balance security with usability?
+
+References
+
+Prosper Team. (2026, July 22). HIPAA compliant generative AI: 25 core concepts (2025). Prosper AI. https://www.getprosper.ai/blog/hipaa-compliant-generative-ai-core-concepts-guide

@@ -1,0 +1,16 @@
+Read or review Chapter 2: “Types of Data,” in Principles of Data Science, available at the Library in the Academic Tools section of this course.
+
+Read or review the following chapters in NumPy Essentials, available at the Library in the Academic Tools section of this course.
+Chapter 1: “An Introduction to NumPy”
+Chapter 2: “The NumPy ndarray Object”
+Chapter 3: “Using NumPy Arrays”
+
+Read or review the following chapters in Python: Real World Machine Learning, Module 3, available at the Library in the Academic Tools section of this course.
+Chapter 1: “First Steps to Scalability”
+Chapter 2: “Scalable Learning in Scikit-Learn”
+Chapter 3: “Fast SVM Implementations”
+Chapter 4: “Neural Networks and Deep Learning”
+
+Reading Summary:
+In this unit, you will be reading about various use cases for implementations in scalable learning, support vector machine (SVM), neural networks, and deep learning. You will then read about various data types such as supervised and unsupervised data, quantitative versus qualitative data, and examples of each. Finally, you will start to read about Python tools used for machine learning.
+

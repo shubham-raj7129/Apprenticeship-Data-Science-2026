@@ -1,0 +1,9 @@
+Read or review Chapter 2: “Analyzing Network Traffic with Scapy,” in Effective Python Penetration Testing, available at the Library in the Academic Tools section of this course.
+
+Read or review the following chapters in Cyber Warfare: Techniques, Tactics, and Tools for Security Practitioners, available at the Library in the Academic Tools section of this course.
+1. Chapter 1: “What is Cyber Warfare?”
+2. Chapter 6: “Logical Weapons”
+3. Chapter 7: “Physical Weapons”
+
+Reading Summary:
+In this unit, you will read about what cyber warfare is and strategic, tactical, and operational concepts covering cyber warfare. You will then read about logical weapons used in cyber warfare such as tools in reconnaissance, scanning, access, exfiltration, sustainment, assault, and obfuscation. All are important tools to allow for automated BOTs to operate effectively. Also, you will read about the physical weapons in cyber warfare covering concerns in infrastructure and supply chains. Finally, you will read about a Python module, scapy, used for network traffic generation and analysis.

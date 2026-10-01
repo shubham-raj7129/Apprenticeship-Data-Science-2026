@@ -1,0 +1,10 @@
+Read or review the following chapters in Mastering Pandas: A Complete Guide to Pandas, available at the Library in the Academic Tools section of this course.
+Chapter 5: Indexing and Selecting in pandas
+Chapter 6: Grouping, Merging, and Reshaping Data in pandas
+Chapter 7: Special Data Operations in pandas
+    Section: Handling missing values
+Chapter 8: Time Series and Plotting Using Matplotlib
+Read or review Chapter 9: “Communicating Data,” in Principles of Data Science, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+In this unit, you will read about various capabilities using Pandas. You will read about basic indexing, multi-indexing, boolean indexing, and operations on indexes. You will also read about grouping, merging, and reshaping data. All of which help a data analyst manipulative data sets for the best results. Finally, you will read about communicating data in the form of visualizations. This is important to effectively show the results of analysis using the proper tools.
