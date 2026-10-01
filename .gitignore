@@ -25,3 +25,6 @@ __pycache__/
 # Editor/tooling local settings
 .claude/settings.local.json
 .vscode/.checkmarx*
+
+# Local-only Copilot instructions (not tracked in git)
+.github/copilot-instructions.md
