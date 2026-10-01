@@ -1,0 +1,20 @@
+Response to Lucas Lucena:
+
+Great post, Lucas! I really enjoyed how you tied your visualization examples to specific real-world domains like Formula 1 telemetry and the NFL's Digital Athlete system — those were unique choices that made the use cases feel concrete rather than hypothetical. Your point about scatter plots being useful for comparing telemetry measurements like speed and braking performance is a great example of how the same visualization type can serve very different industries depending on the variables being plotted.
+
+One thing your post got me thinking about is the distinction between simple imputation methods (mean, median, mode) and the more advanced estimators you mentioned, like KNNImputer and IterativeImputer. I did some additional reading and found that Lin and Tsai (2020) conducted a comparative study of missing data imputation methods and found that while simple techniques like mean imputation are computationally efficient, they tend to underestimate the variance in the data because every missing value gets the same replacement. KNN-based methods, on the other hand, preserved the natural variability better because each missing value is estimated from its own set of neighbors — but at the cost of significantly higher computation time, especially on large datasets. This trade-off between accuracy and efficiency seems especially relevant for the kinds of large-scale sports and weather datasets you described, where millions of data points might have scattered gaps. In a scenario like the NFL Digital Athlete system, where player health decisions depend on the imputed data, do you think the added computational cost of KNN imputation is worth it compared to simpler methods, given what is at stake?
+
+Reference
+
+Lin, W. C., & Tsai, C. F. (2020). Missing value imputation: A review and analysis of the literature (2006–2017). Artificial Intelligence Review, 53(2), 1487–1509. https://doi.org/10.1007/s10462-019-09709-4
+
+
+Response to Jacob Lasley:
+
+Hi Jacob, great post! I appreciated how clearly you explained the three types of missingness — MCAR, MAR, and MNAR — from Emmanuel et al. (2021). That classification framework is something I did not cover in my own post, and it adds important context because the type of missingness directly determines which imputation strategy is appropriate. Your example of creating an age column from a date-of-birth column was also a nice, practical illustration of feature engineering through column creation.
+
+Your point about examining missing data before deciding how to handle it really resonated with me. I came across a study by Jäger et al. (2021) that reinforces this idea — they found that the impact of missing data on model performance depends heavily on the mechanism behind the missingness, not just the percentage missing. In their experiments, even a small amount of MNAR data (where the missingness itself is related to the unobserved value, like patients with severe symptoms being less likely to complete a survey) caused significantly more bias than a larger amount of MCAR data. This suggests that the "examine first" approach you recommended is not just good practice but essential — blindly applying mean imputation to MNAR data, for example, could systematically underestimate the severity of the missing observations. Given your manufacturing example with missing sensor readings, do you think the missingness there would more likely be MCAR (random sensor glitches) or MNAR (sensors failing specifically during extreme operating conditions), and how would that change your imputation choice?
+
+Reference
+
+Jäger, S., Allhorn, A., & Bießmann, F. (2021). A benchmark for data imputation methods. Frontiers in Big Data, 4, 693674. https://doi.org/10.3389/fdata.2021.693674
