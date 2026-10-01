@@ -10,17 +10,17 @@ Personal coursework repository for the Data Science apprenticeship program (Purd
 | --- | --- |
 | [`Orientation/`](./Orientation) | Program orientation materials (syllabus, Dropbox basics, time management resources). |
 | [`IN 501/`](./IN%20501) | IN501 coursework — assignments, seminar slides/PDFs, and assignment rubrics, organized by unit. |
-| [`IN404_MachineLearning/`](./IN404_MachineLearning) | IN404 (Machine Learning) coursework — per-unit folders (`Unit 1`–`Unit 4`+) each with `Assignment/`, `Discussion/`, `Seminar/`, plus shared `Docs/` and `Rubrics/`. |
+| [`IN404_MachineLearning/`](./IN404_MachineLearning) | IN404 (Machine Learning) coursework — per-unit folders (`Unit 1`–`Unit 4`+) each with `Discussion/` and `Seminar/`, plus an assignment folder named `Assignment/` or `Assignments/` depending on the unit, and shared `Docs/` and `Rubrics/`. |
 | [`IN 403 - Deep Learning/`](./IN%20403%20-%20Deep%20Learning) | IN403 (Deep Learning) coursework — per-unit folders (`Unit 1`–`Unit 10`) each with `Assignment/` and `Discussion/` subfolders, notebooks (`.ipynb`), presentations, and datasets used in labs. |
 | [`data/`](./data) | Shared datasets used across notebooks (e.g., MNIST). |
 | `requirements_backup.txt` / `requirements_no_tf.txt` | Snapshots of the Python environment's installed packages (with and without TensorFlow) for reproducing the local `.venv`. |
 
-Each unit folder generally follows the same pattern:
+Each unit folder generally follows the same pattern, though exact subfolder names vary slightly by unit:
 
 - `Overview.txt` / `Reading.txt` — unit overview and reading notes.
-- `Assignment/` — assignment notebooks/write-ups and related datasets.
+- `Assignment/` (or `Assignments/`) — assignment notebooks/write-ups and related datasets.
 - `Discussion/` — discussion board posts and responses.
-- `Seminar/` — seminar slides, recordings notes, or related PDFs.
+- `Seminar/` — seminar slides, recording notes, or related PDFs.
 
 ## Environment Setup
 
