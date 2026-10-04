@@ -220,7 +220,13 @@ print("  SECTION 2: NULL MODEL BASELINE")
 print("=" * 60)
 print()
 y_test_binary = np.where(y_test==5, 1, 0)
-writeFunction ("Null model accuracy (majority class baseline)", max(y_test_binary.mean(), 1 - y_test_binary.mean()))
+writeFunction ("Null model accuracy — holdout (majority class baseline)", max(y_test_binary.mean(), 1 - y_test_binary.mean()))
+
+#Cross-validated null baseline using the same protocol as testVector
+from sklearn.dummy import DummyClassifier
+dummy = DummyClassifier(strategy='most_frequent')
+cv_null_acc = cross_val_score(dummy, X, y, cv=5, scoring='accuracy').mean()
+writeFunction ("Null model accuracy — 5-fold CV (majority class baseline)", cv_null_acc)
 
 
 ###############################################

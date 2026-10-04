@@ -52,7 +52,9 @@ Reduced data set with 1-3 ngrams 128 rows x 6260 columns
 
 Accuracy for reduced data set and 1-3 ngrams 88.37%
 
-Null model accuracy (majority class baseline) 86.05%
+Null model accuracy — holdout (majority class baseline) 86.05%
+
+Null model accuracy — 5-fold CV (majority class baseline) 80.71%
 
 Ngram 1-3 model
   Dimensions: 8276
