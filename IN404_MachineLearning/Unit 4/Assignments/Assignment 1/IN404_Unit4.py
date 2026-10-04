@@ -4,6 +4,8 @@ import scipy as sp
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
 from sklearn import metrics
 from textblob import TextBlob, Word
 from nltk.stem.snowball import SnowballStemmer
@@ -19,19 +21,12 @@ if not sys.warnoptions:
 #Set working directory to the script's folder so relative paths work
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-#Open a file handle for assignment results.
-f = open("IN404_Unit4.txt", "a")
-#Set the writeFunction boolean
-#True = write to concole
-#False = write to file for assignment turnin
-PRINT = True
+#Open a file handle for assignment results (overwrite to avoid stale data).
+f = open("IN404_Unit4.txt", "w")
 
 ###############################################
 ##
-##PURPOSE: Write to console or file based on
-##  the writeFunction variable
-##      True = write to concole
-##      False = write to file for assignment turnin
+##PURPOSE: Write to both console and file
 ##
 ##INPUT: Message to write (message1)
 ##   Optional: message2
@@ -52,18 +47,17 @@ def _fmt(val):
 def writeFunction(message1, *message2):
 
     #Print to console
-    if PRINT:
-        if message2:
-            print(f"  {message1}  {_fmt(message2[0])}")
-        else:
-            print(message1)
-        print()
-    #Print to file for assignment
+    if message2:
+        print(f"  {message1}  {_fmt(message2[0])}")
     else:
-        f.write(str(message1))
-        if message2:
-            f.write(" " + _fmt(message2[0]))
-        f.write("\n\n")
+        print(message1)
+    print()
+
+    #Write to file
+    f.write(str(message1))
+    if message2:
+        f.write(" " + _fmt(message2[0]))
+    f.write("\n\n")
 
 ###############################################
 ##
@@ -242,16 +236,18 @@ writeFunction ("Null model accuracy (majority class baseline)", max(y_test_binar
 ##
 ###############################################
 def testVector(message, vect):
-    logreg = LogisticRegression()
+    # Use a Pipeline so the vectorizer is fitted only on training data
+    # within each CV fold, preventing data leakage.
+    pipe = Pipeline([('vect', vect), ('logreg', LogisticRegression())])
+    acc = cross_val_score(pipe, X, y, cv=5, scoring='accuracy').mean()
+    # Fit on full data only for dimension reporting
     X_dtm = vect.fit_transform(X)
-    acc = cross_val_score(logreg, X_dtm, y, cv=5, scoring='accuracy').mean()
     print(f"  ┌─ {message}")
     print(f"  │  Dimensions:  {X_dtm.shape[1]:,} features")
     print(f"  │  Accuracy:    {acc * 100:.2f}%")
     print(f"  └─────────────────────────────────────────")
     print()
-    if not PRINT:
-        f.write(f"{message}\n  Dimensions: {X_dtm.shape[1]}\n  Accuracy: {acc * 100:.2f}%\n\n")
+    f.write(f"{message}\n  Dimensions: {X_dtm.shape[1]}\n  Accuracy: {acc * 100:.2f}%\n\n")
 
 
 ###############
@@ -264,6 +260,13 @@ print("=" * 60)
 print()
 vect = CountVectorizer(ngram_range=(1, 3))
 testVector("Ngram 1-3 model", vect)
+
+###############
+## Count vectorizer with 1-2 ngrams and using cross validation
+###############
+#Try count vectorization using 1-grams and 2-grams
+vect = CountVectorizer(ngram_range=(1, 2))
+testVector("Ngram 1-2 model", vect)
 
 
 ###############
@@ -373,27 +376,27 @@ y = reviews_best_worst.Star
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 
 ###############
-## Default count vectorizer
+## Default count vectorizer with all four features via ColumnTransformer
 ###############
-#Apply default CountVectorizer with text column only
-vect = CountVectorizer()
+#Use ColumnTransformer to combine text vectorizers for the two text columns
+#with passthrough for the numeric sentiment columns
+ct = ColumnTransformer([
+    ('review_text', CountVectorizer(), 'Review_Text'),
+    ('review_title', CountVectorizer(), 'Review_Title'),
+    ('numeric', 'passthrough', ['sentiment', 'sentiment_title'])
+])
 
-#Transform and fit the training set
-X_train_dtm = vect.fit_transform(X_train.Review_Text)
+#Build a pipeline with the column transformer and logistic regression
+pipe = Pipeline([('features', ct), ('logreg', LogisticRegression())])
+pipe.fit(X_train, y_train)
+y_pred_class = pipe.predict(X_test)
 
-#Transform the testing set
-X_test_dtm = vect.transform(X_test.Review_Text)
+#Print the dimensions of the combined feature matrix
+X_train_transformed = ct.fit_transform(X_train)
+writeFunction ("Final training set dimensions", X_train_transformed.shape)
 
-#Print the dimensions of the training set
-writeFunction ("Final training set dimensions", X_train_dtm.shape)
-
-#Print the dimensions of the testing set
-writeFunction ("Final testing set dimensions", X_test_dtm.shape)
-
-#Apply logistic regression model with text column only
-logreg = LogisticRegression()
-logreg.fit(X_train_dtm, y_train)
-y_pred_class = logreg.predict(X_test_dtm)
+X_test_transformed = ct.transform(X_test)
+writeFunction ("Final testing set dimensions", X_test_transformed.shape)
 
 #Print accuracy
 writeFunction ("Final reduced data set accuracy", metrics.accuracy_score(y_test, y_pred_class))
