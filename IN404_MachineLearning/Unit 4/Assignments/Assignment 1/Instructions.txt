@@ -1,0 +1,54 @@
+NOTE: Unit 4 has two Assignments: Assignment 1 and Assignment 2. Each will be submitted to its individual Dropbox.
+
+Unit 4 Assignment 1: Reshaping Data
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Examine methods to communicate results effectively.
+        Investigate term frequency – inverse document frequency capabilities.
+        Analyze reshaping data sets to achieve the best model.
+    Course Outcome:
+        IN404-3: Analyze different machine learning algorithms for a specified problem.
+
+Purpose
+In this assignment, you will use Python to parse a comma separated value file with end user reviews of a mobile application. You will parse the text for sentiment analysis and compare accuracy scores for various models. You will then compare count vectorization and term frequency – inverse document frequency results.
+
+Assignment Instructions
+
+Complete the following:
+
+Please number the assignment items in your Microsoft® Word® document.
+Item 1 is using Python and VSCode. The results are used for the remaining items.
+For item 1, provide a screenshot of the execution. Be sure to post the .py file for the Python program. Another possibility might be to copy-and-paste your code and results in the assignment document. Be sure to answer all items.
+Start the next action on a new page.
+    Using the provided IN404_Reviews.csv and IN404_Unit4.py files, complete the programming where you see ################# YOUR CODE HERE ########################.
+    List the accuracy score for all that you received in item 1. There are 15 total.
+    Describe which accuracy scores, if any, beat the null model.
+        Which was the best model?
+        Which two tied as the second best model?
+        What do these results tell you?
+    Compare the two tokenization models:
+        vect = CountVectorizer(ngram_range=(1, 3))
+        testVector("Ngram 1-3 model", vect)
+
+        vect = CountVectorizer(ngram_range=(1, 2))
+        testVector("Ngram 1-2 model", vect)
+
+        Which model had the better accuracy score?
+        Why do you think they scored differently?
+    Compare, and contrast, the train/test split and 5-fold cross validation process used in the testVector function from the code in item 1. Show how each was done in the code and which you would expect better results from.
+    Research the CountVectorizer function used. What do the flags of ngram_range, stop_words, max_df, min_df, and max_features do?
+    Compare, and contrast, count vectorization and term frequency – inverse document frequency (TF-IDF). Be sure to include:
+        When would you use each?
+        Which gave the better accuracy results?
+        Why?
+
+Assignment Requirements
+For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit4_Assignment1 and submit it to the Dropbox by the deadline.
+
+Review the rubric before beginning this activity.
+
