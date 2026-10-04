@@ -1,0 +1,47 @@
+NOTE: Unit 4 has two assignments: Assignment 1 and Assignment 2. Each will be submitted to their individual Dropbox.
+
+Unit 4, Assignment 2: Reshaping Data
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Examine methods to communicate results effectively.
+        Investigate term frequency – inverse document frequency capabilities.
+        Analyze reshaping data sets to achieve the best model.
+    Course Outcomes:
+        IN404-3: Analyze different machine learning algorithms for a specified problem.
+
+GEL-1.02: Demonstrate college-level communication through the composition of original materials in Standard English.
+
+Purpose
+This assignment requires you to compose a report covering communicating data using visualization of results. The target audience for the report should be for senior-level executives who need a comparison of the visualizations and two actual use cases for each. It also fulfills the university-mandated communication requirement for the course.
+
+Assignment Instructions
+Based on research and the knowledge you have achieved thus far in this class, compose an informative report covering communicating data using visualizations. Your paper should follow APA guidelines and be at least 3 pages in length, not including the required title and reference pages. Research and provide details covering five reasons to implement data visualizations. Also, cover effective and ineffective visualizations. Use examples to make your points. Be sure to describe the visualization methods listed below, cover when they should be used, and for what type of data. After that, select three visualizations and summarize two use cases, each, in place today where visualizations are used to effectively communicate results of machine learning. Your report must include title and reference pages. You must have at least three references. Make sure to follow the most current APA guidelines.
+    Scatter plots
+    Bar charts
+    Histogram
+    Line graphs
+    Box plots
+    Sentiment models
+    Stacked bar charts
+    Pie charts
+
+Report Parameters/Expectations:
+    Include a title page and reference page.
+    Written work is provided in Standard English.
+    At least 3 pages in length, not counting the title page and reference page.
+    Includes a highly developed viewpoint, purpose and exceptional written content.
+    Writing demonstrates superior organization, is well ordered, logical, and unified.
+    Free of written grammar, punctuation, and spelling errors.
+    No evidence of plagiarism.
+    At least 3 outside references on the topic of the visualizations in addition to the text.
+    Make sure that the reference page is in the latest APA edition style.
+
+For assistance with APA requirements, please go to Academic Writer. You will find the link in the Academic Tools section of the course.
+
+Assignment Requirements
+    For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+    Also review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment:
+    Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit4_Assignment2 and submit it to the Dropbox by the deadline.
