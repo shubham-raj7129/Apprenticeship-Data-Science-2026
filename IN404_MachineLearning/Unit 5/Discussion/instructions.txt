@@ -1,0 +1,10 @@
+Topic: The Perceptron Model
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with perceptron models and binary classification. Based on the resource, respond to the following:
+In paragraph form, summarize the perceptron model. Be sure to discuss the neuron and how the perceptron functions similarly. Also, include summarizations of an activation function and how the perceptron model is used for binary classification. Include a comparison of the SVM and kernel perceptron models in terms of similarities and differences. Conclude with limitations perceptron models have.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about perceptron models and binary classification, or do some light research "beyond" the other student’s initial post (citing your sources, of course).

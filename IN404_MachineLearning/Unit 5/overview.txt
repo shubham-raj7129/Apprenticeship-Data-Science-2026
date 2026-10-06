@@ -1,0 +1,2 @@
+Support Vector Machine
+In this unit, you will learn about classification models used for kernel learning and time-series analysis. You will learn about predictive modeling, support vector machines (SVM), and perceptron techniques used for classification. You will also program a solution using given two data sets that results in a SVM model. Along the way, you will learn about exploring the two data sets and how to examine various metadata for data analysis.

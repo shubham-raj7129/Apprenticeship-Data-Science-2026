@@ -1,0 +1,15 @@
+Hello class,
+
+Attached is the reference code and also the txt file output that I promised for Unit 5 alongwith the other files that you would need for the assignment. Please attempt to write the code yourself first and then if you get stuck feel free to use this as a way to troubleshoot.
+
+Please email me if you have any questions. 
+
+Thanks,
+
+Dr. Sen Baidya
+
+Attachment(s): 
+IN404_Unit5_Solution.py (12.53 KB)			
+IN404_Unit5.py (14.24 KB)			
+IN404_Unit5and6_1.csv (9.78 KB)			
+IN404_Unit5and6_2.csv (4.9 KB)			

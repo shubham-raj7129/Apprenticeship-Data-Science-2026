@@ -1,0 +1,20 @@
+Response to Jacob Lasley:
+
+Great post, Jacob! I really appreciated how you structured the comparison between the basic perceptron, the kernel perceptron, and the SVM — it made the progression from simple to more capable models very easy to follow. Your point about the Collobert and Bengio (2004) finding that a perceptron and a linear SVM can actually be equivalent under certain conditions was a detail I had not encountered before, and it adds an interesting nuance to the idea that these are fundamentally different algorithms.
+
+One thing your post got me thinking about is the gap between the basic perceptron's "find any boundary" approach and the SVM's maximum-margin strategy. I did some additional reading and found that Freund and Schapire (1999) proposed an interesting middle ground called the voted perceptron, which attempts to bring margin-like benefits to the perceptron framework. Instead of relying on just the final set of weights after training, the voted perceptron stores every intermediate weight vector generated during training and combines their predictions through a weighted vote, where each vector's vote is weighted by how many consecutive examples it classified correctly. Freund and Schapire showed that this approach achieves generalization bounds comparable to the SVM's, despite using the perceptron's simple mistake-driven update rule rather than explicit margin optimization. I found this fascinating because it suggests that some of the SVM's advantage over the basic perceptron is not necessarily about the margin objective itself, but about the basic perceptron discarding useful intermediate information during training. Given your mention of the equivalence result from Collobert and Bengio, do you think the gap between perceptrons and SVMs in practice is more about the algorithms' training procedures than their underlying model structure?
+
+Reference
+
+Freund, Y., & Schapire, R. E. (1999). Large margin classification using the perceptron algorithm. Machine Learning, 37(3), 277–296. https://doi.org/10.1023/A:1007662407062
+
+
+Response to Mateo Uribe Giraldo:
+
+Hi Mateo, great post! I thought your explanation of how the perceptron mirrors a biological neuron — receiving inputs, assigning weights, combining them with a bias, and using an activation function to decide whether to fire — was one of the clearest summaries I have read on the topic. Your mention of polynomial and RBF kernels from Xu and Zhang (2005) was also a nice specific detail that grounded the kernel perceptron discussion in concrete techniques rather than keeping it abstract.
+
+Your point about the basic perceptron failing to converge when classes are not linearly separable stood out to me, and I wanted to add some context I found around the convergence guarantee itself. Novikoff (1962) proved that when training data are linearly separable, the perceptron algorithm is guaranteed to converge after making at most (R/γ)² mistakes, where R is the maximum norm of any input vector and γ is the margin of separability. What I find interesting about this bound is that it depends entirely on the geometry of the data — specifically the ratio between how spread out the data points are and how cleanly they can be separated — rather than on the number of features or training examples. This means the perceptron can actually converge very quickly on well-separated data, even in high-dimensional spaces. However, as you noted, when no linear boundary exists, this guarantee disappears entirely, and the algorithm can cycle indefinitely without settling on a solution. This all-or-nothing behavior is a stark contrast to the SVM, which can handle overlapping classes gracefully through its soft-margin formulation. Given the kernel perceptron's ability to handle non-linear boundaries that you discussed, do you think there are practical scenarios where the perceptron's simplicity and online learning capability would make it preferable to an SVM despite its convergence limitations?
+
+Reference
+
+Novikoff, A. B. (1962). On convergence proofs on perceptrons. Proceedings of the Symposium on the Mathematical Theory of Automata, 12, 615–622.

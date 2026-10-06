@@ -1,0 +1,52 @@
+This week, we move deeper into machine learning classification by exploring Support Vector Machines (SVMs). You will build on concepts such as perceptrons and binary classification and apply them using Python.
+
+What You’ll Learn
+By the end of this week, you should be able to:
+    Explain how Support Vector Machines (SVMs) work.
+    Understand kernels and how they help create complex decision boundaries.
+    Review perceptrons and binary classification.
+    Prepare and transform datasets for machine learning.
+    Interpret model scores and evaluation results.
+
+What to Review
+Please complete all Week 5/Unit 5 readings and resources, with particular attention to:
+    Neural Networks and Perceptrons
+    Support Vector Machines
+    Kernel learning
+    Predictive modeling with Python
+
+Focus on understanding why data is transformed and how an SVM uses the data to classify observations.
+
+What You’ll Do
+For this week's assignment, you will:
+    Work with datasets and prepare them for modeling.
+    Convert data into appropriate formats for machine learning.
+    Perform a train/test split.
+    Build and run an SVM model in Python/PyCharm.
+    Examine model results, including scores and decision functions.
+    Answer conceptual questions about the steps and results.
+
+Assignment Checklist
+Before submitting, make sure you:
+    Complete all required coding steps.
+    Include your Python code and screenshots of your results.
+    Answer all questions (Items 1–8) clearly.
+    Explain your results in your own words.
+    Submit the assignment in the required Word document format.
+    Follow academic integrity and formatting requirements.
+
+Tips for Success
+Don't just focus on getting the code to run. Pay attention to why each step is necessary, especially data preparation, train/test splitting, kernels, margins, and classification boundaries.
+Start early so you have time to troubleshoot any Python or PyCharm issues.
+
+Due Dates
+Week 5 Discussion: See course schedule
+Week 5 Assignment – Support Vector Machine: See course schedule
+
+Final Thought
+This week is about connecting machine learning theory with hands-on Python implementation. Understanding how SVMs classify data will give you a stronger foundation for working with more advanced machine learning models.
+
+If you have questions, please reach out or bring them to our live session. I look forward to seeing your work this week!
+
+Regards,
+Dr. Sen Baidya
