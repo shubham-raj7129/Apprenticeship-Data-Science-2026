@@ -1,0 +1,390 @@
+Sonali Baidya
+Sonali Baidya
+Good evening, everybody.
+Okay, give… let's give it a few more seconds, and then we can start, okay?
+Okay, so it's past 1 minute. Let's go ahead and start.
+Before going ahead, sir, how is everybody doing today?
+Better go.
+Lucas Lucena
+Lucas Lucena
+02:25
+Pretty good. What about yourself?
+Sonali Baidya
+Sonali Baidya
+02:28
+Good, good. Is everything getting cooler now?
+I know last week people spoke complaining about the heat.
+Lucas Lucena
+Lucas Lucena
+02:38
+Yeah, it's getting colder here in Maryland.
+Sonali Baidya
+Sonali Baidya
+02:41
+Yeah… oh, Maryland is pretty… should be pleasant.
+Yeah, things are getting cooler in Texas, so I can imagine people in the East Coast or other parts must be in a better shape than what we are over here.
+Okay,
+And how about the course? How is everybody doing with the course? Is everybody looking good? Learning something new?
+Or still, like… Any, any suggestions or feedbacks that you guys want to give it to me?
+There's no good or bad, just…
+That's nice, I am… you're learning a lot of new things. Good. What about the others? Anybody has any suggestions, or anything that… or everything looks good so far, you're learning stuff?
+I hope I'm not boring you guys every week.
+Okay.
+Okay, that's good, and I'm glad you guys are learning, and as every week I say, if you guys have any questions, feel free to drop me an email, and I'm happy to explain that to you.
+So, just don't get stuck, or just don't think that there is a good question or a bad question, should I ask or not? You don't have to think about that, just drop that email, okay?
+Okay, so having said that, let's go ahead and start this week's seminar, and this unit is, we are going to learn another new model, you can say, a technique.
+And that's what we're going to go through today, but before that, again, I'm not sure if you got a chance to go through the…
+announcement section or not?
+If not, just go through it. I have already posted what's going to be covered this week. Again, like, every week, you have a discussion, and I already know that some of you have already started, and which is good. And for those who have not started.
+Just go ahead and start today, and
+And you know the drill about the discussion posts, okay?
+There are a couple of articles that you can read in the reading section that will help you in your discussion, as well as also give you some
+insights about… that you're going to apply in the lab as well. Okay, so in the assignment.
+Okay, let's go back… Okay.
+And again, I just…
+For the seminar, for those who are not attending, and when you're going to review this video recording, please make sure you go through it, write as required in the rubrics, and submit the alternative assignment. For those who are attending, you guys are good. So…
+Having said that, let's go ahead and dive into the assignment.
+Okay.
+So if you see this week.
+These are the things that we are going to tackle.
+First, we are now going to know what the support vector machines mean.
+And what does… kernel learning mean? What does perceptron's
+do, and how is it different from SVM? That's a short form of support vector web machines. And why do we need SVM over perceptrons? That's also we are going to see through an example.
+And once you get all these ideas, and that's what you're going to implement.
+In your code this week, okay?
+And, I'm going to go through all of these, what does these mean, definitely, as I do every week, to give you an idea about this
+algorithms. And then…
+I'm going to show you what you need to do it in your, assignment as well, okay, in the code.
+Okay, having said that, for this week, there will be two things that you need to download from the resource section, along with the, of course, the Python file.
+Which is, there is a two CSV file. This is the first CSV file and the second CSV file. You would need both.
+So, you download the two CSV files, keep it in the same folder, just to avoid any confusion. In case you are downloading and keeping it into a separate folder, please make sure you're putting the
+right path over there. Otherwise, it will error out.
+So, that should be first confirmed.
+And again, in the code, you will see the sections where you would need to write your own code, so go ahead and write that code.
+Once you write the code, once you run your program, the results from your program, whatever you're getting, and based on that, you have to answer questions from 2 to 8, okay, in order to understand. So, first of all, what are the shapes of each of these following? I'm going to go through it, you don't want to worry about right now. Third, research why the data object in the data frame 1,
+Was converted to a datetime, date data type, and then to a float data type, explain.
+I'm also going to touch
+through it, so that you can get an idea, and then do some… a little more digging in order to write your, answer for this. What was the train, test, split values? You can… when you run your code, you should be able to see it. In terms of kernel learning, describe what the SBM
+is, and what it is used for. Describe the SVM decision function, shape of
+OVO and OVR, and we're going to know also, so don't worry about that. What was the kernel learning of our SVM score? That's also you're going to get from the output. What does the SVM score mean as applied to X and, like, uppercase S and small y? And I guess by now, you should be knowing what X and Y is.
+So once you have all those answers, and you have the code running with all your screenshots, like, first of all, you need to put… even if you put your screenshots, guys, you need to make sure you're printed into a text file, and you're submitting the text file as well.
+So make sure once you drop, have all your files ready, put it into the…
+Dropbox, and make sure you're putting into the seminar dropbox… sorry, the assignment dropbox, and not on the seminar dropbox, okay?
+Okay, so that's about this week's assignment. Any questions on…
+What is needed and what is required in terms to complete your assignment.
+From the housekeeping stuff, I'm just not talking about the concepts, I'm just talking about, like, asking any, anything, any confusion over here.
+Anybody has any questions?
+Silence means golden, so no, that means there's no question so far. So I'll go ahead and…
+start walking you through these concepts. There's SVM, kernel learning, perceptrons, and stuff like that.
+Okay.
+Let me share my…
+Screen… Damn.
+And let me know if… once you see the PowerPoint.
+If you are able to see it, just let me know. If not, like, I have to then figure out what's going on.
+Okay.
+Okay.
+So… So again, I'm just going to touch in very brief what we
+have learned so far in the past few units, right? First of all, we learned what classification is. We all know that classification means it's like sorting things into groups that, you name in advance, right? So you already know the groups.
+the job is, like, to decide which group this… a particular new thing, if you introduce, it belongs to, right? So, for example, like we have over here, when the email arrives, is it a spam or a not spam? Accordingly, it will be placed.
+or if I show the image, it's an image of a cat, or image of a dog, and stuff like that, right?
+So, what does this mean? That means…
+we are not… nobody's writing any rule by hand. You're collecting the examples where you already know the answers, and you show them to the model, and the model works out as a rule. And this whole concept
+is called supervised learning, right? So, that we already know, and we have been doing that so far.
+Correct? So now… Then, if that is so, let's go a little bit farther.
+So we have seen something like
+classifications, like binary classifications, right? Yes, no, or spam, not spam, pass or fail. So, we already implemented that concept in the last past few units.
+Right? So if I look at this table, we can see that, okay, there are two students, and there are two numbers. One is the hours studied, one is, like, the problems done by the student.
+And, of course, the last column is the label where we are seeing that weather, what's the result, okay?
+So the inputs over here are the hours studied and the problems done, right? So these are the features. So, in code, we know that these are the uppercase X.
+And the answer that we are getting, that is the label, is the lowercase y.
+Right? So that's the target. So, again, this is what we have already know… we already know, we have already implemented.
+And we know from the past few units.
+I'm just going to go very briefly on this, because… just to get into the topic that we are going to implement this week, okay?
+Next comes the term vector. Now.
+every row of data set is one example, right? So, suppose if you take the first row, that's one example. Second row, that's another example. Third one is another example. So the features of that row are a list of numbers.
+So, a list of numbers is what that word vector means, okay? That's what we're going to see in this unit, okay? It's nothing fancier, it's just that numbers that we are seeing it is the vector.
+Okay? So the row 1…
+is having numbers 4 and 10. Row 2 have 1, 2, and row 3 has 5, 12. So those are all the vectors.
+Okay?
+So, again, We understand the features are the questions asked, and…
+The label, that's the why, is the answer of the target.
+Right? Now, having said that, then what is parceptron?
+Okay?
+So, Perceptron is one of the oldest machine learning models. It is very simple on purpose, because it's the simplest form of machine learning model, and it was a very old one. It looks at the features.
+And it draws one straight line, like, boundary, or a straight boundary between the two groups.
+Everything on one side gets the first label, and everything on the other side gets the second label, okay?
+So, then how does it learn? It's… is… is definitely a… is worth understanding, right? So, it starts with a line in some, say, arbitrary place.
+It tests the training examples, so every time it gets one wrong, it nudges the line toward fixing that mistake.
+And it keeps on repeating this. So when no training example is wrong anymore, then it stops, okay? So we put
+Wait on that last word, like, means you have to stop.
+When… when does it stop? That means the training example is no more… no longer raw, okay? So as soon as the line separates that examples, the perceptron is satisfied, and it quits, okay?
+So…
+I hope that makes sense what perceptron means. Okay, now we are going to see a diagram, and then it will make more sense. So let's say over here, okay?
+So it's a straight line. We have two groups, if you can see. Group A has two points.
+name as 1 and 2, and Group B has two points, which is 6 and 7.
+So a perceptron looks for a line that puts A on one side and B on the other side. So, let's say there is a line at 2.5, okay?
+So everything below 2.5 is labeled as A, everything above 2.5 is labeled as B.
+So, 1 is obviously less than 2.5, that's why it is A, whereas 6 is greater than 2.5, it's at B.
+Okay So now, when the perceptron checks, okay, yeah, 1 is less…
+So let's put it on this side, 2 is less, which is correct, C is greater, so it's on that side, 7 greater, okay. So the perception stops now, okay? It checks all these 4, the labels are all right, so by its own rule, it is done. So it stops.
+But, what is the disadvantage of this?
+Okay? There are two limits.
+So… and hence, that's why we do not use Perceptron anymore. We move… we have moved towards SVM, or Support Vector Machines. The first limit, it is, like, a line at 2.5,
+gets the training points right, but it leaves almost no room for… or on the A side, you can see.
+to add anything. So suppose… imagine a new reading at 2.6. It is much closer to A points than to B points, right?
+So, if I see that if the line would have been a little more shifted towards the right, then we could have easily made 2.6.
+as Group A, or labeled it as A, whereas in this case, it will be labeled as B.
+So, in this case, the model was not wrong on understanding, yes, it was greater than 2.5, so hence, it was labeled as
+B, but you can see it is fragile on the data. It has not seen, right? The other limit, or other limitation you can see about Perceptron is it can only draw a straight line.
+So, if the two groups are not arranged in a straight line, Okay, what happens then?
+then the perceptron never finishes.
+Okay? So, that's another issue with Perceptron, for which these, in order to overcome these two things, came as VM. Okay? Any questions so far?
+Okay, if not, Then what is SVN? Okay?
+again, we have already meet… I have already shown you, it's support vector machine, so that means…
+Machine means it's going to learn a rule from the labeled examples, right? And a vector Because…
+I sh… it's a list of numbers.
+Now, why support? Because a small number of training points supports the boundary and holds it in a place. So, if you see over here.
+So, it's… so you can say that is VM is, like, it puts the boundary in the middle.
+of the widest empty space between the two groups. So suppose A is here, B is here, so it goes at the middle, and it finds out which is the widest space between the two groups. It takes that, finds the middle point, and draws a line over there.
+Okay?
+Now, whereas if we have seen the other one, the perceptron had the line over here.
+Okay? Now… So,
+Over here is the same data. We have same two groups, both lines labeled in the training points correctly.
+And the SPM's line has room on both the sides this time.
+So… This room that is there on both the sides of the line, it is called the margin.
+Okay? And the SVM's whole job is to make it as wide as possible.
+Okay? Now…
+Why do we need to have the widest gap? Okay, so there are a couple of things that we need to understand. First.
+Definitely, the first point says, more room for new data, so that means the boundary is not crowding either group. So a new point that is slightly off still lands on the correct side, as we showed. Like, if it's 2.6, it still lands on the correct size.
+Okay?
+And…
+Only a few points matter, so that means the support vectors decides the boundary. That keeps the model stable when a point far from the edge moves.
+And third, you can measure it. So after the model learns, it asks it to label rows you already have answers for, and then, count how many, it got right. So that fraction is the score, okay? So when they are asking in the question, what does SPM score means, that means it's talking about
+that fraction that you're calculating using SVM in your code, okay?
+Now, there are limitations too, definitely. Everything has limitations, and that's why advanced things comes out.
+So, support vector machines are slow on very large datasets, okay? They give you a label, but they don't give you any probability, unless you ask it for doing extra work.
+And also.
+features need to be on comparable scales, because a method is built on distance, right? So we are talking about distance over here. So these are the limitations that SVM have.
+Okay, now let's go to the next part, which is, like…
+we are talking about… they asked about kernel learning, right? So now, we have to understand a picture where two features… so…
+like, if they are not in a straight line, okay? This sits in clusters, maybe, okay? So, like, over here, group A sits in a small cluster, which is at the middle, and group B is scattered all the way around, like a ring.
+So now, can we make these two things in a straight line? Can we put every A on one side and every B on the other side in a straight line?
+Can we do that from this diagram?
+Anybody?
+What do you think from this diagram? Can we put each of these Proofs in a straight line.
+Can we draw a straight line?
+From here.
+In each of these… Yes, no?
+Anybody?
+Yeah, we cannot, right? It's not possible. Any straight line you draw over here, it will cut the ring.
+Somehow the other, okay?
+So, this is the…
+Another limitations of Perceptron that we were talking about, that its perceptron is only in a straight line, but if we have clusters, then Perceptron won't work.
+Okay?
+Now… Then what's the solution?
+Okay?
+So let's talk about that.
+Now, since the two groups differ in distance from the center, so because both are circles, can you imagine, and we can imagine that the two groups differ.
+from each other from… in distance from the center, okay? So if we make distance as a feature.
+Okay? We can add a third number.
+For every row.
+And that third number is the Z.
+And what is that Z calculating? It's calculating X squared plus Y squared.
+Okay, so this is the squared distance from the middle.
+Okay, so once… so if we compute that, now say if we have X0, Y0, then Z will be 0, we can term that as, group A.
+Now, if I take, say, 0.4, 0.3, then Z will be, say, 0.25, so that can be group B and group A as well.
+Now, if I take X to be 2 and Y1, then Z will be 5. So in that case, this is greater than 4, if we think about that as a middle point, the widest space, so then it will be in the group B.
+Okay? And similarly for this one as well, Group B.
+Okay? So, now as, if you see, the smaller the Z is.
+Okay? The A… they fall into A's, and the larger the Zs are, you can… they fall into B's.
+Okay, so if we sort by Z alone.
+Then we can get an idea of the two groups.
+Okay, and then… Based on that, we can identify, okay, this belongs to A group and B group.
+Okay? Now, what we are doing right here is called a kernel learning, okay? It's a function that gives the model that extra information
+Okay? To build that…
+straight line, or the widest space, based on which we can make into Group A and Group B.
+Okay? So, any questions on that? Any guys, any, any… Any confusion over here?
+Regarding what is kernel, what is kernel learning, and how it's used Along with SVM,
+Okay, so if there is no question.
+Then, the next thing is,
+So, we can choose what type of kernel we want, okay? It's a choice you can make when you're creating the model. So the first one is linear.
+It is a straight boundary. You use it when the group's already separate with a straight line, like our number line that we saw earlier.
+The other one is RBF, and the RBF stands for… stands for is Radial Basis Function.
+So it's like a carved boundary based on distance.
+And so this is the example that I showed earlier, that's a circle one. So it is the default when you do not name a kernel, and it is what the lab… in your code, you'll see the lab uses, okay? In your code, you will use this.
+So… The kernel decides what shape the boundary is allowed to be.
+Okay, so that's why there's a question with SBM along with kernel learning.
+Okay? I hope that clarifies what it means.
+Okay, then it talks about… there's a question when it mentions what is OVR, OVO.
+Okay? So… it's too… groups.
+So, one boundary…
+Like, you can say that when there are more than two groups, okay, one boundary is not enough.
+Okay? And that's where the two concepts comes in. That's OVR and OVO.
+OVR, as the name suggests, one versus rest.
+Okay?
+And so for each group, you train a boundary that separates that group from everything else combined.
+I can… 3 groups means three boundaries over here, okay? So, A against, say, the rest, B against the rest, C against the rest, like that. So, one result
+per group. Remember that.
+And…
+1 versus 1, which is OVO. It's a train, a boundary for every pair of groups. So if there are three groups.
+you'll make 3 pairs, so A versus B, A versus C, then B versus C, and like that. So the count is the number of group times 1 less than that, and then you divide that by 2.
+So, that's how OVR and OVO works, okay? And based on that, you can identify what type you are going to use, okay? And in your core also, you will be mentioning that.
+Okay, so that's about OVR OVO. Any questions so far?
+Okay, if not, then the next thing in your code, and as well as in your question, I think they talked about the shape.
+So, the shape of a table is nothing but two numbers, right? How many rows and how many columns?
+So, a table, say, of thousand rows, which you will be seeing in your CSV files, around 1,000 rows.
+And there are two columns, so then the shape will be 1000 by 2, right?
+Now…
+They have asked you to, in your code, you'll see throughout, they'll be asking you to show the shapes.
+Multiple times.
+Okay?
+Now…
+If you add a column, and why is that? Like, there are… because in different times, you will be seeing different outputs, because there are different things happening.
+First, if you add a column.
+The row count stays the same, but the column count goes up by one. And that's what you're going to do in the code, that you'll see that you will add one column, and the column count goes by one, but the row doesn't.
+Now, if you pull one column out of the table, that definitely there will be a single column.
+And the row count stays the same.
+But if you split a table into two pieces, then the two row counts add back up to the original one.
+Okay? So that's why you will see different counts for different shapes based on different scenarios.
+Okay? So that's another part thing about shapes.
+The other thing that you will see that,
+The table and the single column differs.
+In both the CSV files that you'll be having.
+So, and as we talked about, a single column, when pulled out of the table, is a different kind of object. It is only one column of values. So, its shapes has only one number.
+the row count, and it is written with, like, you'll see, I can show you, let me share my entire screen, then I can show you how it will look in the
+Output for the code.
+Okay, so this is one shape.
+Let me see, where else is that one?
+Just the same, same, same.
+Yeah, over here. See, over here?
+So it's a single column.
+Okay? So… Its shape has only one number.
+Okay? The row count. And it is written like this. You'll see there is a comma coming in the back.
+So, and nothing after that, so this comma is not a typo.
+Okay? It means that there is only single column over there.
+Okay? So that's why you'll see this shape.
+Okay? So, that's about the shape part.
+The other thing is when you will be dealing with dates, so in your CSV file, you'll see dates over there, and let me pull that up, if I can.
+one of the CSV files. So, if you see over here, these are all the dates over here.
+Okay.
+So now, when you have a file which has dates in it, Okay, for…
+models like this, these are just characters, okay? And…
+And we saw that text has no size and no distance. So the model, if I want to, say, take two dates, I want to find out the difference between the dates, the model cannot subtract one piece of text from the another.
+Okay? So there, that's why, in your code, you have to do certain things.
+There, the first step will be… It will tell the tool
+That this text is a date.
+Now, the values have real order, okay? Like, February is the 4th.
+comes before, say, February the 4th comes before, say, February the 6th, so the two dates can be subtracted, and the answer is a length of time it will give.
+The second step is, you have to turn that into a plain number.
+You have to find the earliest date in that data set.
+For every row, you have to ask how many days after the earliest date this row is.
+And then, the earliest date, or earliest row becomes zero in that case.
+And the next day becomes 1, and the two days later becomes 2, and so on and so forth. So now every row has a number.
+That carries the same information, like, it now understands that, okay, it has the same number, it understands that it carries the same information, likes the date, and the model then can use it.
+So remember, whenever you're feeding it a date into a model directly, it is going to consider that date as a text, and not like a real date. So you have to do certain things in order to make that into a number where the model will know that, okay, this is a date, now I can use it. Okay?
+So, that's why they have asked you a question about what happens to the deed thing.
+So that's about the basic concepts about what you need to implement in your code. Now, let's go to the code.
+So I'm not going to go from the beginning, because these are mostly the same thing, and you know the drill, you need to make it into true in order to print it over here.
+So, these are all the helper functions that we have been using so far, so these are all the same. These are the two CSV files you need to download and use it in your,
+Code, so make sure you download it, and then…
+put it over there with the right path, if you are putting in somewhere other folders. These are pretty much there, so you don't have to write anything, but you can run it and see it, and these things you already know, you have been using it, and we discussed about shape, what happens to the shape, and why you will see when you run this shape.
+throughout your code, it will be different, and I will be discussed as well on that.
+Okay, so these are pretty fine, any, any…
+there shouldn't be much confusion on this. The other thing is where you need to work on is this part. Like, if I go to the actual one.
+So…
+These are the parts where you need to write your code. So they have the first data frame shown. You need to just do the same, mostly similar thing for the…
+next data frame, and print the outputs, okay? Once that is done, this is where you're converting the object to datetime, and I discussed already, so if you see over here.
+This first line and this line is mostly doing those things. So, PD2… sorry.2T date time, this one, it reads the date column from your file, it recognizes each value as a calendar date, and writes the column back, converting, after converting it, okay?
+So before this line, the type is object, which is the panda's name for text. Okay, so the panda package understands that as text. So after it, the type is now
+Date time.
+Okay?
+Once that is done, the next is over here. So, if you see DF1 date,
+So, this one… or first, let's go ahead and do this one. So, DF1Date.min, okay? So, this finds the earliest date in the column, okay?
+So let's say it finds, say, the earliest date is February 4th, 2020, or whatever is there in that CSV file, okay? And this one is getting subtracted from DF1 date, so that's the earliest date from every row.
+And the result is not a number yet. It is still a duration, till this point, okay?
+What does… what happens is this part.
+It divides each duration by exactly one day, and which converts the duration into a plain count of days as a decimal. So that's what this function is doing.
+Okay? And once that, everything is done, it's been stored over there, and then you can see it, as an output.
+Okay, any questions on these two, about the debt… date part, what has been done, how it's been converted?
+Any confusions or any questions?
+Okay. The other questions, I think you guys should be able to handle the question that they had over there on the trend test split values, I guess, because you have been doing that, so you should be okay. I think there was a question on… let me see…
+Yeah, the… kernel learning and the SVM part. So, again, like, if I go to this code…
+Let's go to the solution.
+So, if you see over here, this part Okay?
+Remember, we talked about the boundaries and the kernel, so this is OVR, that we are using, the shape, okay?
+And svm.sbc is the classifier, the support vector classifier that we are using.
+This creates the model, okay, but does not train it, okay? So it has not learned anything yet.
+Okay? It learns only once we name the kernel, okay?
+And, I also mentioned that by default.
+If I don't mention anything, by default, it's RBF.
+Okay, if you want to make it a straight line, you have to make it a linear version of the kernel. Okay? Once that is done, the next part, this is the line.
+This is the only line in the entire code that learns anything, okay? It finds the boundary.
+And that leaves the widest margin between the classes.
+And then it receives those training rows only, whatever you are splitting up into. If it's 80-20 or 75-25, it's your decision. And based on that, it's going to then set that boundary and show the score over here.
+So that's what… It's been done in this last few lines.
+Okay? So once you have those outputs, you're just going to explain it over here, as we discussed today. You can do a little more research in order to make it more, like, if you want to have a better answer, how you want to put it.
+You can go ahead and do that as well. But this isn't just what your assignment is for this week. Anybody has any questions, or anything that
+has not… Clear.
+Anybody? Any questions?
+Okay.
+Manish Singh
+Manish Singh
+44:29
+Yeah, I, I had a question regarding the kernel.
+Sonali Baidya
+Sonali Baidya
+44:34
+Regarding what?
+Manish Singh
+Manish Singh
+44:35
+the kernel? Just trying to create, like, is it, the same that we…
+sort of study when we are talking about, like, containers, they interact with the kernel directly, not with the OSM.
+Similar things.
+Sonali Baidya
+Sonali Baidya
+44:53
+Oh, no, this is a different one. This is regarding… related to SBM.
+You're talking from the OS standpoint, right?
+Manish Singh
+Manish Singh
+45:06
+Yeah, yeah, I think that's…
+Sonali Baidya
+Sonali Baidya
+45:08
+Differenta, yeah.
+Manish Singh
+Manish Singh
+45:10
+So, not directly the one who… which handles, like.
+The physical components of a compute machine, right?
+Sonali Baidya
+Sonali Baidya
+45:20
+No, this is, nothing related to OS. This is related to SVM, okay? That's classified that we showed… that I showed you.
+That's… it's like the shape.
+The decision function shape and all those stuff that we talked about, that's…
+related to this. This is the kernel learning. Like, if we want to make it in a straight line, it's going to be a radial, and stuff like that, so that's what it is about.
+it is not the cons… nothing… no concepts about OS
+Directly linked over here, in this kernel learning.
+If…
+Manish Singh
+Manish Singh
+45:59
+I was trying to make sense, but I think, yeah, that's definitely something different.
+Sonali Baidya
+Sonali Baidya
+46:05
+Yeah, okay. Any other questions relating regarding the, code?
+Or regarding the assignment?
+Okay, if there is no other questions, you guys can feel free to drop off. I'll be here if still you guys have any questions, I can answer. We have still 15 more minutes.
+But if you don't have any questions right now, you can drop me an email at any point, and I can help you with that, okay?
+See you guys next week again.
+Lucas Lucena
+Lucas Lucena
+46:42
+Thank you, have a good night.
+Sonali Baidya
+Sonali Baidya
+Yeah, sure.

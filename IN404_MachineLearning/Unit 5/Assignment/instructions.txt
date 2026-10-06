@@ -1,0 +1,46 @@
+Unit 5 Assignment: Support Vector Machine
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Examine support vector machines for kernel learning.
+        Investigate perceptrons and binary classification.
+        Analyze reshaping data sets to create a SVM model.
+    Course Outcome:
+        IN404-4: Explore kernel learning and time-series analyses.
+
+Purpose
+In this assignment, you will use two data sets to create a support vector machine model for kernel learning. You will examine the two data sets and convert data types to achieve the best results. You will perform a train/test split and examine the resulting four data sets. Finally, you will create a SVM model and answer presented questions.
+
+Assignment Instructions
+
+Complete the following:
+Please number the assignment items in your Microsoft® Word® document.
+Please post your code for Python to cover item 1 below.
+For item 1 below, provide a screenshot of the execution. Be sure to post the .py file for the Python program. Another possibility might be to copy-and-paste your code and results in the assignment document. Also, be sure to respond to items 2–8.
+Start a next action on a new page.
+    Using the IN404_Unit5and6_1.csv, IN404_Unit5and6_2.csv, and IN404_Unit5.py files provided, complete the programming where you see ################# YOUR CODE HERE ########################.
+        Using the results from the program, answer the questions below:
+    What are the shapes for each of the following?:
+        df2
+        df1 after the datetime conversion to float
+        X
+        y
+        X_train
+        X_test
+        y_train
+        y_test
+    Research why the Date object in dataframe 1, df1, was converted to a datetime data type and then to a float data type. Explain.
+    What was the train/test split values (Such as 50% train and 50% test)?
+    In terms of kernel learning, describe what the support vector machine (SVM) is and what it is used for.
+    Describe the SVM decision function shape of ‘ovo’ and ovr’.
+    What was the kernel learning, or SVM, score?
+    What does the SVM score mean as applied to X and y?
+
+Assignment Requirements
+For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit5 and submit it to the Dropbox by the deadline.
+
+Review the rubric before beginning this activity.

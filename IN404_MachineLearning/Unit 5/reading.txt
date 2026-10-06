@@ -1,0 +1,11 @@
+Read or review the following chapters in Mastering Machine Learning Algorithms: Expert Techniques for Implementing Popular Machine Learning Algorithms, available at the Library in the Academic Tools section of this course.
+    Chapter 9: Neural Networks for Machine Learning
+        Sections: The basic artificial neuron, Perceptron, and Multilayer perceptrons
+Read or review the following chapters in Machine Learning Algorithms: Popular algorithms for data science and machine learning, available at the Library in the Academic Tools section of this course.
+    Chapter 7: Support Vector Machines
+Read or review Chapter 3: “Predictive Modeling,” in Python: Real World Machine Learning, available at the Library in the Academic Tools section of this course.
+
+Read or review Chapter 5: “Learning Clusters and Recommendations,” in Machine Learning: The New AI, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+In this unit, you will read about classification models with emphasis on the support vector machine (SVM) model for kernel learning and the perceptron. You will also read about predictive modeling methods and how SVM can be applied for linear classification.
