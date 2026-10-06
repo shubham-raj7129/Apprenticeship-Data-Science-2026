@@ -137,7 +137,7 @@ writeFunction("Minimum value for dataframe 2 number1 column")
 
 #Print the max value for dataframe 2 number2 column
 writeFunction("Max value for dataframe 2 number2 column")
-w################# YOUR CODE HERE ########################
+################# YOUR CODE HERE ########################
 
 #Print the min value for dataframe 1 number2 column
 writeFunction("Minimum value for dataframe 2 number2 column")
@@ -149,7 +149,7 @@ writeFunction("Count for dataframe 2 number1 column")
 
 #Print the count for dataframe 1 number2 column
 writeFunction("Count for dataframe 2 number2 column")
-w################# YOUR CODE HERE ########################
+################# YOUR CODE HERE ########################
 
 ###################################
 #Convert object to datetime
@@ -329,7 +329,7 @@ writeFunction("Statistics for X_train")
 
 #Print the count for X_train number1 column
 writeFunction("Count for X_train number1 column")
-w################# YOUR CODE HERE ########################
+################# YOUR CODE HERE ########################
 
 #Print the count for X_train date_num column
 writeFunction("Count for X_train date_num column")

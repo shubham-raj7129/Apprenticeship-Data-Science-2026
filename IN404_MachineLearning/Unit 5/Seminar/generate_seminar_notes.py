@@ -5,8 +5,7 @@ from docx.shared import Pt, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 import os
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)) if '__file__' in dir() else
-         "/Users/L037129/Desktop/Apprenticeship/Data Science 2026/IN404_MachineLearning/Unit 5/Seminar")
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 doc = Document()
 
@@ -172,6 +171,6 @@ bullet('I\'m curious about how SVM performs compared to the logistic regression 
 bullet('The distinction between OVR and OVO was new to me. I want to explore whether the choice between them significantly affects accuracy on multi-class problems.')
 
 # ── Save ────────────────────────────────────────────────
-out = "/Users/L037129/Desktop/Apprenticeship/Data Science 2026/IN404_MachineLearning/Unit 5/Seminar/IN404_ShubhamRaj_Unit5_Seminar.docx"
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "IN404_ShubhamRaj_Unit5_Seminar.docx")
 doc.save(out)
 print(f"Saved → {out}")
