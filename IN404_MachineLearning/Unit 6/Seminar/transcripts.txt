@@ -1,0 +1,469 @@
+Sonali Baidya
+Sonali Baidya
+Good evening, everybody.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:11:57
+Good evening, Sonali.
+Sonali Baidya
+Sonali Baidya
+00:11:59
+Hey, good evening.
+Okay, let's give a couple of few more seconds. I think people are still joining, and we'll start right after that, okay?
+Okay, let's go ahead and start. We are past 1 minute.
+Okay, good evening, everyone, again.
+So, we'll go ahead and start this week's seminar, but before that, like.
+Anybody has any questions?
+Or anything that wants to bring up before we go ahead and start this week's seminar?
+Okay, so… There is nothing… let's start, but before I hope everybody's going… doing fine today, right?
+I know, I'm not sure, but it's raining. Crazy over here from yesterday night, so…
+Not sure if… how's the weather everybody is having today? Good.
+Much cooler.
+Lucas Lucena
+Lucas Lucena
+00:14:26
+Very good here in Maryland.
+Sonali Baidya
+Sonali Baidya
+00:14:29
+Good, good.
+Okay, I'm guessing, like, fall is coming, so things are getting cooler now, so…
+Okay, so let's go ahead and start.
+And, this week, we are going to focus a little bit on the…
+a visualization part. So, we have been doing so far, like, using and applying the models and stuff, and this year… week, we are going to just start to visualize, okay, we applied the model.
+How does it work if I'm going to plot it in a form of.
+charts, or something like that, right? So, that's what we are going to see this week. And again.
+Like every week?
+Let me go ahead and share my screen.
+Okay.
+Let me know if you are not able to.
+Okay.
+So, like, every week, this week too, we have some reading material, so I will highly recommend you guys to go ahead and start reading them.
+That will help you get an understanding on some of the concepts that we are going to go through while we are doing this assignment this week. And.
+Definitely, if you have not started the discussion post, that will also help you to write.
+and refer to while you are putting the… while you're working on that discussion post, okay? Now, again, as every week, this week too, we have a discussion post, so please go ahead and make sure you
+participate in that, and… Post the discussions in a timely manner. Seminar, again, like.
+Those who always join, thanks for joining, though, and those who cannot, due to various reasons, please make sure
+go through this video recordings, and then submit the alternative seminar assignment, and put it in the appropriate Dropbox. It's going to be the seminar Dropbox and not the assignment Dropbox, okay?
+So, make sure you are doing that, and putting the files in the right dropbox.
+Okay.
+Otherwise, I won't be able to…
+Do the grading, and you have to, again, Turn back in.
+Okay, so having said that, we'll go through the assignment for this week, and
+As I said, we are going to focus on the visualization part.
+So for this week, we are going to use some of the functions of the matplotlib, and
+For those who already work.
+in those areas and have got some knowledge, you should be knowing what Matplotlib is. Otherwise, for those which is new, we are going to go through it, so don't worry about that. We are going to investigate whatever we had done in the last week, using and also with the data that we have in the two CSV files that we used last week.
+We are going to investigate that and then plot it and then.
+draw some charts using the Matplotlib functions.
+Also, we used kernel learning last week, okay, and we are going to see how that kernel learning is being implemented by generating a confusion matrix and classification reports. Along with that, we are going to
+draw a SVM boundary graph, you can say, to see whether, actually, the kernel learning that we used is using a linear kernel learning or RBF, okay? So that's what we're going to see in this assignment as well.
+So, like every week, this week too, you need to download the two CSV files that we used similar to the last week, use the same CSV files, and also you need to download the Unit 6.
+Patent file.
+Wherever you are saying that you need to add your code, you know how to do it now, so you just go ahead and complete that part, and along with that, you need to run your code, see the graphs, and answer these questions that is here from 2 to 8, okay?
+So the first one is summarize what a confusion matrix is and how it is used, describe the confusion matrix output and what it means, and we're going to go through the concepts in a bit, just… I'm just going to go through each of them so that you understand what you need to do.
+And accordingly, we're after, I go through the concepts that will help you to get some more understanding, and definitely you need to go back and do some more research.
+Go through the code, run it, see the graphs, understand it, and then write your understanding in this particular report, okay?
+Fourth point is summarize what a classification report is and how it is used, and describe the classification report output and what it means. Using the visualization for the numbers over time, answer the following questions. Which date number combination had the highest frequency, approximate frequency value?
+Combination had the lowest frequency, approximate frequency value, and this is…
+we are going to see it in a bit. When I run the code, you should get an idea, like, what this is about. Number 7 talks about using the frequency of numbers bar chart, which number had the lowest frequency, using the decision region plot that we are going to see towards the end. You have to respond what is the purpose of the plot, and what do the results tell you. So this entire assignment is based on
+visualization.
+To interpret the graphs, to understand what they are showing, and then write it down in the form of a report. Okay, so again, like, you have to compose your assignment in our doc file and submit it.
+Also, please make sure you're submitting the dot pi files, because I would be running it and seeing your graphs, as well. So…
+Any questions on the assignment?
+Any confusions, any questions?
+If not, then I'll go ahead and start going over some of the concepts that they are meant to have talked about over here, okay?
+Okay.
+So, let's go ahead… And… Share my screen.
+To the.
+Okay.
+Okay, are you guys able to see my screen now?
+Yes.
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:21:47
+Okay. PPT.
+Sonali Baidya
+Sonali Baidya
+00:21:50
+Okay, so now…
+So let's… let's talk about… first about the Matplotlib, right? So, and let me go ahead and… So this is the code that you're going to use, and if you see, we are importing this particular package over here, right? And then we are using something like PyPlot.
+And then using the PLT, that alias that we created to plot, like, like, print, basically, those graphs in our
+in this code, right? So, then what does this matplotlib is? So, matplotlib is basically, like, you can think of every chart that we are drawing, it's like an architecture, that has 3 layers in it.
+So every chart that you will see when you are.
+executing your code. It has three layers, and… which is stacked on top of each other, okay?
+The backend layer, you can think of it as like a printer, okay? So, whenever we are seeing that plt.show that you see, that is, like, everything has been handed over to the backend layer, and the printer is just printing and showing it.
+Okay.
+The other than that, we have the artist layer as well. So, the artist layer is like anything that you see in that screen, that the line, the title, the
+The tick marks, or the circles, or whatever you see, any objects that you are seeing in your screen, that is the artist layer. Okay?
+And the last but not least is the scripting layer.
+Scripting layer is the one that has all your commands that you're writing in your code. For example, like, in this one, we wrote
+plt.show, that's a command, okay? So, similar to this, wherever we are using these, these are the scripting layer. So, all these three together, combined. is the Matplotlib architecture.
+Okay, so that's what we're going to use today. Now, when we are drawing the… Graphs.
+There are some concepts of figure and axis. Now, figure is… you can…
+Think of it's like the entire sheet over here, okay? So this entire sheet, this white portion is the figure.
+And the axis is one plot area drawn on that sheet.
+So, a figure can hold several axes, okay? So, you can think of figure as a page. And access is a chart on that page, okay? So these are some of the terms that we use when we are talking about matplotlib architecture.
+Okay, the next part that we are going to talk about is spy plot, okay? So this spy plot is in the scripting layer.
+Now.
+The key idea is… Of this pie plot is about talking… when we're talking about the current figure.
+So, PyPlot keeps track of which figure and which axis you touched
+in the last line, okay? And every command, like the PLT command that you're writing, it applies to that one, okay?
+So, that is convenient for a quick chart, like, if you have one chart. But if you have multiple charts in a
+code in a file, right? Then, it becomes quite confusing. So that's where, when we are using PLT, you will see a multiple PLT in your code, like in this particular
+See if you see there is a plt.show over here.
+PLT.show over here, even here.
+But, if you see, this is a different chart.
+This is a different chart, and this is a different chart. So when we are going line by line, we are talking about plt.show, this plt.show is only for this particular chart.
+This PLT show is going to talk about… is only understanding, okay, we are… this means we are talking about this chart.
+Okay? So that's what this pie plot is, is this is keeping track of which particular figure we are touching right now, or talking about, or working on right now.
+Okay?
+So… Any questions?
+Okay. Now, when we are talking about pi plot, like, pi plot came from the concept
+earlier, when… I'm not sure how many of you have heard about MATLAB. So, when we used to use MATLAB, we used to use a package called PyLab in it. So, that PyLab, had
+Both Pyplot and NumPy in it.
+We don't use that anymore over here. We just use PyPlot, which is in the form of a state machine style. So, as I said, state machine means we are talking about the current
+state of which particular graph you're talking about, or using it over here, okay? The other concept is the object style, and we are also using the object style over here. If you see this AX, these are all the object styles that we are using.
+So the object-oriented style is the name of the axis.
+And it then talks to it directly. Okay, that's why wherever you see this AX, these are the object style. Wherever you see PLT, that's the pipelocked.
+Okay? So that's why you will see a combination of these two in the entire code as you are going through, or you're writing. Now.
+Now, if I go to this particular… so AX over here is a variable which is holding one plot area. That's an axis, okay?
+And we talked about what access is.
+So, if we check this one.
+this particular, line. So, AX is equal to whatever it's asking to draw a line plot, or a line chart. That means it creates the chart and then stores it.
+Right? And this one, this is the X level and the Y level.
+Okay? So, if you had 2 charts open.
+These lines would still hit the 1 in AX.
+Because you hold the object and you call methods on it. That's why it's object-oriented.
+But, when it comes to PLT, as I said, it's state machine over here, means every PLT command applies to the current chart.
+Okay? So, does that make sense now? Like…
+What's the difference? Any questions so far?
+Okay, if there are no questions, then… then you will… so again, like, this is the solution file, though. So, in your entire code, you will be asked to fill up the…
+Codes with your… wherever you see this.
+Okay? So, these are already there, so you don't have to work on these. So this, when you run, you should be able to see this. And… and I'm going to run it in a bit.
+Right after this, when you are… you have to do… run the codes, start writing from here. But, we're going to come to that in a bit, because…
+That's where we are going to talk about and touch about the confusion matrix. But before that, in these parts, we are just generally drawing a dead… a line.
+Chart, in both the cases.
+We are going to see the difference between these two, and the third one is mostly about, like, a bar chart, which is going to be the next one. We're going to come in a bit.
+Okay, so if I go ahead and run it…
+Okay, so do you see this first picture?
+Okay, so this one is the line chart that we have.
+So, if over here, we use a line when the order
+along the bottom means something to us, right? Because the line itself claims that there is a path from one point to the next, and if you see over here, we are using dates, so it's like time, so it's a time series.
+Okay.
+Now.
+When we are talking about… let's say there's a question, I think… let's go back. Yeah, so over here, if you see…
+In this question number 6,
+They have questions around this date-time combination at a highest frequency, approximate frequency, and lowest frequency.
+That's the one they… over here, this is just a single date, right? So if you go to the next one, if you see, this is a combination.
+So this is where you have a bottom axis, which is a combination of a date and number together.
+So, I'm not sure if you remember, but if I go to the CSV file, you see over here, it's a combination of a date and number.
+Okay?
+So that's what's been plotted over here.
+So let's go back.
+So this is the combination of date and number together, so there are, say, 9 positions instead of 3 that we saw in the last one. That's because if you see with the date, it has 1, 2, and 3 for each date.
+So there are 3 dates, it's pairing with 1, 2, and 3 class, okay? So that's why there are 9. Now, based on this, when you… they are asking you which one has the highest point, which one has the lowest point, and stuff like that. So that's what you need to understand and interpret from there, and then…
+Answer it over there.
+Make sense? So that's what number, I think, 6 or 7 was talking about.
+Any questions over here?
+If not, let's go ahead and move to the next one.
+So next one talks about the bar chart. So there is… so when you run your code, and if I just go to that part… so this is where
+You're generating the bar chart, okay?
+I'm not going to go into details about how we are converting the… date, the text.
+into an object of date-time object. Remember, we did that last time, we explained it. So, it's going to be the same over here.
+Okay, in these two lines, that's what been done.
+So.
+And this part, as I said, is the bar chart. So when you generate that, it's going to show you this bar chart, but just keep in mind.
+We are using pandas over here, right? As an… to find out, like.
+which one counts the highest, and then the next. So that's why, if you see this line over here in the number, it's 1, 3, and 2, and not 1, 2, 3, that's because it's going by descending order, okay?
+So, and again, like, there's a question to understand, like, what's the count, I guess, from the frequency of numbers, or lowest or highest from the bar chart? That's what you have to answer after looking… going through this bar chart. But keep always in mind, these numbers over here.
+This is not 1, 2, 3, but rather 1, 3, 2, and…
+The reason I told you just now, okay?
+Okay, so I hope this is very… pretty simple so far, and I have no questions, I hope. The next part we are going to talk about is…
+It's about the Confucian matrix, okay?
+Okay.
+Okay, so now, anybody has any idea about confusion matrix, what this is?
+About? Anybody has heard or used?
+I know what confusion matrix is.
+Okay.
+So now let's… let's take a simple… okay, I see some… someone mentioned something.
+Okay.
+That's fine.
+So… and we talked about it. So, think about…
+Confusion matrix is, is something like this.
+So, how it's been done, right?
+What we are showing over here, if you see.
+It's a layout of a confusion matrix, okay?
+So the rose are the truth.
+Columns are the guess.
+Okay? So the cell in, say, row 2, and, say, column 3, it holds the cases that really were 2, and the model called it 3. So that means that's wrong.
+Okay? So… And this diagonal, if you see, this diagonal is where the row and the column agreed.
+Okay.
+And that's why it's the correct prediction.
+So, if I look at this matrix, that means everything
+In this diagonal, our correct predictions, everything off the diagonal line, are mistake, or
+we say wrong predictions, okay? So that's how the Confucian matrix are built.
+Okay.
+So now, if I go to this one.
+So, we have over here… 45.
+And we have over here, say, 40, so that means 85, right, total.
+Okay? So now, then 10 in row 1 over here, that means…
+10 cases that really wore yes, and the model said no.
+So if we think this is to be a medical test, that means these are all missed diagnoses.
+Same thing over here. The 5 in the row 2 is…
+And column 1, this is also a false alarm.
+So, we can say that these two add up to the
+right diagnosis, and these are all the wrong ones, or the missed ones, okay? So that's how the confusion matrix are being used, okay? Now, if I go back to this one.
+So, if you see, the diagonal is…
+If I move my crown, and you can see on this bottom right corner, if I move it, so this one is 21.
+This one is 22, and this one is 39.
+Okay.
+So, if I add these 3, 21, 22, 39.
+So that means it's roughly around 82, correct, right?
+And out of how many? Out of, say, 250.
+Test rows that we are using.
+Okay? Not the trained ones. We're going to… Predict based on the test, right?
+So now, what is the score then? So we will do that 82 divided by 250, whatever it's coming, that's the accuracy that your program will be printing. So now, if I go over here.
+Oh.
+So we are printing up accuracy score over here.
+So that's based on that, okay?
+So… I'm not sure… yes. So over here, if you see, it's coming around 0.328. Now.
+Does that mean that my confusion matrix is showing correct? So if you see 21 plus…
+22 plus 39, that's coming around 80, 80 divided by 250, is it 0.328 or not?
+Can somebody do the maths and see?
+Here it is that.
+Then that means… That confusion matrix is reporting the right accuracy score.
+Okay? Based on whatever we are testing with.
+Okay?
+Now.
+If I, look down to the, say, the third column.
+Okay, like here.
+So, this one is 40.
+This one is 55, and this one is 39.
+Okay?
+So that means the model, if you see, these are in the range, these are all green, yellow, and green.
+So these are all the genuine findings, okay? And it is… Invisible in the accuracy number.
+So, if I go to my code, let's see if I can see that…
+Yeah, so if you see over here, this part.
+Okay.
+So this is a function.
+That is going to tell you what fraction did the model get right.
+Okay? So that's what it's been shown over here in the accuracy score, as I said. And that's what the confusion matrix is also plotting and showing you.
+Okay? That you need to understand a little bit more about the confusion matrix, and then write the report. Any questions on the confusion matrix?
+Anybody?
+No questions?
+I'm guessing, so let's go ahead and…
+Move to the next part, let's see what's there. Okay.
+So, this is the heat map for the classification reports. So, we'll go ahead and check the…
+So, before going ahead and seeing, looking at the code, so anybody has any idea what heatmap does, or what it shows, actually?
+Anybody?
+In general?
+Okay. So… If you see, it's basically based on these colors that we are showing, right?
+So, over here, we are actually looking at the Light or dark patches.
+So… The light cell
+is recall for all the class that we are going to work on, say, class 1, 2, and 3. There are 3 classes that we are working on, right? 1, 2, and 3. So the light cell is the…
+Recall for Class 3, so that's right here, standing of Miss in the middle. Okay, so it's…
+Immediately stands out, because that's a light cell.
+And it is the only value above one half anywhere in the table, if you see.
+And the dark cells… recalls for classes 1 and 2. So if you see this 1.22,
+or 0.27. These are all the dark cells, so which are recall for classes 1 and 2. Now, what is recall, right? The next question comes. And we are going to go that in a second, but before that, in the code, if you just go ahead and…
+Come over here in the heat map.
+So again, like, you see we are using the object, axe, plt.axis, okay? And then we are using this… this particular thing over here. If you see, pd.dataframe.
+So now, what is happening over here? This particular PD.dataframe and within brackets CR we are passing, it turns the dictionary into a table.
+Okay?
+This part… It drops the last row, which is… it was supporting.
+And .t means it flips it so classes runs down the side, okay?
+And this one is set to true, so that it writes the numbers in the cell. So, the heat map that you were seeing over here, it shows the precision.
+It shows the recall, it shows the F1 score, okay?
+And support is in the printed dictionary, not in the color grid. So we don't show it in the color grid.
+Now, what does this precision recall F1 score mean?
+Right? So that's the next question that we have.
+Okay, so let's go to that part as well.
+So, when we are talking about
+Okay, let's… let's go to the…
+First, let's go to the code.
+Close this.
+Oh, it's taking time.
+Okay, forget about that. Let's go to this one.
+Okay.
+So we are talking, going to now go about and find out what that, those words mean.
+Okay.
+So, and we, so we were talking about confusion matrix. Let's go to that part first.
+Okay.
+Okay.
+Now, let me see if it's been printed over here. It's better to do it over here. Okay, so if you see, I… this is… it's printing the confusion matrix, and it's showing the values for each of those cells as well.
+And we tested with 250 test rows, okay?
+And, we are showing 3 classes, 1, 2, and 3, as we talked about, okay?
+Now, what does precision mean? So, when it said, say, the model said.
+3.
+Was it right or wrong?
+Okay.
+So.
+If I go through this particular last three col… last… that third column, okay, it's 40, 55, and 39.
+Okay? So that means the model answered.
+Class 3, this many times. So, 40 plus 55 plus 39, that's around, say.
+134, okay?
+Now.
+What is… remember, the bottom one is 39. So, and we… we were checking the accuracy score, the same way we are going to check the accuracy score over here. So we are going to see, okay.
+The… only the bottom number was actually 3, because we know the diagonal, these are all correct. 21, 22, 39. This is in the confusion matrix, in the diagonal.
+Line, so that means 39 is all correct.
+So then, 39 was all correct out of 139.
+Which is, if you divide that, whatever you are going to get, that is the precision for the Class 3 in the report.
+Make sense?
+Okay? Anybody has any questions? What does precision mean over here now?
+So when we are talking about confusion matrix.
+When we say, are going to find out what's the…
+when the model said, okay, this is 3, what is it? Is it right or wrong? So that's precision.
+Okay? The same concept you might apply for Class 1 and 2, so that means if I go by 1, 21, 22, 21, you get the total, then 21 divided by that total, whatever you're getting, that's the precision.
+Okay? Now, what is recall then?
+Now we are going to check, okay, of the real trees.
+How many did it find?
+So, if I look across the actual Draw for the 3.
+It's 21, 13, and 39.
+Okay? So that means if I add these three, it's coming to… 73.
+So that means… and how many are correct? 39 are correct.
+So the model found 39 of them.
+Correct, out of 73.
+So, 39 by 73, whatever we are going to get. That's the recall for Class 3.
+So, in short, precision means we are going to go by columns. Recall, we are going to check by.
+Rose.
+Okay?
+Any questions?
+Anybody?
+Okay.
+Now, why do we need to check
+Precision and recall. Can anybody understand, like, tell me out of once we see this calculation?
+Anybody?
+Any guess?
+No guests also?
+Okay. So, when, say, the model is saying, okay, this one is Class 3.
+It's… it's Class 3, right? We want to check whether it is overusing that label or not.
+Okay.
+So that means, and remember we were showing that
+Like, if we are shouting too much, like, everything is good, good, good, the tendency for the model to go towards good is more.
+than the other one, and as a result, we need to see whether it's classifying that as 3, whether it is overusing that label or not, and that's where the recall and the precision comes into the picture.
+Okay.
+So.
+That's why we are going to check those two. The next one we saw in that heat map was F1.
+And support.
+So, we talked about these two. So, F1 and support are the last two columns of the report that you are going to print over here. So, if I go to this code…
+And if I just… let's see…
+Yeah, over here.
+So, this is the classification report that you are going to print.
+Okay? That's in the form of a dictionary.
+So.
+Support means, like, how many test rows really wore This particular class.
+Okay, so it's not a score, we're checking the headcount. That is what support is. And F1 means it's, say.
+One number…
+instead of arguing between precision and recall. So we have a precision score, we have a recall score.
+And if we start now arguing which one we should be going for.
+We might have a tendency to get biased with precision or with recall, okay? In order to avoid that confusion, F1 is something which is unbiased. It refuses to pick any particular one side, okay?
+It will only take a blend of both of them, both from recall and precision, and then come up with a score.
+Okay? And based on that, we are going to say, okay, the more… how accurate the model is.
+So that is F1.
+Okay? So, when we are writing this particular line over here.
+White test.
+We know the real labels that we are talking about, that's that 250 test rows.
+And why?
+underscore P-R-E-D, that's the prediction, is…
+is the one that has been guessing for those, the same rows, okay? And this classification report, this function, it counts matches.
+Then fills in those precisions, the recall, the F1 score, and support for all the three classes, 1, 2, and 3, and we can see that in the heat map.
+Okay? So that is the holistic picture of the classification report that we see inside the heat map. And then we draw the heat map, okay?
+Any questions on this part, or anything?
+If not.
+I will go over to the next part, which is the SVM decision regions. Now, this is an interesting thing. Because if you look at this.
+Decision region plot generally helps us to see whether the SBM is thinking, or what was the SBM thinking. So we wrote the code, we applied SBM in our last unit. This unit, we are trying to visualize and see what the SBM was thinking.
+Okay?
+So now, let's see in the code which part it is,
+I think it's me. Let me search by this.
+Okay, this one is the region that we… is plotting that particular, SVM region, but I'm trying to find out where is that… okay, yeah.
+So this is the part.
+Okay, so if you see over here.
+CLF it is using over here. Now, CLF is a trained SVM, okay? The SVM that we used in the last unit.
+X is number one.
+And why is the debt num? Remember when we were plotting at the very beginning?
+We were seeing number one and date numbers all over the charts, right?
+So, these are the ones that we are using over here, in the X and Y.
+And CLF, as I said, is the trained SVM.
+And.
+When we are making that SVM,
+Okay? When we are doing it for the first time, okay, it's nothing… it's just an empty model.
+Okay? Now, when we are doing this fit, where is that part? Okay, let me see…
+Yes.
+So then, when we are doing the fit.
+Okay, this is where we are teaching the model to learn from the training rules.
+Okay?
+So the model itself only answers with numbers, right? We already know about that. So it predicts and says that whether it's 1, 2, or 3.
+Okay? You cannot look at CLF and see the rule. So that's why VR
+Plotting this, and coming up with this map.
+Now, what is it… what are we trying to understand from there… from this?
+We are trying to see, for any pair of number 1 and date num.
+Even a pair that is not in the CSV file, you can point at the map and say, okay, the model would call this as 1, or 2, or 3, because it's already showing which regions are 1, 2, and 3.
+Second, you can see the boundary over here, so where the color changes, okay? So that means you can understand what… where the SVM is changing its mind.
+Third, remember we were doing kernel learning in the last unit?
+Now, this helps us to understand, okay, the kernel learning that we used was not linear, because it's using RBAY, because it is using this carved ages.
+Okay, and not linear lines over here. So that's another thing that we are understanding, okay? The SVM that we were using, the kernel learning that we applied, is correct. Okay?
+Now, the next part is these dots, and we are going to come up
+Understand what these dots mean, because a similar concept has been applied in the…
+The last graph we are going to talk about is the scatter plot.
+But any questions on the SVM regions?
+to… to understand what we are talking about in the SBM regions.
+Anybody?
+Okay, so if not, then let's talk about this one.
+So, for this, again, we'll talk about a little bit on the number 1 and right now.
+So, let me see, where is that? Feature… feature columns, okay, yeah.
+So over here, as we can see, we are defining the X… The features, okay?
+So.
+Any… any idea, like, what we are doing over here and this one?
+These two lines…
+Anybody?
+Come on.
+No one… I was expecting some, at least, answers from here.
+Okay, so that's already commented. So we are adding all the rows from the feature columns into X, okay? So that's what X is about over here, okay? Now.
+The other thing is, we are plotting the scatter plot, so let's go back to that part.
+Yeah, over here.
+So if you see this part again.
+This first part is the number one. That's the number one axis that we were talking about, the plots, the…
+labels, so this is that. That's from left to right.
+And this one, we… is the date noun, which is up and down.
+So, C equal to Y, this is the color. So what are we talking about over here? So this thing.
+Number one, Vietnam and the colors.
+And the last one, what type of colors we are using? The rainbow colors. So that's what's over here, we are shown, see?
+No.
+The next question comes when we are plotting the scatter plot. We are only seeing 9, and we are not seeing that the total number of
+Test data that we use.
+You can only see 9. Why? Because number 1 only has 3 values. Remember, 1, 2, and 3.
+And where are we getting that again? Let's go back. So this is 1, 2, and 3. These are the only 3 values that we have.
+Right? So that's why… So, every row's X coordinate is one of those three. Okay?
+And date num as well has 3 values. If you see 6, 4, and 5, and just to avoid, if I open it, and if you filter in your CSV file, you'll be able to see there are only 3 dates.
+So, there are 3 numbers?
+1, 2, 3, and there are 3 dates.
+4, 5, 6. So that's 3.
+and 3 each, so that means 3 times 3 is 9, so that's been plotted over here. Now, how it's getting plotted?
+So if I go by number 1, So it's 1 and 0.
+1 and 1?
+1 and 2, and things like that. That's how it's been plotted in these positions.
+Okay? So that's why you're only seeing
+9. Now. What happens to the rest? What happens is, anything that falls in this particular coordinate, it stacks on top of each other, and as a result, you'll see this is a combination of all those number of rows that falls in this particular coordinate position.
+So maybe you're seeing one dot, but all those things that is falling under that specific position is falling… it's stacked on top of this one another, and that's why you're seeing this as a single dot, and not multiple.
+Okay?
+So.
+Does that answer? What is a scatterplot? How is it plotted? And why are we seeing only 9 and not more?
+Anybody has any questions on that?
+Okay, if not, let's… Okay.
+Okay, so now let's go back to the…
+assignment. So now we know what a confusion matrix is.
+Classification report, we talked about recall, precision, F1 score, output, support.
+Visualization of all the line charts, the frequencies, and the bar chart also we've seen.
+And decision region plot, that's the SVM region plot that we showed… I showed you with all the boundaries. What is the purpose we discussed, and what do the results tell you? So I guess I have touched upon all of these, and I've given you some
+Idea about all these things.
+So, you need to do a little more research, go through the graphs after you run the code.
+And then I should… I think it should be.
+pretty Easy now to write your report.
+Anybody has any questions on the assignment, or anything that you didn't understand?
+If not, I think that's all for this week. Feel free to drop off, and we'll see next week. But if anybody of you have any other questions, you can stay back, and I can…
+Help you answer those.
+Thank you everyone. Bye.
+Lucas Lucena
+Lucas Lucena
+Thank you. Bye.

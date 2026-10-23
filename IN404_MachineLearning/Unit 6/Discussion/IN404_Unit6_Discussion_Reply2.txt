@@ -1,0 +1,11 @@
+Response to Lucas Lucena:
+
+Nice work, Lucas! I really liked how you walked through the full execution flow step by step — from data in a list or DataFrame, through the creation of visual objects, all the way to the backend rendering the final output. That made the architecture very easy to follow. Your use cases were also well chosen, especially the sports analytics example with tennis data — that was a creative pick I had not thought of.
+
+Building on your discussion of the Artist layer, I came across an interesting detail in the documentation about how Artists are organized into two categories: container Artists and primitive Artists. Container Artists include the Figure, Axes, and Axis objects, which hold and organize other Artists. Primitive Artists are the actual visual elements that get drawn — things like Line2D for line plots, Rectangle for bar charts, Text for labels, and PolyCollection for scatter plots (The Matplotlib Development Team, 2024). So when you mentioned that "almost everything visible on a graph is considered an Artist," that is exactly right — even the tick marks and grid lines on an axis are individual Artist objects with their own properties like color, size, and visibility.
+
+I also wanted to add to your point about pyplot keeping track of the current Figure and Axes. This is what makes it a "state machine" — each plt command targets whatever figure and axes were most recently created or used. In our Unit 6 code, I noticed there are multiple plt.show() calls, and each one only renders the chart that was built since the last plt.show(). Understanding that state-machine behavior helped me make sense of why the code produces separate figures rather than stacking everything onto one chart.
+
+Reference
+
+The Matplotlib Development Team. (2024). Matplotlib 3.9 documentation. https://matplotlib.org/stable/
