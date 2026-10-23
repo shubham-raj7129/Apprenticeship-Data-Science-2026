@@ -158,7 +158,12 @@ cm = confusion_matrix(y_test,y_pred)
 writeFunction(cm)
 
 #Plot the confusion matrix using matshow
+#Label ticks with the class values (clf.classes_ is the order confusion_matrix uses)
 plt.matshow(cm)
+plt.xticks(range(len(clf.classes_)), clf.classes_)
+plt.yticks(range(len(clf.classes_)), clf.classes_)
+plt.xlabel("Predicted class")
+plt.ylabel("Actual class")
 plt.title("Confusion Matrix")
 plt.colorbar()
 plt.show()
@@ -169,8 +174,9 @@ cr = classification_report(y_test,y_pred, output_dict=True)
 writeFunction(cr)
 
 #Plot the classification report using a heatmap
+#Drop the scalar accuracy (printed above) so it isn't shown as precision/recall/F1
 ax = plt.axes()
-sns.heatmap(pd.DataFrame(cr).iloc[:-1, :].T, annot=True, ax=ax)
+sns.heatmap(pd.DataFrame(cr).drop(columns='accuracy').iloc[:-1, :].T, annot=True, ax=ax)
 ax.set_title('Heatmap for Classification Report')
 plt.show()
 
