@@ -1,0 +1,41 @@
+Unit 6 Assignment: Kernel Analysis
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Examine the matplotlib architecture and APIs.
+        Investigate visualization results in plot and charts.
+        Analyze kernel learning using a confusion matrix and a classification report.
+Course Outcome:
+    IN404-4: Explore kernel learning and time-series analyses.
+
+Purpose
+In this assignment, you will program visualizations of different types to show results of the analysis. Areas covered are kernel learning, time-series, confusion matrix, line and bar charts, scatter plots, decision boundaries, and a heat map of the classification report. You will then respond to questions discussing the results.
+
+Assignment Instructions
+    Please number the assignment items in your Microsoft® Word® document.
+    Please post your code for Python to cover item 1 below.
+    For item 1 below, provide a screenshot of the execution. Be sure to post the .py file for the Python program. Another possibility might be to copy-and-paste your code and results in the assignment document. Also, be sure to respond to items 2–8.
+    Start a next action on a new page.
+        Using the IN404_Unit5and6_1.csv, IN404_Unit5and6_2.csv, and IN404_Unit6.py files provided, complete the programming where you see ################# YOUR CODE HERE ########################.
+        Summarize what a confusion matrix is and how it is used.
+        Describe the confusion matrix output and what it means.
+        Summarize what a classification report is and how it is used.
+        Describe the classification report output and what it means.
+        Using the visualization for the numbers over time, answer the questions below:
+            Which date/number combination had the highest frequency?
+            What is the approximate frequency value?
+            Which date/number combination had the lowest frequency?
+            What is the approximate frequency value?
+        Using the frequency of numbers bar chart, which number had the lowest frequency?
+        Using the decision region plot, respond to the questions below:
+            What is the purpose of the plot?
+            What do the results tell you?
+
+Assignment Requirements
+For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit6 and submit it to the Dropbox by the deadline.
+
+Review the rubric before beginning this activity.

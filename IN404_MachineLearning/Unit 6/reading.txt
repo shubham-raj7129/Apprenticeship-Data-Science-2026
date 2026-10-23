@@ -1,0 +1,9 @@
+READING and RESOURCES
+
+Read or review the following chapters in Mastering Matplotlib, available at the Library in the Academic Tools section of this course.
+    Chapter 2: “The matplotlib Architecture”
+    Chapter 3: “matplotlib APIs and Integrations”
+Read or review Module 1, Chapter 12: “Visualizing Data,” in Python: Real World Machine Learning, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+In this unit, you will read about the matplotlib architecture to understand the backend, artist, and scripting layers. You will also read about matplotlib application programming interfaces (APIs) covering pyplot. You may note that pyplot has been used quite a bit for visualizations. Finally, you will read about various visualizations such as scatter and bubble plots, pie charts, histograms, and heat maps.

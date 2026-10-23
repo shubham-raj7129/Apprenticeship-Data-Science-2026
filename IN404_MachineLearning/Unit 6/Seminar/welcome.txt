@@ -1,0 +1,45 @@
+Welcome to Unit 6!
+Sonali Sen Baidya posted on Sep 30, 2026 12:01 AM
+
+This week, we will focus on kernel analysis, data visualization, and model evaluation. You will use Python visualizations and evaluation tools to better understand how well a machine learning model performs.
+
+What You’ll Learn
+By the end of this unit, you should be able to:
+    Understand basic matplotlib architecture and APIs
+    Create and interpret different visualizations
+    Analyze a confusion matrix and a classification report
+    Understand decision boundaries and model performance
+
+Readings & Videos
+Please complete the assigned Unit 6 readings and review the recommended videos on:
+    Matplotlib and data visualization
+    Support Vector Machines and RBF kernels
+    Confusion matrices
+    Classification reports
+    Scatter, line, bar, and heatmap charts
+
+Unit 6 Assignment: Kernel Analysis
+You will work with:
+    IN404_Unit5and6_1.csv
+    IN404_Unit5and6_2.csv
+    IN404_Unit6.py
+
+Complete the sections of the Python file as instructed, run the code, and include your code and results in your assignment document.
+Be sure to address:
+    Confusion matrix and what it tells you
+    Classification report, including precision, recall, F1-score, and support
+    Time-series and frequency visualizations
+    Decision region plot and its purpose
+    Screenshots or results from your Python execution
+
+Tips for Success
+    Clearly number each question/assignment item.
+    Include your Python code and output/results.
+    Don't just show a chart—explain what the chart tells you.
+    Focus on interpreting the model results in your own words.
+    Follow the formatting instructions and review the rubric before submitting.
+
+Key Takeaway
+Remember: visualization helps us understand machine learning results. The goal is not just to create charts or calculate metrics, but to explain what they tell us about the model's performance.
+
+Please reach out if you have questions. I look forward to seeing your work this week!

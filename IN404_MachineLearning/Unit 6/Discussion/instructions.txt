@@ -1,0 +1,11 @@
+Topic: Matplotlib
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with matplotlib. Based on the resource, respond to the following:
+
+In paragraph form, discuss the matplotlib architecture. Be sure to summarize the execution flow of data from creation to its display. Discuss the backend, artist, and scripting layers and what they do. Also, add a summarization of the pyplot API that includes what it is and how it can be used. Conclude with a description of two use cases where matplotlib is used to visualize results.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about matplotlib, or do some light research "beyond" the other student’s initial post (citing your sources, of course).
