@@ -1,0 +1,15 @@
+Response to Jacob Lasley:
+
+Great post, Jacob! I liked that you used the Hagberg et al. (2008) NetworkX paper, because it shows where the library came from as a research tool for studying network structure. I also had the same experience with Seaborn in Unit 6. Turning the classification report into a heatmap took one line of code, and the light and dark cells made it obvious which class the model handled best.
+
+I was curious about your reason for ranking Bokeh last, since you prefer visualizations that can go directly into a report. I did some extra research and found that Bokeh can actually produce static images too. Its export_png() function renders a plot in a headless browser and saves a screenshot as a PNG file, and setting a plot's output_backend to "svg" lets export_svg() save it as a scalable SVG file (Bokeh Contributors, n.d.). The catch is that this needs extra setup, either the Playwright package or Selenium with a matching browser driver installed. So I think your instinct is still right for our assignments. Matplotlib and Seaborn can save a figure with a single savefig() call, while Bokeh needs a browser running in the background just to make a picture. Bokeh seems like a better fit when the final product is a web dashboard rather than a document.
+
+Your point about ggplot2 also connects to something I found in Seaborn. Version 0.12 added a newer seaborn.objects interface, where I build a plot by creating a Plot object, mapping columns to x, y, and color, and then adding marks such as Dot or Line (Waskom, n.d.). To me, that layered style feels very close to the grammar of graphics you described from Irizarry. Since Seaborn is one of your favorites, have you tried this objects interface yet, or do you think the classic functions like heatmap() and scatterplot() are easier to use for our assignments?
+
+References
+
+Bokeh Contributors. (n.d.). PNG and SVG export. Bokeh documentation. Retrieved November 2, 2026, from https://docs.bokeh.org/en/latest/docs/user_guide/output/export.html
+
+Hagberg, A. A., Schult, D. A., & Swart, P. J. (2008). Exploring network structure, dynamics, and function using NetworkX. In G. Varoquaux, T. Vaught, & J. Millman (Eds.), Proceedings of the 7th Python in Science Conference (pp. 11–15).
+
+Waskom, M. (n.d.). The seaborn.objects interface. seaborn documentation. Retrieved November 2, 2026, from https://seaborn.pydata.org/tutorial/objects_interface.html

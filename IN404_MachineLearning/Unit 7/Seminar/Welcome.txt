@@ -1,0 +1,52 @@
+This week, we will focus on pipeline models, model optimization, and using multiple Python programs together. You will learn how pipelines can combine different machine learning steps into one organized workflow and how a driver program can run multiple Python files.
+
+What You’ll Learn
+By the end of this unit, you should be able to:
+    Build and use Python pipeline models
+    Understand GridSearchCV and identify the best model parameters
+    Use a driver program to run multiple Python programs
+    Use RMSE to evaluate sentiment scores and understand model results
+    Interpret model performance and sentiment values
+
+Readings & Videos
+Please complete the assigned Unit 7 readings and review the recommended videos on:
+    Machine learning pipelines
+    GridSearchCV
+    Multinomial Naïve Bayes
+    Root Mean Square Error (RMSE)
+These resources will help you understand the concepts used in this week's assignment.
+
+Unit 7 Assignment: Pipeline Models
+You will work with:
+    IN404_Reviews.csv
+    IN404_Unit7_1.py
+    IN404_Unit7_2.py
+    IN404_Unit7_Driver.py
+
+Complete the Python code as instructed, run the programs, and include your code and results in your assignment document.
+Be sure to address:
+    Best model score and best parameter settings
+    RMSE sentiment score and what it means
+    Lowest and highest sentiment values
+    How the driver program runs multiple Python programs
+    Pipeline, Multinomial Naïve Bayes, and GridSearchCV concepts
+    What best_score_ and best_params_ represent
+
+Tips for Success
+    Clearly number each assignment item.
+    Include your Python code and output/screenshots.
+    Make sure all three Python files are saved in the same directory and run correctly.
+    Explain what your results mean, rather than simply reporting the numbers.
+    When discussing RMSE, explain what the value tells you about the model's predictions.
+    Follow the assignment formatting instructions and review the rubric before submitting.
+
+Key Takeaway
+The goal this week is to understand how different parts of a machine learning project can work together. A pipeline helps organize the workflow, while tools such as GridSearchCV help improve model performance.
+
+Please reach out if you have questions about the Python files, pipeline, or interpreting your results.
+
+I look forward to seeing your work this week!
+
+Regards,
+
+Dr. Sen Baidya

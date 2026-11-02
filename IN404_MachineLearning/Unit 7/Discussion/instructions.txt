@@ -1,0 +1,18 @@
+Topic: High-level Plotting
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with using matplotlib for high-level plotting. Based on the resource, respond to the following:
+
+In paragraph form, discuss the high-level plotting using matplotlib. Be sure to summarize the below high-level plotting modules or methods:
+    NetworkX
+    Seaborn
+    Pandas
+    Ggplot
+    Boken
+
+Discuss which graphing modules, or tools, you liked best and why. Also, describe which graphing modules you liked least and why. Conclude with a summarization of two real-world use cases where one of the matplotlib modules was used to visualize results.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about using matplotlib for high-level plotting, or do some light research "beyond" the other student’s initial post (citing your sources, of course).

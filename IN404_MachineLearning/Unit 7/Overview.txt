@@ -1,0 +1,2 @@
+Pipeline Models
+In this unit, you will learn about high-level plotting, customization, and configuration using the matplotlib module. In that you will learn about the use of subplots to provide the best visualizations possible. You will also learn about advanced probability, Bayes theorem, and random variables, and ensemble methods to add models together to gain better results. You will then apply that knowledge to programs provided and code results using Python and machine learning methods.
