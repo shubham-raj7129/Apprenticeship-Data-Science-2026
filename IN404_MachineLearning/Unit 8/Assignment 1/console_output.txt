@@ -1,0 +1,66 @@
+The mean of CV on NB model
+(0.7838709677419355,)
+
+The mean of CV on NB model using TF-IDF text
+(0.7451612903225807,)
+
+X_train scaled (first column - mean)
+(1.7227598657976567e-16,)
+
+X_train scaled (first column - std)
+(0.9999999999999999,)
+
+X_train scaled (second column - mean)
+(1.2250736823450003e-16,)
+
+X_train scaled (second column - std)
+(1.0,)
+
+X_train scaled after standardization (first column - mean)
+(-0.12297331507169044,)
+
+X_train scaled after standardization (first column - std)
+(1.0138672668405495,)
+
+X_train scaled after standardization (second column - mean)
+(-0.028597723657408095,)
+
+X_train scaled after standardization (second column - std)
+(1.122720789299994,)
+
+KNN accuracy on original data
+(0.6923076923076923,)
+
+KNN accuracy on scaled data
+(0.6923076923076923,)
+
+Pipeline that scales data and then runs a KNN with 3 neighbors
+()
+
+ cross validate your pipeline using cv=5 with accuracy metric
+()
+
+0.7516129032258064
+()
+
+Best score with optimal n_neighbors value using GridSearchCV
+(0.7870967741935484,)
+
+Best parameter with optimal n_neighbors value using GridSearchCV
+({'kneighborsclassifier__n_neighbors': 15},)
+
+Evaluation results
+({'accuracy': 0.78205127, 'accuracy_baseline': 0.7051282, 'auc': 0.8197628, 'auc_precision_recall': 0.9280962, 'average_loss': 0.49028197, 'label/mean': 0.7051282, 'loss': 38.241993, 'precision': 0.7794118, 'prediction/mean': 0.75161195, 'recall': 0.96363634, 'global_step': 2000},)
+
+Tensor prediction
+({'logits': array([-3.526584], dtype=float32), 'logistic': array([0.02856523], dtype=float32), 'probabilities': array([0.9714347 , 0.02856523], dtype=float32), 'class_ids': array([0]), 'classes': array([b'0'], dtype=object), 'all_class_ids': array([0, 1], dtype=int32), 'all_classes': array([b'0', b'1'], dtype=object)},)
+
+Tensor prediction
+({'logits': array([3.008482], dtype=float32), 'logistic': array([0.95295584], dtype=float32), 'probabilities': array([0.04704415, 0.95295584], dtype=float32), 'class_ids': array([1]), 'classes': array([b'1'], dtype=object), 'all_class_ids': array([0, 1], dtype=int32), 'all_classes': array([b'0', b'1'], dtype=object)},)
+
+Tensor prediction
+({'logits': array([-0.6164824], dtype=float32), 'logistic': array([0.3505819], dtype=float32), 'probabilities': array([0.6494181, 0.3505819], dtype=float32), 'class_ids': array([0]), 'classes': array([b'0'], dtype=object), 'all_class_ids': array([0, 1], dtype=int32), 'all_classes': array([b'0', b'1'], dtype=object)},)
+
+Tensor prediction
+({'logits': array([-0.28526205], dtype=float32), 'logistic': array([0.4291642], dtype=float32), 'probabilities': array([0.5708358, 0.4291642], dtype=float32), 'class_ids': array([0]), 'classes': array([b'0'], dtype=object), 'all_class_ids': array([0, 1], dtype=int32), 'all_classes': array([b'0', b'1'], dtype=object)},)
+

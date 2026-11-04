@@ -1,0 +1,62 @@
+Hi everyone,
+
+Welcome to Unit 8!
+
+This week, we will focus on advanced machine learning models, feature scaling, pipelines, and deep learning with TensorFlow. You will also explore how machine learning and automation affect people in the workplace.
+
+What You’ll Learn
+
+By the end of this unit, you should be able to:
+    Build and evaluate machine learning pipelines
+    Apply feature scaling and understand its impact on model performance
+    Use K-Nearest Neighbors (KNN), Naïve Bayes, and TensorFlow models
+    Explain deep neural networks and their applications
+    Analyze the positive and negative effects of machine learning on the workplace and human expression
+
+Readings & Videos
+Please review the assigned Unit 8 materials and recommended videos on:
+    Machine learning pipelines
+    K-Nearest Neighbors (KNN)
+    StandardScaler and feature scaling
+    TensorFlow and deep neural networks
+These resources will help you understand the concepts covered in both assignments.
+
+Assignment 1: Advanced Machine Learning Models
+For this technical assignment, you will work with several machine learning techniques, including:
+    Naïve Bayes with Count Vectorization and TF-IDF
+    StandardScaler and Z-score concepts
+    KNN with and without feature scaling
+    Pipelines, cross-validation, and GridSearchCV
+    TensorFlow for deep neural network modeling
+Complete the required Python code, run your models, and include your code, screenshots, results, and written explanations.
+
+Tips for Success:
+    Start early, as this assignment includes several models and steps.
+    Pay close attention to feature scaling, especially when evaluating KNN.
+    Explain what your results mean rather than simply reporting numbers.
+    Make sure your code runs correctly and include the required evidence.
+
+Assignment 2: Machine Learning and Human Expression
+For this written assignment, you will prepare a minimum three-page APA-formatted report discussing the real-world impact of machine learning.
+Be sure to address:
+    The impact of machine learning on the workplace
+    Five positive and five negative effects on human expression
+    How automation can improve efficiency and profitability
+    Future implications for employment and communication
+Write for a non-technical, executive audience and use examples and credible sources to support your discussion. Include at least three references and follow the APA formatting requirements.
+
+Important Reminders
+    Submit each assignment to its correct Dropbox
+    Include all required code, screenshots, and written responses for Assignment 1.
+    Follow APA formatting and reference requirements for Assignment 2.
+    Review the assignment instructions and rubric before submitting.
+
+Key Takeaway
+This week connects advanced technical skills with real-world business and social implications. Remember that building a strong machine learning model involves more than selecting an algorithm; it also requires appropriate preprocessing, model evaluation, and an understanding of how the technology affects people.
+
+Please reach out if you have questions about the Python code, model results, or written report. Start early, stay organized, and take each part one step at a time.
+
+I look forward to seeing your work this week!
+
+Regards,
+Dr. Sen Baidya

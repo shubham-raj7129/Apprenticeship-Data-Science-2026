@@ -1,0 +1,15 @@
+Response to Mateo Uribe Giraldo:
+
+Great post, Mateo! I liked how clearly you laid out the path from a single perceptron to a single-layer network and then to a multilayer network, and your point that the extra hidden layers are what let the network recognize nonlinear patterns. I also appreciated that you mentioned gradient descent. In my own research I found that the two ideas work together: backpropagation, popularized by Rumelhart et al. (1986), is the method that calculates how much each weight contributed to the error, and gradient descent then uses those values to adjust the weights a little at a time.
+
+Your OCR example caught my attention because it is one of the earliest big successes of neural networks. I did some extra research and found the paper by LeCun et al. (1998), which compared different methods on a standard handwritten digit recognition task. The authors found that convolutional networks, "which are specifically designed to deal with the variability of 2D shapes," were "shown to outperform all other techniques" (LeCun et al., 1998, p. 2278). What impressed me most was that this was not just a lab result. The check-reading system they described used convolutional neural network character recognizers, and it was "deployed commercially and reads several million cheques per day" (LeCun et al., 1998, p. 2278). That shows how OCR was already supporting the kind of automated document processing you described more than 25 years ago. I have a personal connection to this example too, because in IN501 I trained a CNN on the MNIST handwritten digit dataset using both Keras and PyTorch, and it was satisfying to see how well even a small convolutional network could recognize digits.
+
+I also found your underwater image example interesting, since it shows the same CNN idea being used in a very different setting. Do you know if the 96% accuracy reported by Agrawal et al. (2024) was measured on a balanced set of image classes? I ask because in our earlier units we saw that a model can reach a high accuracy just by favoring the most common class, so I am curious whether the paper also reported measures like precision and recall for each class.
+
+References
+
+Agrawal, A. P., Reddy, K. B. N., & Malviya, A. (2024). A use of DL method with the 5G integration for image analysis which is in underwater with aerial vehicle kind of networks. 2024 1st International Conference on Innovative Sustainable Technologies for Energy, Mechatronics, and Smart Systems (ISTEMS). IEEE. https://doi.org/10.1109/ISTEMS60181.2024.10560077
+
+LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278–2324. https://doi.org/10.1109/5.726791
+
+Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. Nature, 323(6088), 533–536. https://doi.org/10.1038/323533a0

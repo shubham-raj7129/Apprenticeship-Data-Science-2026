@@ -1,0 +1,503 @@
+Sonali Baidya
+Sonali Baidya
+00:15:07
+Good evening, everyone.
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:15:12
+Good evening.
+Sonali Baidya
+Sonali Baidya
+00:15:14
+Yeah, let's give a couple of few more seconds for the rest of the folks to join, and then we'll start, okay?
+Okay, good evening, everyone, again. So…
+Before we move on to this week, any questions from past week or anything that you guys want to go ahead and discuss or share?
+If not, like… How are… how is everyone doing today?
+Okay.
+Yeah, I'm a bit down under the weather, so… It's like bad.
+But Okay, so if…
+No questions from past week or anything to discuss. Let's go ahead with this week's seminar.
+Oh.
+Yeah, it's gloomy over here as well, I'm not sure it's because of the weather or what's going on.
+But yeah.
+Okay, so let's go ahead and start.
+Like, as every week I do, I have already posted an announcement, just to give you an idea about what this week is going to cover.
+And as every week, this week too, you need to go ahead and start participating in a discussion.
+I know as like.
+Some of you have already started working on it.
+For those who have not started, please go ahead and start, and
+For the seminar 2, for those who are not attending, please make sure to review this video and submit the alternative.
+Assignment.
+Okay.
+Now, for the assignment for this week, there are two parts. First part is mostly code-based, you have to run the code, and then based on the outputs, you have to write a document answering these questions.
+And the part 2 is, a little bit on research-based.
+So, I'll go ahead with the first… this part 2 first, and then we'll go back to part 1.
+Okay.
+So… This week, we are.
+For the code part, we are going to go through a little bit on what Oh…
+Concepts on the standard scalar.
+Or concept on a neural network.
+And there's some ideas on the KNN method and stuff like that for… The first part.
+The second part, as you can see.
+This, you have to do a research, and then write a report.
+which is based on. You have to compose a report covering humans expression.
+On the workplace, as affected by machine learning now and in the future.
+The target auditions for the report should be for senior-level executives who need an understanding of how machine learning can affect the workplace. So you are going to submit a report as if, like.
+Mostly for your senior executives, to make them understand how machine learning is, how it can affect their workplace. How is it affecting now versus in the future, and all those stuffs.
+So, based on the research and the knowledge you have achieved thus far in this class, compose an informative report covering human expression on the workplace as affected by machine learning.
+Again, you need to write based on the APA guidelines, and at least 3 pages in length.
+Not including the title and the reference pages.
+Okay? Research and provide details covering Current effects…
+of machine learning has on the workplace. Also cover 5 positive and 5 negative effects of machine learning may have on human expression now. Use examples to make your points, and this is important, okay?
+After that, explore the efficiency, the profitability, automated machine learning processes may have in workplace. Include how this affects human expression, employment, and work possibilities.
+And conclude with your opinion on the status of future effects.
+Machine learning will have on human expressions in the workplace.
+And be sure to support your position and use examples, and since you're going to use examples, make sure you're using correct, appropriate references throughout your document.
+The… read through these instructions, make sure your report are following these.
+And it should be covered in your… when you're submitting the report, okay?
+So that's on Part 2. Any questions on Part 2 report?
+You can use automations, how automations are being used today, how machine learning
+automated use cases are being applied in the workplace environment, in industries, in different industries, and I'm guessing most of you are working in different areas, different types of industries, so try to bring in your report affecting how that's
+Machine learning is affecting your industry, your workplace environment, and all those stuffs.
+Both in positive and negative ways, so that's…
+What your report should be covering. Okay.
+Okay. Excuse me. Okay. So that's about the Part 2. That's a separate document. Make sure you're submitting in the appropriate Dropbox. That's Assignment 2.
+And Assignment 1 is… That needs to be submitted on a separate document as well.
+Okay?
+So, for Assignment 1, you will… now, we have been building the machine learning
+Using different techniques, we're trying to streamline our model and our results.
+What we are going to do today is we will apply models that.
+pipeline, count vectorization, and TFIDF with NAB base, and we have already done that in the last unit.
+We are going to do a little more extension of it.
+And, using a method called Standard Scaler.
+And we are going to see what standard scalar mean.
+We are going to also apply KNN.
+And also get some ideas about how TensorFlow work.
+And what deep neural network is, okay?
+Okay, so finally, once you have these codes written in… as you do in, every unit.
+First of all, you make sure that you have the right file, Python file, and also the CSV file, so these two files you wouldn't be needing. And wherever you will see that you need to write your code here, just go ahead and fill up those gaps with your code. Run your code.
+And then answer, after getting your answers, like, the outputs, you have to start answering these questions. Okay?
+No.
+We have already gone through the grid search CV model last week.
+How?
+We are going to go through the concept how KNN is going to make that score that we achieved last week a little more optimal.
+That's what we are going to see this week.
+The best score as well as the best parameter, okay?
+We are also going to use TensorFlow in our code, and I'm going to show you in a bit.
+And, apart from that, concepts like standard scalar and z-score will be also applied.
+to the
+concepts that we used last week. It's going to be a little more extension to those to see how we can improve our scores.
+Okay.
+Okay, having said that, I'll go ahead and share my… Oh.
+slides first, so that I go through the concepts first, and then I will go back to the code.
+So that we know it, or we understand it better.
+Are you guys able to see my slide, or am I sharing a different screen?
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:25:25
+See you, Rasamunda.
+Sonali Baidya
+Sonali Baidya
+00:25:28
+Okay.
+You are seeing the assignment, not the slide.
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:25:32
+No, we see the assignment.
+Sonali Baidya
+Sonali Baidya
+00:25:34
+Okay, let me… Stop sharing and share back again.
+Are you guys able to see the slide now?
+Sathiyasivam Somasundaram
+Sathiyasivam Somasundaram
+00:25:48
+Yep.
+Sonali Baidya
+Sonali Baidya
+00:25:49
+Okay, good.
+So, last week, we did go through the concepts of count vectorization.
+Then we used Tfidf.
+This week we are going to use something called standard scalar.
+And what Standard Scaler does is it rewrites each numeric column.
+So, it is measured in standard deviations, okay?
+And that is based on the training average.
+Okay, after we get a correct fit on the training rules.
+that column's mean goes… becomes 0, and its standard deviation becomes 1. Okay, so that's why we use standard scalar. And now…
+Shwen on it to understand, let's go ahead and see how it works.
+So suppose, And for that, we use a medium to do that that is called the Z-score.
+Okay.
+So, as per this formula, if you can see, the Z score is the… this formula is used.
+So if these are the real numbers.
+If you see over here.
+64, 68, 72, these are all the near numbers.
+The mean is 68.
+And we take the standard as 4 over here.
+So, that's because if you subtract these two, each of them from each other, you'll see it is differentiated, like, all the differences are by 4.
+Now, the formula we apply to get the z-score, which is your… we are applying the standard scalar over here.
+And why we do that, I'll show you in an example very soon, but…
+We put that in this, plug it in this formula.
+So that means 72 minus 68 by 4, and we do apply the same thing over here.
+The Z score we get for this one is positive 1, for this one is negative 1, and for this one is 0. So that's how we get the Z score.
+Plugging into the standard scalar method.
+Okay.
+No.
+The…
+And I'll come into the next example of why we are using standard scalar in a bit, but before that, the next concept that we are going to use is KNN.
+KNN is the key nearest neighbor.
+So, what does that mean is…
+We go by the closest means smallest… closest over here means the smallest distance, okay?
+So, K is how many people?
+So if you see over here, the training numbers are 5.
+The hour studies are these for each of these persons, and the labels are here. Now, if we introduce a new person.
+Okay?
+Say we introduce a new person, which is, the hour studied will be, say, 4.
+So, if I'm introducing a new person with an hour study, say, 4, the nearest neighbors are 3, 2, and 1 to that 4.
+Now.
+So now, the nearest person, the new member, nearest neighbors are 1, 2, and 5. These are my nearest neighbors to that new person. That we introduced over here.
+Now, in all these three cases, if we see, the label is failed. So, in that case, the voting will be failed, because the nearest numbers are all failed, and hence, that's how we do the learning In case of KNN. Now.
+But KNN alone cannot achieve.
+Unless we apply the standard scalar.
+So, let's say… We have two persons.
+One of them, height is, say.
+70 inch, and the other one is 68 inch.
+One has an income of, say, $40,000, and the other has $90,000.
+Okay.
+Now, if I want to use these features.
+These are two different types of features with two different types of units.
+Right?
+So.
+Mmm.
+In order to do that.
+That's why we entered the concept of standard scale, so that we come to a… in a way that we can
+Learn or train our…
+model in such a way that we can understand, okay, which one to go for if we are applying the KNN.
+Okay?
+Why? Because this is 70, this is 68, and these are in inches, this is 40 and 90,000, these are in dollars, so how am I going to introduce, and which feature I'm going to go for? This is very confusing.
+Okay.
+So what we do over here, we start introducing that standard scalar method, the same way we did in the other ones.
+So the height of this one is 70, this one is 68, we go by the… standard…
+Deviation as 1.
+Right? And in this case, this is 90,000 and 40,000.
+So, maybe we will go by…
+A standard deviation of, say, 25,000.
+Okay?
+So now, once we have these two, what we do is, we will do 70 minus 69 by 1.
+Which is plus 1, and 68 minus 69 by 1, which is negative 1.
+Similarly, we will go by 40,000 minus 65,000 by 25,000, which is minus 1, and 90,000 minus 65,000 by 25,000, which is positive 1.
+Now, what we have over here is, in terms of all ones.
+Okay, so 1, negative 1, minus 1, negative 1 over here, and 1. So…
+It makes more sense now, because we are now using a standard scale.
+Okay? If we had unscaled it, and we introduced another Person.
+It would have been very difficult for us to go for a KNN.
+Because these are not standardized.
+And that's why we use standard scalar along with KNN to come to a standard like this output.
+Based on which we can find out, or which one to vote for, and which one not to vote for.
+Okay.
+So, in this case, If you go for the unscaled one.
+Distance would have seen, like, say.
+$50,000 and ignored the 2 inches, right?
+But after the output, now both the columns differ by 2.
+So even both height and income, both can do the voting. In both the cases, we can do the voting and find out.
+And that's the reason we use standard scalar and, you know, along with KNL, okay?
+So now, how we're going to implement in our code, I'm going to show in a bit.
+The other concept we will be using is TensorFlow.
+I'm not sure how many of you have already worked on it, but the concept is like a network. It's stacked on simple units, okay? So suppose there are two inputs over here.
+And the answers will be two outputs.
+So… And in the middle, we have all these hidden leaves.
+So, each circle is a neuron.
+They add up some weighted inputs.
+Then they bent.
+And.
+This column of circles is a layer, okay? And what does deep means? In deep learning, deep means more
+Than one hidden column.
+So there can be more than one columns like this, hidden layers.
+Okay? So that's what TensorFlow is about. Now, in your code.
+You will be using, again, two inputs.
+And I'm going to show you in the code where it is, and how we are using it.
+Okay.
+Two inputs, which is mostly the sentiment score and the sentiments that we have been using so far.
+Okay? And there are hidden layers.
+At the beginning, we are going to use 10 units.
+Then we are going to expand to 20 units, and then again, we are going to get the 10 units. So these are all the hidden layers, and that's going to work.
+And once that is done, at the end, we are going to get two outputs, which is good or bad reviews.
+Okay.
+Now… Now, the thing is that, okay, I understand the concept, I see what it is, then how we do… we implement in the code.
+Before we go ahead and…
+Go ahead… before I go ahead and just tell you what is and how it works.
+One thing I want to just inform.
+For tensor flow.
+Over here, if you see, we are using certain, packages.
+Okay? So this is what we are using.
+Now, when you run anything your machine like with your pie charm, make sure your interpreter is a little old.
+Because.
+This TensorFlow…
+This package was removed in TensorFlow 2.16, so the recent interpreters that you will be having, that is 3.13 or so.
+And when you run this particular code in your machine, it will give error, and it will say there is no TensorFlow module, you won't be able to install.
+So, in order to use this code and send this package, what you have to do is you have to change your interpreter to 3.11.
+So, make sure you do that before you go ahead and run this particular code, okay? So that's…
+Because, this package was… Available in TensorFlow 2.15, but later it was removed.
+And.
+Different packages was introduced.
+Okay.
+So that's a thing that you have to please make sure that before you run this code, you need to change your interpreter to 3.11.
+Okay?
+Okay, so having said that, other than that, everything else is the same. There is no changes in the packages.
+That's the only package that we are going to use extra in this particular code.
+Initial part is the same, so I'm not going to go through all these things again, because we have been using the same file and the same codes from the beginning.
+What I'm going to focus on is, Maybe from 96, yeah.
+Let's see, yeah, from this part.
+So, we have already used the… Count vectorizer, last class.
+Last unit, right?
+So.
+We are creating account vectorizer. Now, what we are doing is, it splits each review into lowercase words, and all with… and will count
+how often each word will appear, right? So that's what we did.
+We already did that. The next line here, we are generally… what we are doing is we are learning the vocabulary from all review
+texts, And then converts them into a…
+sparse documenter matrix, okay? One row per review and one column per word. So that's what we are doing in this particular line, if you remember.
+And the next line we already also implemented in the last unit.
+We are creating an untrained multinomial NAPE-based classifier.
+Right?
+This is the part which is new, which you are going to be… you have been going to be asked to write. So let me see this file…
+Yeah, so if you see after this, this is where you have to write the code where you need to find out the mean.
+Now, in this case, We are going to run not 5 folds, but 10 fold.
+So we are going to run tenfold cross validation.
+that data
+is split into 10 parts, right? As we have done in 5-fold, it's going to be the same thing when we are using 10 parts.
+So the model trains on 9 and tests on one, and it rotates through all these 10,
+Faults, right?
+Scoring is equal to accuracy, which makes each fold report the fraction.
+That has been classified correctly or not. And then we are going to find out the mean, okay? Which is the average of this 10 accuracy into one single number, and we are going to print it.
+Okay, so that's the line that you need to… Add in this particular.
+code. And then once you run it and get the answer, you need to find out the answer, and then
+I think in your assignment, that's their… they're asking at the very beginning. Mean result of the count vectorizer, same thing, you'll need to do it for the TF-IDF.
+So if you go over here.
+That's where you have to write your code, so that's where we are going to do the same way, exact same way. We are going to, again, go by tenfolds for the TF-IDF.
+And then find out the mean, and then run, and find out the mean, and write your answer in that report.
+Okay? So that's the first two questions that you have.
+Penny… Any confusion in this line? Anyone has any questions on this?
+Okay.
+No questions means, I hope it's clear.
+Okay, so next part is… let's go…
+So these are all the… this is where we are using the standard scaler.
+Functions?
+So, this… you don't have to do anything over here. What you… they're asking is, you have to write the second column for the extreme states. First column has already been shown to you, you have to introduce it for… similarly for the second column. Now.
+Okay, let's go and see how it works, okay?
+So, this is where we are using the… creating a standard scalar. That means it learns the mean and the standard deviation of each column from the training data that I showed you with an example. Same way, we are going to use that same formula through that standard scalar function.
+And then… We are going to only fit, and then apply the formula to the training data.
+And then, transformed right?
+Now, the result?
+which is over here. The extreme scaled is a numpy array that we are using.
+Right?
+So now, what we are going is, doing over here is…
+And if you see over here, we have… it's in the comment, it's already also mentions about how you're calculating the z-score.
+Okay.
+Now, let's go to the… move on to the next line. That's the part that you have to write over here. This part has been already written for you, so similarly, you have to do the second one.
+So in this one, what we are doing is we are checking the first column of… that is the sentiment score of the scaled training data.
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:43:19
+That's why…
+Sonali Baidya
+Sonali Baidya
+00:43:19
+colon, comma, zero.
+Okay.
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:43:24
+I'm sorry, but we still see the PowerPoint slide.
+Sonali Baidya
+Sonali Baidya
+00:43:29
+Oh, really? I'm so sorry.
+I've been talking, talking, talking, and I showed you all these things, so I'm really sorry for that.
+Okay, let me again share.
+Are you guys able to see now? I'm so sorry for you guys.
+Dhaneshwar Patil
+Dhaneshwar Patil
+00:43:53
+Spy jump screen, yeah.
+Sonali Baidya
+Sonali Baidya
+00:43:55
+Okay, so let's go back again. I don't know how… what did we miss? So, we missed from the very beginning, so this part, right? Okay.
+So again, let me share my entire screen first. I have to go back and forth, Mary.
+Okay.
+So again, as I was saying.
+The first two questions is talking about, you have to show the mean result of the running cross-validation using the classifier. on the fitted count vectorized text and TF-IDF text. Now, as I mentioned, over here, what you need to do is.
+You just need to go to this particular line and this section. This is where the convectorizer function has been called, right? And we did that in the last week.
+So it's creating a count vectorizer, it splits each review into lower
+words, lowercase words, right? And it will count how often each word will appear.
+Then, in this next line, as I said, you're going to learn the vocabulary from all the review texts, and then convert them into a… A sparse documenter matrix.
+Right? So we did all these things in the last unit.
+What they're asking you to… and then again, this one is the classifier that we used, right?
+Now, what they're asking you to do is, you have to find out the mean, and for this one, we are going to run a
+Tenfold cross-validation.
+So that's why we are mentioning CV is equal to 10, not 5 this time. So that means that data is split into 10 parts. The model trains on 9 and tests on 1, right? And then it rotates through all those 10.
+And you.
+I'm not sure if you've got a chance to go through the earlier
+code when we were using 5 folds. It's using a scoring which is scoring equal to accuracy which makes each fault report the fraction that's classified correctly or not.
+Once you get from all these 10 folds, you'll take a mean Okay? The average of the 10 accuracies into one number, and you have to print that.
+This way that you have done… we have done in-count vectorizer, the same way you have to apply for the TF-IDF vectorizer as well, and find out those two means, and then… then report it over here in this first two questions.
+Okay? So that's what it's 2 and 3 about. The next part we were talking… that I was mentioning is…
+If you come to this part of the code, that's from line number 135.
+Basically need to do, write the code for…
+It's the second column for the X-train scale, and for that, I was going through what this means. So, as I said, we are going to use the standard scalar, so that's where we are creating a standard scalar, which means it learns the mean and the standard deviation of each column.
+And I showed you how we are doing that. We are using this formula, remember, the z-scorer thing?
+So that's what's been done over here. We are only fitting it over here, and then we are applying the formula to the training data set.
+And that's the transform.
+And the result that we get, we are printing it over here. So the result that is extreme scaled.
+is the numpy array, and we are going to first print the first column, that's why we are doing colon, comma, 0.
+And then in this… the next that you are… you are required to print is the second column. That's going to be colon, comma 1.
+Once you get that, you have to print the mean and the standard deviation in both the case and print it.
+Any questions on this part? That's what it's talking about in this 149 you need to apply.
+Anybody?
+Okay.
+Okay, so the next part is.
+I think we covered this one.
+Okay, then is…
+If we start looking at this code, X test scaled equal to scalar.transferX test, you know, like, we are scaling the test data with the same scalar now.
+And then the transform is used.
+Without fit over here.
+Okay? So that's why you don't see the fit, you just see the transform function.
+So the test set…
+Excuse me. is scaled with the training set's mean and standard deviation, and this avoids the leaking of that test set information into.
+pre-processing, and that's why we are using transform. So the question might come, like, we are not fitting over here, why? So that's the reason.
+Okay? Once that is done, these two other functions that we are printing, the printing the mean and the standard.
+Excuse me.
+Sorry for that.
+So the test set is the…
+So, so this is the prints, the mean, and the standard deviation of the first scaled Test column.
+And.
+They will be close, but not exactly 0 and 1, because the training
+Statistics were used over here, remember?
+Okay.
+Excuse me.
+And that's why the label says.
+The extreme.
+But the values come from the X test scaled, okay?
+So.
+That's the thing that you have to do the same way for apply for this part.
+For the next column, For the second column, exactly the same.
+Okay.
+Okay? So that's what we are doing over here. Any questions?
+It's pretty straightforward.
+We already have N01 applied over here, you just need to apply for the second column.
+Okay, so now coming to that KNN part, that's what it is over here.
+KN, initially, you don't have to do anything. The part that you need to work on, it's after the grid search CV part. That's right here. So let's go over this code again.
+So, what we are doing over here is, again, we are creating a KNN classifier with n neighbors equal to 3.
+So, to classify a point, it finds the closest three Training points.
+That's why we are taking KN neighbors is equal to 3, okay?
+Then, again, we are training the model on the unscaled training data.
+For, kNN.fit. This is… that's why we are mentioning over here.
+And then, we have the predictions being done. It predicts a class 0 or 1, okay?
+For each row of the unscaled test data that we are using.
+Next, we are measuring the… are computing the accuracy, the fraction of test predictions that match the Y test.
+and prints it. So this is the same we have done in the other model in the previous unit as well. We are going to apply the same logic in the KNN as well.
+Now, next it is… what it is doing is, it is predicting On the scaled.
+Test it, huh?
+Similarly. Okay? And it prints the accuracy on the scale data, again.
+That's what this part is. It's a scaling
+matters, as we said, why, and I showed you why we are going to scale, because so that if there are different units, different types, different features.
+We can come to a common platform, right?
+Okay, now scaling matters for Kanan because I'm so sorry.
+Because it is distance-based.
+So, a feature with a larger range can dominate.
+And that's fine.
+Here, two columns have similar ranges, so the change may be small.
+Yes.
+Let me take a moment, okay, please.
+Okay, okay.
+Okay.
+So, any questions so far on this one?
+Okay, if no questions, then the next part is.
+We are making a pipeline now.
+So we are creating the pipeline that first scales the data and then runs the KNN with three neighbors.
+And that's why we are using make pipeline function over here. We're calling it And
+We are using the standard scalar and the KNN neighbors classifier, okay? And again, as we said, we are using the three nearest closest neighbors.
+Okay, so once that is done, again.
+This time, we are using CV equal to 5, that's cross-validation 5-folds.
+And then we are finding out the mean, the same way we did in the past.
+I hope everything looks good so far. If you guys have any questions, feel free to raise your hand, or you can ask me.
+If not, then let's move on to the next part.
+We are using, now, A new pipeline for the search.
+So, the KNN has no fixed N numbers.
+So, what we are doing over here is we are creating a range, which is range 1 to 21. That means it generates a candidate's values.
+from 1 through 20, so that's why I showed you when we were using the layers.
+We started with 10, then we went to 20, and then we came back to the 10 in the third layer. So we are using multi-layers.
+Hidden layers in our… network. Okay.
+Now, we build the parameter grid, which is, like, in the form of a dictionary.
+And… Remember that… Once you build this, you have to then…
+Find out the best score and the best parameter. Okay?
+And that's also a part of the questions over here.
+When you're using the KNN?
+right here.
+Okay.
+So, that's pretty much about the KNN.
+Once that is done, then we go to the next part, which is the… TensorFlow part.
+And this is where it starts.
+Okay.
+So.
+If you look at this one.
+extreme keys… That means it loops over the column names.
+of that, the training set, okay? Dot keys is, like, on a data frame. It returns its column names. That's the sentiment score and the sentiment that we are using.
+Okay? So for each name.
+We… that is the T feature column numeric, that's what over here. So for each name, it declares a numeric input feature with that name.
+Now, this is where the estimator comes into the picture that we are using over here from the TensorFlow.
+The estimator uses this list.
+To know which inputs to read and how to interpret them.
+Okay?
+So that's where… and it also builds a DNN classifier. It's a pre-built.
+You can say a feed-forward neural network that we are using over here.
+And the feature column, it defines the inputs.
+And the hidden units are being defined over here, 10, 20, and 10.
+It creates 3 hidden layers, and that means 10, 20, 10 are the neurons, how many neurons we are using.
+Now we are using an optimizer over here. I don't want to go into a lot of details about what it is.
+But we use this optimizer over here, which adapts the learning rate for each weight. So when we are learning, it gives a weightage.
+So that's what this optimizer is doing. An n-class is equal to 2 means it makes a binary classifier.
+That means the output will be either good or bad. So that's how it's been defined over here, and we are defining the network. Once we build the network, we have the classifier and everything defined for the TensorFlow.
+The rest is pretty much the same.
+we define the input, training input function. Then we
+convert the data frame to dictionary of columns.
+and stuffs like that, and we return the data set. So that… the rest of the features is mostly the same way we have been using in the
+Earlier, part…
+The only thing that you need to understand is how this one is working, and how we are writing the… or building the neural network.
+Okay, apart from that, let me see, what else?
+Yeah, so this is the part that you would need to write, that's after… the eval input function.
+You have to print the results.
+That's the part that you have to write your code.
+So that's what it is over here.
+So, you're just printing the output?
+And then finding out the output, and based on that, you have to answer.
+What is the evaluation result, and what are the predictions for these
+sets. So, if you see this over here, the values over here, now let's go back to this.
+These are the sentiment scores that we have already over here. So, based on your neural network model, once you run it. You have to find out how it is scoring, and it's showing.
+So what basically it's doing is it's creating a dictionary of four
+handmade examples that we are using over here.
+So each… Position pairs a sentiment score and a sentiment value.
+That's what it is, zero and…
+Minus 0.5, 1 and 0.66, and so on and so forth.
+Have.
+So once you have this, and you run your code.
+Then you have to.
+You ask the network to predict the four examples.
+Using this particular function that we have, eval input function.
+Right? And then whatever you get as the output, you have to find out in the results, and then…
+Mention it over here.
+So that's what, basically, you need to do for your… All the questions?
+That you have over here, and then bring the results.
+And.
+Mention it.
+Any questions on any part of the code that.
+Was.
+not clear, and again, this will be provided to you. You can also go ahead and take a look at each line and try to understand what they're doing.
+And if you have any questions, you can also drop an email, and I can explain it as well.
+Anybody has any questions?
+Anybody else?
+Is there any part that is not clear?
+Nobody?
+So, everybody good? Okay. So, if you guys don't have any other questions, feel free to drop off, and we'll meet again next week, but if you have any questions, please do drop me an email.
+And I can help you, explaining via email. Okay?
