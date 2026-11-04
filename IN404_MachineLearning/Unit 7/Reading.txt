@@ -1,0 +1,10 @@
+Read or review the following chapters in Mastering Matplotlib, available at the Library in the Academic Tools section of this course.
+    Chapter 5: “High-level Plotting and Data Analysis”
+    Chapter 6: “Customization and Configuration”
+
+Read or review Chapter 6: “Advanced Probability,” in Principles of Data Science, available at the Library in the Academic Tools section of this course.
+
+Read or review Module 2, Chapter 8: “Ensemble Methods” in Python: Real World Machine Learning, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+In this unit, you will read about high-level plotting, customization, and configuration using the matplotlib module. With high-level plotting you will read about the use of subplots and how that helps create better visualizations. You will also read about advanced probability, Bayes theorem, and random variables. Finally, you will look at ensemble methods to add models together to gain better results.

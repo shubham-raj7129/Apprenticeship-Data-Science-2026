@@ -1,0 +1,13 @@
+Response to Shashank Mishra:
+
+Great post, Shashank! I appreciated how concise your summaries were, especially your description of plotnine as building layered, declarative charts that "compile down to Matplotlib." That is a clear way to explain how it fits into the ecosystem. I also landed on the same favorite and least favorite tools. Your point that NetworkX drawings turn into an "overlapping mess" lines up with what I found in my research, where the NetworkX documentation itself says the library's main goal is graph analysis rather than visualization and recommends dedicated tools like Gephi and Cytoscape (NetworkX Developers, n.d.).
+
+Your bioinformatics example made me want to learn more about how clustermap works, so I looked at the Seaborn documentation. I found that clustermap does not do the clustering math itself. It relies on SciPy's linkage function, and by default it uses average linkage with Euclidean distance (Waskom, n.d.). One parameter that seems very important for RNA-sequencing data is z_score. Setting z_score=0 converts each row to a z-score so that it has a mean of 0 and a variance of 1 (Waskom, n.d.). I think this matters because some genes are expressed at much higher levels than others. Without scaling, the clustering would mostly group patients by those few high-expression genes instead of by the overall pattern across all genes. There is also a standard_scale option that rescales each row or column using its minimum and maximum values instead.
+
+This also connects to our Unit 7 code, where we used RMSE to measure how far predictions were from real values. Both RMSE and Euclidean distance are built on squared differences, so in both cases large values can dominate the result unless the data is on a similar scale. Do you know which linkage method or distance metric biologists usually choose for this kind of analysis, or do they mostly keep Seaborn's defaults?
+
+References
+
+NetworkX Developers. (n.d.). Drawing. NetworkX documentation. Retrieved November 2, 2026, from https://networkx.org/documentation/stable/reference/drawing.html
+
+Waskom, M. (n.d.). seaborn.clustermap. seaborn documentation. Retrieved November 2, 2026, from https://seaborn.pydata.org/generated/seaborn.clustermap.html

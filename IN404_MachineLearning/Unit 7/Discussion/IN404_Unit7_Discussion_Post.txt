@@ -1,0 +1,39 @@
+Unit 7 Discussion Post — High-level Plotting
+
+Initial Post
+
+For this week's discussion, I went beyond the course text and used the official Matplotlib documentation's page on third-party packages as my main resource, along with the documentation and published papers for each library. I found that the term "high-level plotting" describes libraries that sit on top of Matplotlib and let me produce a complete, meaningful chart from a single function call. Matplotlib itself gives very fine control over every line, tick, and label, but that control can make common tasks repetitive. The Matplotlib documentation lists a whole ecosystem of packages that extend it, grouping them into categories such as "alternative APIs" and "domain-specific libraries" (The Matplotlib Development Team, n.d.). Most of the five tools in this week's topic fall into one of those two groups, and the one that does not (Bokeh) taught me something useful about how the ecosystem has changed.
+
+NetworkX is a library for creating and analyzing graphs, meaning networks of nodes connected by edges, such as social networks or road maps. Its drawing functions, like draw() and draw_networkx(), are built on Matplotlib, so I can position nodes with a layout algorithm and render the network as a normal Matplotlib figure. What surprised me is that the NetworkX developers are very upfront that visualization is not their main goal. Their documentation states that the library's purpose is graph analysis rather than graph visualization, and it recommends dedicated tools such as Gephi, Cytoscape, or Graphviz for serious network drawings (NetworkX Developers, n.d.).
+
+Seaborn is a library for statistical graphics that, in the words of its author, "provides a high-level interface to matplotlib and integrates closely with pandas data structures" (Waskom, 2021, p. 1). When I give seaborn a DataFrame and say which columns to use, it automatically maps values to color, size, or style, calculates statistics like averages and confidence intervals, and adds axis labels and a legend. Waskom (2021) explains that Matplotlib's lower-level API can make tasks such as a scatter plot with size and shape encodings "cumbersome," because the programmer has to loop over the categories manually. Seaborn removes that work while still exposing the underlying Matplotlib objects for customization.
+
+Pandas is best known as a data manipulation library, but its DataFrame and Series objects have a built-in .plot() method. By default, this method uses Matplotlib as its backend and supports chart types such as line, bar, histogram, box, scatter, area, and pie through the kind argument (pandas development team, n.d.). In practice, this is the fastest way I know to look at data, because I can call df['column'].value_counts().plot(kind='bar') without creating a figure first. We used this exact pattern in our Unit 6 bar chart.
+
+Ggplot refers to the "grammar of graphics" approach made popular by the ggplot2 package in R. In this approach, I build a chart in layers: first the data, then the mapping of columns to axes and colors (the "aesthetics"), then the geometric shape (points, lines, bars), and then extras like facets and themes. The original Python ggplot package is no longer actively maintained, and today the main Python implementation is plotnine, which describes itself as a data visualization package "based on the grammar of graphics" (Kibirige, n.d.). The Matplotlib documentation lists plotnine as one of its alternative APIs, which means it draws its figures with Matplotlib underneath (The Matplotlib Development Team, n.d.).
+
+Bokeh (listed as "Boken" in the prompt) is the outlier of the group. It is a Python library for creating interactive visualizations that run in a web browser and are powered by JavaScript, without my having to write any JavaScript (Bokeh Contributors, n.d.). Unlike the other four, Bokeh does not render through Matplotlib, and I noticed it is not listed on Matplotlib's third-party packages page at all. Older versions of Bokeh offered a compatibility layer for converting Matplotlib figures, which explains why the course text groups it with Matplotlib tools, but current Bokeh is an independent plotting system with its own output. Its strength is interactivity: zooming, panning, hover tooltips, and dashboards that can update with streaming data.
+
+The tool I liked best is seaborn. In our Unit 6 assignment, I turned a classification report into a heatmap with sns.heatmap(), and one line gave me a labeled, color-scaled, annotated grid that would have taken many lines in plain Matplotlib. I also like that seaborn's defaults are designed around statistics, such as showing error bars on aggregated data, which encourages me to show uncertainty instead of hiding it. My second favorite is pandas plotting, simply because of how fast it is during exploration.
+
+The tool I liked least is NetworkX's drawing module. I think NetworkX is excellent for analysis, but its own developers describe the drawing functions as basic, and the documentation even warns that visualization may be removed or moved to an add-on package in the future (NetworkX Developers, n.d.). When a library tells me to use a different tool for drawing, I take that advice seriously. I also have mixed feelings about the ggplot approach in Python. I like the layered grammar, but the name has been attached to a package that is no longer maintained, which could confuse someone new to Python plotting.
+
+To conclude, I looked at two real-world cases where Matplotlib was used to visualize results. The first is the 2015 detection of gravitational waves by LIGO (event GW150914), the first direct observation of two black holes merging. The LIGO Open Science Center published a public tutorial that uses matplotlib.pyplot to plot the strain data from the Hanford and Livingston detectors around the moment of the event, so anyone can reproduce the famous signal plot from the open data (LIGO Open Science Center, n.d.). The second case is space exploration more broadly. NumFOCUS, the nonprofit that sponsors Matplotlib, reports that it "has been used on high profile projects such as Mars landers and the Hubble space telescope" (NumFOCUS, n.d.). Both examples show me that the same library I use for a simple RMSE line chart in this unit is trusted for some of the most important scientific results of recent decades.
+
+References
+
+Bokeh Contributors. (n.d.). Bokeh documentation. Retrieved November 2, 2026, from https://docs.bokeh.org/en/latest/
+
+Kibirige, H. (n.d.). plotnine. Retrieved November 2, 2026, from https://plotnine.org/
+
+LIGO Open Science Center. (n.d.). Signal processing with GW150914 open data. Gravitational Wave Open Science Center. Retrieved November 2, 2026, from https://gwosc.org/s/events/GW150914/GW150914_tutorial.html
+
+NetworkX Developers. (n.d.). Drawing. NetworkX documentation. Retrieved November 2, 2026, from https://networkx.org/documentation/stable/reference/drawing.html
+
+NumFOCUS. (n.d.). Matplotlib. Retrieved November 2, 2026, from https://numfocus.org/project/matplotlib
+
+pandas development team. (n.d.). Chart visualization. pandas documentation. Retrieved November 2, 2026, from https://pandas.pydata.org/docs/user_guide/visualization.html
+
+The Matplotlib Development Team. (n.d.). Third-party and user-contributed packages. Matplotlib. Retrieved November 2, 2026, from https://matplotlib.org/thirdpartypackages/
+
+Waskom, M. L. (2021). seaborn: Statistical data visualization. Journal of Open Source Software, 6(60), Article 3021. https://doi.org/10.21105/joss.03021

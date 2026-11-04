@@ -1,0 +1,46 @@
+Unit 7 Assignment: Pipeline Models
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Compose high-level plotting methods.
+        Construct an application driver to run multiple programs.
+        Write Python code for pipeline models.
+        Write Python code using root mean square error to get sentiment cutoffs.
+    Course Outcome:
+        IN404-5: Develop a machine learning application using common machine learning tools.
+
+Purpose
+
+In this assignment, you will explore the use of pipelines for combining models. You will also determine the root mean square error (RMSE) to determine the sentiment cutoff used for decision making. You will code three different file solutions and run them as one application. The files will be provided and are best run from the same directory. For the IN404_Unit7_Driver.py program, you will use the system subprocess function to run the other two python files. Finally, you will respond to questions based on the result of the programs running.
+
+Assignment Instructions
+    Please number the assignment items in your Microsoft® Word® document.
+    Please post your code for Python to cover item 1 below.
+    For item 1 below, provide a screenshot of the execution. Be sure to post the .py file for the Python program. Another possibility might be to copy-and-paste your code and results in the assignment document. Also, be sure to respond to items 2–5.
+    Start a next action on a new page.
+        Using the IN404_Reviews.csv, IN404_Unit7_1.py, IN404_Unit7_2.py, and IN404_Unit7_Driver.py files provided, complete the programming where you see ################# YOUR CODE HERE ########################.
+        For IN404_Unit7_1.py results, answer the questions below.
+            What was the best score?
+            What was the best parameter setting?
+        For In404_Unit7_2.py results, answer the questions below.
+            What was the RMSE sentiment score?
+            What is the lowest value in the sentiment range?
+            What is the highest value in the sentiment range?
+        Describe the value of being able to use a driver to run several programs
+        Research grid search functionality using Python and respond to each of the following:
+            Summarize Pipeline and the value of using it.
+            Summarize what the Multinomial Naïve Bayes classifier is.
+            Summarize what GridSearchCV is and what it offers for machine learning.
+                Include a description of parameters such as:
+                    best_score_
+                    best_params_
+
+Assignment Requirements
+    For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+    Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+    Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit7 and submit it to the Dropbox by the deadline.
+
+Review the rubric before beginning this activity.
+
