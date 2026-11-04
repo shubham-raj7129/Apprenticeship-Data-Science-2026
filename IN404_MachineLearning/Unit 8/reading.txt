@@ -1,0 +1,6 @@
+Read or review Module 1, Chapter 11: “Deep Neural Networks” in Python: Real World Machine Learning, available at the Library in the Academic Tools section of this course.
+
+Read or review Chapter 4: “Neural Networks and Deep Learning” in Machine Learning: The New AI, available at the Library in the Academic Tools section of this course.
+
+Reading Summary:
+    In this unit, you will read about deep neural networks. You will read about the concept of neural networks as compared to your brain. Also, you will read about building perceptrons, single-layer, and multilayer neural networks. The deep neural networks can be valuable for pattern recognition for images and character recognition.

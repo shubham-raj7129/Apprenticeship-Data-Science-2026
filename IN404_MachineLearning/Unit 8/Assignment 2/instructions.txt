@@ -1,0 +1,39 @@
+Unit 8, Assignment 2: Advanced Machine Learning Models
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Compose pipelined models to improve accuracy.
+        Report on deep neural networks.
+        Write about the effects of machine learning impact on humans in the workplace.
+        Write Python code using various advanced machine learning models.
+    Course Outcomes:
+        IN404-5: Develop a machine learning application using common machine learning tools.
+        GEL-5.03: Communicate the impact of human expression on the workplace.
+
+Purpose
+This assignment requires you to compose a report covering human expression on the workplace as affected by machine learning now and in the future. The target audience for the report should be for senior-level executives who need an understanding of how machine learning can affect the workplace. It also fulfills the university-mandated communication requirement for the course.
+
+Assignment Instructions
+Based on research and the knowledge you have achieved thus far in this class, compose an informative report covering human expression on the workplace as affected by machine learning. Your paper should follow APA guidelines and be at least 3 pages in length, not including the required title and reference pages. Research and provide details covering current affects machine learning has on the workplace. Also, cover five positive and five negative affects machine learning may have on human expression now. Use examples to make your points. After that, explore the efficiency, and profitability, automated machine learning processes may have in the workplace. Include how this affects human expression, employment, and work possibilities. Conclude with your opinion on the status of future affects machine learning will have on human expressions in the workplace. Be sure to support your position and use examples as appropriate. Your report must include title and reference pages. You must have at least three references. Make sure to follow the most current APA guidelines.
+
+Report Parameters/Expectations:
+    Include a title page and reference page.
+    Written work is provided in Standard English.
+    At least 3 pages in length, not counting the title page and reference page.
+    Includes a highly developed viewpoint, purpose, and exceptional written content.
+    Writing demonstrates superior organization, is well ordered, logical, and unified.
+    Free of written grammar, punctuation, and spelling errors.
+    No evidence of plagiarism.
+    At least 3 outside references on the topic of the machine learning in addition to the text.
+    Make sure that the reference page is in the latest APA edition style.
+For assistance with APA requirements, please go to Academic Writer. You will find the link in the Academic Tools section of the course.
+
+Assignment Requirements
+    For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+    Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment:
+Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit8_Assignment2 and submit it to the Dropbox by the deadline.
+
+Review the grading rubric before beginning this Activity.
+

@@ -1,0 +1,17 @@
+Response to Tyler Ni:
+
+Great post, Tyler! I liked that you pointed out Goodfellow et al.'s (2016) view that neuroscience guided early work but now plays a smaller role. I found the same idea in the Stanford CS231n notes, which describe the artificial neuron as a "very coarse" model of a biological one (Stanford University, n.d.). I also thought your explanation of feedforward networks, where information flows from input to output with no feedback loops, was a clear way to describe how the layers work together.
+
+Your image recognition example made me want to look into the moment that made deep networks famous for it. In 2012, Krizhevsky et al. trained a deep convolutional neural network, now known as AlexNet, on 1.3 million high-resolution images from the ImageNet dataset to sort them into 1,000 classes. The network had five convolutional layers, 60 million parameters, and 500,000 neurons, and it reached a top-5 error rate of 18.9% on the test data, which the authors describe as considerably better than the previous state of the art (Krizhevsky et al., 2012). LeCun et al. (2015) later wrote that deep convolutional nets brought breakthroughs in processing images, video, speech, and audio, which supports both of your use cases. I think AlexNet also connects to your point about depth. The Stanford notes say that deeper networks often work better than a single wide hidden layer, but that this is mostly an empirical observation rather than something proven (Stanford University, n.d.).
+
+This made me think about our Unit 8 code. The TensorFlow DNNClassifier uses three hidden layers of 10, 20, and 10 neurons, but it only has two input features: the sentiment score and the sentiment polarity. AlexNet needed depth because raw pixels hold very complex patterns, while our two inputs are fairly simple. Since you mentioned that depth can reduce the number of units needed to represent a function, do you think our three hidden layers are really needed for just two inputs, or would a single hidden layer do just as well? Have you tried changing the hidden_units setting to see if the evaluation accuracy changes?
+
+References
+
+Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning. MIT Press.
+
+Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). ImageNet classification with deep convolutional neural networks. Advances in Neural Information Processing Systems, 25. https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+
+LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436–444. https://doi.org/10.1038/nature14539
+
+Stanford University. (n.d.). CS231n: Deep learning for computer vision [Course notes]. Retrieved November 2, 2026, from https://cs231n.github.io/neural-networks-1/

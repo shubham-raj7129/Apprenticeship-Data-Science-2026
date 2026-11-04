@@ -1,0 +1,11 @@
+Topic: Deep Neural Networks
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with deep neural networks. Based on the resource, respond to the following:
+
+In paragraph form, discuss the deep neural networks. Be sure to summarize what a deep neural network is as related to human brains. Discuss layering concepts of deep neural networks. Also, describe building perceptrons, single layer, and multilayer neural networks. Conclude with a summarization of two real-world use cases where deep neural networks have been applied successfully.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about deep neural networks, or do some light research "beyond" the other student’s initial post (citing your sources, of course).

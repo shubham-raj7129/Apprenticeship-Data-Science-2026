@@ -1,0 +1,2 @@
+Advanced Machine Learning Models
+In this unit, you will learn about various models such as combining text recognition models with Multinomial Naive Bayes and TensorFlow for deep neural network analysis. You will also learn about advanced deep learning concepts and how they can be applied for optical character recognition. Finally, you will then apply that knowledge to programs provided and code results using Python and machine learning methods.
