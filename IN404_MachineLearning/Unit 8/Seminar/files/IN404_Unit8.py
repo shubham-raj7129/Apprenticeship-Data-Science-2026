@@ -103,9 +103,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=2)
 #Cross validate naive bayes models.
 # Fit to the count vectorized text
 # Fit over a 10-fold validation with accuracy.
+# Put the vectorizer and classifier in a pipeline and cross validate it on the
+# raw review text, so the vocabulary is learned from each training fold only.
 vect = CountVectorizer()
-all_dtm = vect.fit_transform(reviews_best_worst.Review_Text)
 nb = MultinomialNB()
+pipe = make_pipeline(vect, nb)
 #################### YOUR CODE HERE ######################## mean = ?
 writeFunction("The mean of CV on NB model", mean)
 
@@ -113,8 +115,8 @@ writeFunction("The mean of CV on NB model", mean)
 #Fit to the tfidfed text. Cross validate naive bayes models.
 # Fit over a 10-fold validation with accuracy
 vect = TfidfVectorizer()
-all_dtm = vect.fit_transform(reviews_best_worst.Review_Text)
 nb = MultinomialNB()
+pipe = make_pipeline(vect, nb)
 #################### YOUR CODE HERE ######################## mean = ?
 writeFunction("The mean of CV on NB model using TF-IDF text", mean)
 
@@ -152,8 +154,8 @@ writeFunction("X_train scaled (first column - std)", X_train_scaled[:, 0].std())
 X_test_scaled = scaler.transform(X_test)
 
 #First column of X_test_scaled
-writeFunction("X_train scaled after standardization (first column - mean)", X_test_scaled[:, 0].mean())
-writeFunction("X_train scaled after standardization (first column - std)", X_test_scaled[:, 0].std())
+writeFunction("X_test scaled after standardization (first column - mean)", X_test_scaled[:, 0].mean())
+writeFunction("X_test scaled after standardization (first column - std)", X_test_scaled[:, 0].std())
 
 #Second column of X_test_scaled
 #################### YOUR CODE HERE ########################
@@ -259,7 +261,7 @@ predictions = classifier.predict(
 #Print the tensor prediction results
 #  Classes hold the prediction.
 #   1 = good and 0 = bad.
-f#################### YOUR CODE HERE ########################
+#################### YOUR CODE HERE ########################
 
 
 #Close a file handle for assignment results.

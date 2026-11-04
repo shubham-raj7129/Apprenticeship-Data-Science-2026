@@ -103,19 +103,21 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=2)
 #Cross validate naive bayes models.
 # One model should attempt to fit to the count vectorized text
 # Fit over a 10-fold validation with accuracy.
+# The vectorizer sits inside a pipeline so its vocabulary is learned from
+# each training fold only (no leakage from the held-out reviews).
 vect = CountVectorizer()
-all_dtm = vect.fit_transform(reviews_best_worst.Review_Text)
 nb = MultinomialNB()
-mean = cross_val_score(nb, all_dtm, reviews_best_worst.score, cv=10, scoring='accuracy').mean()
+pipe = make_pipeline(vect, nb)
+mean = cross_val_score(pipe, reviews_best_worst.Review_Text, reviews_best_worst.score, cv=10, scoring='accuracy').mean()
 writeFunction("The mean of CV on NB model", mean)
 
 
 #Fit to the tfidfed text. Cross validate naive bayes models.
 # Fit over a 10-fold validation with accuracy
 vect = TfidfVectorizer()
-all_dtm = vect.fit_transform(reviews_best_worst.Review_Text)
 nb = MultinomialNB()
-mean = cross_val_score(nb, all_dtm, reviews_best_worst.score, cv=10, scoring='accuracy').mean()
+pipe = make_pipeline(vect, nb)
+mean = cross_val_score(pipe, reviews_best_worst.Review_Text, reviews_best_worst.score, cv=10, scoring='accuracy').mean()
 writeFunction("The mean of CV on NB model using TF-IDF text", mean)
 
 
@@ -152,12 +154,12 @@ writeFunction("X_train scaled (second column - std)", X_train_scaled[:, 1].std()
 X_test_scaled = scaler.transform(X_test)
 
 #First column of X_test_scaled
-writeFunction("X_train scaled after standardization (first column - mean)", X_test_scaled[:, 0].mean())
-writeFunction("X_train scaled after standardization (first column - std)", X_test_scaled[:, 0].std())
+writeFunction("X_test scaled after standardization (first column - mean)", X_test_scaled[:, 0].mean())
+writeFunction("X_test scaled after standardization (first column - std)", X_test_scaled[:, 0].std())
 
 #Second column of X_test_scaled
-writeFunction("X_train scaled after standardization (second column - 0)", X_test_scaled[:, 1].mean())
-writeFunction("X_train scaled after standardization (second column - 1)", X_test_scaled[:, 1].std())
+writeFunction("X_test scaled after standardization (second column - mean)", X_test_scaled[:, 1].mean())
+writeFunction("X_test scaled after standardization (second column - std)", X_test_scaled[:, 1].std())
 
 ############### KNN #########################
 #KNN accuracy on original data

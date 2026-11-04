@@ -24,8 +24,8 @@ Assignment Instructions
         What is the mean result of running cross validation using a Naïve Bayes classifier on fitted TF-IDF text?
         What is the scaled X_train mean for the second column?
         What is the scaled X_train standard deviation for the second column?
-        What is the scaled X_train mean for the second column after standardization?
-        What is the scaled X_train standard deviation for the second column after standardization?
+        What is the scaled X_test mean for the second column after standardization?
+        What is the scaled X_test standard deviation for the second column after standardization?
         Research and summarize the standard scaler model.
         Research and summarize the Z-score.
         What is the K-nearest neighbor on the original data before scaling?

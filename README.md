@@ -14,6 +14,7 @@ Personal coursework repository for the Data Science apprenticeship program (Purd
 | [`IN 403 - Deep Learning/`](./IN%20403%20-%20Deep%20Learning) | IN403 (Deep Learning) coursework — per-unit folders (`Unit 1`–`Unit 10`) with notebooks (`.ipynb`), presentations, and lab datasets. Most units use `Assignment/` and `Discussion/` subfolders, but a few units (e.g., `Unit 2`, `Unit 3`) keep assignment/discussion material as files directly in the unit root instead. |
 | [`data/`](./data) | Shared datasets used across notebooks (e.g., MNIST). |
 | `requirements_backup.txt` / `requirements_no_tf.txt` | Snapshots of the Python environment's installed packages (with and without TensorFlow) for reproducing the local `.venv`. |
+| `requirements_tf215.txt` | Isolated Python 3.11 / TensorFlow 2.15 environment for scripts that still use `tf.estimator` (see below). |
 
 Unit folders generally include some combination of the following, but exact names and whether content lives in a subfolder or directly at the unit root **vary by unit** — browse each unit to confirm its layout:
 
@@ -31,6 +32,18 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements_backup.txt   # or requirements_no_tf.txt to skip TensorFlow
 ```
+
+### TensorFlow Estimator scripts (IN404 Unit 8)
+
+The IN404 Unit 8 scripts (`Assignment 1/IN404_Unit8.py` and `Seminar/files/IN404_Unit8*.py`) use `tf.estimator.DNNClassifier`, which TensorFlow removed in 2.16. They fail with `AttributeError` under the main `.venv` (TensorFlow 2.21). Run them in a separate Python 3.11 environment pinned to TensorFlow 2.15:
+
+```bash
+python3.11 -m venv ~/.venvs/in404-tf215
+source ~/.venvs/in404-tf215/bin/activate
+pip install -r requirements_tf215.txt
+```
+
+`requirements_tf215.txt` is a full `pip freeze` of the environment I used to produce `Unit 8/Assignment 1/console_output.txt`. It includes compatible pins such as `numpy==1.26.4` and `keras==2.15.0`, not just the interpreter version.
 
 ## Notes
 
