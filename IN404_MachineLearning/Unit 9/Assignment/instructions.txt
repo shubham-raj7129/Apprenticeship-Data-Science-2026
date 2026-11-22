@@ -1,0 +1,37 @@
+Unit 9 Assignment: Predictions Using Various Models
+
+Outcomes addressed in this activity:
+    Unit Outcomes:
+        Predict using linear regression on a data set.
+        Predict using a random forest tree model on a data set.
+        Apply various models to determine accuracy of results.
+        Discover when to use which model on data sets.
+    Course Outcome:
+        IN404-6: Apply classification and regression trees algorithm to make predictions on data.
+
+Purpose
+In this assignment, you will use linear regression to graph plots and perform predictions on installs versus uninstalls on devices and at a daily rate. You will also apply decision tree and random forest models on the same data set. You will then compare the results, analyze them, and conclude on the results.
+
+Assignment Instructions
+    Please number the assignment items in your Microsoft® Word® document.
+    Please post your code for Python to cover item 1 below.
+    For item 1 below, provide a screenshot of the execution. Be sure to post the .py file for the Python program. Another possibility might be to copy-and-paste your code and results in the assignment document. Also, be sure to respond to items 2–8.
+    Start a next action on a new page.
+        Using the IN404_Installs.csv and IN404_Unit9.py files provided, complete the programming where you see ################# YOUR CODE HERE ########################.
+        List the intercept and coefficient for the linear regression model.
+        What do the intercept and coefficient tell you about the data set?
+        What are the prediction results for the linear regression model? Include the 25, 51, and 90 results.
+        What conclusions can you make based on the predicted values for uninstalls?
+        Compare the linear regression predictions to the random forest predictions.
+        Which model had the better accuracy, the decision tree or random forest model?
+        Summarize your final conclusions of the data set in terms of installs versus uninstalls for daily devices.
+
+Assignment Requirements
+    For more information on APA style formatting, refer to the resources in the Academic Tools area of this course.
+    Also, review the university policy on plagiarism. If you have any questions, please contact your professor.
+
+Directions for Submitting Your Assignment
+    Compose your assignment in Microsoft® Word® and save it as IN404_YourName_Unit9 and submit it to the Dropbox by the deadline.
+
+Review the rubric before beginning this activity.
+

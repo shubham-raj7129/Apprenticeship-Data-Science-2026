@@ -1,0 +1,50 @@
+Hi everyone,
+
+This week, we will focus on predictive modeling using linear regression, decision trees, and random forests. You will learn how these models make predictions, evaluate their performance, and compare results using data on device installs and uninstalls.
+
+What You’ll Learn
+By the end of this unit, you should be able to:
+    Use linear regression to generate predictions and understand relationships between variables
+    Interpret regression coefficients, intercepts, and prediction results
+    Understand how decision trees and random forests make predictions
+    Compare model performance and prediction accuracy
+    Analyze trends in device installs and uninstalls
+
+Readings & Resources
+Please review the assigned Unit 9 readings:
+    Principles of Data Science — Chapter 11: “Predictions Don’t Grow on Trees – or Do They?”
+    Machine Learning Algorithms: Popular Algorithms for Data Science and Machine Learning — Chapter 8: “Decision Trees and Ensemble Learning”
+You may also review the recommended videos on linear regression, decision trees, Scikit-learn regression, and random forests.
+
+Unit 9 Assignment: Predictions Using Various Models
+You will work with the following files:
+    IN404_Installs.csv
+    IN404_Unit9.py
+
+Complete the missing Python code, run the program, and include your code and results as instructed.
+Be sure to address:
+    Regression coefficients and intercepts
+    Prediction results for values such as 25, 51, and 90
+    Comparison of decision tree and random forest performance
+    Analysis of installs versus uninstalls
+    Interpretation of why different models may produce different predictions
+
+Tips for Success
+Clearly number each assignment response in your Word document.
+    Include screenshots showing successful code execution.
+    Submit your completed Python (.py) file as required.
+    Explain what the predictions mean rather than simply reporting numbers.
+    Compare the models and explain which performs better based on your results.
+    Follow the assignment formatting instructions, including starting each new action on a new page as directed.
+    Review the rubric before submitting.
+
+Key Takeaway
+Different machine learning models can produce different predictions from the same data. The goal is to understand how each model works, evaluate its performance, and determine which approach is most appropriate for the problem.
+
+Please reach out early if you have questions about the Python code, model results, or assignment requirements.
+
+I look forward to seeing your work this week!
+
+Regards,
+
+Dr. Sen Baidya

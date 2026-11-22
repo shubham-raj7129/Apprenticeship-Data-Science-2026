@@ -1,0 +1,215 @@
+Sonali Baidya
+Sonali Baidya
+Good evening, everyone.
+James Dixon
+James Dixon
+14:31
+Hello?
+Sonali Baidya
+Sonali Baidya
+14:32
+Let's give a… Few more seconds, and then we'll go and start.
+Okay, let's go ahead and start this week's seminar.
+First of all, good evening, everyone, and thanks for joining.
+Before we go ahead with this week's seminar, any… anyone has anything to discuss or share, or anything that you need to…
+Mention about last week's assignment or anything?
+Anybody has any questions?
+Okay,
+Okay, I don't see anything in the chat, or if anybody has any questions. Feel free to drop me an email later if you don't want to discuss now.
+And, we'll go ahead and start this week's seminar, and I have already posted in the announcement what we are going to cover this week.
+So, again, like, every week,
+This week, too, we have a discussion post for those who have started. Good job. For those who haven't. Please go ahead and start your discussion.
+And make sure you're going by the rubrics and submitting the discussion posts, based on the timeline that's been mentioned over there.
+The other thing is, for those who are not attending the seminar, please make sure you go through this recording and submit the alternative seminar at the appropriate Dropbox.
+Okay, now, for this week, I'll go ahead and share my screen, and let's see what's there for this week.
+Here…
+Are you guys able to see my screen?
+Dhaneshwar Patil
+Dhaneshwar Patil
+17:18
+Yes.
+Sonali Baidya
+Sonali Baidya
+17:19
+Okay.
+So, this week, the assignment is…
+So the code that you need to write, it's going to implement 3 methods, that's the linear regression.
+A random forestry model.
+And we are also going to use decision trees as well.
+So…
+And we are going to apply to see how the different models determine the accuracy of their results.
+For this unit, you would need to download the file
+Of one… one… Sorry, IN404 underscore installs. So this is the CSV file we are going to use. Let me see if I can…
+Bennett, does it open up?
+Oops, sorry.
+Mmm…
+Okay, yeah, let's go ahead and open this one. So, if you see in this week, this is the file that we are going to use, the dataset.
+It doesn't have any headers, so that will be mentioned through your code.
+So if I go to read the code,
+So we are going to mention the headers over here. So if you see…
+Date, package name, daily device installs, daily device uninstalls, daily device upgrades.
+total user installs, daily user installs, and daily user uninstalls. So these are all the columns that we are defining over here in the code, whereas your CSV file doesn't have it, so your CSV file starts from the data set, and it has the data, so we are going to take it from the very first row.
+Okay, so…
+I'm going to go through the code later, but let's go ahead and see what's there in the assignment.
+You're going to use the Unit 9 Python file, and you're going to, again, like, every week you have been doing, you have to complete the program, wherever you see this.
+Once you run your code and get the outputs, you have to list the intercept and coefficient for the linear regression model.
+Then you have to explain what do intercept and coefficient tell you about the data set.
+What are the prediction results for the linear regression model when we are including
+These, 25, 51, and 90, and we're going to see it in our code as well, how we are going to do that.
+Then last, what conclusions can you make based on the predicted values for uninstalls?
+Similarly, once you do it for the linear regression model, you're going to…
+Find the results for the random forest predictions as well through your code.
+And once you do that, you will compare the two results.
+two predictions, and you have to mention which model had the better accuracy. Is it a decision tree or the random forest model?
+And also summarize your conclusions from the dataset and what you got from the outputs among… on the different types of… after implementing the different types of models.
+Okay, once you do that, go ahead and submit the doc file. You have to name it accordingly and put it into the appropriate Dropbox.
+Okay, now, any questions on understanding what you need to do for this week?
+Okay, so if not…
+I'll go ahead and first go through the different concepts, and among these, we have already gone through the linear regression in the past units, so it's a reputation over here, but along with that, we're going to extend it
+By implementing random forest model, and also, we'll go through what does decision tree mean.
+So, having said that, again, like, we all know the linear regression model, it's like a straight line, right? So, almost we try to find out
+Which line covers most of the dots in our data set.
+So that's what the intent is. So, suppose, like, think of, like, a laminate stand, where we are in, like, we are saying that, okay, what is the role of the temperature? As the role of the temperature goes up.
+The cell goes up, if the temperature goes down, the cell goes down, and vice, like that.
+Right? So, linear regression finds the one straight line that sits on as close as possible to all the dots. Now, three things we should be keeping in mind when we are implementing the linear regression. One is the intercept, where the line meets the vertical axis. Right? Second, the slope.
+Which is, we call as coefficient in case of when we are finding out the
+intercept in our code, right? And…
+Third is a prediction. So, we pick a number, and then we find out what's… what's going to be. So, for example, in this data, we are going to find out
+If the number of installs is this, we are going to predict how many uninstalls.
+Can happen based on the linear regression model.
+Okay? So that's what we are going to
+use in linear way. It's a straight graph. They're going to find out the intercept, we're going to find out the slope. Using the intercept and the coefficient, or the slope, we'll plug it in in a formula, and then we'll predict and get the answer.
+So that's what linear regression is. Now, what is the decision tree? And from the concept of the word decision tree, and from this diagram, you can well understand that
+It's like, you can say that it's like the game we used to play earlier, like the 20 questions, right? As we ask more questions, we narrow down the possibilities until we get a good guess.
+So, this decision tree also does the same with our data.
+So we start with the top box, and we'll say, okay, is the number of installs less than or below 40 or not?
+If it is fierce, it will go to the left branch. If it is no.
+Then it follows to the right, and then we will predict.
+Okay? So that's what the decision tree is. It's like a flow chart of yes and no. Eventually, when we go down, we will get the predictions.
+To the lymph node.
+Now, the risk over here is… overfitting.
+Because a tree that keeps splitting until every training
+As its own leaf, it can memorize the answers instead of learning a pattern.
+So, it looks great on training data.
+Whereas, if you give, new data, it won't give you a very good outcome.
+Okay?
+The third one is a random forest. So, random forest is, like,
+It's like a forest of… you say… let's say it's a crowd, and we keep on asking.
+The same question to different people.
+say I have 100 friends, instead of asking question to one, I keep on asking to every
+other friend, okay? And then…
+we get, from the training data, like, like, for example, this… so all these trees, this all trees, combination of all these trees makes a forest. So that's what the concept is over here. So…
+From the training data, each tree gets its own random sample of, say, for example, in your data set, the number of days, okay? So every tree learns slightly different rules and makes different,
+wrong predictions, you can say, different mistakes. So each tree then predicts the uninstalls for the same input.
+and it… then it votes. So what happens is, suppose this one votes for 20, this tree votes for 22, this tree votes for 20. Eventually, we'll see, okay, number of 20 is more.
+people has voted for 20 more, so we will go for 20. So that's how the random forest works. It depends on the voting. Okay, which one has the greatest more weightage towards? We will lean towards it. So that's how the random forest works.
+Now… Once, so in your code, once you do that, you have to, again.
+Split up your data into 70 and 30, and then use your,
+Training dataset, as well as test data to find out the predictions.
+And we are going to go through that in our… the code, rather than talking over here.
+Now, the… obviously, when we are using the three
+methods, the first question that comes to our mind is, okay, where should I use what, right? So.
+When we are talking about linear regression, we generally use linear regression when the trend is roughly a straight line, and you want a very simple story with a slope and an intercept, and that's it.
+We will use decision tree when we need rules
+That people can read and explain.
+Okay? So that's where we want to try and implement decision tree in those cases, or in those scenarios. And we will use a random forest when the accuracy matters most, and you can give up some explainability. So…
+We will not just go by one iteration, we will go by voting, we'll find out through different iterations, we'll take all this decision trees, find out which one has the highest vote, and we'll go for that.
+So, based on your scenarios, you will use which model to use on that particular scenario to predict or get the accuracy of your model.
+Now, in this particular dataset, we are going to implement all these three models, we'll find out the accuracy of these three, and then you can do a comparison to see which one is better, which one gives the more accurate… accuracy is higher, and accordingly, you have to explain
+Okay, why is this high, in this case, and not in the other?
+Okay? Now, let's go to the code. When we are talking about the code, the first few lines, I don't… just don't want to go, it's the same.
+If you see over here the packages we have, we are using a linear regression, we are using a decision tree classifier, and we are also using a random forest classifier.
+Okay?
+Now, using these, I'm going to skip all these, these are the same, and as I read, these are the column names that I am already defining over here for my dataset that I'm going to read from this particular CSV file.
+Okay?
+This is all pretty straightforward, this is the same thing we have been doing. Top 4 rows, we are printing, we are finding now the shape.
+Now, later, this part is explaining where we are plotting the regression model.
+And then we are finding a graph.
+To see, how does this particular… and for this one, we are using,
+Now, it's SNS, this one is using a Seabourn package right here for visualization. And then,
+We're defining it over here.
+Okay?
+Now, I'm gonna run it, and let me show you how it looks. So, if I run this code.
+The first one is this seabone plot, if you see over here.
+That's been plotted, and it's… we are showing over here.
+So, it shows, or it draws one dot per day. If you see, the X is the installs, and the Y is the uninstalls.
+Okay? And, we are using the…
+data from here, that's why it's, like, mentioned over here. And keep in mind, the column names are defined over here and not in our data set, so we are going to take the column names from here.
+Okay?
+Now, the next part is… We are using, pandas…
+scatterplot, so if I close this, this will come up.
+So this is the panda scatter plot that's been used to plot the…
+Again, the installs and uninstalls to visualize how it looks.
+The next part is a linear regression, and this, I think, is the same way we have done in the past.
+So, we are creating an empty linear regression model, which we are naming it over here as LINRIG. You can define anything as you want when you're writing your code.
+Again, this is an empty one, so nothing has been learned yet.
+This line, as you know, is holding a list of
+one column name. So it is a list because a model can use several features, okay? Here, we will only use the installs, so that's why we are using the column device installs right here.
+Now… Data features column. This is where we are selecting that particular column as a data frame.
+And we know that we are using capital X, so it's a Skype kit learn.
+requires X, so that's Y.
+So, that's why we have the packages up there installed, and similarly, next is, we know that Y is a target.
+So it is showing the uninstalls column, okay?
+And then we are, running the least squares, so we are fitting it over here. It tries the intercepts and the slopes and keeps the pair who squared
+Mrs.
+Adds up to the number of days that we have in… over there, so in that particular
+data set. So we are going to add it up and find out how many number of Ts over there.
+Okay, so once that is done, then we are writing it. So, for here, these are the… remember the top head, the shape, that's been over here.
+And let me go ahead and close the…
+Okay, so now you can see the data intercept, the coefficient that's been printed over here.
+And then… If you see, the next part is we are writing these three.
+Right, so that's what… over here, and after that, we are printing… Where is that? Yes. So this 25 daily device install.
+And 51 daily device installed, and 90 daily device installed. So, if I go to the…
+Code that you need to fill in.
+Let me open that.
+So… This is where you need to print in,
+So this is for scatterplot, that you need to…
+write in those four lines for, similarly to the one that we showed, the pandas, the scatter plot over here. Then we are going to write the intercept and the coefficient, the print, that's FIN over here.
+So that's what I showed you over here, that's what exactly we are going to print over here.
+Taking from here, once we get the fit done, we are going to use that and get the intercept and the coefficient.
+Okay? So…
+So that's other two things that you have to do first. Then after that, these are all there, you don't have to worry about. What you have to do is you have to do… for 25 daily devices, it's been showed what you need to do in this particular code. Similarly, you need to do it for 51 and 90.
+Now, definitely over here, if you see,
+The only question that you might have over here… let's go to this one, maybe.
+This particular brackets.
+No.
+The question might come up, why are we putting this 25 into 2 square brackets?
+Anybody has any idea?
+Why are we putting the two square brackets? And that's what you need to do it for 51 and 90 as well.
+Okay, so the double brackets we are putting over here, it makes a table of one row and one column.
+So, the same shape as X that we have used earlier.
+We are going to use it over here, so that means we are predicting 25. That means predict…
+It's like a two-dimensional array. We are going to use 25 rows and 25 columns, and that's why we are putting double brackets.
+Okay? Similarly, for 51 device install and 19 device install, that's what your code you need to write and find out the predictions for all of them, and you're going to print it, and you're going to get the arrays over here.
+Okay? So that's what, pretty much, you have to do for linear regression.
+The next part is… For, yeah.
+The decision tree. So you have to fit the tree, and you have to print the accuracy for the decision tree classifier that you are going to use over here.
+So let's go ahead and see what's there.
+So, if you see over here.
+We are using a decision tree classifier.
+Right, so… now, this creates an empty classification tree.
+And, we are taking random state to be 1. That means we're fixing how the tree will break ties, so the same training rows always give the same tree, okay? So that's why we are putting random state is equal to 1.
+Now, the next part is, again, we are going to fit. That means, we are training it.
+Now, once that is done, You then… this is the part that you need to print.
+And find out the accuracy scope.
+Okay? So, pretty straightforward, nothing much. You have to make any changes to the code or anything. What you need to do is you have to fit, and then you have to run the write function, call that, print the score or accuracy model, okay?
+Now, next part is the random forest classifier, and that's, again, the same thing that you need to do. You have to run this random forest classifier, and then, again, fit prediction, and your code will be finding out or printing the results.
+And the… also the accuracy. Once that is done, you're also going to predict similarly as you did for the linear regression for 25. You have to do it for 51 and 90 in this case… this case as well. And then you have to do a comparison of the two accuracy score and find out why… which one is better and why.
+Okay?
+So now again, just to explain, If you see over here.
+We are creating, again, an empty, random forest.
+of 100 classification trees. That's why we're mentioning it as 100. Okay?
+So, if there is nothing mentioned.
+Then the trees will be run randomly.
+That's… that's why we are just mentioning over here, let's stick 200, and based on that, we are going to run our classification tree.
+Okay? The next one, it fits those 100 trees. Each tree is trained on its own random sample, and then we get the
+Once that is done, we'll go ahead and do the prediction, we'll print the prediction, and then we'll print accuracy score. Similarly, we are going to predict for 51 and 90, and find out the scores. So once you run it, you should see this array of the random forest prediction.
+And also, you'll get the accuracy score.
+As well as the predictions for 25, 51, and 90 daily device installs. So that's pretty much it for this week's, assignment.
+Anybody has any questions regarding any part in the code, or anything on the models, or anything?
+Okay.
+So, if you guys don't have any questions, I think that's all for this week's assignment.
+I'm going to stay back. If you got… anybody has any questions about any other assignment or anything, feel free to stay back, and I can discuss else. Everybody has a… have a great weekend, and we'll talk to you next week. Next week will be the last seminar.
+So we'll go over, and we'll also let you know the deadline when you need to submit, if anything is still pending from your end. But if there are stuffs that you are behind, I will definitely suggest you to start working on them, so that you have it ready before the last unit starts.
+Okay?
+Having said that, everybody have a great night, and have a great weekend. Talk to you guys again next week.

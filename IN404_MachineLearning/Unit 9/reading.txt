@@ -1,0 +1,8 @@
+Read or review Chapter 11: “Predictions Don’t Grow on Trees – or Do They?,” in Principles of Data Science, available at the Library in the Academic Tools section of this course.
+
+Read or review the following chapters in Machine Learning Algorithms: Popular algorithms for data science and machine learning, available at the Library in the Academic Tools section of this course.
+    Chapter 8: Decision Trees and Ensemble Learning
+
+Reading Summary:
+In this unit, you will read about various methods for making predictions. Some of the models covered are decision trees, K-means clustering, and Naïve Bayes. For each, you will read about what they are and when to use them for various data sets. You will read about feature extraction and principal component analysis to reduce your analysis to the necessary columns. Finally, you will read more about using scikit-learn with decision trees.
+

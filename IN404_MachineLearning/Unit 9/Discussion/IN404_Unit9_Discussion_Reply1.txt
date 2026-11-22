@@ -1,0 +1,15 @@
+Response to Mateo Uribe Giraldo:
+
+Great post, Mateo! I liked how you ended by saying that choosing a model comes down to balancing accuracy, interpretability, and computational efficiency. That matches what I found in my own research, and it is the same point the professor made in this week's seminar. I also appreciated that you pointed out K-means is sensitive to feature scaling. Since K-means assigns each point to the nearest cluster center, it has the same scaling problem we saw with KNN in Unit 8, where a feature with a larger range can take over the distance calculation.
+
+Your fraud detection example made me want to see what real fraud data looks like. I found a widely used credit card fraud dataset released by Dal Pozzolo et al. (2015). It contains transactions made by European cardholders over two days in September 2013. Out of 284,807 transactions, only 492 are fraud, so the fraud class makes up just 0.172% of the data (Dal Pozzolo et al., 2015). This shows how unbalanced fraud problems usually are. A model that labels every single transaction as "not fraud" would be about 99.8% accurate and still catch zero fraud. That is why accuracy alone can be misleading here, and measures like precision and recall for the fraud class tell us much more.
+
+The imbalance also matters for the tree-based models you described. The scikit-learn guide warns that "decision tree learners create biased trees if some classes dominate," and it recommends balancing the dataset before fitting (scikit-learn developers, n.d.). Since a random forest is built from many of these trees, it can carry the same bias toward the majority class. scikit-learn's RandomForestClassifier has a class_weight option that gives the rare class more weight during training, which is one way to handle this. I also found it interesting that the features in this dataset were already transformed with PCA for confidentiality (Dal Pozzolo et al., 2015), which connects to this week's reading on principal component analysis.
+
+Do you know how financial institutions usually handle this imbalance in practice? I am curious whether they rebalance the training data, adjust the model's decision threshold, or both.
+
+References
+
+Dal Pozzolo, A., Caelen, O., Johnson, R. A., & Bontempi, G. (2015). Calibrating probability with undersampling for unbalanced classification. In 2015 IEEE Symposium Series on Computational Intelligence (pp. 159–166). IEEE. https://doi.org/10.1109/SSCI.2015.33
+
+scikit-learn developers. (n.d.). Decision trees. scikit-learn documentation. Retrieved November 4, 2026, from https://scikit-learn.org/stable/modules/tree.html

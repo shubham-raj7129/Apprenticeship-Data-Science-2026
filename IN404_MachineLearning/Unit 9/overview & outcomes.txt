@@ -1,0 +1,2 @@
+Predictions Using Various Models
+In this unit, you will learn about linear regression for plotting and predictions. You will also apply a decision tree and random forest models for accuracy. Further, you will apply the random forest model for predictions and compare results between the models. Finally, you will learn about when to use each model and for what data sets.
