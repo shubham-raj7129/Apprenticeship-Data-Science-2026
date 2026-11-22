@@ -1,0 +1,38 @@
+== Data set ==
+Days: 2073 | installs range: 24 to 534
+Correlation (installs vs. uninstalls): 0.9136
+Total installs: 181744 | total uninstalls: 156650 | ratio: 0.8619
+Distinct uninstall values (classes): 145
+Actual uninstalls on days with 23-27 installs: n=6, mean=37.0
+Actual uninstalls on days with 49-53 installs: n=102, mean=53.6
+Actual uninstalls on days with 88-92 installs: n=148, mean=75.3
+
+== Linear regression (all data) ==
+Intercept: 8.3902 | coefficient: 0.7662 | R-squared: 0.8346
+Break-even installs (predicted uninstalls = installs): 35.89
+  25 installs -> 27.55 uninstalls (110.2% of installs)
+  51 installs -> 47.47 uninstalls (93.1% of installs)
+  90 installs -> 77.35 uninstalls (85.9% of installs)
+
+== Test split comparison (622 test days) ==
+Baseline: always predict the most common training value (68) -> accuracy 0.0241
+Linear regression  exact=0.0273  MAE=13.12  R2=0.837  within5=0.267  within10=0.498
+Decision tree      exact=0.0225  MAE=15.15  R2=0.781  within5=0.262  within10=0.458
+Random forest      exact=0.0225  MAE=14.60  R2=0.796  within5=0.248  within10=0.469
+Tree depth: 28 | leaves: 165
+Highest training accuracy any model could reach with this one feature: 0.1799
+
+== Random forest votes ==
+25 installs: training days with exactly 25 installs = 0 []
+   top classes: 24 (68.0%), 51 (11.6%), 28 (10.4%)
+51 installs: training days with exactly 51 installs = 9 [37, 45, 56, 59, 60, 60, 61, 62, 66]
+   top classes: 60 (22.6%), 56 (13.1%), 62 (12.0%)
+90 installs: training days with exactly 90 installs = 20 [52, 58, 60, 60, 63, 66, 67, 71, 77, 77, 79, 80, 80, 82, 85, 89, 92, 94, 94, 97]
+   top classes: 60 (10.4%), 94 (10.1%), 80 (9.5%)
+
+== RandomForestRegressor (for comparison) ==
+Test MAE: 12.41 | R2: 0.849
+Predictions for 25, 51, 90: [29.88 56.33 75.94]
+
+== Decision tree vs. random forest test accuracy over 30 splits ==
+Random forest higher: 12 | decision tree higher: 13 | tied: 5

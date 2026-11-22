@@ -1,0 +1,11 @@
+Topic: Regression and Classification
+
+Do some Internet or Library research beyond the text and find a credible resource that deals with regression and classification models. Based on the resource, respond to the following:
+
+In paragraph form, discuss the linear regression, decision tree, random forest, K-means, and K-nearest neighbor models. Be sure to summarize each to include any strengths or weaknesses. Also, describe when each should be used and for what type of data sets. Conclude with a summarization of a real-world use case of three of the models that have been applied successfully.
+
+For the initial post:
+    Cite your source properly using APA in-text citation.
+    Provide a full APA reference entry at the end of the post.
+
+In responses to at least two others, consider sharing experiences about regression or classification models, or do some light research "beyond" the other student’s initial post (citing your sources, of course).

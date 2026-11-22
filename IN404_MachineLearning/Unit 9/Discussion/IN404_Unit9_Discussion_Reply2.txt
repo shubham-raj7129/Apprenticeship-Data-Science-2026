@@ -1,0 +1,19 @@
+Response to Tyler Ni:
+
+Great post, Tyler! Your summary was concise and still covered each model's strengths, weaknesses, and the type of data it fits best. I especially liked your note that random forests "average many trees." I found the same detail in the scikit-learn guide, which explains that its implementation "combines classifiers by averaging their probabilistic prediction, instead of letting each classifier vote for a single class" (scikit-learn developers, n.d.-b). That surprised me a little, since random forests are usually described as a vote.
+
+You mentioned that K-means requires choosing K, and that made me want to look into how people actually choose it. One common method is the silhouette coefficient, introduced by Rousseeuw (1987). For each point, it compares how close the point is to the other points in its own cluster with how close it is to the nearest neighboring cluster. The scikit-learn guide explains that the score "is bounded between -1 for incorrect clustering and +1 for highly dense clustering," and that "scores around zero indicate overlapping clusters" (scikit-learn developers, n.d.-a). To use it, we can run K-means for several values of K and pick the one with the highest average silhouette score. There is one catch that connects to your point that K-means favors round clusters (James et al., 2023). The guide notes that the silhouette coefficient "is generally higher for convex clusters" (scikit-learn developers, n.d.-a), so it shares some of the same bias as K-means itself.
+
+This also helped me see a difference between the two "K" models in your post. In Unit 8, we chose K for KNN with GridSearchCV because we had labels, so we could test which K gave the best accuracy. K-means has no labels to check against, so we need an internal measure like the silhouette score instead.
+
+Your customer segmentation example made me curious. Do you know whether businesses usually pick the number of segments from a score like this, or from what is practical for their marketing team to manage?
+
+References
+
+James, G., Witten, D., Hastie, T., Tibshirani, R., & Taylor, J. (2023). An introduction to statistical learning: With applications in Python. Springer.
+
+Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. Journal of Computational and Applied Mathematics, 20, 53–65. https://doi.org/10.1016/0377-0427(87)90125-7
+
+scikit-learn developers. (n.d.-a). Clustering. scikit-learn documentation. Retrieved November 4, 2026, from https://scikit-learn.org/stable/modules/clustering.html
+
+scikit-learn developers. (n.d.-b). Ensembles: Gradient boosting, random forests, bagging, voting, stacking. scikit-learn documentation. Retrieved November 4, 2026, from https://scikit-learn.org/stable/modules/ensemble.html
